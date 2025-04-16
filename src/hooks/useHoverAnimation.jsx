@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-const useAnimation = (initialText, finalText) => {
+const useHoverAnimation = (initialText, finalText) => {
 
     const [animatedText, setAnimatedText] = useState(initialText);
     const animatingRef = useRef(false);
@@ -11,7 +11,7 @@ const useAnimation = (initialText, finalText) => {
         if (animatingRef.current) return; // No relanzar si ya está animando
 
         const fullWord = finalText;
-        let current = initialText[1]; // Iniciar con la primera letra del texto final;
+        let current = initialText; // Iniciar con la primera letra del texto final;
         let i = 0;
 
         animatingRef.current = true;
@@ -20,7 +20,7 @@ const useAnimation = (initialText, finalText) => {
         intervalRef.current = setInterval(() => {
             if (i < fullWord.length) {
                 current += fullWord[i];
-                setAnimatedText(`{${current}}`);
+                setAnimatedText(current);
                 i++;
             } else {
                 clearInterval(intervalRef.current);
@@ -49,4 +49,4 @@ const useAnimation = (initialText, finalText) => {
 
 };
 
-export default useAnimation;
+export default useHoverAnimation;

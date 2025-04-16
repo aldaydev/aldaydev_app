@@ -14,7 +14,7 @@
     transition: letter-spacing 0.3s 1s ease-in-out;
 }
 
-#header__logo:hover{
+/* #header__logo:hover{
     letter-spacing: 6px;
     transition: letter-spacing .6s ease-in-out;
 }
@@ -22,17 +22,46 @@
 .header__logo:hover {
     letter-spacing: 5px;
     transition: letter-spacing .3s ease-in-out;
+} */
+
+.header__logoBraceLeft, .header__logoBraceRight{
+    font-size: 1.6rem;
+    transition: margin 0.3s .8s ease-in-out;
+}
+
+#header__logo:hover .header__logoBraceLeft,
+.header__link:hover .header__logoBraceLeft{
+    padding-right: 5px;
+    transition: margin .3s ease-in-out;
+}
+
+#header__logo:hover .header__logoBraceRight,
+.header__link:hover .header__logoBraceRight{
+    padding-left: 5px;
+    transition: margin .3s ease-in-out;
+}
+
+.header__link:hover .header__aboutIcon{
+    padding-right: 5px;
 }
 
 .header__links{
+    height: 100%;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .header__link{
-    padding-top: 4px;
+    height: 100%;
     font-weight: 800;
     font-size: 1rem;
     color: white;
+    display: flex;
+    align-items: center;
 }
+
+.header__aboutIcon{
+    cursor: pointer;
+}
+
