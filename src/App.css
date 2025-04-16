@@ -1,1 +1,12 @@
+.App__header{
+  width: 80%;
+  margin: 0 auto;
+}
 
+.App__main{
+  background-color: aqua;
+}
+
+.App__footer{
+  
+}
