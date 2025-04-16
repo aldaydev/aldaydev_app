@@ -11,7 +11,7 @@ const useAnimation = (initialText, finalText) => {
         if (animatingRef.current) return; // No relanzar si ya está animando
 
         const fullWord = finalText;
-        let current = "A";
+        let current = initialText[1]; // Iniciar con la primera letra del texto final;
         let i = 0;
 
         animatingRef.current = true;
@@ -28,7 +28,7 @@ const useAnimation = (initialText, finalText) => {
 
                 if (shouldResetRef.current) {
                     // Si el mouse ya se había ido, ahora sí hacemos reset
-                    setTimeout(() => setAnimatedText("{A}"), 700); // Un pequeño delay opcional
+                    setTimeout(() => setAnimatedText(initialText), 700); // Un pequeño delay opcional
                 }
             }
         }, 70);
@@ -40,7 +40,7 @@ const useAnimation = (initialText, finalText) => {
                 shouldResetRef.current = true;
             } else {
                 // Si no estaba animando, reset inmediato
-                setAnimatedText("{A}");
+                setAnimatedText(initialText);
             }
         };
 

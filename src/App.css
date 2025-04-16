@@ -1,6 +1,8 @@
 .App__header{
   width: 80%;
   margin: 0 auto;
+
+  height: 70px;
 }
 
 .App__main{

@@ -1,65 +1,39 @@
-import { useState, useRef } from "react";
 import "./header.css";
 import useAnimation from "../../hooks/useAnimation";
+import useWindowSize from "../../hooks/useWindowSize";
+import { Link } from "react-router-dom";
 
 function Header() {
+
+    const { width, height } = useWindowSize();
+    const isMobile = width <= 900; // Definimos un tamaño de pantalla para considerar móvil
 
     // {animatedText, startAnimation, stopAnimation}
     const animateLogo = useAnimation("{A}", "ldayDev");
 
-    // const [logoText, setLogoText] = useState("{A}");
-    // const animatingRef = useRef(false);
-    // const shouldResetRef = useRef(false);
-    // const intervalRef = useRef(null);
-
-    // const startLogoAnimation = () => {
-    //     if (animatingRef.current) return; // No relanzar si ya está animando
-
-    //     const fullWord = "ldayDev";
-    //     let current = "A";
-    //     let i = 0;
-
-    //     animatingRef.current = true;
-    //     shouldResetRef.current = false;
-
-    //     intervalRef.current = setInterval(() => {
-    //         if (i < fullWord.length) {
-    //             current += fullWord[i];
-    //             setLogoText(`{${current}}`);
-    //             i++;
-    //         } else {
-    //             clearInterval(intervalRef.current);
-    //             animatingRef.current = false;
-
-    //             if (shouldResetRef.current) {
-    //                 // Si el mouse ya se había ido, ahora sí hacemos reset
-    //                 setTimeout(() => setLogoText("{A}"), 700); // Un pequeño delay opcional
-    //             }
-    //         }
-    //     }, 70);
-    // };
-
-    // const stopLogoAnimation = () => {
-    //     // En lugar de cortar la animación, marcamos que debe resetear al terminar
-    //     if (animatingRef.current) {
-    //         shouldResetRef.current = true;
-    //     } else {
-    //         // Si no estaba animando, reset inmediato
-    //         setLogoText("{A}");
-    //     }
-    // };
-
     return (
         <header className="App__header">
             <div className="header__Container">
+                {isMobile ?
+                    <span className="header__logo">
+                        {"{"}A{"}"}
+                    </span>
+                    :
                     <span 
                     id="header__logo"
                     onMouseOver={animateLogo.startAnimation} 
                     onMouseLeave={animateLogo.stopAnimation}
                     >
                         {animateLogo.animatedText}
-                    </span>
+                    </span>    
+                }
+                <div className="header__links">
+                    <Link to="/about" className="header__link">About</Link>
+                    <Link to="/projects" className="header__link">Projects</Link>
+                    <Link to="/cv" className="header__link">CV</Link>
+                </div>
             </div>
+
         </header>
     );
 }

@@ -1,7 +1,38 @@
+.header__Container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
-#header__logo {
+#header__logo,
+.header__logo {
     cursor: pointer;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    transition: letter-spacing 0.3s 1s ease-in-out;
+}
+
+#header__logo:hover{
+    letter-spacing: 6px;
+    transition: letter-spacing .6s ease-in-out;
+}
+
+.header__logo:hover {
+    letter-spacing: 5px;
+    transition: letter-spacing .3s ease-in-out;
+}
+
+.header__links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__link{
+    padding-top: 4px;
+    font-weight: 800;
+    font-size: 1rem;
+    color: white;
 }
