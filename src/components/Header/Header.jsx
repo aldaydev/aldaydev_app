@@ -1,17 +1,13 @@
 import "./header.css";
 import useHoverAnimation from "../../hooks/useHoverAnimation.jsx";
-import useWindowSize from "../../hooks/useWindowSize.jsx";
+
 import { Link } from "react-router-dom";
 import about_icon from "../../assets/icons/about_icon.svg";
 import HeaderLogo from "./HeaderLogo.jsx";
 
 function Header() {
 
-    const { width, height } = useWindowSize();
-    const isMobile = width <= 900; // Definimos un tamaño de pantalla para considerar móvil
-
     // {animatedText, startAnimation, stopAnimation}
-    const animateLogo = useHoverAnimation("A", "ldayDev");
     const animateAbout = useHoverAnimation("", "About");
 
     return (

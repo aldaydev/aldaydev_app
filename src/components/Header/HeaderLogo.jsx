@@ -8,13 +8,13 @@ function HeaderLogo() {
     const isCollapsed = width < 1024; // Definimos un tamaño de pantalla para considerar móvil
 
     return (
-        <Link to="/" className={isCollapsed && "headerLogo__link"}>
-            <span className="headerLogo__braceLeft">{"{"}</span>
+        <Link to="/" className="headerLogo__link">
+            <span className={!isCollapsed ? "headerLogo__braceLeft" : "headerLogo__braceLeft headerLogo__braceLeft--collapsed"}>{"{"}</span>
             <span className="headerLogo__textContainer">
                 <span className="headerLogo__initialText">A</span>
-                <span className="headerLogo__finalText">ldayDev</span>
+                {!isCollapsed && <span className="headerLogo__finalText">ldayDev</span>}
             </span>
-            <span className="headerLogo__braceRight">{"}"}</span>
+            <span className={!isCollapsed ? "headerLogo__braceRight" : "headerLogo__braceRight headerLogo__braceRight--collapsed"}>{"}"}</span>
         </Link>
     )
 }
