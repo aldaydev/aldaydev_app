@@ -3,6 +3,7 @@ import useHoverAnimation from "../../hooks/useHoverAnimation.jsx";
 import useWindowSize from "../../hooks/useWindowSize.jsx";
 import { Link } from "react-router-dom";
 import about_icon from "../../assets/icons/about_icon.svg";
+import HeaderLogo from "./HeaderLogo.jsx";
 
 function Header() {
 
@@ -16,14 +17,7 @@ function Header() {
     return (
         <header className="App__header">
             <div className="header__Container">
-                <Link to="/" className="header__logo">
-                    <span className="header__logoBraceLeft">{"{"}</span>
-                        <span className="header__textContainer">
-                            <span className="header__logoInitial">A</span>
-                            <span className="header__logoFinal">ldayDev</span>
-                        </span>
-                    <span className="header__logoBraceRight">{"}"}</span>
-                </Link>
+                <HeaderLogo />
                 <div className="header__links">
                     <Link 
                         to="/about" 
