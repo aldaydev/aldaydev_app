@@ -7,38 +7,71 @@
 
 #header__logo,
 .header__logo {
+    width: 45px;
     cursor: pointer;
     font-size: 1.6rem;
     font-weight: 800;
-    letter-spacing: 3px;
-    transition: letter-spacing 0.3s 1s ease-in-out;
+    /* letter-spacing: 3px; */
+    transition: letter-spacing .3s .6s ease-in-out, width .5s ease-in-out;
+    interpolate-size: allow-keywords;
 }
 
 /* #header__logo:hover{
     letter-spacing: 6px;
     transition: letter-spacing .6s ease-in-out;
-}
+} */
 
 .header__logo:hover {
-    letter-spacing: 5px;
-    transition: letter-spacing .3s ease-in-out;
-} */
+    width: auto;
+    transition: letter-spacing .3s .6s ease-in-out, width .5s ease-in-out;
+    /* letter-spacing: 2px;
+    transition: letter-spacing .3s ease-in-out; */
+}
+
+
+.header__textContainer{
+    font-size: 1.4rem;
+}
+
+.header__logoFinal{
+    display: inline-block;
+    width: 0%;
+    overflow: hidden;
+
+    vertical-align: bottom;
+
+    transition: width .5s ease-in-out;
+    interpolate-size: allow-keywords;
+}
+
+.header__logo:hover .header__logoFinal{
+    width: auto;
+    transition: width .5s ease-in-out;
+}
 
 .header__logoBraceLeft, .header__logoBraceRight{
     font-size: 1.6rem;
-    transition: margin 0.3s .8s ease-in-out;
+    transition: padding .3s .5s ease-in-out;
 }
 
-#header__logo:hover .header__logoBraceLeft,
+.header__logoBraceLeft{
+    padding-right: 2px;
+}
+
+.header__logoBraceRight{
+    padding-left: 2px;
+}
+
+.header__logo:hover .header__logoBraceLeft,
 .header__link:hover .header__logoBraceLeft{
     padding-right: 5px;
-    transition: margin .3s ease-in-out;
+    transition: padding .3s ease-in-out;
 }
 
-#header__logo:hover .header__logoBraceRight,
+.header__logo:hover .header__logoBraceRight,
 .header__link:hover .header__logoBraceRight{
     padding-left: 5px;
-    transition: margin .3s ease-in-out;
+    transition: padding .3s ease-in-out;
 }
 
 .header__link:hover .header__aboutIcon{

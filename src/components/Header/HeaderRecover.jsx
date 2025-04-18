@@ -16,14 +16,21 @@ function Header() {
     return (
         <header className="App__header">
             <div className="header__Container">
-                <Link to="/" className="header__logo">
-                    <span className="header__logoBraceLeft">{"{"}</span>
-                        <span className="header__textContainer">
-                            <span className="header__logoInitial">A</span>
-                            <span className="header__logoFinal">ldayDev</span>
-                        </span>
-                    <span className="header__logoBraceRight">{"}"}</span>
-                </Link>
+                {isMobile ?
+                    <span className="header__logo">
+                        {"{"}A{"}"}
+                    </span>
+                    :
+                    <span 
+                    id="header__logo"
+                    onMouseEnter={animateLogo.startAnimation} 
+                    onMouseLeave={animateLogo.stopAnimation}
+                    >
+                        <span className="header__logoBraceLeft">{"{"}</span>
+                        {animateLogo.animatedText}
+                        <span className="header__logoBraceRight">{"}"}</span>
+                    </span>    
+                }
                 <div className="header__links">
                     <Link 
                         to="/about" 
