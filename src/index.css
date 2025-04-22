@@ -1,7 +1,7 @@
 :root{
   --color-yellow: #e4e12f;
   --color-white: #fffffa;
-  --color-white-contrast: #fff8ec;
+  --color-white-contrast: white;
 }
 
 :root {

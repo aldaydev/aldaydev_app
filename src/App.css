@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  margin-bottom: 70px;
   z-index: 1000;
 
   /* box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.267); */
@@ -24,6 +25,7 @@
 }
 
 .App__main{
+  margin-top: 70px;
   background-color: var(--color-white);
   min-height: 100vh;
 }

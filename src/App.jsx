@@ -16,8 +16,9 @@ function App() {
       <main className='App__main'>
         <Routes>
           <Route path="/" element={<h1>Home</h1>} />
-          <Route path="/about" element={<h1>About</h1>} />
-          <Route path="/contact" element={<h1>Contact</h1>} />
+          <Route path="/proyectos" element={<h1>About</h1>} />
+          <Route path="/curriculum" element={<h1>Projects</h1>} />
+          <Route path="/sobre-mi" element={<h1>Projects</h1>} />
         </Routes>
       </main>
       <Footer/>

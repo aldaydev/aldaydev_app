@@ -5,16 +5,16 @@ import linkedin_icon from '../../assets/icons/social-icons/linkedin_icon.svg';
 import youtube_icon from '../../assets/icons/social-icons/youtube_icon.svg';
 import envelope_icon from '../../assets/icons/social-icons/envelope_icon.svg';
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function HeaderLinks () {
 
     return(
         <div className="header__links">
             <div className='headerLinks__pages'>
-                <Link to="/projects" className="headerLinks__pageLink">PROYECTOS</Link>
-                <Link to="/cv" className="headerLinks__pageLink">CURRÍCULUM</Link>
-                <Link to="/cv" className="headerLinks__pageLink">SOBRE MÍ</Link>
+                <NavLink to="/proyectos" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"}>PROYECTOS</NavLink>
+                <NavLink to="/curriculum" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"}>CURRÍCULUM</NavLink>
+                <NavLink to="/sobre-mi" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"}>SOBRE MÍ</NavLink>
             </div>
             <div className='headerLinks__social'>
                 <a href='https://github.com/aldaydev' target='_blank' className='headerLinks__socialLink'>
