@@ -1,32 +1,44 @@
 .App__header{
-  background-color: #fbfaf0;
+  background-color: var(--color-white-contrast);
   padding: 0 100px;
-
   height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 
-  z-index: 999;
+  /* box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.267); */
+}
 
+.App__header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
   box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.267);
+  z-index: 900;
 }
 
 .App__main{
-  background-color: #fbfaf0;
+  background-color: var(--color-white);
+  min-height: 100vh;
 }
 
 .App__footer{
-  
+  background-color: var(--color-white-contrast);
 }
 
 
 @media screen and (max-width: 1024px) {
   .App__header{
-    background-color: #fbfaf0;
+
     padding: 0 50px;
   
     height: 70px;
-  
-    z-index: 999;
-  
-    box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.267);
+
   }
 }

@@ -17,7 +17,7 @@
 }
 
 .headerLinks__pageLink:hover{
-    color: yellow;
+    color: var(--color-yellow);
     text-shadow: 
         -1px -1px 0.2px black,
         1px -1px 0.2px black,
@@ -54,6 +54,32 @@
     height: 30px;
 }
 
-/* .headerLinks__socialLink--youtube{
-    display: block;
-} */
+@media screen and (max-width: 1024px) {
+    .header__links{
+        background-color: var(--color-white-contrast);
+        padding: 50px;
+        flex-direction: column;
+
+    }
+
+    .headerLinks__pages{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        z-index: 900;
+    }
+
+    .headerLinks__social{
+        flex-wrap: wrap;
+        z-index: 900;
+    }
+
+    .headerLinks__socialLink{
+        height: 40px;
+    }
+
+    .headerLinks__icon{
+        width: 40px;
+        height: 40px;
+    }
+}

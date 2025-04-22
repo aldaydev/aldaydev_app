@@ -17,9 +17,8 @@ function Header() {
                 <HeaderLogo isCollapsed={isCollapsed} />
                 <div className="header__navbar">
                     <HeaderLinks/>
-                    {isCollapsed && <MenuToggle/>}
-                    
                 </div>
+                {isCollapsed && <MenuToggle/>}
                 
                 
             </div>

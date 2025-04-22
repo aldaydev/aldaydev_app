@@ -18,10 +18,10 @@ function HeaderLinks () {
             </div>
             <div className='headerLinks__social'>
                 <a href='https://github.com/aldaydev' target='_blank' className='headerLinks__socialLink'>
-                    <img src={github_icon}/>
+                    <img src={github_icon} className='headerLinks__icon'/>
                 </a>
                 <a href='https://linkedin.com/in/rafaelalday' target='_blank' className='headerLinks__socialLink headerLinks__socialLink--youtube'>
-                    <img src={linkedin_icon}/>
+                    <img src={linkedin_icon} className='headerLinks__icon'/>
                 </a>
                 <a href='https://youtube.com/@aldaydev' target='_blank' className='headerLinks__socialLink'>
                     <img src={youtube_icon} className='headerLinks__icon'/>

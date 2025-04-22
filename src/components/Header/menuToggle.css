@@ -5,6 +5,7 @@
     cursor: pointer;
     transition: display .3s ease-in-out;
     position: relative;
+    z-index: 1000;
     transform: scale(.9);
 }
 
@@ -12,7 +13,7 @@
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: #d6e457;
+    background-color: var(--color-yellow);
     /* border-radius: 2px; */
     box-shadow: 
         -1px -1px 0.2px black,

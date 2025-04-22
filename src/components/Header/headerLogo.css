@@ -1,6 +1,6 @@
 .headerLogo__link {
     /* color: #F4F4F5; */
-    color: #e4e12f;
+    color: var(--color-yellow);
     text-shadow: 
         -1px -1px 0.2px black,
         1px -1px 0.2px black,
@@ -14,6 +14,8 @@
     transition: width .5s ease-in-out;
     interpolate-size: allow-keywords;
     filter: blur(0.1px);
+    position: relative;
+    z-index: 1000;
 }
 
 .headerLogo__link:hover {
