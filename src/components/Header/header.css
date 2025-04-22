@@ -8,39 +8,6 @@
 .header__navbar{
     display: flex;
     gap: 20px;
-}
-
-/* .header__link:hover .header__logoBraceLeft{
-    padding-right: 5px;
-    transition: padding .3s ease-in-out;
-} */
-
-/* .header__link:hover .header__logoBraceRight{
-    padding-left: 5px;
-    transition: padding .3s ease-in-out;
-} */
-
-.header__link:hover .header__aboutIcon{
-    padding-right: 5px;
-}
-
-.header__links{
-    height: 100%;
-    display: flex;
     align-items: center;
-    gap: 1rem;
-}
-
-.header__link{
-    height: 100%;
-    font-weight: 800;
-    font-size: 1rem;
-    color: #16161D;
-    display: flex;
-    align-items: center;
-}
-
-.header__aboutIcon{
-    cursor: pointer;
 }
 

@@ -8,14 +8,6 @@
     transform: scale(.9);
 }
 
-.menuToggle__container--close{
-    
-}
-
-.menuToggle__container--open {
-
-}
-
 .menuToggle__bar{
     position: absolute;
     width: 100%;

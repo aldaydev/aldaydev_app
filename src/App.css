@@ -3,12 +3,30 @@
   padding: 0 100px;
 
   height: 70px;
+
+  z-index: 999;
+
+  box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.267);
 }
 
 .App__main{
-  background-color: #16161D;
+  background-color: #fbfaf0;
 }
 
 .App__footer{
   
+}
+
+
+@media screen and (max-width: 1024px) {
+  .App__header{
+    background-color: #fbfaf0;
+    padding: 0 50px;
+  
+    height: 70px;
+  
+    z-index: 999;
+  
+    box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.267);
+  }
 }
