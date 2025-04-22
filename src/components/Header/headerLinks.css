@@ -63,6 +63,19 @@
     height: 28px;
 }
 
+@media screen and (max-width: 1440px) {
+
+    .headerLinks__pageLink{
+        font-size: 1rem;
+    }
+
+    .headerLinks__icon{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
 @media screen and (max-width: 1024px) {
     .header__links{
         background-color: var(--color-white-contrast);
