@@ -1,0 +1,112 @@
+.menuToggle__container--open,
+.menuToggle__container--close{
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    transition: display .3s ease-in-out;
+    position: relative;
+    transform: scale(.9);
+}
+
+.menuToggle__container--close{
+    
+}
+
+.menuToggle__container--open {
+
+}
+
+.menuToggle__bar{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #d6e457;
+    /* border-radius: 2px; */
+    box-shadow: 
+        -1px -1px 0.2px black,
+        1px -1px 0.2px black,
+        -1px  1px 0.2px black,
+        3px  2px 0.2px black;
+}
+
+.menuToggle__container--close .menuToggle__bar--1{
+    bottom: calc(100% - 4px);
+    transition: transform .3s ease-in-out, bottom .3s ease-in-out;
+}
+
+.menuToggle__container--close .menuToggle__bar--3{
+    bottom: 0;
+    transition: transform .3s ease-in-out, bottom .3s ease-in-out;
+}
+
+.menuToggle__container--close .menuToggle__bar--2{
+    bottom: calc(50% - 2px);  
+    transition: width .3s ease-in-out;
+}
+
+.menuToggle__container--open .menuToggle__bar--1{
+    bottom: 48%;
+    transform: rotate(45deg) ;
+    transition: transform .3s ease-in-out, bottom .3s ease-in-out, box-shadow .3s ease-in-out;
+    box-shadow: 
+        -1px -1px 0.2px black,
+        1px -1px 0.2px black,
+        -1px  1px 0.2px black,
+        1px  1px 0.2px black;
+}
+
+.menuToggle__container--open .menuToggle__bar--2{
+    bottom: calc(50% - 2px);
+    width: 0%;
+    transition: width .1s ease-in-out;
+}
+
+.menuToggle__container--open .menuToggle__bar--3{
+    bottom: 48%;
+    transform: rotate(-45deg);
+    transition: transform .3s ease-in-out, bottom .3s ease-in-out, box-shadow .3s ease-in-out;
+    box-shadow: 
+        -1px -1px 0.2px black,
+        1px -1px 0.2px black,
+        -1px  1px 0.2px black,
+        1px  1px 0.2px black;
+}
+
+
+
+.menuToggle__bar--copy{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #d6e457;
+}
+
+.menuToggle__container--close .menuToggle__bar--1copy{
+    opacity: 0;
+    bottom: calc(100% - 4px);
+    transition: transform .3s ease-in-out, bottom .3s ease-in-out;
+}
+
+.menuToggle__container--close .menuToggle__bar--3copy{
+    opacity: 0;
+    bottom: 0;
+    transition: transform .3s ease-in-out, bottom .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.menuToggle__container--open .menuToggle__bar--1copy{
+    opacity: 1;
+    bottom: 48%;
+    transform: rotate(45deg) translate(2px, -2px);
+    z-index: -10;
+    transition: transform .3s ease-in-out, bottom .3s ease-in-out, box-shadow .3s ease-in-out;
+    background-color: black;
+}
+
+.menuToggle__container--open .menuToggle__bar--3copy{
+    opacity: 1;
+    bottom: 48%;
+    transform: rotate(-45deg) translate(2px, 2px);
+    z-index: -10;
+    transition: transform .3s ease-in-out, bottom .3s ease-in-out, box-shadow .3s ease-in-out;
+    background-color: black;
+}

@@ -4,8 +4,13 @@ import useHoverAnimation from "../../hooks/useHoverAnimation.jsx";
 import { Link } from "react-router-dom";
 import about_icon from "../../assets/icons/about_icon.svg";
 import HeaderLogo from "./HeaderLogo.jsx";
+import MenuToggle from "./MenuToggle.jsx";
+import useWindowSize from "../../hooks/useWindowSize.jsx";
 
 function Header() {
+
+    const { width } = useWindowSize();
+    const isCollapsed = width < 1024; // Definimos un tamaño de pantalla para considerar móvil
 
     // {animatedText, startAnimation, stopAnimation}
     const animateAbout = useHoverAnimation("", "About");
@@ -13,22 +18,18 @@ function Header() {
     return (
         <header className="App__header">
             <div className="header__Container">
-                <HeaderLogo />
-                <div className="header__links">
-                    <Link 
-                        to="/about" 
-                        className="header__link"
-                        onMouseEnter={animateAbout.startAnimation} 
-                        onMouseLeave={animateAbout.stopAnimation}
-                    >
-                        <span className="header__logoBraceLeft">{"{"}</span>
-                        <img src={about_icon} alt="About" className="header__aboutIcon" />
-                        {animateAbout.animatedText}
-                        <span className="header__logoBraceRight">{"}"}</span>
-                    </Link>
-                    <Link to="/projects" className="header__link">Projects</Link>
-                    <Link to="/cv" className="header__link">CV</Link>
+                <HeaderLogo isCollapsed={isCollapsed} />
+                <div className="header__navbar">
+                    <div className="header__links">
+                        <Link to="/projects" className="header__link">PROYECTOS</Link>
+                        <Link to="/cv" className="header__link">CURRÍCULUM</Link>
+                        
+                    </div>
+                    {isCollapsed && <MenuToggle/>}
+                    
                 </div>
+                
+                
             </div>
 
         </header>

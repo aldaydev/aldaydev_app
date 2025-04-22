@@ -1,12 +1,12 @@
 .App__header{
-  width: 80%;
-  margin: 0 auto;
+  background-color: #fbfaf0;
+  padding: 0 100px;
 
   height: 70px;
 }
 
 .App__main{
-  background-color: #1a1a1d;
+  background-color: #16161D;
 }
 
 .App__footer{
