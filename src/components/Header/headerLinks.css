@@ -38,7 +38,7 @@
 }
 
 .headerLinks__socialLink{
-    height: 34px;
+    height: 28px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -50,8 +50,8 @@
 }
 
 .headerLinks__icon{
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
 }
 
 @media screen and (max-width: 1024px) {
