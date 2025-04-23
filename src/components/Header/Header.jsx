@@ -40,13 +40,12 @@ function Header() {
         <header className="App__header">
             <div className="header__Container">
                 <HeaderLogo isCollapsed={isCollapsed} />
-                <div ref={navbarRef} className={`header__navbar ${(isCollapsed & isOpen) ? "header__navbar--open" : "header__navbar--close"}`}>
+                <nav ref={navbarRef} className={`header__navbar ${(isCollapsed && isOpen) ? "header__navbar--open" : "header__navbar--close"}`}>
                     <HeaderLinks isOpen={isOpen} setIsOpen={setIsOpen} isCollapsed={isCollapsed}/>
-                </div>
+                </nav>
                 {isCollapsed && <MenuToggle isOpen={isOpen} setIsOpen={setIsOpen} ref={toggleRef}/>}
                 
             </div>
-
         </header>
     );
 }

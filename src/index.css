@@ -46,3 +46,7 @@ p a {
   display: inline;
 }
 
+ul, li{
+  list-style: none;
+}
+

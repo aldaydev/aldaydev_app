@@ -32,8 +32,8 @@
     transition: color .2s ease-in-out, text-shadow .2s ease-in-out; */
 }
 
-.headerLinks__pageLink::after,
-.headerLinks__pageLink--active::after{
+.headerLinks__pageItem .headerLinks__pageLink::after,
+.headerLinks__pageItem .headerLinks__pageLink--active::after{
     content: "";
     width: 100%;
     height: 0px;
@@ -44,15 +44,19 @@
         -1px  1px 0.2px black,
         3px  2px 0.2px black;
     position: absolute;
-    top: 110%;
+    top: 90%;
     transition: height .1s ease-in-out;
 }
 
-.headerLinks__pageLink--active::after{
+.headerLinks__pageItem{
+    height: 40px;
+}
+
+.headerLinks__pageItem .headerLinks__pageLink--active::after{
     height: 3px;;
 }
 
-.headerLinks__pageLink:hover::after {
+.headerLinks__pageItem:hover .headerLinks__pageLink::after {
     height: 3px;
 }
 
@@ -73,10 +77,13 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+}
+
+.headerLinks__socialItem{
     transition: transform .3s ease-in-out;
 }
 
-.headerLinks__socialLink:hover{
+.headerLinks__socialItem:hover{
     transform: scale(1.2);
 }
 
@@ -121,15 +128,18 @@
         justify-content: center;
     }
 
-    .headerLinks__socialLink{
+    .headerLinks__socialItem{
         width: 80%;
         border-radius: 10px;
-        
+        overflow: hidden;
+    }
+
+    .headerLinks__socialLink{
         justify-content: center;
         height: 38px;
     }
 
-    .headerLinks__socialLink:hover{
+    .headerLinks__socialItem:hover{
         transform: scale(1.1);
     }
 
@@ -138,20 +148,20 @@
         height: 32px;
     }
 
-    .headerLinks__socialLink:first-child{
+    .headerLinks__socialItem:first-child{
         background-color: #000000;
     }
 
-    .headerLinks__socialLink:nth-child(2){
+    .headerLinks__socialItem:nth-child(2){
         background-color: #007EBB;
     }
 
 
-    .headerLinks__socialLink:nth-child(3){
+    .headerLinks__socialItem:nth-child(3){
         background-color: #ED1D24;
     }
 
-    .headerLinks__socialLink:nth-child(4){
+    .headerLinks__socialItem:nth-child(4){
         background-color: #39995B;
     }
 }
