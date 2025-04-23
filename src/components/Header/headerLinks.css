@@ -1,41 +1,63 @@
 .header__links{
-    height: 100%;
     display: flex;
     align-items: center;
     gap: 2.5rem;
 }
 
 .headerLinks__pageLink{
-    height: 100%;
+    transform: translateY(2px);
+    position: relative;
+    height: 105%;
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: black;
     display: flex;
     align-items: center;
     text-shadow: none;
-    transition: color .2s ease-in-out, text-shadow .2s  ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .headerLinks__pageLink--active{
-    color: var(--color-yellow);
-    text-shadow: 
-        -1px -1px 0.2px black,
-        1px -1px 0.2px black,
-        -1px  1px 0.2px black,
-        4px  3px 0.2px black;
+    transform: translateY(-1px);
 }
 
 .headerLinks__pageLink:hover{
-    color: var(--color-yellow);
+    transform: translateY(-1px);
+    /* color: var(--color-yellow);
     text-shadow: 
         -1px -1px 0.2px black,
         1px -1px 0.2px black,
         -1px  1px 0.2px black,
         4px  3px 0.2px black;
-    transition: color .2s ease-in-out, text-shadow .2s ease-in-out;
+    transition: color .2s ease-in-out, text-shadow .2s ease-in-out; */
+}
+
+.headerLinks__pageLink::after,
+.headerLinks__pageLink--active::after{
+    content: "";
+    width: 100%;
+    height: 0px;
+    background-color: var(--color-yellow);
+    box-shadow: 
+        -1px -1px 0.2px black,
+        1px -1px 0.2px black,
+        -1px  1px 0.2px black,
+        3px  2px 0.2px black;
+    position: absolute;
+    top: 110%;
+    transition: height .1s ease-in-out;
+}
+
+.headerLinks__pageLink--active::after{
+    height: 3px;;
+}
+
+.headerLinks__pageLink:hover::after {
+    height: 3px;
 }
 
 .headerLinks__pages{
+    height: 100%;
     display: flex;
     gap: 2rem;
 }
@@ -65,10 +87,6 @@
 
 @media screen and (max-width: 1440px) {
 
-    .headerLinks__pageLink{
-        font-size: 1rem;
-    }
-
     .headerLinks__icon{
         width: 25px;
         height: 25px;
@@ -78,6 +96,7 @@
 
 @media screen and (max-width: 1024px) {
     .header__links{
+        height: 100%;
         background-color: var(--color-white-contrast);
         padding: 50px;
         flex-direction: column;
@@ -89,10 +108,11 @@
         align-items: center;
         gap: 2rem;
         z-index: 900;
+        height: auto;
     }
 
     .headerLinks__pageLink{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .headerLinks__social{
