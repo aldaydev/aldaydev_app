@@ -10,7 +10,7 @@ function HeaderLogo( {isCollapsed}) {
     }
 
     return (
-        <Link to="/" className={headerLogoClass.link}>
+        <Link to="/" className={headerLogoClass.link} aria-label="Ir al inicio">
             <span className={headerLogoClass.braceLeft}>{"{"}</span>
             <span className="headerLogo__textContainer">
                 <span className="headerLogo__initialText">A</span>

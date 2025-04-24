@@ -38,11 +38,29 @@ function Header() {
 
     return (
         <header className="App__header">
+
             <div className="header__Container">
+
                 <HeaderLogo isCollapsed={isCollapsed} />
-                {isCollapsed && <MenuToggle isOpen={isOpen} setIsOpen={setIsOpen} ref={toggleRef} tabIndex={isCollapsed ? 0 : -1}/>}
-                <nav ref={navbarRef} className={`header__navbar ${(isCollapsed && isOpen) ? "header__navbar--open" : "header__navbar--close"}`}>
+
+                {isCollapsed && 
+                <MenuToggle 
+                    isOpen={isOpen}
+                    setIsOpen={setIsOpen}
+                    ref={toggleRef}
+                    tabIndex={isCollapsed ? 0 : -1}
+                    aria-expanded={isOpen}
+                />
+                }
+
+                <nav 
+                    ref={navbarRef} 
+                    className={`header__navbar ${(isCollapsed && isOpen) ? "header__navbar--open" : "header__navbar--close"}`}
+                    aria-hidden={!isOpen}
+                >
+
                     <HeaderLinks isOpen={isOpen} setIsOpen={setIsOpen} isCollapsed={isCollapsed}/>
+
                 </nav>
             </div>
         </header>

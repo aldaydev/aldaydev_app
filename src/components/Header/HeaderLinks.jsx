@@ -13,13 +13,13 @@ function HeaderLinks () {
         <section className="header__links">
             <ul className='headerLinks__pages'>
                 <li className='headerLinks__pageItem'> 
-                    <NavLink to="/proyectos" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"}>PROYECTOS</NavLink>
+                    <NavLink to="/proyectos" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Proyectos">PROYECTOS</NavLink>
                 </li>
                 <li className='headerLinks__pageItem'>
-                    <NavLink to="/curriculum" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"}>CURRÍCULUM</NavLink>
+                    <NavLink to="/curriculum" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Currículum">CURRÍCULUM</NavLink>
                 </li>
                 <li className='headerLinks__pageItem'>
-                    <NavLink to="/sobre-mi" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"}>SOBRE MÍ</NavLink>
+                    <NavLink to="/sobre-mi" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Sobre mí">SOBRE MÍ</NavLink>
                 </li>
                 
             </ul>

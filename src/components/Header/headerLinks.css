@@ -37,7 +37,7 @@
         -1px  1px 0.2px black,
         3px  2px 0.2px black;
     position: absolute;
-    top: 90%;
+    top: 83%;
     transition: height .1s ease-in-out;
 }
 
@@ -102,7 +102,6 @@
     bottom: -10px;
     border: 2px solid var(--color-blue-dark);
     border-radius: 8px;
-    /* background-color: aqua; */
 }   
 
 .headerLinks__socialItem{
@@ -123,6 +122,10 @@
     .headerLinks__icon{
         width: 25px;
         height: 25px;
+    }
+
+    .headerLinks__pageLink{
+        font-size: .9rem;
     }
 }
 
@@ -157,7 +160,6 @@
     .headerLinks__socialItem{
         width: 80%;
         border-radius: 10px;
-        overflow: hidden;
     }
 
     .headerLinks__socialLink{
