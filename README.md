@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 1 - 24-04-2025 - sprint 1 finished
+Sprint 2 - 24-04-2025 - sprint 2 initial commit
 
 ## Sprint 1
 
