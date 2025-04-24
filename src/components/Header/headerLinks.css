@@ -23,13 +23,6 @@
 
 .headerLinks__pageLink:hover{
     transform: translateY(-1px);
-    /* color: var(--color-yellow);
-    text-shadow: 
-        -1px -1px 0.2px black,
-        1px -1px 0.2px black,
-        -1px  1px 0.2px black,
-        4px  3px 0.2px black;
-    transition: color .2s ease-in-out, text-shadow .2s ease-in-out; */
 }
 
 .headerLinks__pageItem .headerLinks__pageLink::after,
@@ -50,6 +43,21 @@
 
 .headerLinks__pageItem{
     height: 40px;
+}
+
+.headerLinks__pageLink:focus-visible{
+    outline: none;
+}
+
+.headerLinks__pageLink:focus-visible::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    right: -8px;
+    bottom: -3px;
+    border: 2px solid var(--color-blue-dark); /* Contorno con aire */
+    border-radius: 8px;
 }
 
 .headerLinks__pageItem .headerLinks__pageLink--active::after{
@@ -78,6 +86,24 @@
     display: flex;
     align-items: center;
 }
+
+.headerLinks__socialLink:focus-visible{
+    outline: none;
+    position: relative;
+    overflow: visible;
+}
+
+.headerLinks__socialLink:focus-visible::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid var(--color-blue-dark);
+    border-radius: 8px;
+    /* background-color: aqua; */
+}   
 
 .headerLinks__socialItem{
     transition: transform .3s ease-in-out;

@@ -25,26 +25,26 @@ function HeaderLinks () {
             </ul>
             <ul className='headerLinks__social'>
                 <li className='headerLinks__socialItem'>
-                    <a href='https://github.com/aldaydev' target='_blank' className='headerLinks__socialLink'>
-                        <img src={github_icon} className='headerLinks__icon' alt="Github"/>
+                    <a href='https://github.com/aldaydev' target='_blank' rel="noopener noreferrer" aria-label="Visitar GitHub" title="Visitar GitHub" className='headerLinks__socialLink'>
+                        <img src={github_icon} className='headerLinks__icon' alt="Icono de Github"/>
                     </a>
                 </li>
                 
                 <li className='headerLinks__socialItem'>
-                    <a href='https://linkedin.com/in/rafaelalday' target='_blank' className='headerLinks__socialLink headerLinks__socialLink--youtube'>
-                        <img src={linkedin_icon} className='headerLinks__icon' alt="LinkedIn"/>
+                    <a href='https://linkedin.com/in/rafaelalday' target='_blank' rel="noopener noreferrer" aria-label="Visitar LinkedIn" title="Visitar LinkedIn" className='headerLinks__socialLink headerLinks__socialLink--youtube'>
+                        <img src={linkedin_icon} className='headerLinks__icon' alt="Icono de LinkedIn"/>
                     </a>
                 </li>
                 
                 <li className='headerLinks__socialItem'>
-                    <a href='https://youtube.com/@aldaydev' target='_blank' className='headerLinks__socialLink'>
-                        <img src={youtube_icon} className='headerLinks__icon' alt="Youtube"/>
+                    <a href='https://youtube.com/@aldaydev' target='_blank' rel="noopener noreferrer" aria-label="Visitar Youtube" title="Visitar Youtube" className='headerLinks__socialLink'>
+                        <img src={youtube_icon} className='headerLinks__icon' alt="Icono de Youtube"/>
                     </a>
                 </li>
                 
                 <li className='headerLinks__socialItem'>
-                    <a href='mailto:aldaydev@gmail.com' target='_blank' className='headerLinks__socialLink'>
-                        <img src={envelope_icon} className='headerLinks__icon' alt="Email"/>
+                    <a href='mailto:aldaydev@gmail.com' target='_blank' aria-label="Enviar email" title="Enviar email" className='headerLinks__socialLink'>
+                        <img src={envelope_icon} className='headerLinks__icon' alt="Icono de Email"/>
                     </a>
                 </li>
             </ul>

@@ -18,6 +18,21 @@
     z-index: 1000;
 }
 
+.headerLogo__link:focus-visible{
+    outline: none;
+}
+
+.headerLogo__link:focus-visible::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -7px;
+    right: -5px;
+    bottom: -10px;
+    border: 2px solid var(--color-blue-dark); /* Contorno con aire */
+    border-radius: 8px;
+}
+
 .headerLogo__link:hover {
     width: 175px;
     transition: width .5s ease-in-out;
