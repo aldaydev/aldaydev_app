@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 2 - 24-04-2025 - sprint 2 initial commit
+Sprint 2 - 25-04-2025 - working on spotlight section
 
 
 ## Sprint 2

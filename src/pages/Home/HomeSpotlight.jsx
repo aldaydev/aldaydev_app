@@ -1,6 +1,7 @@
 import './homeSpotlight.css';
 
 import foto_alday from '../../assets/images/foto_rafa_alday.jpg';
+import down_icon from '../../assets/icons/util-icons/down_icon.svg';
 
 import AnimatedTitle from "../../components/AnimatedTitle/AnimatedTitle";
 
@@ -17,17 +18,28 @@ function HomeSpotlight () {
                     braceSize="3.4rem"
                     color="var(--color-white)"
                 />
+
                 <h1 className='spotlight__title'>
                     RAFA ALDAY
                     <span> ● </span>
                     WEB DEVELOPER
                 </h1>
-                <article className='spotlight__descriptionContainer'>
-                    <div className='spotlight__imageContainer'>
-                        <img src={foto_alday} className='spotlight__image'/>
-                    </div>
-                    <p className='spotlight__description'>Te doy la bienvenida a mi portfolio como desarrollador web. Aquí podrás saber un poco más acerca de mí, así como ver mis proyectos desplegados y vídeos presentándolos.</p>
-                </article>
+
+                <div className='spotlight__imageContainer'>
+                    <img 
+                        src={foto_alday} 
+                        className='spotlight__image' 
+                        loading="lazy"
+                        width={260}
+                        height={260}
+                    />
+                </div>
+
+                <div className='spotlight__goDownContainer'>
+                    <img 
+                        src={down_icon} className='spotlight__goDownIcon'/>
+                </div>
+
             </section>
         </header>
     )
