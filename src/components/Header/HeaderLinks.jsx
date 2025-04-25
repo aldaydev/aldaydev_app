@@ -7,46 +7,46 @@ import envelope_icon from '../../assets/icons/social-icons/envelope_icon.svg';
 
 import { NavLink } from "react-router-dom";
 
-function HeaderLinks () {
+function HeaderLinks ( {isOpen}) {
 
     return(
         <section className="header__links">
             <ul className='headerLinks__pages'>
                 <li className='headerLinks__pageItem'> 
-                    <NavLink to="/proyectos" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Proyectos">PROYECTOS</NavLink>
+                    <NavLink to="/proyectos" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Proyectos" tabIndex={isOpen ? 0 : -1} >PROYECTOS</NavLink>
                 </li>
                 <li className='headerLinks__pageItem'> 
-                    <NavLink to="/videos" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Proyectos">VIDEOS</NavLink>
+                    <NavLink to="/videos" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Proyectos" tabIndex={isOpen ? 0 : -1}>VIDEOS</NavLink>
                 </li>
                 <li className='headerLinks__pageItem'>
-                    <NavLink to="/curriculum" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Currículum">CURRÍCULUM</NavLink>
+                    <NavLink to="/curriculum" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Currículum" tabIndex={isOpen ? "0" : "-1"}>CURRÍCULUM</NavLink>
                 </li>
                 <li className='headerLinks__pageItem'>
-                    <NavLink to="/sobre-mi" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Sobre mí">SOBRE MÍ</NavLink>
+                    <NavLink to="/sobre-mi" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Sobre mí" tabIndex={isOpen ? 0 : -1}>SOBRE MÍ</NavLink>
                 </li>
                 
             </ul>
             <ul className='headerLinks__social'>
                 <li className='headerLinks__socialItem'>
-                    <a href='https://github.com/aldaydev' target='_blank' rel="noopener noreferrer" aria-label="Visitar GitHub" title="Visitar GitHub" className='headerLinks__socialLink'>
+                    <a href='https://github.com/aldaydev' target='_blank' rel="noopener noreferrer" aria-label="Visitar GitHub" title="Visitar GitHub" className='headerLinks__socialLink' tabIndex={isOpen ? 0 : -1}>
                         <img src={github_icon} className='headerLinks__icon' alt="Icono de Github"/>
                     </a>
                 </li>
                 
                 <li className='headerLinks__socialItem'>
-                    <a href='https://linkedin.com/in/rafaelalday' target='_blank' rel="noopener noreferrer" aria-label="Visitar LinkedIn" title="Visitar LinkedIn" className='headerLinks__socialLink headerLinks__socialLink--youtube'>
+                    <a href='https://linkedin.com/in/rafaelalday' target='_blank' rel="noopener noreferrer" aria-label="Visitar LinkedIn" title="Visitar LinkedIn" className='headerLinks__socialLink headerLinks__socialLink--youtube' tabIndex={isOpen ? 0 : -1}>
                         <img src={linkedin_icon} className='headerLinks__icon' alt="Icono de LinkedIn"/>
                     </a>
                 </li>
                 
                 <li className='headerLinks__socialItem'>
-                    <a href='https://youtube.com/@aldaydev' target='_blank' rel="noopener noreferrer" aria-label="Visitar Youtube" title="Visitar Youtube" className='headerLinks__socialLink'>
+                    <a href='https://youtube.com/@aldaydev' target='_blank' rel="noopener noreferrer" aria-label="Visitar Youtube" title="Visitar Youtube" className='headerLinks__socialLink' tabIndex={isOpen ? 0 : -1}>
                         <img src={youtube_icon} className='headerLinks__icon' alt="Icono de Youtube"/>
                     </a>
                 </li>
                 
                 <li className='headerLinks__socialItem'>
-                    <a href='mailto:aldaydev@gmail.com' target='_blank' aria-label="Enviar email" title="Enviar email" className='headerLinks__socialLink'>
+                    <a href='mailto:aldaydev@gmail.com' target='_blank' aria-label="Enviar email" title="Enviar email" className='headerLinks__socialLink' tabIndex={isOpen ? 0 : -1}>
                         <img src={envelope_icon} className='headerLinks__icon' alt="Icono de Email"/>
                     </a>
                 </li>

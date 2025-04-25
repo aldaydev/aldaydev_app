@@ -37,7 +37,8 @@ function HomeSpotlight () {
 
                 <div className='spotlight__goDownContainer'>
                     <img 
-                        src={down_icon} className='spotlight__goDownIcon'/>
+                        src={down_icon} className='spotlight__goDownIcon'
+                    />
                 </div>
 
             </section>

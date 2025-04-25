@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 2 - 25-04-2025 - working on spotlight section
+Sprint 2 - 25-04-2025 - fixing accesibility in navbar
 
 
 ## Sprint 2

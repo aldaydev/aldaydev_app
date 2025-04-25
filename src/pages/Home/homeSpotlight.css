@@ -61,6 +61,17 @@
     font-weight: 300;
     word-spacing: 3px;
     color: var(--color-yellow);
+    animation: fade-in 1s ease-in-out 1.2s both;
+}
+
+@keyframes fade-in {
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    }to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .spotlight__title span{
@@ -83,6 +94,8 @@
     border: 8px solid transparent;
     outline: 2px solid var(--color-white);
     position: relative;
+
+    animation: fade-in 1s ease-in-out 1.5s both;
 }
 
 .spotlight__imageContainer::after{
@@ -106,7 +119,7 @@
 .spotlight__goDownContainer{
     padding-top: 40px;
     position: relative;
-    
+    animation: fade-in 1s ease-in-out 1.8s both;
 }
 
 .spotlight__goDownIcon{

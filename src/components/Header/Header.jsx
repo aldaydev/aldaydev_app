@@ -5,6 +5,7 @@ import MenuToggle from "./MenuToggle.jsx";
 import useWindowSize from "../../hooks/useWindowSize.jsx";
 import HeaderLinks from "./HeaderLinks.jsx";
 import { useEffect, useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 function Header() {
 
@@ -14,11 +15,19 @@ function Header() {
     const navbarRef = useRef(null);
     const toggleRef = useRef(null);
 
+    const location = useLocation();
 
+    useEffect(()=>{
+        setIsOpen(false);
+        document.activeElement.blur();
+        document.body.focus();
+    },[location.pathname])
+
+    //If click
     useEffect(()=>{
         function handleClickOutside(event) {
             if (
-                navbarRef.current && !navbarRef.current.contains(event.target) &&
+                isOpen && navbarRef.current && !navbarRef.current.contains(event.target) &&
                 toggleRef.current && !toggleRef.current.contains(event.target))  {
                 setIsOpen(false);
             }
@@ -29,11 +38,16 @@ function Header() {
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
-    }, []);
+    });
+
+    //Each time width changes we close navbar if open
+    useEffect(()=>{
+        isOpen && setIsOpen(false)
+    },[width])
 
     useEffect(()=>{
-        setIsOpen(false)
-    },[width])
+        console.log(isOpen);
+    },[isOpen]);
 
 
     return (
