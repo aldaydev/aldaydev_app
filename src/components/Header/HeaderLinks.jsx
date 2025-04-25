@@ -15,6 +15,9 @@ function HeaderLinks () {
                 <li className='headerLinks__pageItem'> 
                     <NavLink to="/proyectos" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Proyectos">PROYECTOS</NavLink>
                 </li>
+                <li className='headerLinks__pageItem'> 
+                    <NavLink to="/videos" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Proyectos">VIDEOS</NavLink>
+                </li>
                 <li className='headerLinks__pageItem'>
                     <NavLink to="/curriculum" className={ ({isActive}) => isActive ? "headerLinks__pageLink headerLinks__pageLink--active" : "headerLinks__pageLink"} aria-label="Ir a la sección Currículum">CURRÍCULUM</NavLink>
                 </li>

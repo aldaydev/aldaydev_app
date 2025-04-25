@@ -2,6 +2,18 @@
 
 Sprint 2 - 24-04-2025 - sprint 2 initial commit
 
+
+## Sprint 2
+
+Objetivos:
+
+* Agregar sección "videos" al header
+* Home -> Crear "spotlight" section
+       -> Crear "welcome" article
+       -> Crear "technologies" article
+       -> Crear "proyects" article
+       -> Crear "videos" article
+
 ## Sprint 1
 
 Objetivos:

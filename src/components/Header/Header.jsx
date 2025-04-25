@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from "react";
 function Header() {
 
     const { width } = useWindowSize();
-    const isCollapsed = width <= 1024; // Definimos un tamaño de pantalla para considerar móvil
+    const isCollapsed = width <= 1024;
     const [ isOpen, setIsOpen ] = useState(false);
     const navbarRef = useRef(null);
     const toggleRef = useRef(null);

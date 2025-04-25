@@ -1,0 +1,114 @@
+.animatedTitle {
+    /* color: #F4F4F5; */
+    /* color: var(--color-yellow); */
+    
+    cursor: pointer;
+    /* font-size: 2.4rem;
+    line-height: 2.4rem; */
+    /* margin-bottom: 4.5px; */
+    font-weight: 800;
+    transition: width .5s ease-in-out;
+    /* interpolate-size: allow-keywords; */
+    filter: blur(0.2px);
+    position: relative;
+    z-index: 1000;
+    animation: pop-in .8s ease-in-out both;
+}
+
+.animatedTitle--isFilled{
+    text-shadow: 
+        -1px -1px 0.2px black,
+        1px -1px 0.2px black,
+        -1px  1px 0.2px black,
+        3px  2px 0.2px black;
+}
+
+.animation--popin{
+    animation: pop-in 3s ease both;
+}
+
+@keyframes pop-in{
+    0%{
+        transform: scale(0%);
+    }
+    70%{
+        transform: scale(120%);
+    }
+    90%{
+        transform: scale(90%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
+.headerLogo__link:hover .headerLogo__finalText{
+    width: auto;
+    transition: width .5s ease-in-out;
+}
+
+@keyframes show-text {
+    from{
+        width: 0;
+    }to{
+        width: auto;
+    }
+}
+
+@keyframes spread-braceLeft {
+    from{
+        padding-right: 5px;
+    }to{
+        padding-right: 9px;
+    }
+}
+
+@keyframes spread-braceRight {
+    from{
+        padding-left: 5px;
+    }to{
+        padding-left: 9px;
+    }
+}
+
+.animatedTitle__braceLeft, .animatedTitle__braceRight{
+    font-size: 2.8rem;
+    transition: padding .3s .2s ease-in-out;
+}
+.animatedTitle__braceLeft{
+    padding-right: 5px;
+    animation: spread-braceLeft .2s ease-in-out 1.5s both;
+}
+
+.animatedTitle__braceRight{
+    padding-left: 5px;
+    animation: spread-braceRight .2s ease-in-out 1.5s both;
+}
+
+/* .animatedTitle:hover .animatedTitle__braceLeft{
+    padding-right: 11px;
+    transition: padding .3s ease-in-out;
+}
+
+.animatedTitle:hover .animatedTitle__braceRight{
+    padding-left: 11px;
+    transition: padding .3s ease-in-out;
+} */
+
+.animatedTitle__heading{
+    display: inline-block;
+}
+
+.animatedTitle__initialText{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.animatedTitle__finalText{
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    overflow: hidden;
+    interpolate-size: allow-keywords;
+    animation: show-text .7s .9s ease-in-out both;
+}

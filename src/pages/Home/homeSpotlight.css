@@ -1,0 +1,101 @@
+.home__spotlight{
+    height: calc(80dvh - 62px);
+    /* min-height: calc(80dvh - 62px); */
+    /* min-height: 50dvh; */
+    /* background-image: url('../../assets/images/home_header_bg.jpg');
+    background-size: cover;
+    background-position: center; */
+    position: relative;
+    z-index: 500;
+    /* filter: blur(2px); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+
+}
+
+.home__spotlight::after{
+    content: "";
+    position: absolute;
+    z-index: 520;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(90deg,var(--color-blue-dark) 0%, rgb(139, 139, 139) 40%, rgb(131, 131, 131) 60%,var(--color-blue-dark) 100%); */
+    /* background: white; */
+    background: var(--color-blue-dark);
+    opacity: 0.7;
+}
+
+.home__spotlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/images/home_header_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    z-index: -1; /* Asegura que quede por detrás de los otros elementos */
+}
+
+.spotlight__section{
+    position: relative;
+    z-index: 600;
+    padding: 30px;
+
+    color: var(--color-white);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.spotlight__title{
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    word-spacing: 3px;
+    color: var(--color-yellow);
+}
+
+.spotlight__title span{
+    text-wrap: nowrap;
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+
+.spotlight__descriptionContainer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+}
+
+.spotlight__imageContainer{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.spotlight__image{
+    max-width: 100%;
+    height: auto;
+}
+
+.spotlight__description{
+    font-size: 1.2rem;
+    text-wrap: balance;
+}

@@ -6,7 +6,7 @@
 }
 
 :root {
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -49,5 +49,9 @@ p a {
 
 ul, li{
   list-style: none;
+}
+
+h1, h2 {
+  all: unset;
 }
 
