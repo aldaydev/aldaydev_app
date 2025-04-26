@@ -9,20 +9,22 @@ function HomeSpotlight () {
 
     return(
         <header className="home__spotlight">
-            <section className="spotlight__section">
-                <AnimatedTitle 
+            <AnimatedTitle 
                     headingLevel = "h2"
                     initialText="A"
                     finalText="ldayDev"
+                    id="spot__animatedTitle"
                     fontSize="3rem"
                     braceSize="3.4rem"
                     color="var(--color-white)"
                 />
+            <section className="spotlight__section">
+                
 
-                <h1 className='spotlight__title'>
-                    RAFA ALDAY
-                    <span> ● </span>
-                    WEB DEVELOPER
+                <h1 className='spotlight__title' height={38.39}>
+                    <span className='spotlight__titleName'>RAFA ALDAY</span>
+                    <span className='spotlight__titleSeparator'> ● </span>
+                    <span className='spotlight__titleDescription'>WEB DEVELOPER</span>
                 </h1>
 
                 <div className='spotlight__imageContainer'>
@@ -38,6 +40,9 @@ function HomeSpotlight () {
                 <div className='spotlight__goDownContainer'>
                     <img 
                         src={down_icon} className='spotlight__goDownIcon'
+                        loading="lazy"
+                        width={50}
+                        height={50}
                     />
                 </div>
 

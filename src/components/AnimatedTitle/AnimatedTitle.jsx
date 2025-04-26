@@ -1,13 +1,11 @@
 import './animatedTitle.css';
 
 function AnimatedTitle ({
-    headingLevel = "h2", 
-    initialText, 
-    finalText, 
-    isFilled = false, 
-    fontSize,
-    braceSize,
-    color
+    headingLevel = "h2",
+    initialText,
+    finalText,
+    isFilled = false,
+    id
 }) {
 
     const Heading = headingLevel;
@@ -19,12 +17,12 @@ function AnimatedTitle ({
 
     return (
         <div 
-            className={`animatedTitle ${isFilled && "animatedTitle--isFilled"}`} 
-            style={{fontSize: fontSize, color: color}}
+            className={`animatedTitle ${isFilled && "animatedTitle--isFilled"}`}
+            id={id}
         >
             <span 
                 className={animatedTitleClass.braceLeft}
-                style={{fontSize: braceSize, color: color}}
+                id={`${id}__braceLeft`}
             >{"{"}</span>
             <Heading className="animatedTitle__heading">
                 <span className="animatedTitle__initialText">{initialText}</span>
@@ -32,7 +30,7 @@ function AnimatedTitle ({
             </Heading>
             <span 
                 className={animatedTitleClass.braceRight}
-                style={{fontSize: braceSize, color: color}}
+                id={`${id}__braceRight`}
             >{"}"}</span>
         </div>
     )

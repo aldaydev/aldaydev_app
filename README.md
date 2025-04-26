@@ -1,18 +1,20 @@
 # AldayDev App
 
-Sprint 2 - 25-04-2025 - fixing accesibility in navbar
+Sprint 2 - 26-04-2025 - working on responsive spotligth component
 
 
 ## Sprint 2
 
 Objetivos:
 
-* Agregar sección "videos" al header
-* Home -> Crear "spotlight" section
-       -> Crear "welcome" article
-       -> Crear "technologies" article
-       -> Crear "proyects" article
-       -> Crear "videos" article
+* Trabajo inicial con sección Home 
+       - Crear "spotlight" section (primera vista)
+       - Responsive "spotlight" section
+
+* Repaso Header 
+       - Agregar sección "videos"
+       - Correciones en accesibilidad
+       - Correciones tamaños iconos
 
 ## Sprint 1
 
