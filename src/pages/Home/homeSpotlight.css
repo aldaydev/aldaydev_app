@@ -211,7 +211,8 @@
 
     /*---------- HOME SPOTLIGHT ----------*/
     .home__spotlight{
-        min-height: 612.98px;
+        /* min-height: 612.97px; */
+        padding-top: 25px;
     }
     
     /*---------- ANIMATED TITLE ----------*/
@@ -225,7 +226,7 @@
     }
     /*---------- TITLE / IMAGE / DOWN ARROW ----------*/
     .spotlight__title{
-        word-wrap: wrap;
+        margin-top: 0;
         /* margin-left: 20px;
         margin-right: 20px; */
     }
@@ -251,7 +252,7 @@
     }
 
     .spotlight__image{
-        max-width: 190px;
+        max-width: 170px;
     }
     .spotlight__goDownContainer{
         padding-top: 30px;
