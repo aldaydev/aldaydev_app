@@ -18,9 +18,12 @@ function Header() {
     const location = useLocation();
 
     useEffect(()=>{
-        setIsOpen(false);
-        document.activeElement.blur();
-        document.body.focus();
+        if(isCollapsed && isOpen){
+            setIsOpen(false);
+            document.activeElement.blur();
+            document.body.focus();
+        }
+        
     },[location.pathname])
 
     //If click
