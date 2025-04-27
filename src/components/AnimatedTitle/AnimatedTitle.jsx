@@ -17,7 +17,7 @@ function AnimatedTitle ({
 
     return (
         <div 
-            className={`animatedTitle ${isFilled && "animatedTitle--isFilled"}`}
+            className={`animatedTitle ${isFilled ? "animatedTitle--isFilled" : ""}`}
             id={id}
         >
             <span 

@@ -1,35 +1,44 @@
 [
     {
+        "id": "react",
         "name": "React",
-        "icon": "/assets/icons"
+        "icon": "/assets/icons",
+        "isFilter": true
     },
     {
+        "id": "node",
         "name": "Node",
-        "icon": "/assets/icons"
+        "icon": "/assets/icons",
+        "isFilter": true
     },
     {
+        "id": "express",
         "name": "Express",
-        "icon": "/assets/icons"
+        "icon": "/assets/icons",
+        "isFilter": true
     },
     {
+        "id": "mongodb",
         "name": "MongoDB",
-        "icon": "/assets/icons"
+        "icon": "/assets/icons",
+        "isFilter": true
     },
     {
+        "id": "mysql",
         "name": "MySQL",
-        "icon": "/assets/icons"
+        "icon": "/assets/icons",
+        "isFilter": true
     },
     {
+        "id": "firebase",
         "name": "FireBase",
-        "icon": "/assets/icons"
+        "icon": "/assets/icons",
+        "isFilter": true
     },
     {
-        "name": "FireStore",
-        "icon": "/assets/icons"
-    },
-    {
+        "id": "vanilla",
         "name": "Vanilla",
-        "icons": "/assets/icons"
+        "icon": "/assets/icons",
+        "isFilter": true
     }
-
 ]

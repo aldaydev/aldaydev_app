@@ -1,12 +1,14 @@
 /*---------- HOME SPOTLIGHT ----------*/
 
 .home__spotlight{
-    height: calc(80dvh - 62px);
-    min-height: fit-content;
+    /* height: calc(80dvh - 62px); */
+    height: fit-content;
+    min-height: 683px;
     position: relative;
     z-index: 500;
 
     padding-top: 50px;
+    padding-bottom: 30px;
 
     /* display: flex;
     flex-direction: column;
@@ -157,9 +159,10 @@
 
     /*---------- HOME SPOTLIGHT ----------*/
     .home__spotlight{
-        height: calc(80dvh - 62px);
-        max-height: fit-content;
-        min-height: 573.8px;
+        /* height: calc(80dvh - 62px);
+        max-height: fit-content; */
+        min-height: 623.8px;
+        height: fit-content;
     }
 
     /*---------- ANIMATED TITLE ----------*/
@@ -212,6 +215,7 @@
     /*---------- HOME SPOTLIGHT ----------*/
     .home__spotlight{
         /* min-height: 612.97px; */
+        min-height: 602.98px;
         padding-top: 30px;
     }
     
@@ -256,7 +260,7 @@
     }
     .spotlight__goDownContainer{
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     .spotlight__goDownIcon{
         width: 40px;

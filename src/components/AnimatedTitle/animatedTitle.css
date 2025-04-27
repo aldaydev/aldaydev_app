@@ -1,4 +1,6 @@
 .animatedTitle {
+    display: block;
+    width: auto;
     text-align: center;
     cursor: pointer;
     font-weight: 800;
