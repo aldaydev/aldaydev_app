@@ -278,7 +278,7 @@ const technologiesData = [
         name: "Render",
         bgColor: "#000000",
         textColor: "white",
-        icon: reactrouter_icon,
+        icon: render_icon,
         isFilter: false
     },
     {

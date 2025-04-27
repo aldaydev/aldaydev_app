@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 2 - 27-04-2025 - tech and project images imported
+Sprint 2 - 28-04-2025 - sprint 2 finished
 
 
 ## Sprint 2
@@ -13,12 +13,13 @@ Objetivos:
        - Correciones tamaños iconos
 
 * Trabajo inicial con sección Home
+       - Desarrollo componente animación titulos (reutilizable)
        - Crear "spotlight" section (primera vista)
        - Responsive "spotlight" section
 
 * Tech and projects DATA
        - Creación de objetos con datos
-       - Recolección de iconos
+       - Recolección de iconos e imágenes
 
 ## Sprint 1
 

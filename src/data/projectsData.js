@@ -1,31 +1,39 @@
 import gamer_capture_desktop from '../assets/images/projects/gamer_capture_400px.png';
+import gamer_capture_fullScreen from '../assets/images/projects/gamer_capture_1200px.png';
 import gamer_logo from '../assets/images/projects/gamer_logo.png';
 import devagency_capture_desktop from '../assets/images/projects/devagency_capture_400px.png';
+import devagency_capture_fullScreen from '../assets/images/projects/devagency_capture_1200px.png';
 import devagency_logo from '../assets/images/projects/devagency_logo.png';
 import cvaudiovisual_capture_desktop from '../assets/images/projects/cvaudiovisual_capture_400px.png';
+import cvaudiovisual_capture_fullScreen from '../assets/images/projects/cvaudiovisual_capture_1200px.png';
 import cvaudiovisual_logo from '../assets/images/projects/cvaudiovisual_logo.png';
 import aldayes_capture_desktop from '../assets/images/projects/aldayes_capture_400px.png';
+import aldayes_capture_fullScreen from '../assets/images/projects/aldayes_capture_1200px.png';
 import aldayes_logo from '../assets/images/projects/aldayes_logo.png';
 import pokegame_capture_desktop from '../assets/images/projects/pokegame_capture_400px.png';
-import pokegamer_logo from '../assets/images/projects/pokegame_logo.png';
+import pokegame_capture_fullScreen from '../assets/images/projects/pokegame_capture_1200px.png';
+import pokegame_logo from '../assets/images/projects/pokegame_logo.png';
 import musikos_capture_desktop from '../assets/images/projects/musikos_capture_400px.png';
+import musikos_capture_fullScreen from '../assets/images/projects/musikos_capture_1200px.png';
 import musikos_logo from '../assets/images/projects/musikos_logo.png';
 import chordsapi_capture_desktop from '../assets/images/projects/chordsapi_capture_400px.png';
+import chordsapi_capture_fullScreen from '../assets/images/projects/chordsapi_capture_1200px.png';
 import chordsapi_logo from '../assets/images/projects/chordsapi_logo.png';
-import technologiesData from './technologiesData';
 
 const projectsData = [
     {
         id: 1,
         name: "Gamer News Layout",
-        description: "Proyecto de maquetación de un portal web de noticias de videojuegos realizado con HTML, CSS y JavaScript.",
+        description: "Proyecto de maquetación de un portal web de noticias de videojuegos. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
         date: "2024-08",
         rate: 5,
         isVanilla: true,
+        hasTesting: false,
         technologies: ["html", "css", "javascript"],
         img: {
-            "desktop": gamer_capture_desktop,
-            "mobile": gamer_logo
+            fullScreen: gamer_capture_fullScreen,
+            desktop: gamer_capture_desktop,
+            mobile: gamer_logo
         },
         github: [
             { 
@@ -33,18 +41,22 @@ const projectsData = [
                 url: "https://github.com/aldaydev/gamer"
             }
         ],
-        deployed: "https://gamer.alday.dev/",
+        deployed: "https://gamer.alday.dev",
         video: null
     },
     {
         id: 2,
         name: "Dev Agency Layout",
-        description: "Proyecto de maquetación de una agencia de desarrollo web realizado con HTML, CSS y JavaScript.",
-        date: "2024-08",
+        description: "Proyecto de maquetación de la web de una agencia de desarollo web. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
+        date: "2024-09",
         rate: 5,
+        isVanilla: true,
+        hasTesting: false,
+        technologies: ["html", "css", "javascript"],
         img: {
-            "desktop": devagency_capture_desktop,
-            "mobile": devagency_logo
+            fullScreen: devagency_capture_fullScreen,
+            desktop: devagency_capture_desktop,
+            mobile: devagency_logo
         },
         github: [
             { 
@@ -52,8 +64,129 @@ const projectsData = [
                 url: "https://github.com/aldaydev/dev-agency"
             }
         ],
-        deployed: "https://devagency.alday.dev/"
-    }
+        deployed: "https://devagency.alday.dev",
+        video: null
+    },
+    {
+        id: 3,
+        name: "CV Audiovisual",
+        description: "Website con mi currículum audiovisual. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
+        date: "2024-10",
+        rate: 5,
+        isVanilla: true,
+        hasTesting: false,
+        technologies: ["html", "css", "javascript"],
+        img: {
+            fullScreen: cvaudiovisual_capture_fullScreen,
+            desktop: cvaudiovisual_capture_desktop,
+            mobile: cvaudiovisual_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/CV_AUDIOVISUAL"
+            }
+        ],
+        deployed: "https://cvaudiovisual.alday.dev",
+        video: null
+    },
+    {
+        id: 4,
+        name: "Mi web Musical",
+        description: "Mi website como artista musical. Realizado con HTML, CSS y JavaScript y creado en el contexto de mis estudios oficiales de 'Desarrollo de aplicaciones Web'.",
+        date: "2024-11",
+        rate: 4,
+        isVanilla: true,
+        hasTesting: false,
+        technologies: ["html", "css", "javascript"],
+        img: {
+            fullScreen: aldayes_capture_fullScreen,
+            desktop: aldayes_capture_desktop,
+            mobile: aldayes_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/alday_es"
+            }
+        ],
+        deployed: "https://alday.es",
+        video: null
+    },
+    {
+        id: 5,
+        name: "Pokemon Game App",
+        description: "Aplicación creada con React que consiste en un juego de pokemon donde puedes registrarte y ganar pokeballs al cazar pokemons y cumplir hitos. Creada con React, utilizando FireBase Auth para gestionar la autenticación y FireStore para la base de datos.",
+        date: "2025-01",
+        rate: 7,
+        isVanilla: false,
+        hasTesting: true,
+        technologies: ["react", "reactrouter", "node", "firebase", "selenium", "html", "css", "javascript"],
+        img: {
+            fullScreen: pokegame_capture_fullScreen,
+            desktop: pokegame_capture_desktop,
+            mobile: pokegame_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/pokegame"
+            }
+        ],
+        deployed: "https://pokegame.alday.dev",
+        video: "https://youtu.be/MxDscYjcJKU?si=ApWAEuw926NKNoYU"
+    },
+    {
+        id: 6,
+        name: "Musikos App",
+        description: "Versión beta de 'Musikos', una aplicación full stack creada para conectar músicos entre sí. En ella puedes buscarlos, filtrar por estilo, instrumento, ubicación, edad y nombre. También puedes crear tu cuenta para que otros músicos afines te encuentren.",
+        date: "2025-03",
+        rate: 8,
+        isVanilla: false,
+        hasTesting: true,
+        technologies: ["react", "node", "express", "mongodb", "mysql", "reactrouter", "nodemon", "bcrypt", "cors", "cookieparser", "dotenv", "jsdoc", "jwt", "mongoose", "nodemailer", "sequelize", "mongoose", "swagger", "winston", "jest", "selenium", "cypress", "vite", "dotenv", "html", "css", "javascript"],
+        img: {
+            fullScreen: musikos_capture_fullScreen,
+            desktop: musikos_capture_desktop,
+            mobile: musikos_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/musikos_client"
+            },
+            { 
+                type: "backend",
+                url: "https://github.com/aldaydev/musikos_server"
+            }
+        ],
+        deployed: null,
+        video: "https://youtu.be/hBbSiVGH7nQ?si=mO9WE-1Yw_EDZi0t"
+    },
+    {
+        id: 7,
+        name: "Chords API",
+        description: "API Rest pública y gratuita. Pensada para desarrolladores que están empezando a hacer sus primeras peticiones (fetch, axios) y que, además, les gusta la música. Totalmente desplegada, vistas servidas desde el backend, documentación en inglés con Swagger y JSDoc.",
+        date: "2025-04",
+        rate: 8,
+        isVanilla: false,
+        hasTesting: true,
+        technologies: ["node", "express", "mongodb", "mongoose", "ejs", "swagger", "jsdoc", "nodemon", "winston", "dotenv", "cors", "render"],
+        img: {
+            fullScreen: chordsapi_capture_fullScreen,
+            desktop: chordsapi_capture_desktop,
+            mobile: chordsapi_logo
+        },
+        github: [
+            { 
+                type: "backend",
+                url: "https://github.com/aldaydev/chords_api"
+            }
+        ],
+        deployed: "https://chords.alday.dev",
+        video: null
+    },
+
 ]
 
 export default projectsData;
