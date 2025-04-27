@@ -1,0 +1,9 @@
+.techFilters{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 250px));
+    gap: 1rem; /* opcional, para separar */
+}
+
+.techFilters__techFilter{
+    
+}

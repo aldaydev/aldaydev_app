@@ -6,6 +6,12 @@
     background-image: url("../../assets/images/projects_bg.png");
     background-size: cover;
     background-position: center;
+
+    padding: 0 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .projects__header{

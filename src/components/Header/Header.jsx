@@ -48,11 +48,6 @@ function Header() {
         isOpen && setIsOpen(false)
     },[width])
 
-    useEffect(()=>{
-        console.log(isOpen);
-    },[isOpen]);
-
-
     return (
         <header className="App__header">
 
