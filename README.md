@@ -1,7 +1,14 @@
 # AldayDev App
 
-Sprint 2 - 28-04-2025 - sprint 2 finished
+Sprint 3 - 28-04-2025 - sprint 3 initial commit
 
+
+## Sprint 3
+
+Objetivos:
+
+* Sección proyectos:
+       - Creación componente ProjectsFilter
 
 ## Sprint 2
 
