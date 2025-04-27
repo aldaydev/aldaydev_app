@@ -2,43 +2,186 @@
     {
         "id": "react",
         "name": "React",
-        "icon": "/assets/icons",
+        "bgColor": "#61DAFB",
+        "textColor": "black",
+        "icon": "react.svg",
         "isFilter": true
     },
     {
         "id": "node",
         "name": "Node",
-        "icon": "/assets/icons",
+        "bgColor": "#8CC84B",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/node.svg",
         "isFilter": true
     },
     {
         "id": "express",
         "name": "Express",
-        "icon": "/assets/icons",
+        "bgColor": "#000000",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/express.svg",
         "isFilter": true
     },
     {
         "id": "mongodb",
         "name": "MongoDB",
-        "icon": "/assets/icons",
+        "bgColor": "#47A248",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/mongodb.svg",
         "isFilter": true
     },
     {
         "id": "mysql",
         "name": "MySQL",
-        "icon": "/assets/icons",
+        "bgColor": "#F29111",
+        "textColor": "black",
+        "icon": "/assets/icons/tech-icons/mysql.svg",
         "isFilter": true
     },
     {
         "id": "firebase",
         "name": "FireBase",
-        "icon": "/assets/icons",
+        "bgColor": "#DD2C00",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/firebase.svg",
+        "isFilter": true
+    },
+    {
+        "id": "testing",
+        "name": "Testing",
+        "bgColor": "c33be2",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/testing.svg",
         "isFilter": true
     },
     {
         "id": "vanilla",
         "name": "Vanilla",
-        "icon": "/assets/icons",
+        "bgColor": "#F7DF1E",
+        "textColor": "black",
+        "icon": "/assets/icons/tech-icons/vanilla.svg",
         "isFilter": true
+    },
+    {
+        "id": "mongoose",
+        "name": "Mongoose",
+        "bgColor": "#880000",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/mongoose.svg",
+        "isFilter": false
+    },
+    {
+        "id": "sequelize",
+        "name": "Sequelize",
+        "bgColor": "#52B0E7",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/sequelize.svg",
+        "isFilter": false
+    },
+    {
+        "id": "bootstrap",
+        "name": "Bootstrap",
+        "bgColor": "#7952B3",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/bootstrap.svg",
+        "isFilter": false
+    },
+    {
+        "id": "vite",
+        "name": "Vite",
+        "bgColor": "#646CFF",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/vite.svg",
+        "isFilter": false
+    },
+    {
+        "id": "jwt",
+        "name": "JSON Web Tokens",
+        "bgColor": "#000000",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/jsonwebtokens.svg",
+        "isFilter": false
+    },
+    {
+        "id": "bcrypt",
+        "name": "Bcrypt",
+        "bgColor": "#0061F2",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/npm.svg",
+        "isFilter": false
+    },
+    {
+        "id": "winston",
+        "name": "Winston",
+        "bgColor": "#0061F2",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/npm.svg",
+        "isFilter": false
+    },
+    {
+        "id": "nodemailer",
+        "name": "Node Mailer",
+        "bgColor": "#0061F2",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/npm.svg",
+        "isFilter": false
+    },
+    {
+        "id": "swagger",
+        "name": "Swagger",
+        "bgColor": "#85EA2D",
+        "textColor": "black",
+        "icon": "/assets/icons/tech-icons/swagger.svg",
+        "isFilter": false
+    },
+    {
+        "id": "jsdoc",
+        "name": "JSDoc",
+        "bgColor": "#0061F2",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/npm.svg",
+        "isFilter": false
+    },
+    {
+        "id": "selenium",
+        "name": "Selenium",
+        "bgColor": "#43B02A",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/selenium.svg",
+        "isFilter": false
+    },
+    {
+        "id": "jest",
+        "name": "Jest",
+        "bgColor": "#C21325",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/jest.svg",
+        "isFilter": false
+    },
+    {
+        "id": "cypress",
+        "name": "Cypress",
+        "bgColor": "#000000",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/cypress.svg",
+        "isFilter": false
+    },
+    {
+        "id": "git",
+        "name": "Git",
+        "bgColor": "#F05032",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/git.svg",
+        "isFilter": false
+    },
+    {
+        "id": "github",
+        "name": "GitHub",
+        "bgColor": "#181717",
+        "textColor": "white",
+        "icon": "/assets/icons/tech-icons/github.svg",
+        "isFilter": false
     }
+
 ]
