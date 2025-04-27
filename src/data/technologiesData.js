@@ -19,6 +19,10 @@ import cypress_icon from '../assets/icons/tech-icons/cypress.svg';
 import git_icon from '../assets/icons/tech-icons/git.svg';
 import github_icon from '../assets/icons/tech-icons/github.svg';
 import reactrouter_icon from '../assets/icons/tech-icons/reactrouter.svg';
+import html_icon from '../assets/icons/tech-icons/html.svg';
+import css_icon from '../assets/icons/tech-icons/css.svg';
+import javascript_icon from '../assets/icons/tech-icons/javascript.svg';
+import render_icon from '../assets/icons/tech-icons/render.svg';
 
 const technologiesData = [
     {
@@ -84,6 +88,30 @@ const technologiesData = [
         textColor: "black",
         icon: vanilla_icon,
         isFilter: true
+    },
+    {
+        id: "html",
+        name: "HTML",
+        bgColor: "#E34F26",
+        textColor: "white",
+        icon: html_icon,
+        isFilter: false
+    },
+    {
+        id: "css",
+        name: "CSS",
+        bgColor: "#663399",
+        textColor: "white",
+        icon: css_icon,
+        isFilter: false
+    },
+    {
+        id: "javascript",
+        name: "JavaScript",
+        bgColor: "#F7DF1E",
+        textColor: "black",
+        icon: javascript_icon,
+        isFilter: false
     },
     {
         id: "mongoose",
@@ -242,6 +270,14 @@ const technologiesData = [
         name: "React Router",
         bgColor: "#61DAFB",
         textColor: "black",
+        icon: reactrouter_icon,
+        isFilter: false
+    },
+    {
+        id: "render",
+        name: "Render",
+        bgColor: "#000000",
+        textColor: "white",
         icon: reactrouter_icon,
         isFilter: false
     },

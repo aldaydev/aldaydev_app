@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 2 - 27-04-2025 - working on technologies
+Sprint 2 - 27-04-2025 - tech and project images imported
 
 
 ## Sprint 2
