@@ -1,25 +1,21 @@
 import './homeSpotlight.css';
 
-import foto_alday from '../../assets/images/foto_rafa_alday.jpg';
-import down_icon from '../../assets/icons/util-icons/down_icon.svg';
+import foto_alday from '../../../assets/images/foto_rafa_alday.jpg';
+import down_icon from '../../../assets/icons/util-icons/down_icon.svg';
 
-import AnimatedTitle from "../../components/AnimatedTitle/AnimatedTitle";
+import AnimatedTitle from "../../../components/AnimatedTitle/AnimatedTitle";
 
 function HomeSpotlight () {
 
     return(
         <header className="home__spotlight">
             <AnimatedTitle 
-                    headingLevel = "h2"
-                    initialText="A"
-                    finalText="ldayDev"
-                    id="spot__animatedTitle"
-                    fontSize="3rem"
-                    braceSize="3.4rem"
-                    color="var(--color-white)"
-                />
+                headingLevel = "h2"
+                initialText="A"
+                finalText="ldayDev"
+                id="spot__animatedTitle"
+            />
             <section className="spotlight__section">
-                
 
                 <h1 className='spotlight__title' height={38.39}>
                     <span className='spotlight__titleName'>RAFA ALDAY</span>

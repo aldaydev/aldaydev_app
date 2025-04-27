@@ -1,0 +1,35 @@
+[
+    {
+        "name": "React",
+        "icon": "/assets/icons"
+    },
+    {
+        "name": "Node",
+        "icon": "/assets/icons"
+    },
+    {
+        "name": "Express",
+        "icon": "/assets/icons"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "/assets/icons"
+    },
+    {
+        "name": "MySQL",
+        "icon": "/assets/icons"
+    },
+    {
+        "name": "FireBase",
+        "icon": "/assets/icons"
+    },
+    {
+        "name": "FireStore",
+        "icon": "/assets/icons"
+    },
+    {
+        "name": "Vanilla",
+        "icons": "/assets/icons"
+    }
+
+]

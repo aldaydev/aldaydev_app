@@ -27,7 +27,7 @@
   margin-top: 62px;
   border-top: 1px solid transparent;
   background-color: var(--color-white);
-  min-height: 100vh;
+  min-height: calc(100dvh - 62px);
 }
 
 .App__footer{
@@ -44,4 +44,25 @@
   .App__header{
     padding: 0 30px;
   }
+}
+
+/*---------- ANIMATED PAGE TITLES ----------*/
+
+#page__animatedTitle{
+  color: var(--color-white);
+  /* color: var(--color-yellow); */
+  letter-spacing: 2px;
+  font-size: 2.4rem;
+  /* filter: blur(0.4px); */
+
+  /* text-shadow: 
+        -1px -1px 0.2px black,
+        1px -1px 0.2px black,
+        -1px  1px 0.2px black,
+        3px  3px 0.2px black; */
+}
+
+#page__animatedTitle__braceLeft,
+#page__animatedTitle__braceRight{
+  font-size: 2.8rem;
 }

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Gamer News Layout",
+        "description": "Proyecto de maquetación de un portal web de noticias de videojuegos realizado con HTML, CSS y JavaScript.",
+        "date": "2024-08",
+        "img": {
+            "desktop": "",
+            "mobile": ""
+        },
+        "github": "https://github.com/aldaydev/gamer",
+        "deployed": "https://gamer.alday.dev/"
+    }
+]

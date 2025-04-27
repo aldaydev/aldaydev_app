@@ -1,5 +1,5 @@
 import './home.css';
-import HomeSpotlight from './HomeSpotlight';
+import HomeSpotlight from './components/HomeSpotlight';
 
 // import home_header_bg from '../../assets/images/home_header_bg.jpg';
 
