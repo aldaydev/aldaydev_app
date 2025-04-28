@@ -22,6 +22,7 @@ function TechFilters ( {setSelectedTechs, selectedTechs} ) {
                     <label 
                         key={index} 
                         className='techFilters__techFilter'
+                        style={{backgroundColor: techFilterItem.bgColor}}
                     >
                         <input 
                             type='checkbox' 
@@ -42,9 +43,9 @@ function TechFilters ( {setSelectedTechs, selectedTechs} ) {
                         <img 
                             src={techFilterItem.icon}
                             className='techFilter__image'
-                            style={{height: "40px", filter: techFilterItem.textColor === 'black' ? "invert(0)" : "invert(1)"}}
+                            style={{height: "25px", filter: techFilterItem.textColor === 'black' ? "invert(0)" : "invert(1)"}}
                         />
-                        <span style={{fontSize: "1.7rem"}} className='techFilter__text'>
+                        <span style={{fontSize: "1.3rem", color: techFilterItem.textColor}} className='techFilter__text'>
                             {techFilterItem.name}
                         </span>
                     </label>

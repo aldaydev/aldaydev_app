@@ -1,9 +1,38 @@
 .techFilters{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min-content, 250px));
-    gap: 1rem; /* opcional, para separar */
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 250px)); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .techFilters__techFilter{
+    flex: 0 1 30%;
+    max-width: 300px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 7px;
+
+    background-color: var(--color-yellow);
+}
+
+.techFilter__checkbox{
+    display: none;
+}
+
+.techFilters__techFilter:has(.techFilter__checkbox:checked) {
+    /* aplicar estilos al padre */
+    /* background-color: var(--color-yellow); */
     
+}
+
+.techFilter__checkbox:checked ~ .techFilter__image{
+    fill: blue;
 }

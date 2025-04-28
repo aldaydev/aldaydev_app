@@ -76,7 +76,7 @@ const technologiesData = [
     {
         id: "testing",
         name: "Testing",
-        bgColor: "c33be2",
+        bgColor: "#c33be2",
         textColor: "white",
         icon: testing_icon,
         isFilter: true
