@@ -15,9 +15,24 @@ function TechFilters ( {setSelectedTechs, selectedTechs, testingAndVanilla, setT
     //     setTechFilterList(techFilterItems);
     // },[])
 
+    const [isChecked, setIsChecked] = useState({
+        vanilla: false,
+        testing: false
+    });
+
+    // const handleRatio = (e) => {
+    //     console.log(e.target.value);
+    //     console.log(isChecked[e.target.value])
+    //     setIsChecked(isChecked[e.target.value] ? true : false)
+    // }
+
+    useEffect(() => {
+        console.log(isChecked);
+    }, [isChecked])
+
     return (
-        <>
-        <section className='techFilters'>
+        <section className='projectFilters'>
+        <label className='techFilters'>
             {techFilterIcons && techFilterIcons.map( (techFilterItem, index) => {
                 
                 return (
@@ -53,14 +68,35 @@ function TechFilters ( {setSelectedTechs, selectedTechs, testingAndVanilla, setT
                     </label>
                 )
             })}
-        </section>
-            <label htmlFor='vanillaOrTesting' onChange={(e) => setTestingAndVanilla(e.target.value)}>
-                {otherFilterIcons && otherFilterIcons.map((otherFilterIcon)=>{
+        </label>
+            <label 
+                htmlFor='vanillaOrTesting' 
+                onChange={(e) => setTestingAndVanilla(e.target.value)}
+                className='otherFilters'
+            >
+                {otherFilterIcons && otherFilterIcons.map((otherFilterIcon, index)=>{
                     return (
-                        <div>
-                            <input type="radio" name='vanillaOrTesting' value={otherFilterIcon.id}/>
-                        <img src={otherFilterIcon.icon}/>
-                </div>
+                        <label key={index} className='otherFilters__otherFilter'>
+                            <input 
+                                type="radio"
+                                name='vanillaOrTesting'
+                                value={otherFilterIcon.id}
+                                className='otherFilter__radio'
+                                checked={isChecked[otherFilterIcon.id]}
+                                onChange={()=> setIsChecked((prev) => {
+                                    if(prev[otherFilterIcon.id]){
+                                        return {...prev, [otherFilterIcon.id]: false}
+                                    }else{
+                                        return {...prev, [otherFilterIcon.id]: true}
+                                    }
+                                })}
+                            />
+                            <img 
+                                src={otherFilterIcon.icon}
+                                className='otherFilter__image'
+                            />
+                            <span>{otherFilterIcon.name}</span>
+                        </label>
                     )
                 })}
                 {/* <div>
@@ -71,10 +107,7 @@ function TechFilters ( {setSelectedTechs, selectedTechs, testingAndVanilla, setT
                     <input type="radio" name='vanillaOrTesting' value='testing'/>
                 </div> */}
             </label>
-        <section>
-
         </section>
-        </>
     )
 }
 

@@ -1,10 +1,17 @@
+.projectFilters{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .techFilters{
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 250px)); */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    column-gap: 5%;
+    row-gap: 20px;
 }
 
 .techFilters__techFilter{
@@ -33,11 +40,13 @@
     display: none;
 }
 
-.techFilters__techFilter:has(.techFilter__checkbox:checked)::before {
+.techFilters__techFilter:has(.techFilter__checkbox:checked)::before,
+.otherFilters__otherFilter:has(.otherFilter__radio:checked)::before {
     height: 3px;
 }
 
-.techFilters__techFilter:has(.techFilter__checkbox:checked)::after {
+.techFilters__techFilter:has(.techFilter__checkbox:checked)::after,
+.otherFilters__otherFilter:has(.otherFilter__radio:checked)::after{
     height: 8px;
 }
 
@@ -55,7 +64,8 @@
     transition: scale .2s ease-in-out;
 }
 
-.techFilters__techFilter::before{
+.techFilters__techFilter::before,
+.otherFilters__otherFilter::before{
     content: "";
     width: 80%;
     height: 0px;
@@ -71,7 +81,12 @@
     transition: height .1s ease-in-out;
 }
 
-.techFilters__techFilter::after{
+.otherFilters__otherFilter::before{
+    bottom: -23%;
+}
+
+.techFilters__techFilter::after,
+.otherFilters__otherFilter::after{
     content: "";
     width: 8px;
     height: 0px;
@@ -86,4 +101,40 @@
     top: -18px;
     left: calc(50% - 4px);
     transition: height .1s ease-in-out;
+}
+
+.otherFilters__otherFilter::after{
+    top: -13px;
+}
+
+/*---------- OTHER FILTERS ----------*/
+
+.otherFilters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.otherFilters__otherFilter{
+    font-size: 1.4rem;
+    color: var(--color-white);
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    position: relative;
+
+    cursor: pointer;
+    transition: scale .2s ease-in-out;
+}
+
+.otherFilters__otherFilter:hover .otherFilter__image{
+    scale: 1.1;
+}
+
+
+.otherFilter__radio{
+    display: none;
 }
