@@ -2,9 +2,9 @@ import './techFilters.css';
 
 import { useEffect, useState } from "react";
 import technologiesData from "../../../data/technologiesData.js";
-import techFilterIcons from "../../../data/techFilterIcons.js";
+import {techFilterIcons, otherFilterIcons} from "../../../data/filterIcons.js";
 
-function TechFilters ( {setSelectedTechs, selectedTechs} ) {
+function TechFilters ( {setSelectedTechs, selectedTechs, testingAndVanilla, setTestingAndVanilla} ) {
 
     // const [techFilterList, setTechFilterList] = useState([]);
 
@@ -16,6 +16,7 @@ function TechFilters ( {setSelectedTechs, selectedTechs} ) {
     // },[])
 
     return (
+        <>
         <section className='techFilters'>
             {techFilterIcons && techFilterIcons.map( (techFilterItem, index) => {
                 
@@ -53,6 +54,27 @@ function TechFilters ( {setSelectedTechs, selectedTechs} ) {
                 )
             })}
         </section>
+            <label htmlFor='vanillaOrTesting' onChange={(e) => setTestingAndVanilla(e.target.value)}>
+                {otherFilterIcons && otherFilterIcons.map((otherFilterIcon)=>{
+                    return (
+                        <div>
+                            <input type="radio" name='vanillaOrTesting' value={otherFilterIcon.id}/>
+                        <img src={otherFilterIcon.icon}/>
+                </div>
+                    )
+                })}
+                {/* <div>
+                    <input type="radio" name='vanillaOrTesting' value='vanilla'/>
+                    <img src=''/>
+                </div>
+                <div>
+                    <input type="radio" name='vanillaOrTesting' value='testing'/>
+                </div> */}
+            </label>
+        <section>
+
+        </section>
+        </>
     )
 }
 

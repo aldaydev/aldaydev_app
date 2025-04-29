@@ -7,10 +7,15 @@ import { useEffect, useState } from 'react';
 function Projects () {
 
     const [selectedTechs, setSelectedTechs] = useState([]);
+    const [testingAndVanilla, setTestingAndVanilla] = useState(null);
 
     useEffect(()=>{
         console.log(selectedTechs);
     }, [selectedTechs])
+
+    useEffect(()=>{
+        console.log(testingAndVanilla);
+    }, [testingAndVanilla])
 
     return(
         <div className='pageContainer projects'>
@@ -28,7 +33,12 @@ function Projects () {
             <section>
             <h3>En esta sección podrás encontrar mis proyectos. Puedes filtrarlos eligiendo una o varias tecnologías y te aparecerán lo que las utilizan. </h3>
             </section>
-            <TechFilters setSelectedTechs={setSelectedTechs} selectedTechs={selectedTechs}/>
+            <TechFilters 
+                setSelectedTechs={setSelectedTechs} 
+                selectedTechs={selectedTechs}
+                testingAndVanilla={testingAndVanilla}
+                setTestingAndVanilla={setTestingAndVanilla}
+            />
         </div>
     )
 }
