@@ -4,6 +4,7 @@
     text-align: center;
     cursor: pointer;
     font-weight: 800;
+    font-size: 2.4rem;
     transition: width .5s ease-in-out;
     filter: blur(0.2px);
     position: relative;
@@ -12,6 +13,7 @@
 }
 
 .animatedTitle--isFilled{
+    color: var(--color-yellow);
     text-shadow: 
         -1px -1px 0.2px black,
         1px -1px 0.2px black,
