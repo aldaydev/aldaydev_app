@@ -2,27 +2,28 @@ import './techFilters.css';
 
 import { useEffect, useState } from "react";
 import technologiesData from "../../../data/technologiesData.js";
+import techFilterIcons from "../../../data/techFilterIcons.js";
 
 function TechFilters ( {setSelectedTechs, selectedTechs} ) {
 
-    const [techFilterList, setTechFilterList] = useState([]);
+    // const [techFilterList, setTechFilterList] = useState([]);
 
-    useEffect(()=>{
-        const techFilterItems = technologiesData.filter((techItem)=>{
-            return techItem.isFilter === true;
-        })
-        setTechFilterList(techFilterItems);
-    },[])
+    // useEffect(()=>{
+    //     const techFilterItems = technologiesData.filter((techItem)=>{
+    //         return techItem.isFilter === true;
+    //     })
+    //     setTechFilterList(techFilterItems);
+    // },[])
 
     return (
         <section className='techFilters'>
-            {techFilterList && techFilterList.map( (techFilterItem, index) => {
+            {techFilterIcons && techFilterIcons.map( (techFilterItem, index) => {
                 
                 return (
                     <label 
                         key={index} 
                         className='techFilters__techFilter'
-                        style={{backgroundColor: techFilterItem.bgColor}}
+                        title={techFilterItem.name}
                     >
                         <input 
                             type='checkbox' 
@@ -43,9 +44,9 @@ function TechFilters ( {setSelectedTechs, selectedTechs} ) {
                         <img 
                             src={techFilterItem.icon}
                             className='techFilter__image'
-                            style={{height: "25px", filter: techFilterItem.textColor === 'black' ? "invert(0)" : "invert(1)"}}
+                            // style={{height: "25px", filter: techFilterItem.textColor === 'black' ? "invert(0)" : "invert(1)"}}
                         />
-                        <span style={{fontSize: "1.3rem", color: techFilterItem.textColor}} className='techFilter__text'>
+                        <span>
                             {techFilterItem.name}
                         </span>
                     </label>

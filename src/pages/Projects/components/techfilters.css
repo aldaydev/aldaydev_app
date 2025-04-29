@@ -9,30 +9,81 @@
 
 .techFilters__techFilter{
     flex: 0 1 30%;
-    max-width: 300px;
-    min-width: 200px;
+    max-width: 100px;
+    min-width: 100px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
+    
+    cursor: pointer;
+    position: relative;
 
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 7px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
 
-    background-color: var(--color-yellow);
+.techFilters__techFilter:hover .techFilter__image{
+    scale: 1.1;
 }
 
 .techFilter__checkbox{
     display: none;
 }
 
-.techFilters__techFilter:has(.techFilter__checkbox:checked) {
-    /* aplicar estilos al padre */
-    /* background-color: var(--color-yellow); */
-    
+.techFilters__techFilter:has(.techFilter__checkbox:checked)::before {
+    height: 3px;
+}
+
+.techFilters__techFilter:has(.techFilter__checkbox:checked)::after {
+    height: 8px;
+}
+
+.techFilters__techFilter:has(.techFilter__checkbox:checked) .techFilter__image{
+    scale: 1.1;
 }
 
 .techFilter__checkbox:checked ~ .techFilter__image{
     fill: blue;
+}
+
+.techFilter__image{
+    position: relative;
+    width: 90px;
+    transition: scale .2s ease-in-out;
+}
+
+.techFilters__techFilter::before{
+    content: "";
+    width: 80%;
+    height: 0px;
+    background-color: var(--color-yellow);
+    box-shadow: 
+        -1px -1px 0.2px black,
+        1px -1px 0.2px black,
+        -1px  1px 0.2px black,
+        3px  2px 0.2px black;
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+    transition: height .1s ease-in-out;
+}
+
+.techFilters__techFilter::after{
+    content: "";
+    width: 8px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: var(--color-yellow);
+    box-shadow: 
+        -1px -1px 0.2px black,
+        1px -1px 0.2px black,
+        -1px  1px 0.2px black,
+        3px  2px 0.2px black;
+    position: absolute;
+    top: -18px;
+    left: calc(50% - 4px);
+    transition: height .1s ease-in-out;
 }

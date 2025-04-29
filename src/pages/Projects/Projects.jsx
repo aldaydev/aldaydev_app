@@ -13,7 +13,7 @@ function Projects () {
     }, [selectedTechs])
 
     return(
-        <div className='projects'>
+        <div className='pageContainer projects'>
             <header className='projects__header'>
                 <AnimatedTitle 
                     headingLevel = "h1"

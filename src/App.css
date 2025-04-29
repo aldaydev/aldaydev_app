@@ -66,3 +66,19 @@
 #page__animatedTitle__braceRight{
   font-size: 2.8rem;
 }
+
+.pageContainer{
+  padding: 0 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .pageContainer{
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pageContainer{
+    padding: 0 30px;
+  }
+}

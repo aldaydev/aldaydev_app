@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 3 - 28-04-2025 - sprint 3 initial commit
+Sprint 3 - 29-04-2025 - working on project filtering by tech
 
 
 ## Sprint 3
