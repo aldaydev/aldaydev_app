@@ -27,7 +27,7 @@ function TechFilters ( {setSelectedTechs, selectedTechs, testingAndVanilla, setT
     // }
 
     useEffect(() => {
-        console.log(isChecked);
+        console.log('isChecked', isChecked);
     }, [isChecked])
 
     return (
@@ -84,10 +84,11 @@ function TechFilters ( {setSelectedTechs, selectedTechs, testingAndVanilla, setT
                                 className='otherFilter__radio'
                                 checked={isChecked[otherFilterIcon.id]}
                                 onChange={()=> setIsChecked((prev) => {
+                                    console.log(prev[otherFilterIcon.id])
                                     if(prev[otherFilterIcon.id]){
-                                        return {...prev, [otherFilterIcon.id]: false}
+                                        return {...isChecked, [otherFilterIcon.id]: false}
                                     }else{
-                                        return {...prev, [otherFilterIcon.id]: true}
+                                        return {...isChecked, [otherFilterIcon.id]: true}
                                     }
                                 })}
                             />

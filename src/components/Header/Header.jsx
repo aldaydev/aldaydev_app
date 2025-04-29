@@ -68,7 +68,7 @@ function Header() {
                 <nav 
                     ref={navbarRef} 
                     className={`header__navbar ${(isCollapsed && isOpen) ? "header__navbar--open" : "header__navbar--close"}`}
-                    aria-hidden={!isOpen}
+                    aria-hidden={isCollapsed && !isOpen}
                 >
 
                     <HeaderLinks isOpen={isOpen} setIsOpen={setIsOpen} isCollapsed={isCollapsed}/>
