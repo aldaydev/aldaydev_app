@@ -6,7 +6,7 @@
         1px -1px 0.2px black,
         -1px  1px 0.2px black,
         3px  2px 0.2px black;
-    width: 56px;
+    width: 58px;
     cursor: pointer;
     font-size: 1.6rem;
     margin-bottom: 4.5px;
@@ -34,7 +34,7 @@
 }
 
 .headerLogo__link:hover {
-    width: 177px;
+    width: 179px;
     transition: width .5s ease-in-out;
 }
 
