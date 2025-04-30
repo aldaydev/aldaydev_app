@@ -1,8 +1,9 @@
 import AnimatedTitle from '../../components/AnimatedTitle/AnimatedTitle';
 import './projects.css';
 
-import TechFilters from './components/TechFilters.jsx';
+import TechFilters from './components/ProjectFilters.jsx';
 import { useEffect, useState } from 'react';
+import ProjectFilters from './components/ProjectFilters.jsx';
 
 function Projects () {
 
@@ -33,7 +34,7 @@ function Projects () {
             <section>
             <h3>En esta sección podrás encontrar mis proyectos. Puedes filtrarlos eligiendo una o varias tecnologías y te aparecerán lo que las utilizan. </h3>
             </section>
-            <TechFilters 
+            <ProjectFilters 
                 setSelectedTechs={setSelectedTechs} 
                 selectedTechs={selectedTechs}
                 testingAndVanilla={testingAndVanilla}

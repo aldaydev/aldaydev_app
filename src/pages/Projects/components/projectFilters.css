@@ -28,12 +28,14 @@
     position: relative;
 
     color: white;
-    font-weight: 500;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 1rem;
+
+    transition: scale .2s ease-in-out;
 }
 
-.techFilters__techFilter:hover .techFilter__image{
-    scale: 1.1;
+.techFilters__techFilter:hover{
+    scale: 1.05;
 }
 
 .techFilter__checkbox{
@@ -50,8 +52,8 @@
     height: 8px;
 }
 
-.techFilters__techFilter:has(.techFilter__checkbox:checked) .techFilter__image{
-    scale: 1.1;
+.techFilters__techFilter:has(.techFilter__checkbox:checked){
+    scale: 1.05;
 }
 
 .techFilter__checkbox:checked ~ .techFilter__image{
@@ -61,7 +63,7 @@
 .techFilter__image{
     position: relative;
     width: 90px;
-    transition: scale .2s ease-in-out;
+    /* transition: scale .2s ease-in-out; */
 }
 
 .techFilters__techFilter::before,
@@ -116,7 +118,7 @@
 }
 
 .otherFilters__otherFilter{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: var(--color-white);
     width: 200px;
     display: flex;
@@ -130,8 +132,8 @@
     transition: scale .2s ease-in-out;
 }
 
-.otherFilters__otherFilter:hover .otherFilter__image{
-    scale: 1.1;
+.otherFilters__otherFilter:hover{
+    scale: 1.05;
 }
 
 
