@@ -1,22 +1,37 @@
 import AnimatedTitle from '../../components/AnimatedTitle/AnimatedTitle';
 import './projects.css';
 
-import TechFilters from './components/ProjectFilters.jsx';
 import { useEffect, useState } from 'react';
 import ProjectFilters from './components/ProjectFilters.jsx';
+import projectsData from "../../data/projectsData.js";
 
 function Projects () {
 
     const [selectedTechs, setSelectedTechs] = useState([]);
     const [testingAndVanilla, setTestingAndVanilla] = useState(null);
+    const [projectList, setProyectList] = useState(projectsData);
 
     useEffect(()=>{
-        console.log(selectedTechs);
-    }, [selectedTechs])
+        console.log('selectedTechs', selectedTechs);
+    }, [selectedTechs]);
 
     useEffect(()=>{
-        console.log(testingAndVanilla);
-    }, [testingAndVanilla])
+        console.log('testiongAndVanilla', testingAndVanilla);
+        // setPoryectList(projectsData);
+    }, [testingAndVanilla]);
+
+    useEffect(()=>{
+        console.log('Listado de proyectos', projectList);
+    }, [projectList]);
+
+    useEffect(() => {
+        if(testingAndVanilla){
+            console.log('Hay testing o vanilla');
+            const filteredProjects = projectsData.filter((project) => project[testingAndVanilla]);
+            setProyectList(filteredProjects);
+        }
+        console.log('No hay vanilla o testing; listado completo',  projectList)
+    }, [selectedTechs, testingAndVanilla])
 
     return(
         <div className='pageContainer projects'>
@@ -37,7 +52,6 @@ function Projects () {
             <ProjectFilters 
                 setSelectedTechs={setSelectedTechs} 
                 selectedTechs={selectedTechs}
-                testingAndVanilla={testingAndVanilla}
                 setTestingAndVanilla={setTestingAndVanilla}
             />
         </div>

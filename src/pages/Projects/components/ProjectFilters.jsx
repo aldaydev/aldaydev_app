@@ -1,19 +1,10 @@
 import './projectFilters.css';
 
-import { useEffect, useState } from "react";
-import technologiesData from "../../../data/technologiesData.js";
+import { useState } from "react";
 import { techFilterIcons, otherFilterIcons } from "../../../data/filterIcons.js";
 
-function ProjectFilters({ setSelectedTechs, selectedTechs, testingAndVanilla, setTestingAndVanilla }) {
+function ProjectFilters({ setSelectedTechs, selectedTechs, setTestingAndVanilla }) {
 
-    // const [techFilterList, setTechFilterList] = useState([]);
-
-    // useEffect(()=>{
-    //     const techFilterItems = technologiesData.filter((techItem)=>{
-    //         return techItem.isFilter === true;
-    //     })
-    //     setTechFilterList(techFilterItems);
-    // },[])
 
     const [isChecked, setIsChecked] = useState({
         vanilla: false,
@@ -38,9 +29,13 @@ function ProjectFilters({ setSelectedTechs, selectedTechs, testingAndVanilla, se
         });
     };
 
-    useEffect(() => {
-        console.log('isChecked', isChecked);
-    }, [isChecked])
+    const handleTestingAndVanilla = (e) => {
+        if(!e.target.checked){
+            setTestingAndVanilla(null);
+        }else{
+            setTestingAndVanilla(e.target.value);
+        }
+    }
 
     return (
         <section className='projectFilters'>
@@ -72,7 +67,6 @@ function ProjectFilters({ setSelectedTechs, selectedTechs, testingAndVanilla, se
                             <img
                                 src={techFilterItem.icon}
                                 className='techFilter__image'
-                            // style={{height: "25px", filter: techFilterItem.textColor === 'black' ? "invert(0)" : "invert(1)"}}
                             />
                             <span>
                                 {techFilterItem.name}
@@ -83,7 +77,7 @@ function ProjectFilters({ setSelectedTechs, selectedTechs, testingAndVanilla, se
             </label>
             <label
                 htmlFor='vanillaOrTesting'
-                onChange={(e) => setTestingAndVanilla(e.target.value)}
+                onChange={(e) => handleTestingAndVanilla(e)}
                 className='otherFilters'
             >
                 {otherFilterIcons && otherFilterIcons.map((otherFilterIcon, index) => {

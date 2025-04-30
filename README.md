@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 3 - 29-04-2025 - working on project filtering by tech
+Sprint 3 - 30-04-2025 - working on filter combination functions
 
 
 ## Sprint 3
