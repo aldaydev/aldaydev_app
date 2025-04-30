@@ -15,9 +15,6 @@
 
 @media screen and (max-width: 1024px) {
     .header__navbar{
-        display: flex;
-        gap: 20px;
-        align-items: center;
         position: absolute;
         top: 62px;
         right: 0;
@@ -28,7 +25,6 @@
         interpolate-size: allow-keywords;
         transition: width .3s ease-in-out;
 
-        /* filter: drop-shadow(1px 1px 5px black); */
     }
 
     .header__navbar::after {
