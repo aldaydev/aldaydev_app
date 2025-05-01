@@ -7,6 +7,9 @@ import projectsData from "../../data/projectsData.js";
 
 import ProyectList from './components/projectList.jsx';
 
+import background from '../../assets/images/background.svg';
+
+
 function Projects () {
 
     const [selectedTechFilters, setSelectedTechFilters] = useState([]);

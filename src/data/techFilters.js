@@ -34,7 +34,7 @@ const techFilters = [
     },
     {
         id: "mongodb",
-        name: "Mongo DB",
+        name: "MongoDB",
         alt: "Icono de Mongo DB",
         icon: mongo_icon
     },

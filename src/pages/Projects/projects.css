@@ -1,18 +1,78 @@
 .projects{
-    width: 100%;
+    width: 100dvw;
     height: 100%;
     min-height: calc(100dvh - 62px);
-    background-color: var(--color-blue-dark);
-    background-image: url("../../assets/images/background.svg");
-    background-size: 100% 100dvh;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-attachment: fixed; /* <- Fondo fijo */
     margin: 0;
-
+    /* background-color: var(--color-blue-dark); */
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    position: relative;
+    z-index: 0;
+
+    overflow: hidden;
+}
+
+.projects::after {
+    content: "";
+    position: fixed; /* Se queda fija en pantalla */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+
+    background-color: var(--color-blue-dark);
+    background-image: url("../../assets/images/background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Mantiene la proporción sin recortar */
+    
+    animation: bg-popin 1s 1s ease-out both, bg-animation 20s 1s ease-in-out infinite;
+    pointer-events: none; /* Para evitar que interfiera con el contenido encima */
+
+    scale: 1.2;
+}
+
+/* .projects::after{
+    content: "";
+    width: 100%;
+    height: 100dvh;
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    right: 100%;
+    top: 0;
+    bottom: 100%;
+    background-color: var(--color-blue-dark);
+    background-image: url("../../assets/images/background.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    animation: bg-popin 1s 1s ease-out both, bg-animation 20s 1s ease-in-out infinite;
+} */
+
+@keyframes bg-popin {
+    0%{
+        transform: scaleX(3);
+    }90%{
+        transform: scaleX(0.5) skew(500px) perspective(600px);
+    }100%{
+        transform: scaleX(1) skew(100px) perspective(200px);
+    }
+}
+
+@keyframes bg-animation {
+    0%{
+        transform: scaleX(1) scaleX(1) skew(100px, 100px) perspective(600px);
+    }50%{    
+        transform: scaleX(1.05) scaleY(1.1) skew(0, 0) perspective(1200px);
+    }100%{
+        transform: scaleX(1) skew(100px, 500px) perspective(600px);
+        transform:
+    }
 }
 
 .projects__header{

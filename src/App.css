@@ -1,5 +1,4 @@
 .App__header{
-  background-color: var(--color-white-contrast);
   padding: 0 100px;
   height: 62px;
   width: 100%;
@@ -12,6 +11,8 @@
 }
 
 .App__header::after {
+  background-color: #071A28;
+  opacity: 1;
   content: "";
   position: absolute;
   top: 0;
@@ -24,8 +25,8 @@
 }
 
 .App__main{
-  margin-top: 62px;
-  border-top: 1px solid transparent;
+  /* margin-top: 62px; */
+  /* border-top: 1px solid transparent; */
   background-color: var(--color-white);
   min-height: calc(100dvh - 62px);
   z-index: 0;
@@ -50,6 +51,7 @@
 /*---------- ANIMATED PAGE TITLES ----------*/
 
 #page__animatedTitle{
+  margin-top: 60px;
   color: var(--color-white);
   /* color: var(--color-yellow); */
   letter-spacing: 2px;
