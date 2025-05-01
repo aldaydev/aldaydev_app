@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 5%;
+    column-gap: 4%;
     row-gap: 40px;
 }
 
@@ -43,16 +43,17 @@
 }
 
 .techFilters__techFilter:has(.techFilter__checkbox:checked)::before,
-.otherFilters__otherFilter:has(.otherFilter__radio:checked)::before {
+.otherFilters__otherFilter:has(.otherFilter__checkbox:checked)::before {
     height: 3px;
 }
 
 .techFilters__techFilter:has(.techFilter__checkbox:checked)::after,
-.otherFilters__otherFilter:has(.otherFilter__radio:checked)::after{
+.otherFilters__otherFilter:has(.otherFilter__checkbox:checked)::after{
     height: 8px;
 }
 
-.techFilters__techFilter:has(.techFilter__checkbox:checked){
+.techFilters__techFilter:has(.techFilter__checkbox:checked),
+.otherFilters__otherFilter:has(.otherFilter__checkbox:checked){
     scale: 1.05;
 }
 
@@ -115,12 +116,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 60px;
 }
 
 .otherFilters__otherFilter{
     font-size: 1.1rem;
     color: var(--color-white);
-    width: 200px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,11 +134,15 @@
     transition: scale .2s ease-in-out;
 }
 
+/* .otherFilter__image{
+    width: 75px;
+} */
+
 .otherFilters__otherFilter:hover{
     scale: 1.05;
 }
 
 
-.otherFilter__radio{
+.otherFilter__checkbox{
     display: none;
 }

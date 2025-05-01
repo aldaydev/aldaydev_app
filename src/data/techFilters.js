@@ -9,10 +9,11 @@ import firebase_icon from '../assets/icons/filter-icons/firebase_icon.png';
 
 //Other filter icon imports
 
-import vanilla_icon from '../assets/icons/filter-icons/vanilla_icon.svg';
+import vanilla_icon from '../assets/icons/filter-icons/vanilla_icon.png';
+import doc_icon from '../assets/icons/filter-icons/documentation_icon.svg';
 import testing_icon from '../assets/icons/filter-icons/testing_icon.svg';
 
-const techFilterIcons = [
+const techFilters = [
     {
         id: "react",
         name: "React",
@@ -48,15 +49,22 @@ const techFilterIcons = [
         name: "Firebase",
         alt: "Icono de Firebase",
         icon: firebase_icon
-    }
-]
-
-const otherFilterIcons = [
+    },
     {
         id: "vanilla",
         name: "Vanilla",
-        alt: "Icono de Vanilla",
+        alt: "Icono de HTML5, CSS3 y JavaScript",
         icon: vanilla_icon
+    }
+
+]
+
+const otherFilters = [
+    {
+        id: "documentation",
+        name: "Documentación",
+        alt: "Icono de Documentación",
+        icon: doc_icon
     },
     {
         id: "testing",
@@ -66,4 +74,4 @@ const otherFilterIcons = [
     },
 ]
 
-export {techFilterIcons, otherFilterIcons};
+export {techFilters, otherFilters};

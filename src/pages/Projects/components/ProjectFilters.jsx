@@ -1,101 +1,103 @@
 import './projectFilters.css';
 
-import { useState } from "react";
-import { techFilterIcons, otherFilterIcons } from "../../../data/filterIcons.js";
+import { techFilters, otherFilters } from "../../../data/techFilters.js";
 
-function ProjectFilters({ setSelectedTechs, selectedTechs, setTestingAndVanilla }) {
+function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelectedOtherFilters, selectedOtherFilters }) {
 
+    const handleTechFilters = (techFilter) => {
 
-    const [isChecked, setIsChecked] = useState({
-        vanilla: false,
-        testing: false
-    });
+        if(techFilter.id === "vanilla"){
+            setSelectedTechFilters(prev => {
+                if (prev.includes("vanilla")) {
+                    // Si ya está, vaciamos
+                    return [];
+                } else {
+                    // Si no está, lo añadimos
+                    return ["vanilla"];
+                }
+            });
 
-    const handleOtherFilters = (id) => {
-        setIsChecked(prev => {
-            // Si ya estaba seleccionado, desmarcar todos
-            if (prev[id]) {
-                return {
-                    vanilla: false,
-                    testing: false
-                };
-            } else {
-                // Seleccionar este y desmarcar el otro
-                return {
-                    vanilla: id === 'vanilla',
-                    testing: id === 'testing'
-                };
-            }
-        });
-    };
-
-    const handleTestingAndVanilla = (e) => {
-        if(!e.target.checked){
-            setTestingAndVanilla(null);
         }else{
-            setTestingAndVanilla(e.target.value);
+            setSelectedTechFilters(prev => {
+                if (prev.includes(techFilter.id)) {
+                    // Si ya está, lo quitamos
+                    return prev.filter(id => id !== techFilter.id);
+                } else {
+                    // Si no está, lo añadimos
+                    const excludeVanilla = prev.filter(id => id !== "vanilla");
+                    return [...excludeVanilla, techFilter.id];
+                }
+            });
         }
+        
+        
     }
+
+    const handleOtherFilters = (otherFilter) => {
+
+        if(selectedTechFilters[0] === "vanilla"){
+            setSelectedTechFilters({});
+        }
+        setSelectedOtherFilters( prev => {
+            
+            if (prev.includes(otherFilter.id)){
+                // Si ya está, lo quitamos
+                return prev.filter(id => id !== otherFilter.id);
+            } else {
+                return [...prev, otherFilter.id]
+            }
+        })
+    };
 
     return (
         <section className='projectFilters'>
-            <label className='techFilters'>
-                {techFilterIcons && techFilterIcons.map((techFilterItem, index) => {
+            <article className='techFilters'>
+                {techFilters && techFilters.map((techFilter, index) => {
 
                     return (
                         <label
                             key={index}
                             className='techFilters__techFilter'
-                            title={techFilterItem.name}
+                            title={techFilter.name}
                         >
                             <input
                                 type='checkbox'
                                 className='techFilter__checkbox'
-                                checked={selectedTechs.includes(techFilterItem.id)}
-                                onChange={() => {
-                                    setSelectedTechs(prev => {
-                                        if (prev.includes(techFilterItem.id)) {
-                                            // Si ya está, lo quitamos
-                                            return prev.filter(id => id !== techFilterItem.id);
-                                        } else {
-                                            // Si no está, lo añadimos
-                                            return [...prev, techFilterItem.id];
-                                        }
-                                    });
-                                }}
+                                checked={selectedTechFilters.includes(techFilter.id)}
+                                onChange={() => handleTechFilters(techFilter)}
                             />
                             <img
-                                src={techFilterItem.icon}
+                                src={techFilter.icon}
                                 className='techFilter__image'
                             />
                             <span>
-                                {techFilterItem.name}
+                                {techFilter.name}
                             </span>
                         </label>
                     )
                 })}
-            </label>
-            <label
-                htmlFor='vanillaOrTesting'
-                onChange={(e) => handleTestingAndVanilla(e)}
+            </article>
+            <article
+                // htmlFor='vanillaOrTesting'
+                // onChange={(e) => handleTestingAndVanilla(e)}
                 className='otherFilters'
             >
-                {otherFilterIcons && otherFilterIcons.map((otherFilterIcon, index) => {
+                {otherFilters && otherFilters.map((otherFilter, index) => {
                     return (
                         <label key={index} className='otherFilters__otherFilter'>
                             <input
                                 type="checkbox"
                                 name='vanillaOrTesting'
-                                value={otherFilterIcon.id}
-                                className='otherFilter__radio'
-                                checked={isChecked[otherFilterIcon.id]}
-                                onChange={() => handleOtherFilters(otherFilterIcon.id)}
+                                value={otherFilter.id}
+                                className='otherFilter__checkbox'
+                                checked={selectedOtherFilters.includes(otherFilter.id)}
+                                onChange={() => handleOtherFilters(otherFilter)}
                             />
                             <img
-                                src={otherFilterIcon.icon}
+                                src={otherFilter.icon}
                                 className='otherFilter__image'
                             />
-                            <span>{otherFilterIcon.name}</span>
+                            <span>{otherFilter.name}</span>
                         </label>
                     )
                 })}
@@ -106,7 +108,7 @@ function ProjectFilters({ setSelectedTechs, selectedTechs, setTestingAndVanilla 
                 <div>
                     <input type="radio" name='vanillaOrTesting' value='testing'/>
                 </div> */}
-            </label>
+            </article>
         </section>
     )
 }

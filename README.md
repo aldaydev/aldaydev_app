@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 3 - 30-04-2025 - working on filter combination functions
+Sprint 3 - 01-05-2025 - combinated filters running
 
 
 ## Sprint 3
@@ -8,7 +8,8 @@ Sprint 3 - 30-04-2025 - working on filter combination functions
 Objetivos:
 
 * Sección proyectos:
-       - Creación componente ProjectsFilter
+       - Creación componente ProjectsFilter (filtros combinados)
+       - Creación de componente ProjectsList
 
 ## Sprint 2
 

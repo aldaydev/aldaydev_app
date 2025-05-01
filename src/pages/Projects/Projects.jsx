@@ -7,31 +7,43 @@ import projectsData from "../../data/projectsData.js";
 
 function Projects () {
 
-    const [selectedTechs, setSelectedTechs] = useState([]);
-    const [testingAndVanilla, setTestingAndVanilla] = useState(null);
-    const [projectList, setProyectList] = useState(projectsData);
+    const [selectedTechFilters, setSelectedTechFilters] = useState([]);
+    const [selectedOtherFilters, setSelectedOtherFilters] = useState([]);
+    const [filteredProjectList, setFilteredProjectList] = useState(projectsData);
 
     useEffect(()=>{
-        console.log('selectedTechs', selectedTechs);
-    }, [selectedTechs]);
+        console.log('selectedTechFilters', selectedTechFilters);
+    }, [selectedTechFilters]);
 
     useEffect(()=>{
-        console.log('testiongAndVanilla', testingAndVanilla);
-        // setPoryectList(projectsData);
-    }, [testingAndVanilla]);
+        console.log('testiongAndVanilla', selectedOtherFilters);
+    }, [selectedOtherFilters]);
 
     useEffect(()=>{
-        console.log('Listado de proyectos', projectList);
-    }, [projectList]);
+        console.log('Listado de proyectos', filteredProjectList);
+    }, [filteredProjectList]);
 
     useEffect(() => {
-        if(testingAndVanilla){
-            console.log('Hay testing o vanilla');
-            const filteredProjects = projectsData.filter((project) => project[testingAndVanilla]);
-            setProyectList(filteredProjects);
+
+        if(filteredProjectList !== projectsData){
+            console.log('El listado de proyectos es distinto');
+            setFilteredProjectList(projectsData);
         }
-        console.log('No hay vanilla o testing; listado completo',  projectList)
-    }, [selectedTechs, testingAndVanilla])
+
+        if(selectedOtherFilters.length > 0 || selectedTechFilters.length > 0){
+            const filteredProjects = projectsData.filter((project) => {
+                if(selectedOtherFilters.length > 0){
+                    return selectedOtherFilters.every(filtro => project[filtro]);
+                }
+                if(selectedTechFilters.length > 0){
+                    return selectedTechFilters.every(filtro => project.technologies.includes(filtro));
+                }
+            });
+
+            setFilteredProjectList(filteredProjects);
+        }
+
+    }, [selectedTechFilters, selectedOtherFilters])
 
     return(
         <div className='pageContainer projects'>
@@ -50,9 +62,10 @@ function Projects () {
             <h3>En esta sección podrás encontrar mis proyectos. Puedes filtrarlos eligiendo una o varias tecnologías y te aparecerán lo que las utilizan. </h3>
             </section>
             <ProjectFilters 
-                setSelectedTechs={setSelectedTechs} 
-                selectedTechs={selectedTechs}
-                setTestingAndVanilla={setTestingAndVanilla}
+                setSelectedTechFilters={setSelectedTechFilters} 
+                selectedTechFilters={selectedTechFilters}
+                setSelectedOtherFilters={setSelectedOtherFilters}
+                selectedOtherFilters={selectedOtherFilters}
             />
         </div>
     )
