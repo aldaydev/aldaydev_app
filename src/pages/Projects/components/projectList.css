@@ -1,0 +1,15 @@
+.projectList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.projectList__project{
+    transition: scale .2s ease-in-out;
+}
+
+.projectList__project:hover{
+    scale: 1.05;
+}

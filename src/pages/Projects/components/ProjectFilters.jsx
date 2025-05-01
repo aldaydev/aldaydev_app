@@ -101,13 +101,6 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
                         </label>
                     )
                 })}
-                {/* <div>
-                    <input type="radio" name='vanillaOrTesting' value='vanilla'/>
-                    <img src=''/>
-                </div>
-                <div>
-                    <input type="radio" name='vanillaOrTesting' value='testing'/>
-                </div> */}
             </article>
         </section>
     )

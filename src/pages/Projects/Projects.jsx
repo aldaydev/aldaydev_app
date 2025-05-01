@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import ProjectFilters from './components/ProjectFilters.jsx';
 import projectsData from "../../data/projectsData.js";
 
+import ProyectList from './components/projectList.jsx';
+
 function Projects () {
 
     const [selectedTechFilters, setSelectedTechFilters] = useState([]);
@@ -67,6 +69,7 @@ function Projects () {
                 setSelectedOtherFilters={setSelectedOtherFilters}
                 selectedOtherFilters={selectedOtherFilters}
             />
+            <ProyectList filteredProjectList={filteredProjectList}/>
         </div>
     )
 }

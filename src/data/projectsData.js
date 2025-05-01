@@ -22,7 +22,7 @@ import chordsapi_logo from '../assets/images/projects/chordsapi_logo.png';
 
 const projectsData = [
     {
-        id: 1,
+        id: "gamer",
         name: "Gamer News Layout",
         description: "Proyecto de maquetación de un portal web de noticias de videojuegos. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
         date: "2024-08",
@@ -45,7 +45,7 @@ const projectsData = [
         video: null
     },
     {
-        id: 2,
+        id: "dev-agency",
         name: "Dev Agency Layout",
         description: "Proyecto de maquetación de la web de una agencia de desarollo web. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
         date: "2024-09",
@@ -68,7 +68,7 @@ const projectsData = [
         video: null
     },
     {
-        id: 3,
+        id: "cv-audiovisual",
         name: "CV Audiovisual",
         description: "Website con mi currículum audiovisual. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
         date: "2024-10",
@@ -91,7 +91,7 @@ const projectsData = [
         video: null
     },
     {
-        id: 4,
+        id: "alday-es",
         name: "Mi web Musical",
         description: "Mi website como artista musical. Realizado con HTML, CSS y JavaScript y creado en el contexto de mis estudios oficiales de 'Desarrollo de aplicaciones Web'.",
         date: "2024-11",
@@ -114,7 +114,7 @@ const projectsData = [
         video: null
     },
     {
-        id: 5,
+        id: "pokemon-game",
         name: "Pokemon Game App",
         description: "Aplicación creada con React que consiste en un juego de pokemon donde puedes registrarte y ganar pokeballs al cazar pokemons y cumplir hitos. Creada con React, utilizando FireBase Auth para gestionar la autenticación y FireStore para la base de datos.",
         date: "2025-01",
@@ -137,7 +137,7 @@ const projectsData = [
         video: "https://youtu.be/MxDscYjcJKU?si=ApWAEuw926NKNoYU"
     },
     {
-        id: 6,
+        id: "musikos",
         name: "Musikos App",
         description: "Versión beta de 'Musikos', una aplicación full stack creada para conectar músicos entre sí. En ella puedes buscarlos, filtrar por estilo, instrumento, ubicación, edad y nombre. También puedes crear tu cuenta para que otros músicos afines te encuentren.",
         date: "2025-03",
@@ -164,7 +164,7 @@ const projectsData = [
         video: "https://youtu.be/hBbSiVGH7nQ?si=mO9WE-1Yw_EDZi0t"
     },
     {
-        id: 7,
+        id: "chords",
         name: "Chords API",
         description: "API Rest pública y gratuita. Pensada para desarrolladores que están empezando a hacer sus primeras peticiones (fetch, axios) y que, además, les gusta la música. Totalmente desplegada, vistas servidas desde el backend, documentación en inglés con Swagger y JSDoc.",
         date: "2025-04",
