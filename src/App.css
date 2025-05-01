@@ -12,7 +12,7 @@
 
 .App__header::after {
   background-color: #071A28;
-  opacity: 1;
+  opacity: 0;
   content: "";
   position: absolute;
   top: 0;

@@ -27,9 +27,9 @@
     background-image: url("../../assets/images/background.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; /* Mantiene la proporción sin recortar */
+    background-size: cover; /* Mantiene la proporción sin recortar */
     
-    animation: bg-popin 1s 1s ease-out both, bg-animation 20s 1s ease-in-out infinite;
+    animation: bg-popin 1s ease-out both, bg-animation 20s 1s ease-in-out infinite;
     pointer-events: none; /* Para evitar que interfiera con el contenido encima */
 
     scale: 1.2;
@@ -56,7 +56,7 @@
 
 @keyframes bg-popin {
     0%{
-        transform: scaleX(3);
+        transform: scaleX(5);
     }90%{
         transform: scaleX(0.5) skew(500px) perspective(600px);
     }100%{

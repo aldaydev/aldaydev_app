@@ -7,10 +7,11 @@
 .headerLinks__pageLink{
     transform: translateY(2px);
     position: relative;
-    height: 105%;
-    font-weight: 800;
-    font-size: 1rem;
-    color: black;
+    height: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    color: var(--color-white);
     display: flex;
     align-items: center;
     text-shadow: none;
@@ -115,6 +116,10 @@
 .headerLinks__icon{
     width: 28px;
     height: 28px;
+}
+
+.headerLinks__icon--github{
+    width: 35px;
 }
 
 @media screen and (max-width: 1440px) {

@@ -45,7 +45,7 @@ function HeaderLinks ( {isOpen, isCollapsed}) {
             <ul className='headerLinks__social'>
                 <li className='headerLinks__socialItem'>
                     <a href='https://github.com/aldaydev' target='_blank' rel="noopener noreferrer" aria-label="Visitar GitHub" title="Visitar GitHub" className='headerLinks__socialLink' tabIndex={tabIndex}>
-                        <img src={github_icon} className='headerLinks__icon' alt="Icono de Github"/>
+                        <img src={github_icon} className='headerLinks__icon headerLinks__icon--github' alt="Icono de Github"/>
                     </a>
                 </li>
                 
