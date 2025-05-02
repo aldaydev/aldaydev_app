@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 3 - 02-05-2025 - combinated filters running
+Sprint 3 - 02-05-2025 - working on project cards
 
 
 ## Sprint 3
