@@ -13,15 +13,16 @@ function ProyectList ({ filteredProjectList }) {
                     filteredProjectList && filteredProjectList.map((project, index) => {
                         return(
                             <a href="#" key={index} className="projectList__project">
-
-                                    <figure className="project__imageContainer">
-                                        <img 
-                                            src={!resizeImages ? project.img.desktop : project.img.mobile}
-                                            className="project__image"
-                                        />
-                                    </figure>
+                                <div className="project__bg"/>
+                                <figure className="project__imageContainer">
+                                    <img 
+                                        src={!resizeImages ? project.img.desktop : project.img.mobile}
+                                        className="project__image"
+                                    />
+                                </figure>
                                 
-                                <h3>{project.name}</h3>
+
+                                <h3 className="project__title">{project.name}</h3>
                             </a>
                             
                         )

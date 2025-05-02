@@ -2,7 +2,7 @@ import AnimatedTitle from "../../components/AnimatedTitle/AnimatedTitle";
 
 function Videos () {
     return (
-        <div>
+        <div className="pageContainer videos">
             <AnimatedTitle
                 initialText='A'
                 finalText='ldayDev'

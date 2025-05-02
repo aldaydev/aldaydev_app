@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 3 - 01-05-2025 - combinated filters running
+Sprint 3 - 02-05-2025 - combinated filters running
 
 
 ## Sprint 3
@@ -10,6 +10,10 @@ Objetivos:
 * Sección proyectos:
        - Creación componente ProjectsFilter (filtros combinados)
        - Creación de componente ProjectsList
+       - Creación de componente ProyectsOrganizer
+
+* Rebranding:
+       - Replanteamiento de la imagen de marca
 
 ## Sprint 2
 

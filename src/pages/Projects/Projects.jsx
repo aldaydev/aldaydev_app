@@ -60,7 +60,7 @@ function Projects () {
                     color="var(--color-white)"
                 />
             <section>
-            <h3>En esta sección podrás encontrar mis proyectos. Puedes filtrarlos eligiendo una o varias tecnologías y te aparecerán lo que las utilizan. </h3>
+            <h3 className='projects__subtitle'>Busca en mis proyectos filtrando por tecnologías </h3>
             </section>
             <ProjectFilters 
                 setSelectedTechFilters={setSelectedTechFilters} 
