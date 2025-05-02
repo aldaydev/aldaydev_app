@@ -119,7 +119,8 @@
 }
 
 .headerLinks__icon--github{
-    width: 35px;
+    width: 28px;
+    height: auto;
 }
 
 @media screen and (max-width: 1440px) {
@@ -127,6 +128,11 @@
     .headerLinks__icon{
         width: 25px;
         height: 25px;
+    }
+
+    .headerLinks__icon--github{
+        width: 25px;
+        height: auto;
     }
 
     .headerLinks__pageLink{

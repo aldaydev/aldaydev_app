@@ -41,6 +41,7 @@
 }
 
 .headerLogo__link--collapsed:hover {
+    color: var(--color-white);
     width: 60px;
     transition: width .5s ease-in-out, color 0.7s ease-in-out;
 }
@@ -93,8 +94,10 @@
     transition: padding .3s ease-in-out;
 }
 
-@media screen and (max-width: 1440px){
+
+@media screen and (max-width: 1024px){
+
     .headerLogo__link {
-        scale: .9;
+        scale: 1.1;
     }
 }

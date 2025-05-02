@@ -50,10 +50,12 @@ function Header() {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
             const navbar = document.querySelector(".App__header");
-    
+
+            setIsOpen(false);
+
             if (scrollTop > 0) {
                 navbar.classList.add("App__header--scroll");
-            } else {
+            } else if(scrollTop === 0) {
                 navbar.classList.remove("App__header--scroll");
             }
 
@@ -61,7 +63,7 @@ function Header() {
     
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [window.scrollY]);
 
     useEffect(() => {
         const navbar = document.querySelector(".App__header");

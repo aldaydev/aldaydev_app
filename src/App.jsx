@@ -24,6 +24,7 @@ function App() {
           <Route path="/curriculum" element={<h1>Curriculum</h1>} />
           <Route path="/sobre-mi" element={<h1>Sobre mí</h1>} />
         </Routes>
+        
       </main>
       <Footer/>
     </Router>

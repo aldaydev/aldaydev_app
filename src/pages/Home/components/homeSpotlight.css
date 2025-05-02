@@ -80,7 +80,7 @@
 .spotlight__title{
     margin-top: 10px;
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 300;
     word-spacing: 3px;
     color: var(--color-yellow);
     animation: fade-in 1s ease-in-out 1.2s both;
