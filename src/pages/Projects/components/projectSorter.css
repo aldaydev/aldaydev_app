@@ -1,0 +1,36 @@
+.projectSorter{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+    color: var(--color-white);
+}
+
+.projectSorter__title{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.projectSorter__sorters{
+    display: flex;
+    gap: 10px;
+}
+
+.projectSorter__sorter{
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    /* outline: 1px solid rgba(255, 255, 255, 0.212); */
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.212);
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.projectSorter__sorter:hover{
+    background-color: var(--color-white);
+    color: var(--color-blue-dark);
+}

@@ -1,7 +1,8 @@
 .projectFilters{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 35px;
 }
 
 .techFilters{
@@ -10,7 +11,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 50px;
+    column-gap: 5vw;
     row-gap: 40px;
 }
 

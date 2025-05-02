@@ -6,6 +6,7 @@ import ProjectFilters from './components/ProjectFilters.jsx';
 import projectsData from "../../data/projectsData.js";
 
 import ProyectList from './components/projectList.jsx';
+import ProjectSorter from './components/ProjectSorter.jsx';
 
 
 function Projects () {
@@ -68,6 +69,7 @@ function Projects () {
                 setSelectedOtherFilters={setSelectedOtherFilters}
                 selectedOtherFilters={selectedOtherFilters}
             />
+            <ProjectSorter/>
             <ProyectList filteredProjectList={filteredProjectList}/>
         </div>
     )
