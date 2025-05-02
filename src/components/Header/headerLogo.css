@@ -37,12 +37,12 @@
 .headerLogo__link:hover {
     color: var(--color-yellow);
     width: 179px;
-    transition: width .5s ease-in-out, color .5s .1s ease-in-out;
+    transition: width .5s ease-in-out, color 1s .5s ease-in-out;
 }
 
 .headerLogo__link--collapsed:hover {
     width: 60px;
-    transition: width .5s ease-in-out, color .5s .2s ease-in-out;
+    transition: width .5s ease-in-out, color 0.7s ease-in-out;
 }
 
 .headerLogo__textContainer{
@@ -91,4 +91,10 @@
 .headerLogo__link:hover .headerLogo__braceRight{
     padding-left: 6px;
     transition: padding .3s ease-in-out;
+}
+
+@media screen and (max-width: 1440px){
+    .headerLogo__link {
+        scale: .9;
+    }
 }

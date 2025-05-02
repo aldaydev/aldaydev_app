@@ -14,9 +14,9 @@
     overflow: hidden;
 }
 
-.projects::after {
+/* .projects::after {
     content: "";
-    position: fixed; /* Se queda fija en pantalla */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -27,13 +27,13 @@
     background-image: url("../../assets/images/background.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; /* Mantiene la proporción sin recortar */
+    background-size: cover;
     
     animation: bg-popin 1s ease-out both, bg-animation 20s 1s ease-in-out infinite;
-    pointer-events: none; /* Para evitar que interfiera con el contenido encima */
+    pointer-events: none;
 
     scale: 1.2;
-}
+} */
 
 /* .projects::after{
     content: "";
@@ -71,7 +71,6 @@
         transform: scaleX(1.05) scaleY(1.1) skew(0, 0) perspective(1200px);
     }100%{
         transform: scaleX(1) skew(100px, 500px) perspective(600px);
-        transform:
     }
 }
 

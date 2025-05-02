@@ -6,7 +6,8 @@
     transition: display .3s ease-in-out;
     position: relative;
     z-index: 1000;
-    transform: scale(.9);
+    transform: scale(.95);
+    margin-bottom: 2px;
 }
 
 .menuToggle__container:focus-visible{
