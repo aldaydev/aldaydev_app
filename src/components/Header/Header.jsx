@@ -11,27 +11,25 @@ function Header() {
 
     const { width } = useWindowSize();
     const isCollapsed = width <= 1024;
-    const [ isOpen, setIsOpen ] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const navbarRef = useRef(null);
     const toggleRef = useRef(null);
-
     const location = useLocation();
 
-    useEffect(()=>{
-        if(isCollapsed && isOpen){
+    useEffect(() => {
+        if (isCollapsed && isOpen) {
             setIsOpen(false);
             document.activeElement.blur();
             document.body.focus();
         }
-        
-    },[location.pathname])
+    }, [location.pathname])
 
     //If click
-    useEffect(()=>{
+    useEffect(() => {
         function handleClickOutside(event) {
             if (
                 isOpen && navbarRef.current && !navbarRef.current.contains(event.target) &&
-                toggleRef.current && !toggleRef.current.contains(event.target))  {
+                toggleRef.current && !toggleRef.current.contains(event.target)) {
                 setIsOpen(false);
             }
         }
@@ -44,9 +42,25 @@ function Header() {
     });
 
     //Each time width changes we close navbar if open
-    useEffect(()=>{
+    useEffect(() => {
         isOpen && setIsOpen(false)
-    },[width])
+    }, [width]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            const navbar = document.querySelector(".App__header");
+    
+            if (scrollTop > 0) {
+                navbar.classList.add("App__header--scroll");
+            } else {
+                navbar.classList.remove("App__header--scroll");
+            }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
         <header className="App__header">
@@ -55,23 +69,23 @@ function Header() {
 
                 <HeaderLogo isCollapsed={isCollapsed} />
 
-                {isCollapsed && 
-                <MenuToggle 
-                    isOpen={isOpen}
-                    setIsOpen={setIsOpen}
-                    ref={toggleRef}
-                    tabIndex={isCollapsed ? 0 : -1}
-                    aria-expanded={isOpen}
-                />
+                {isCollapsed &&
+                    <MenuToggle
+                        isOpen={isOpen}
+                        setIsOpen={setIsOpen}
+                        ref={toggleRef}
+                        tabIndex={isCollapsed ? 0 : -1}
+                        aria-expanded={isOpen}
+                    />
                 }
 
-                <nav 
-                    ref={navbarRef} 
+                <nav
+                    ref={navbarRef}
                     className={`header__navbar ${(isCollapsed && isOpen) ? "header__navbar--open" : "header__navbar--close"}`}
                     aria-hidden={isCollapsed && !isOpen}
                 >
 
-                    <HeaderLinks isOpen={isOpen} setIsOpen={setIsOpen} isCollapsed={isCollapsed}/>
+                    <HeaderLinks isOpen={isOpen} setIsOpen={setIsOpen} isCollapsed={isCollapsed} />
 
                 </nav>
             </div>

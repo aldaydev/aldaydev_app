@@ -10,8 +10,10 @@ import Footer from './components/Footer/Footer.jsx';
 import Home from './pages/Home/Home.jsx';
 import Projects from './pages/Projects/Projects.jsx';
 import Videos from './pages/Videos/Videos.jsx';
+import { useEffect } from 'react';
 
 function App() {
+
 
   return (
     <Router>
