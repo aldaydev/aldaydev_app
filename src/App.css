@@ -30,7 +30,7 @@
 }
 
 .App__header::before {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(7px);
   opacity: 1;
   overflow: hidden;
   content: "";
@@ -44,7 +44,7 @@
 
   animation: scroll-header-blur linear;
   animation-timeline: scroll();
-  animation-range: entry 0% cover 30%;
+  animation-range: entry 0% cover 10%;
 }
 
 @keyframes scroll-header-op {
@@ -63,7 +63,7 @@
   }
   to {
     opacity: 1;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
   }
 }
 
@@ -72,6 +72,7 @@
   /* border-top: 1px solid transparent; */
   background-color: var(--color-white);
   min-height: calc(100dvh - 62px);
+  min-height: 100dvh;
   z-index: 0;
 }
 
