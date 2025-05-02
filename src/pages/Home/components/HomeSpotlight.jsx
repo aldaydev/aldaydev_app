@@ -13,7 +13,7 @@ function HomeSpotlight () {
                 headingLevel = "h2"
                 initialText="A"
                 finalText="ldayDev"
-                id="spot__animatedTitle"
+                id="page__animatedTitle"
             />
             <section className="spotlight__section">
 

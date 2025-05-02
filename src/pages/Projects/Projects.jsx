@@ -7,8 +7,6 @@ import projectsData from "../../data/projectsData.js";
 
 import ProyectList from './components/projectList.jsx';
 
-import background from '../../assets/images/background.svg';
-
 
 function Projects () {
 
@@ -52,7 +50,6 @@ function Projects () {
 
     return(
         <div className='pageContainer projects'>
-            <header className='projects__header'>
                 <AnimatedTitle 
                     headingLevel = "h1"
                     initialText="P"
@@ -62,7 +59,6 @@ function Projects () {
                     braceSize="3.4rem"
                     color="var(--color-white)"
                 />
-            </header>
             <section>
             <h3>En esta sección podrás encontrar mis proyectos. Puedes filtrarlos eligiendo una o varias tecnologías y te aparecerán lo que las utilizan. </h3>
             </section>
