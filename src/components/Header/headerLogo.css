@@ -30,7 +30,7 @@
     left: -7px;
     right: -5px;
     bottom: -10px;
-    border: 2px solid var(--color-blue-dark); /* Contorno con aire */
+    border: 2px solid var(--color-white); /* Contorno con aire */
     border-radius: 8px;
 }
 

@@ -22,8 +22,8 @@
 
 .App__header::after {
   height: 70px;
-  background-color: #071A28;
-  box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.267);
+  background-color: var(--color-blue-dark);
+  /* box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.267); */
   z-index: 900;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .App__header--scroll::after {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .App__header--scroll::before{

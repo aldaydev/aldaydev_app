@@ -56,11 +56,22 @@ function Header() {
             } else {
                 navbar.classList.remove("App__header--scroll");
             }
+
         };
     
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    useEffect(() => {
+        const navbar = document.querySelector(".App__header");
+    
+        if (isOpen) {
+            navbar.classList.add("App__header--scroll");
+        } else if (window.scrollY === 0) {
+            navbar.classList.remove("App__header--scroll");
+        }
+    }, [isOpen]);
 
     return (
         <header className="App__header">

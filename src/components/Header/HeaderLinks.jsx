@@ -1,6 +1,6 @@
 import './headerLinks.css';
 
-import github_icon from '../../assets/icons/social-icons/github_icon.svg';
+import github_icon from '../../assets/icons/social-icons/github_icon.png';
 import linkedin_icon from '../../assets/icons/social-icons/linkedin_icon.svg';
 import youtube_icon from '../../assets/icons/social-icons/youtube_icon.svg';
 import envelope_icon from '../../assets/icons/social-icons/envelope_icon.svg';
