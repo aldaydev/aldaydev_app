@@ -1,7 +1,6 @@
 # AldayDev App
 
-Sprint 3 - 02-05-2025 - working on prject sorters
-
+Sprint 3 - 03-05-2025 - filter and order combined
 
 ## Sprint 3
 

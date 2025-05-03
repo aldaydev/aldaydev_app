@@ -141,7 +141,7 @@ const projectsData = [
         name: "Musikos App",
         description: "Versión beta de 'Musikos', una aplicación full stack creada para conectar músicos entre sí. En ella puedes buscarlos, filtrar por estilo, instrumento, ubicación, edad y nombre. También puedes crear tu cuenta para que otros músicos afines te encuentren.",
         date: "2025-03",
-        rate: 8,
+        rate: 9,
         documentation: true,
         testing: true,
         technologies: ["react", "node", "express", "mongodb", "mysql", "reactrouter", "nodemon", "bcrypt", "cors", "cookieparser", "dotenv", "jsdoc", "jwt", "mongoose", "nodemailer", "sequelize", "mongoose", "swagger", "winston", "jest", "selenium", "cypress", "vite", "dotenv", "html", "css", "javascript"],

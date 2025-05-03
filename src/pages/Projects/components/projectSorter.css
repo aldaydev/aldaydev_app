@@ -1,14 +1,23 @@
 .projectSorter{
-    margin-top: 40px;
+    margin: 50px 72px 0 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
+    color: var(--color-white);
+
+    position: relative;
+}
+
+.projectSorter__sortBy{
     display: flex;
     justify-content: center;
     align-items: baseline;
     gap: 15px;
-    color: var(--color-white);
 }
 
 .projectSorter__title{
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 300;
 }
 
@@ -27,10 +36,30 @@
     padding: 8px 25px;
     border-radius: 5px;
     cursor: pointer;
-    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    transition: color .2s ease-in-out, border .2s ease-in-out, box-shadow .2s ease-in-out;
+
+    display: flex;
+    align-items: center;
 }
 
 .projectSorter__sorter:hover{
-    background-color: var(--color-white);
-    color: var(--color-blue-dark);
+    border: 1px solid var(--color-yellow-trans);
+    box-shadow: 2px 2px 5px var(--color-yellow-trans);
+    color: var(--color-yellow);
+}
+
+.projectSorter__sorter--checked{
+    border: 1px solid var(--color-yellow-trans);
+    box-shadow: 2px 2px 5px var(--color-yellow-trans);
+    color: var(--color-yellow);
+}
+
+.projectSorter__order{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.projectSorter__orderCheckbox{
+    display: none;
 }

@@ -21,7 +21,11 @@ function ProyectList ({ filteredProjectList }) {
                                 />
                             </figure>
                             
-                            <h3 className="project__title">{project.name}</h3>
+                            <div className="project__data">
+                                <h3 className="project__title">{project.name}</h3>
+                                <h3 className="project__date">{project.date}</h3>
+                            </div>
+                            
                         </a>
                         
                     )

@@ -11,31 +11,78 @@ import ProjectSorter from './components/ProjectSorter.jsx';
 
 function Projects () {
 
+    const initialProjectList = projectsData.sort((a, b) => b.rate - a.rate);
+
+    const [selectedSorter, setSelectedSorter] = useState({
+        sortBy: "rate",
+        order: "desc"
+    });
     const [selectedTechFilters, setSelectedTechFilters] = useState([]);
     const [selectedOtherFilters, setSelectedOtherFilters] = useState([]);
-    const [filteredProjectList, setFilteredProjectList] = useState(projectsData);
+
+    const [filteredProjectList, setFilteredProjectList] = useState(initialProjectList);
 
     useEffect(()=>{
         console.log('selectedTechFilters', selectedTechFilters);
     }, [selectedTechFilters]);
 
     useEffect(()=>{
-        console.log('testiongAndVanilla', selectedOtherFilters);
+        console.log('Other filters', selectedOtherFilters);
     }, [selectedOtherFilters]);
+
+    useEffect(()=>{
+        console.log('Selected Sorter', selectedSorter);
+    }, [selectedSorter]);
 
     useEffect(()=>{
         console.log('Listado de proyectos', filteredProjectList);
     }, [filteredProjectList]);
 
-    useEffect(() => {
+    // useEffect(()=>{
+    //     orderProjectList();
+    // }, []);
 
-        if(filteredProjectList !== projectsData){
-            console.log('El listado de proyectos es distinto');
-            setFilteredProjectList(projectsData);
+    const orderProjects = (arr) => {
+
+        let newArray = [...arr];
+
+        if(selectedSorter.sortBy === 'rate'){
+            if(selectedSorter.order === 'asc'){
+                newArray.sort((a, b) => {
+                    return a.rate - b.rate;
+                });
+            }else if(selectedSorter.order === 'desc'){
+                newArray.sort((a, b) => {
+                    return b.rate - a.rate;
+                });
+            }
+        }else if(selectedSorter.sortBy === 'date'){
+            if(selectedSorter.order === 'asc'){
+                newArray.sort((a, b) => {
+                    return new Date(a.date) - new Date(b.date);
+                });
+            }else if(selectedSorter.order === 'desc'){
+                newArray.sort((a, b) => {
+                    return new Date(b.date) - new Date(a.date);
+                });
+            }
         }
 
+        return newArray;
+
+    }
+
+    useEffect(() => {
+        const changeOrder = orderProjects(filteredProjectList);
+        setFilteredProjectList(changeOrder);
+    }, [selectedSorter])
+
+    useEffect(() => {
+
+        let arrayToFilter = initialProjectList;
+
         if(selectedOtherFilters.length > 0 || selectedTechFilters.length > 0){
-            const filteredProjects = projectsData.filter((project) => {
+            const filteredProjects = arrayToFilter.filter((project) => {
                 if(selectedOtherFilters.length > 0){
                     return selectedOtherFilters.every(filtro => project[filtro]);
                 }
@@ -44,7 +91,12 @@ function Projects () {
                 }
             });
 
-            setFilteredProjectList(filteredProjects);
+            const mantainOrder = orderProjects(filteredProjects);
+            setFilteredProjectList(mantainOrder);
+            // setFilteredProjectList(filteredProjects);
+        }else{
+            const mantainOrder = orderProjects(arrayToFilter);
+            setFilteredProjectList(mantainOrder);
         }
 
     }, [selectedTechFilters, selectedOtherFilters])
@@ -69,7 +121,7 @@ function Projects () {
                 setSelectedOtherFilters={setSelectedOtherFilters}
                 selectedOtherFilters={selectedOtherFilters}
             />
-            <ProjectSorter/>
+            <ProjectSorter selectedSorter={selectedSorter} setSelectedSorter={setSelectedSorter}/>
             <ProyectList filteredProjectList={filteredProjectList}/>
         </div>
     )
