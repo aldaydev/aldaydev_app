@@ -59,13 +59,18 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
                             key={index}
                             className='techFilters__techFilter'
                             title={techFilter.name}
+                            htmlFor={techFilter.id}
+                            
                         >
                             <input
                                 type='checkbox'
                                 className='techFilter__checkbox'
                                 checked={selectedTechFilters.includes(techFilter.id)}
                                 onChange={() => handleTechFilters(techFilter)}
+                                id={techFilter.id}
+                                tabIndex={0}
                             />
+                            <span class="techFilter__icon"></span>
                             <img
                                 src={techFilter.icon}
                                 className='techFilter__image'
@@ -84,15 +89,18 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
             >
                 {otherFilters && otherFilters.map((otherFilter, index) => {
                     return (
-                        <label key={index} className='otherFilters__otherFilter'>
+                        <label key={index} className='otherFilters__otherFilter' htmlFor={otherFilter.id} >
                             <input
                                 type="checkbox"
                                 name='vanillaOrTesting'
                                 value={otherFilter.id}
+                                id={otherFilter.id}
                                 className='otherFilter__checkbox'
                                 checked={selectedOtherFilters.includes(otherFilter.id)}
                                 onChange={() => handleOtherFilters(otherFilter)}
+                                tabIndex={0}
                             />
+                            <span class="otherFilter__icon"></span>
                             <img
                                 src={otherFilter.icon}
                                 className='otherFilter__image'
