@@ -17,7 +17,7 @@ function ProyectList ({ filteredProjectList }) {
                             <figure className="project__imageContainer">
                                 <img 
                                     src={!resizeImages ? project.img.desktop : project.img.mobile}
-                                    className="project__image"
+                                    className={!resizeImages ? "project__image" : "project__image--mobile"}
                                 />
                             </figure>
                             

@@ -11,7 +11,7 @@
     position: relative;
     z-index: 0;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .projects__subtitle{

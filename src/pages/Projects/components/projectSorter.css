@@ -88,3 +88,17 @@
     outline: 1px solid var(--color-white);
     border-radius: 5px;
 }
+
+@media screen and (max-width: 1440px) {
+
+    .projectSorter {
+        margin: 50px 20px 0 20px;
+        display: flex
+    ;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 15px;
+        color: var(--color-white);
+        position: relative;
+    }
+}

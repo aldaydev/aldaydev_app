@@ -182,6 +182,16 @@
 }
 
 
-/* .otherFilter__checkbox{
-    display: none;
-} */
+@media screen and (max-width: 1024px) {
+    .techFilters__techFilter {
+        flex: 0 1 30%;
+        max-width: 60px;
+        min-width: 60px;
+    }
+
+    .techFilter__image {
+        position: relative;
+        width: 60px;
+        /* transition: scale .2s ease-in-out; */
+    }
+}

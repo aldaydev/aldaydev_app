@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 3 - 03-05-2025 - filter and order combined
+Sprint 3 - 03-05-2025 - working on responsive project list
 
 ## Sprint 3
 
