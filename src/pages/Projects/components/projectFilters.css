@@ -186,12 +186,33 @@
     .techFilters__techFilter {
         flex: 0 1 30%;
         max-width: 60px;
-        min-width: 60px;
+        min-width: 50px;
     }
 
     .techFilter__image {
         position: relative;
-        width: 60px;
+        width: 50px;
         /* transition: scale .2s ease-in-out; */
     }
 }
+
+/* @media screen and (max-width: 776px) {
+
+    .techFilters {
+        column-gap: 4vw;
+        row-gap: 40px;
+    }
+
+    .techFilters__techFilter {
+        max-width: 80px;
+        min-width: 80px;
+
+        font-size: 0.75rem;
+    }
+
+    .techFilter__image {
+        width: 60px;
+        /* transition: scale .2s ease-in-out; */
+    }
+
+} */
