@@ -2,7 +2,7 @@
 import './App.css';
 
 //React imports
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
 
 //Component imports
 import Header from './components/Header/Header.jsx';
@@ -10,11 +10,21 @@ import Footer from './components/Footer/Footer.jsx';
 import Home from './pages/Home/Home.jsx';
 import Projects from './pages/Projects/Projects.jsx';
 import Videos from './pages/Videos/Videos.jsx';
+import { useEffect } from 'react';
 
 function App() {
 
+  const {pathname} = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, [pathname]);
+
   return (
-    <Router>
+    <>
       <Header/>
       <main className='App__main'>
         <Routes>
@@ -26,7 +36,7 @@ function App() {
         </Routes>
       </main>
       <Footer/>
-    </Router>
+    </>
   )
 }
 

@@ -63,13 +63,15 @@ function ProjectSorter ( { selectedSorter, setSelectedSorter }) {
                 </div>
             </div>
 
-            <label className='projectSorter__order'>
+            <label className='projectSorter__order' htmlFor='orderCheckbox'>
                     <input 
                         type='checkbox' 
                         checked={selectedSorter.order === 'asc'}
                         onChange={handleOrder}
                         className='projectSorter__orderCheckbox'
+                        id='orderCheckbox'
                     />
+                    <span className='projectSorter__icon'></span>
                     <p className='projectSorter__orderText'>{selectedSorter.order === 'asc' ? 'A-Z' : 'Z-A'}</p>
                     <img 
                         src={selectedSorter.order === 'asc' ? downarrow_icon : uparrow_icon}
