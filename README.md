@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 4 - 04-05-2025 - projects accesibility
+Sprint 4 - 04-05-2025 - working on video selector
 
 ## Sprint 4
 
