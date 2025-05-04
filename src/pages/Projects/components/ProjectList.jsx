@@ -12,7 +12,12 @@ function ProyectList ({ filteredProjectList }) {
             {
                 filteredProjectList && filteredProjectList.map((project, index) => {
                     return(
-                        <a href="#" key={index} className="projectList__project">
+                        <a 
+                            href={project.deployed ? project.deployed : project.github[1].url} 
+                            target="_blank"
+                            key={index} 
+                            className="projectList__project"
+                        >
                             <div className="project__bg"/>
                             <figure className="project__imageContainer">
                                 <img 

@@ -1,18 +1,19 @@
 # AldayDev App
 
-Sprint 3 - 03-05-2025 - working on responsive project list
+Sprint 3 - 04-05-2025 - first version of projects finalized
 
 ## Sprint 3
 
 Objetivos:
 
-* Sección proyectos:
-       - Creación componente ProjectsFilter (filtros combinados)
-       - Creación de componente ProjectsList
-       - Creación de componente ProyectsOrganizer
-
 * Rebranding:
        - Replanteamiento de la imagen de marca
+
+* Sección proyectos:
+       - Creación componente ProjectFilter (filtros combinados)
+       - Creación de componente ProjecsList
+       - Creación de componente ProyectSorter
+       - Primera versión finalizada
 
 ## Sprint 2
 

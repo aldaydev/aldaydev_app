@@ -93,12 +93,22 @@
 
     .projectSorter {
         margin: 50px 20px 0 20px;
-        display: flex
-    ;
+        display: flex;
         justify-content: space-between;
         align-items: baseline;
         gap: 15px;
         color: var(--color-white);
         position: relative;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .projectSorter h4 {
+        display: none;
+    }
+
+    .projectSorter__sorter{
+        padding: 5px 10px;
     }
 }

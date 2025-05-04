@@ -196,23 +196,75 @@
     }
 }
 
-/* @media screen and (max-width: 776px) {
+@media screen and (max-width: 767px) {
 
-    .techFilters {
-        column-gap: 4vw;
-        row-gap: 40px;
+    .projectFilters{
+        gap: 35px;
+    }
+
+    .techFilters{
+        column-gap: 25px;
+        row-gap: 30px;
     }
 
     .techFilters__techFilter {
-        max-width: 80px;
-        min-width: 80px;
+        flex-basis: 20%;
+        max-width: 40px;
+        min-width: 40px;
+    }
 
-        font-size: 0.75rem;
+    .techFilters__techFilter > span{
+        display: none;
     }
 
     .techFilter__image {
-        width: 60px;
+        position: relative;
+        width: 50px;
         /* transition: scale .2s ease-in-out; */
     }
 
-} */
+    .otherFilters{
+        gap: 25px;
+    }
+
+    .otherFilters__otherFilter{
+        font-size: 0.8rem;
+    }
+
+    .otherFilter__image{
+        width: 25px;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+
+    .techFilters{
+        column-gap: 3.5dvw;
+        row-gap: 30px;
+    }
+
+    .techFilters__techFilter {
+        flex-basis: 30%;
+        max-width: 60px;
+        min-width: 40px;
+    }
+
+}
+
+@media screen and (max-width: 340px){
+
+    .techFilters__techFilter {
+        flex-basis: 30%;
+        max-width: 50px;
+        min-width: 30px;
+    }
+
+    .otherFilters__otherFilter{
+        font-size: 0.8rem;
+    }
+
+    .otherFilter__image{
+        width: 20px;
+    }
+}

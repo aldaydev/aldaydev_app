@@ -86,3 +86,12 @@
         transform: scaleX(1) skew(100px, 500px) perspective(600px);
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .projects__subtitle{
+
+        font-size: 1.2rem;
+        font-weight: 300;
+    
+    }
+}

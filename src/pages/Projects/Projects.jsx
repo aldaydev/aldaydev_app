@@ -113,7 +113,7 @@ function Projects () {
                     color="var(--color-white)"
                 />
             <section>
-            <h3 className='projects__subtitle'>Busca en mis proyectos filtrando por tecnologías </h3>
+            <h3 className='projects__subtitle'>Busca filtrando por tecnologías </h3>
             </section>
             <ProjectFilters 
                 setSelectedTechFilters={setSelectedTechFilters} 

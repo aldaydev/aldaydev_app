@@ -44,7 +44,7 @@ function ProjectSorter ( { selectedSorter, setSelectedSorter }) {
         <section className="projectSorter">
 
             <div className='projectSorter__sortBy'>
-                <h4 className="projectSorter__title">Ordenar por:</h4>
+                <h4 className="projectSorter__title">Ordenar:</h4>
                 <div className='projectSorter__sorters'>
                     {
                         sorters && sorters.map((sorter, index) => {
