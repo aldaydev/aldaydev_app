@@ -4,6 +4,12 @@
   --color-white: #fffffa;
   --color-white-contrast: white;
   --color-blue-dark: #071A28;
+  --color-blue-medium: #003649;
+  --color-blue-light: #003649;
+  --color-green-dark: #004B5B;
+  --color-green-medium: #006168;
+  --color-green-light: #00776F;
+  --color-green-lighter: #008C70;
 }
 
 :root {
@@ -37,6 +43,12 @@ body {
   padding: 0;
 }
 
+button{
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
 a {
   text-decoration: none;
   display: block;
@@ -51,7 +63,7 @@ ul, li{
   list-style: none;
 }
 
-h1, h2 {
+h1 {
   all: unset;
 }
 

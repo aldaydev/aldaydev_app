@@ -10,7 +10,7 @@ function HomeSpotlight () {
     return(
         <header className="home__spotlight">
             <AnimatedTitle 
-                headingLevel = "h2"
+                headingLevel = "h3"
                 initialText="A"
                 finalText="ldayDev"
                 id="page__animatedTitle"
