@@ -196,28 +196,31 @@
     padding: 0 80px;
   }
 
+}
+
+@media screen and (max-width: 1024px) {
   .pageContainer::after {
     background-image: url("./assets/images/background_1x1.svg");
-    scale: 1.2;
+    /* scale: 1.2; */
   }
 
   @keyframes bg-popin {
     0%{
-        transform: scaleX(20);
+        transform: scaleX(10);
     }90%{
         transform: scaleX(0.5) skew(500px) perspective(600px);
     }100%{
-        transform: scaleX(1.5) skew(100px) perspective(200px);
+        transform: scaleX(1) skew(100px) perspective(200px);
     }
   }
   
   @keyframes bg-animation {
     0%{
-        transform: scaleX(1.5) scaleX(1) skew(100px, 100px) perspective(600px);
+        transform: scaleX(1) scaleX(1) skew(100px, 100px) perspective(600px);
     }50%{    
-        transform: scaleX(3) scaleY(1.1) skew(0, 0) perspective(1200px);
+        transform: scaleX(1.15) scaleY(1.1) skew(0, 0) perspective(1200px);
     }100%{
-        transform: scaleX(1.5) skew(100px, 500px) perspective(600px);
+        transform: scaleX(1) skew(100px, 500px) perspective(600px);
     }
   }
 }

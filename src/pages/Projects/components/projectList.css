@@ -8,6 +8,8 @@
     row-gap: 50px;
 
     padding-bottom: 10px;
+
+    animation: fade-in .5s ease-in-out 1.5s both;
 }
 
 /* .projectList{

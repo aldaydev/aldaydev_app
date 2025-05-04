@@ -86,16 +86,6 @@
     animation: fade-in 1s ease-in-out 1.2s both;
 }
 
-@keyframes fade-in {
-    from{
-        transform: translateY(10px);
-        opacity: 0;
-    }to{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 .spotlight__titleSeparator{
     text-wrap: nowrap;
     font-size: 1.4rem;

@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 4 - 04-05-2025 - sprint 4 initial commit
+Sprint 4 - 04-05-2025 - projects accesibility
 
 ## Sprint 4
 

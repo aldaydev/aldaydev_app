@@ -53,6 +53,7 @@ function ProjectSorter ( { selectedSorter, setSelectedSorter }) {
                                 key={index}
                                 className={sorter.class}
                                 onClick={()=> handelSelectedSorter(sorter.id)}
+                                title={`Ordenar por ${sorter.name} `}
                             >
                                 <p className='projectSorter__sorterTitle'>
                                     {sorter.name}
@@ -63,7 +64,11 @@ function ProjectSorter ( { selectedSorter, setSelectedSorter }) {
                 </div>
             </div>
 
-            <label className='projectSorter__order' htmlFor='orderCheckbox'>
+            <label 
+                className='projectSorter__order' 
+                htmlFor='orderCheckbox'
+                title={`Ordenar ${selectedSorter.order === 'asc' ? 'descendente' : 'ascendente'}`}
+            >
                     <input 
                         type='checkbox' 
                         checked={selectedSorter.order === 'asc'}

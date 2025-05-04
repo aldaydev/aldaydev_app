@@ -60,7 +60,6 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
                             className='techFilters__techFilter'
                             title={techFilter.name}
                             htmlFor={techFilter.id}
-                            
                         >
                             <input
                                 type='checkbox'
@@ -69,8 +68,9 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
                                 onChange={() => handleTechFilters(techFilter)}
                                 id={techFilter.id}
                                 tabIndex={0}
+                                aria-label={`Filtrar por ${techFilter.name}`}
                             />
-                            <span class="techFilter__icon"></span>
+                            <span className="techFilter__icon"></span>
                             <img
                                 src={techFilter.icon}
                                 className='techFilter__image'
@@ -83,24 +83,26 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
                 })}
             </article>
             <article
-                // htmlFor='vanillaOrTesting'
-                // onChange={(e) => handleTestingAndVanilla(e)}
                 className='otherFilters'
             >
                 {otherFilters && otherFilters.map((otherFilter, index) => {
                     return (
-                        <label key={index} className='otherFilters__otherFilter' htmlFor={otherFilter.id} >
+                        <label 
+                            key={index} 
+                            className='otherFilters__otherFilter' 
+                            htmlFor={otherFilter.id} 
+                            title={`Filtrar por ${otherFilter.name}`}
+                            aria-label={`Filtrar por ${otherFilter.name}`}
+                        >
                             <input
                                 type="checkbox"
-                                name='vanillaOrTesting'
-                                value={otherFilter.id}
                                 id={otherFilter.id}
                                 className='otherFilter__checkbox'
                                 checked={selectedOtherFilters.includes(otherFilter.id)}
                                 onChange={() => handleOtherFilters(otherFilter)}
                                 tabIndex={0}
                             />
-                            <span class="otherFilter__icon"></span>
+                            <span className="otherFilter__icon" style={{cursor: "pointer"}}></span>
                             <img
                                 src={otherFilter.icon}
                                 className='otherFilter__image'

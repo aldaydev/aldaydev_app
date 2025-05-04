@@ -17,6 +17,7 @@ function ProyectList ({ filteredProjectList }) {
                             target="_blank"
                             key={index} 
                             className="projectList__project"
+                            title={`Visitar proyecto ${project.name}`}
                         >
                             <div className="project__bg"/>
                             <figure className="project__imageContainer">
