@@ -31,6 +31,8 @@
     background-color: transparent;
     z-index: -10;
     opacity: 0;
+
+    transition: background-color .3s ease-in-out, opacity .3s ease-in-out;
 }
 
 .resumeHeader__navbarItem{

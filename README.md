@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 5 - 05-05-2025 - working on resume navbar
+Sprint 5 - 05-05-2025 - working on resume presentation section
 
 ## Sprint 5
 
@@ -9,6 +9,7 @@ Objetivos:
 Sección Currículum (Resume)
 * Disposición inicial sección currículum
 * Creación de navbar para Resume
+* Presentation section
 
 ## Sprint 4
 

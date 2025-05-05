@@ -1,6 +1,7 @@
 import './resume.css';
 
 import AnimatedTitle from "../../components/AnimatedTitle/AnimatedTitle";
+import ResumePresentation from './components/ResumePresentation';
 
 function Resume() {
 
@@ -48,7 +49,9 @@ function Resume() {
                 </nav>
             </header>
 
-
+            <section className='resume__content'>
+                <ResumePresentation/>
+            </section>
         </div>
     )
 }
