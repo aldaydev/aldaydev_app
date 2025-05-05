@@ -11,6 +11,7 @@ import Home from './pages/Home/Home.jsx';
 import Projects from './pages/Projects/Projects.jsx';
 import Videos from './pages/Videos/Videos.jsx';
 import { useEffect } from 'react';
+import Resume from './pages/Resume/Resume.jsx';
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/proyectos" element={<Projects/>} />
           <Route path="/videos" element={<Videos/>} />
-          <Route path="/curriculum" element={<h1>Curriculum</h1>} />
+          <Route path="/curriculum" element={<Resume/>} />
           <Route path="/sobre-mi" element={<h1>Sobre mí</h1>} />
         </Routes>
       </main>
