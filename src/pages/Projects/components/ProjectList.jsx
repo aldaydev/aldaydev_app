@@ -18,6 +18,7 @@ function ProyectList ({ filteredProjectList }) {
                             key={index} 
                             className="projectList__project"
                             title={`Visitar proyecto ${project.name}`}
+                            aria-label={`Visitar proyecto ${project.name}`}
                         >
                             <div className="project__bg"/>
                             <figure className="project__imageContainer">

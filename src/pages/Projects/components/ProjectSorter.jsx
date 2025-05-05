@@ -53,7 +53,10 @@ function ProjectSorter ( { selectedSorter, setSelectedSorter }) {
                                 key={index}
                                 className={sorter.class}
                                 onClick={()=> handelSelectedSorter(sorter.id)}
-                                title={`Ordenar por ${sorter.name} `}
+                                title={`Ordenar proyectos por ${sorter.name} 
+                                ${selectedSorter.order === 'asc' ? 'descendente' : 'ascendente'}`}
+                                aria-label={`Ordenar proyectos por ${sorter.name} 
+                                ${selectedSorter.order === 'asc' ? 'descendente' : 'ascendente'}`}
                             >
                                 <p className='projectSorter__sorterTitle'>
                                     {sorter.name}
@@ -67,7 +70,8 @@ function ProjectSorter ( { selectedSorter, setSelectedSorter }) {
             <label 
                 className='projectSorter__order' 
                 htmlFor='orderCheckbox'
-                title={`Ordenar ${selectedSorter.order === 'asc' ? 'descendente' : 'ascendente'}`}
+                title={`Cambiar a orden ${selectedSorter.order === 'asc' ? 'descendente' : 'ascendente'}`}
+                aria-label={`Cambiar a orden ${selectedSorter.order === 'asc' ? 'descendente' : 'ascendente'}`}
             >
                     <input 
                         type='checkbox' 

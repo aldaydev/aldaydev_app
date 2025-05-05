@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 4 - 05-05-2025 - videos page responsive done
+Sprint 4 - 05-05-2025 - sprint 4 finished
 
 ## Sprint 4
 
@@ -9,6 +9,11 @@ Objetivos:
 * Sección videos:
        - Funcionalidad de selector de vídeos
        - Diseño responsive
+       - Sección de vídeos finalizada
+
+* Repaso accesibilidad y tab navigation
+       - Sección Proyectos finalizada
+       - Sección Vídeos finalizada
 
 ## Sprint 3
 

@@ -60,6 +60,7 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
                             className='techFilters__techFilter'
                             title={techFilter.name}
                             htmlFor={techFilter.id}
+                            aria-label={`Mostrar proyectos que usan ${techFilter.name}`}
                         >
                             <input
                                 type='checkbox'
@@ -68,12 +69,13 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
                                 onChange={() => handleTechFilters(techFilter)}
                                 id={techFilter.id}
                                 tabIndex={0}
-                                aria-label={`Filtrar por ${techFilter.name}`}
+                    
                             />
                             <span className="techFilter__icon"></span>
                             <img
                                 src={techFilter.icon}
                                 className='techFilter__image'
+                                alt={`Mostrar proyectos que usan ${techFilter.name}`}
                             />
                             <span>
                                 {techFilter.name}
@@ -92,7 +94,7 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
                             className='otherFilters__otherFilter' 
                             htmlFor={otherFilter.id} 
                             title={`Filtrar por ${otherFilter.name}`}
-                            aria-label={`Filtrar por ${otherFilter.name}`}
+                            aria-label={`Mostrar proyectos que incluyen ${otherFilter.name}`}
                         >
                             <input
                                 type="checkbox"

@@ -10,14 +10,17 @@ function Videos() {
 
     const videos = [
         {
+            name: "Vídeo presentación de Musikos App",
             url: "https://youtu.be/hBbSiVGH7nQ?si=3nSaakFjdHqMSVHD",
             img: "https://img.youtube.com/vi/hBbSiVGH7nQ/0.jpg"
         },
         {
+            name: "Vídeo presentación de Pokemon Game App",
             url: "https://youtu.be/MxDscYjcJKU?si=-zRrBLrMGHuRRI_F",
             img: "https://img.youtube.com/vi/MxDscYjcJKU/0.jpg"
         },
         {
+            name: "Vídeo sobre imagen de marca del portfolio",
             url: "https://youtu.be/0244Zii9h5c?si=_c4lhMjbGPI6BQ4G",
             img: "https://img.youtube.com/vi/0244Zii9h5c/0.jpg"
         }
@@ -63,6 +66,7 @@ function Videos() {
                                 key={index}
                                     className="videos__otherVideoContainer"
                                     onClick={()=>handleSelectVideo(video.url)}
+                                    aria-label={`Marcar ${video.name} para ver arriba`}
                                 >
                                     <img src={video.img} className="videos__otherVideoImg"/>
                                     <span className="videos__otherVideoDescription">SELECCIONAR PARA VER</span>
@@ -76,7 +80,12 @@ function Videos() {
             </section>
             <section className="videos__youtubeChannel">
                 <h4 className="youtubeChannel__text">TODOS LOS VÍDEOS EN MI CANAL DE YOUTUBE</h4>
-                <a href="https://youtube.com/@aldaydev" target="_blank" className="youtubeChannel__button">
+                <a 
+                    href="https://youtube.com/@aldaydev" 
+                    target="_blank"
+                    className="youtubeChannel__button"
+                    aria-label="Visitar canal de Youtube"
+                >
                     <span className="youtubeChannel__buttonText">IR A YOUTUBE</span>
                     <img 
                         src={youtube__icon}

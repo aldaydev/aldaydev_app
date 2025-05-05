@@ -17,7 +17,7 @@ const MenuToggle = forwardRef(({ isOpen, setIsOpen, ...props }, ref) => {
                 }
             }}
             ref={ref}
-            aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-label={isOpen ? "Cerrar menú desplegable" : "Abrir menú desplegable"}
             {...props}
         >
             <div className="menuToggle__bar menuToggle__bar--1"></div>
