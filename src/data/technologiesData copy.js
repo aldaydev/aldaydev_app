@@ -4,6 +4,8 @@ import express_icon from '../assets/icons/tech-icons/express.svg';
 import mongodb_icon from '../assets/icons/tech-icons/mongodb.svg';
 import mysql_icon from '../assets/icons/tech-icons/mysql.svg';
 import firebase_icon from '../assets/icons/tech-icons/firebase.svg';
+import testing_icon from '../assets/icons/tech-icons/testing.svg';
+import vanilla_icon from '../assets/icons/tech-icons/vanilla.svg';
 import mongoose_icon from '../assets/icons/tech-icons/mongoose.svg';
 import sequelize_icon from '../assets/icons/tech-icons/sequelize.svg';
 import bootstrap_icon from '../assets/icons/tech-icons/bootstrap.svg';
@@ -21,12 +23,6 @@ import html_icon from '../assets/icons/tech-icons/html.svg';
 import css_icon from '../assets/icons/tech-icons/css.svg';
 import javascript_icon from '../assets/icons/tech-icons/javascript.svg';
 import render_icon from '../assets/icons/tech-icons/render.svg';
-import vscode_icon from '../assets/icons/tech-icons/vscode.svg';
-import photoshop_icon from '../assets/icons/tech-icons/photoshop.svg';
-import aftereffects_icon from '../assets/icons/tech-icons/aftereffects.svg';
-import illustrator_icon from '../assets/icons/tech-icons/illustrator.svg';
-import premiere_icon from '../assets/icons/tech-icons/premiere.svg';
-import jira_icon from '../assets/icons/tech-icons/jira.svg';
 
 const technologiesData = [
     {
@@ -35,7 +31,7 @@ const technologiesData = [
         bgColor: "#61DAFB",
         textColor: "black",
         icon: react_icon,
-        type: "develop"
+        isFilter: true
     },
     {
         id: "node",
@@ -43,7 +39,7 @@ const technologiesData = [
         bgColor: "#8CC84B",
         textColor: "white",
         icon: node_icon,
-        type: "develop"
+        isFilter: true
     },
     {
         id: "express",
@@ -51,7 +47,7 @@ const technologiesData = [
         bgColor: "#000000",
         textColor: "white",
         icon: express_icon,
-        type: "develop"
+        isFilter: true
     },
     {
         id: "mongodb",
@@ -59,8 +55,7 @@ const technologiesData = [
         bgColor: "#47A248",
         textColor: "white",
         icon: mongodb_icon,
-        type: "databases"
-        
+        isFilter: true
     },
     {
         id: "mysql",
@@ -68,7 +63,7 @@ const technologiesData = [
         bgColor: "#F29111",
         textColor: "black",
         icon: mysql_icon,
-        type: "databases"
+        isFilter: true
     },
     {
         id: "firebase",
@@ -76,207 +71,23 @@ const technologiesData = [
         bgColor: "#DD2C00",
         textColor: "white",
         icon: firebase_icon,
-        type: "develop"
+        isFilter: true
     },
     {
-        id: "firestore",
-        name: "FireBase",
-        bgColor: "#DD2C00",
+        id: "testing",
+        name: "Testing",
+        bgColor: "#c33be2",
         textColor: "white",
-        icon: firebase_icon,
-        type: "databases"
+        icon: testing_icon,
+        isFilter: true
     },
     {
-        id: "javascript",
-        name: "JavaScript",
+        id: "vanilla",
+        name: "Vanilla",
         bgColor: "#F7DF1E",
         textColor: "black",
-        icon: javascript_icon,
-        type: "develop"
-    },
-    {
-        id: "mongoose",
-        name: "Mongoose",
-        bgColor: "#880000",
-        textColor: "white",
-        icon: mongoose_icon,
-        type: "develop"
-    },
-    {
-        id: "sequelize",
-        name: "Sequelize",
-        bgColor: "#52B0E7",
-        textColor: "white",
-        icon: sequelize_icon,
-        type: "develop"
-    },
-    {
-        id: "bootstrap",
-        name: "Bootstrap",
-        bgColor: "#7952B3",
-        textColor: "white",
-        icon: bootstrap_icon,
-        type: "develop"
-    },
-    {
-        id: "vite",
-        name: "Vite",
-        bgColor: "#646CFF",
-        textColor: "white",
-        icon: vite_icon,
-        type: "develop"
-    },
-    {
-        id: "jwt",
-        name: "JSON Web Tokens",
-        bgColor: "#000000",
-        textColor: "white",
-        icon: jwt_icon,
-        type: "develop"
-    },
-    {
-        id: "bcrypt",
-        name: "Bcrypt",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "winston",
-        name: "Winston",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "nodemailer",
-        name: "Node Mailer",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "cookieparser",
-        name: "Cookie Parser",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "nodemon",
-        name: "Nodemon",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "cors",
-        name: "CORS",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "ejs",
-        name: "EJS",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "yaml",
-        name: "Yaml",
-        bgColor: "#CB171E",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "dotenv",
-        name: "Dotenv",
-        bgColor: "#CB171E",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "swagger",
-        name: "Swagger",
-        bgColor: "#85EA2D",
-        textColor: "black",
-        icon: swagger_icon,
-        type: "develop"
-    },
-    {
-        id: "jsdoc",
-        name: "JSDoc",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "selenium",
-        name: "Selenium",
-        bgColor: "#43B02A",
-        textColor: "white",
-        icon: selenium_icon,
-        type: "develop"
-    },
-    {
-        id: "jest",
-        name: "Jest",
-        bgColor: "#C21325",
-        textColor: "white",
-        icon: jest_icon,
-        type: "develop"
-    },
-    {
-        id: "cypress",
-        name: "Cypress",
-        bgColor: "#000000",
-        textColor: "white",
-        icon: cypress_icon,
-        type: "develop"
-    },
-    {
-        id: "reactrouter",
-        name: "React Router",
-        bgColor: "#61DAFB",
-        textColor: "black",
-        icon: reactrouter_icon,
-        type: "develop"
-    },
-    {
-        id: "render",
-        name: "Render",
-        bgColor: "#000000",
-        textColor: "white",
-        icon: render_icon,
-        type: "management"
-    },
-    {
-        id: "git",
-        name: "Git",
-        bgColor: "#F05032",
-        textColor: "white",
-        icon: git_icon,
-        type: "management"
-    },
-    {
-        id: "github",
-        name: "GitHub",
-        bgColor: "#181717",
-        textColor: "white",
-        icon: github_icon,
-        type: "management"
+        icon: vanilla_icon,
+        isFilter: true
     },
     {
         id: "html",
@@ -284,7 +95,7 @@ const technologiesData = [
         bgColor: "#E34F26",
         textColor: "white",
         icon: html_icon,
-        type: "develop"
+        isFilter: false
     },
     {
         id: "css",
@@ -292,56 +103,201 @@ const technologiesData = [
         bgColor: "#663399",
         textColor: "white",
         icon: css_icon,
-        type: "develop"
+        isFilter: false
     },
     {
-        id: "vscode",
-        name: "VS Code",
-        bgColor: "#2B9FED",
-        textColor: "white",
-        icon: vscode_icon,
-        type: "management"
+        id: "javascript",
+        name: "JavaScript",
+        bgColor: "#F7DF1E",
+        textColor: "black",
+        icon: javascript_icon,
+        isFilter: false
     },
     {
-        id: "photshop",
-        name: "Photoshop",
-        bgColor: "#2B9FED",
+        id: "mongoose",
+        name: "Mongoose",
+        bgColor: "#880000",
         textColor: "white",
-        icon: photoshop_icon,
-        type: "other"
+        icon: mongoose_icon,
+        isFilter: false
     },
     {
-        id: "aftereffects",
-        name: "After Effects",
-        bgColor: "#2B9FED",
+        id: "sequelize",
+        name: "Sequelize",
+        bgColor: "#52B0E7",
         textColor: "white",
-        icon: aftereffects_icon,
-        type: "other"
+        icon: sequelize_icon,
+        isFilter: false
     },
     {
-        id: "premiere",
-        name: "Premiere Pro",
-        bgColor: "#2B9FED",
+        id: "bootstrap",
+        name: "Bootstrap",
+        bgColor: "#7952B3",
         textColor: "white",
-        icon: premiere_icon,
-        type: "other"
+        icon: bootstrap_icon,
+        isFilter: false
     },
     {
-        id: "illustrator",
-        name: "Illustrator",
-        bgColor: "#2B9FED",
+        id: "vite",
+        name: "Vite",
+        bgColor: "#646CFF",
         textColor: "white",
-        icon: illustrator_icon,
-        type: "other"
+        icon: vite_icon,
+        isFilter: false
     },
     {
-        id: "jira",
-        name: "Jira",
-        bgColor: "#2B9FED",
+        id: "jwt",
+        name: "JSON Web Tokens",
+        bgColor: "#000000",
         textColor: "white",
-        icon: jira_icon,
-        type: "management"
+        icon: jwt_icon,
+        isFilter: false
+    },
+    {
+        id: "bcrypt",
+        name: "Bcrypt",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        isFilter: false
+    },
+    {
+        id: "winston",
+        name: "Winston",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        isFilter: false
+    },
+    {
+        id: "nodemailer",
+        name: "Node Mailer",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        isFilter: false
+    },
+    {
+        id: "cookieparser",
+        name: "Cookie Parser",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        isFilter: false
+    },
+    {
+        id: "nodemon",
+        name: "Nodemon",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        isFilter: false
+    },
+    {
+        id: "cors",
+        name: "CORS",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        isFilter: false
+    },
+    {
+        id: "ejs",
+        name: "EJS",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        isFilter: false
+    },
+    {
+        id: "yaml",
+        name: "Yaml",
+        bgColor: "#CB171E",
+        textColor: "white",
+        icon: npm_icon,
+        isFilter: false
+    },
+    {
+        id: "dotenv",
+        name: "Dotenv",
+        bgColor: "#CB171E",
+        textColor: "white",
+        icon: npm_icon,
+        isFilter: false
+    },
+    {
+        id: "swagger",
+        name: "Swagger",
+        bgColor: "#85EA2D",
+        textColor: "black",
+        icon: swagger_icon,
+        isFilter: false
+    },
+    {
+        id: "jsdoc",
+        name: "JSDoc",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        isFilter: false
+    },
+    {
+        id: "selenium",
+        name: "Selenium",
+        bgColor: "#43B02A",
+        textColor: "white",
+        icon: selenium_icon,
+        isFilter: false
+    },
+    {
+        id: "jest",
+        name: "Jest",
+        bgColor: "#C21325",
+        textColor: "white",
+        icon: jest_icon,
+        isFilter: false
+    },
+    {
+        id: "cypress",
+        name: "Cypress",
+        bgColor: "#000000",
+        textColor: "white",
+        icon: cypress_icon,
+        isFilter: false
+    },
+    {
+        id: "reactrouter",
+        name: "React Router",
+        bgColor: "#61DAFB",
+        textColor: "black",
+        icon: reactrouter_icon,
+        isFilter: false
+    },
+    {
+        id: "render",
+        name: "Render",
+        bgColor: "#000000",
+        textColor: "white",
+        icon: render_icon,
+        isFilter: false
+    },
+    {
+        id: "git",
+        name: "Git",
+        bgColor: "#F05032",
+        textColor: "white",
+        icon: git_icon,
+        isFilter: false
+    },
+    {
+        id: "github",
+        name: "GitHub",
+        bgColor: "#181717",
+        textColor: "white",
+        icon: github_icon,
+        isFilter: false
     }
+
 ]
 
 export default technologiesData;
