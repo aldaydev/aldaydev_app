@@ -3,7 +3,7 @@
 }
 
 .techStickers__container{
-    padding-top: 20px;
+    padding-top: 25px;
 
     position: relative;
 }
@@ -31,6 +31,8 @@
     align-items: center;
     gap: 10px;
     font-size: .8rem;
+
+    box-shadow: 2px 2px 5px var(--color-green-lighter);
 }
 
 .techStickers__stickerIcon{
@@ -41,6 +43,22 @@
     text-wrap: nowrap;
 }
 
+@media screen and (max-width: 1400px) {
+
+    .techStickers__stickerIcon{
+        width: 17px;
+    }
+    
+    .techStickers__stickerTitle{
+        font-size: .7rem;
+    }
+
+    .techStickers__stickers{
+        gap: 10px;
+    }
+    
+}
+
 @media screen and (max-width: 1100px) {
     .resume__technologies{
         margin-top: 50px;
@@ -48,7 +66,7 @@
     
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
 
     .techStickers__stickerIcon{
         width: 18px;
@@ -58,13 +76,13 @@
         font-size: .7rem;
     }
     
-}
+} */
 
 @media screen and (max-width: 480px) {
 
-    .techStickers__stickers{
+    /* .techStickers__stickers{
         gap: 10px;
-    }
+    } */
 
     .techStickers__stickerIcon{
         width: 15px;

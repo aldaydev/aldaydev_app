@@ -3,6 +3,7 @@ import './resume.css';
 import AnimatedTitle from "../../components/AnimatedTitle/AnimatedTitle";
 import ResumePresentation from './components/ResumePresentation';
 import ResumeTechnologies from './components/resumeTechnologies';
+import ResumeEducation from './components/ResumeEducation';
 
 function Resume() {
 
@@ -53,6 +54,7 @@ function Resume() {
             <section className='resume__content'>
                 <ResumePresentation/>
                 <ResumeTechnologies/>
+                <ResumeEducation/>
             </section>
         </div>
     )
