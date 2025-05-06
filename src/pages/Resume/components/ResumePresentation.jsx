@@ -1,3 +1,5 @@
+import './resumePresentation.css';
+
 import rafa_alday_foto from '../../../assets/images/foto_rafa_alday.jpg'
 import envelope_icon from '../../../assets/icons/util-icons/envelope_simpleicon.svg';
 import location_icon from '../../../assets/icons/util-icons/location_simpleicon.svg';
@@ -18,12 +20,12 @@ function ResumePresentation() {
             icon: location_icon
         },
         {
-            text: "LinkedIn",
+            text: "linkedin/in/rafaelalday",
             url: "https://linkedin/in/rafaelalday",
             icon: linkedin_icon
         },
         {
-            text: "GitHub",
+            text: "github.com/aldaydev",
             url: "https://github.com/aldaydev",
             icon: github_icon
         },
@@ -39,15 +41,20 @@ function ResumePresentation() {
             </figure>
             <div className='resume__personalInfo'>
                 <h2 className='personalInfo__name'>RAFAEL ALDAY</h2>
-                <h3 className='personalInfo__position'>DESARROLLADOR WEB FULL STACK</h3>
-                <ul className='personalInfo__linkList'>
+                <h3 className='personalInfo__role'>DESARROLLADOR WEB FULL STACK</h3>
+                <p className='personalInfo_description'>Tras más de 12 años trabajando como Técnico Audiovisual para importantes clientes como Telefónica o Presidencia del Gobierno, me he renovado como Desarrollador Web para aportar a este sector el compromiso y buen hacer
+                que siempre me han caracterizado.</p>
+                
+            </div>
+            <div className='personalInfo__personalLinks'>
+            <ul className='personalLinks__linkList'>
                     {
-                        basicInfo && basicInfo.map((field) => {
+                        basicInfo && basicInfo.map((item, index) => {
                             return (
-                                <li className='personalInfo__linkItem'>
-                                    <a href={field.url} className='personalInfo__link'>
-                                        <img src={field.icon} />
-                                        <span>{field.text}</span>
+                                <li key={index} className='personalLinks__linkItem'>
+                                    <a href={item.url} className='personalLinks__link'>
+                                        <img src={item.icon} className='personalLinks__linkIcon'/>
+                                        <span className='personalLinks__linkText'>{item.text}</span>
                                     </a>
                                 </li>
                             )

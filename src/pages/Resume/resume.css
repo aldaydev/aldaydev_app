@@ -70,3 +70,25 @@
 .resumeHeader__navbarLink{
     padding: 10px 30px;
 }
+
+.resume__content{
+    margin-top: 60px;
+    color: var(--color-white);
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .resumeHeader__navbarLink:first-child{
+        padding-left: 2.5dvw;
+    }
+    
+    .resumeHeader__navbarLink:last-child{
+        padding-right: 2.5dvw;
+    }
+    
+    .resumeHeader__navbarLink{
+        padding: 10px 2dvw;
+    }
+
+}

@@ -30,9 +30,9 @@ function Resume() {
                     <ul className="resumeHeader__navbarList">
                         
                         {
-                            resumeSections && resumeSections.map(resumeSection => {
+                            resumeSections && resumeSections.map((resumeSection, index) => {
                                 return (
-                                    <li className="resumeHeader__navbarItem">
+                                    <li key={index} className="resumeHeader__navbarItem">
                                         <span className='resumeHeader__bg'/>
                                         <a
                                             href="#"
