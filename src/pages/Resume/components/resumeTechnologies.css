@@ -2,3 +2,76 @@
     margin-top: 70px;
 }
 
+.techStickers__container{
+    padding-top: 20px;
+
+    position: relative;
+}
+
+.techStickers__title{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.techStickers__stickers{
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+    align-items: center;
+    gap: 15px;
+}
+
+.techStickers__sticker{
+    min-width: fit-content;
+    border: 1px solid var(--color-white);
+    border-radius: 5px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .8rem;
+}
+
+.techStickers__stickerIcon{
+    width: 20px;
+}
+
+.techStickers__stickerTitle{
+    text-wrap: nowrap;
+}
+
+@media screen and (max-width: 1100px) {
+    .resume__technologies{
+        margin-top: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+
+    .techStickers__stickerIcon{
+        width: 18px;
+    }
+    
+    .techStickers__stickerTitle{
+        font-size: .7rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    .techStickers__stickers{
+        gap: 10px;
+    }
+
+    .techStickers__stickerIcon{
+        width: 15px;
+    }
+    
+    .techStickers__stickerTitle{
+        font-size: .6rem;
+    }
+    
+}

@@ -88,7 +88,7 @@
 
     position: relative;
 
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .resume__articleTitle::after{
@@ -96,8 +96,9 @@
     width: 100%;
     height: 1px;
     background-color: var(--color-white);
+    border-radius: 10px;
     position: absolute;
-    bottom: -5px;
+    bottom: -7px;
     left: 0;
     box-shadow: 2px 2px 20px 3px var(--color-green-lighter);
 

@@ -63,6 +63,24 @@ const technologiesData = [
         
     },
     {
+        id: "mongoatlas",
+        name: "Mongo Atlas",
+        bgColor: "#47A248",
+        textColor: "white",
+        icon: mongodb_icon,
+        type: "databases"
+        
+    },
+    {
+        id: "mongocompass",
+        name: "Mongo Compass",
+        bgColor: "#47A248",
+        textColor: "white",
+        icon: mongodb_icon,
+        type: "databases"
+        
+    },
+    {
         id: "mysql",
         name: "MySQL",
         bgColor: "#F29111",
@@ -71,8 +89,16 @@ const technologiesData = [
         type: "databases"
     },
     {
+        id: "mysqlworkbench",
+        name: "MySQL Workbench",
+        bgColor: "#F29111",
+        textColor: "black",
+        icon: mysql_icon,
+        type: "databases"
+    },
+    {
         id: "firebase",
-        name: "FireBase",
+        name: "Firebase",
         bgColor: "#DD2C00",
         textColor: "white",
         icon: firebase_icon,
@@ -80,7 +106,7 @@ const technologiesData = [
     },
     {
         id: "firestore",
-        name: "FireBase",
+        name: "Firestore",
         bgColor: "#DD2C00",
         textColor: "white",
         icon: firebase_icon,
@@ -255,14 +281,6 @@ const technologiesData = [
         type: "develop"
     },
     {
-        id: "render",
-        name: "Render",
-        bgColor: "#000000",
-        textColor: "white",
-        icon: render_icon,
-        type: "management"
-    },
-    {
         id: "git",
         name: "Git",
         bgColor: "#F05032",
@@ -300,7 +318,7 @@ const technologiesData = [
         bgColor: "#2B9FED",
         textColor: "white",
         icon: vscode_icon,
-        type: "management"
+        type: "develop"
     },
     {
         id: "photshop",
@@ -340,6 +358,14 @@ const technologiesData = [
         bgColor: "#2B9FED",
         textColor: "white",
         icon: jira_icon,
+        type: "management"
+    },
+    {
+        id: "render",
+        name: "Render",
+        bgColor: "#000000",
+        textColor: "white",
+        icon: render_icon,
         type: "management"
     }
 ]
