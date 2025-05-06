@@ -1,3 +1,5 @@
+import './resumeTechnologies.css';
+
 import techData from '../../../data/technologiesData.js';
 
 function ResumeTechnologies () {
@@ -6,20 +8,22 @@ function ResumeTechnologies () {
 
     return(
         <article className="resume__technologies">
-            <h3>TECNOLOGÍAS</h3>
-            <p>
-                Todas las tecnologías del siguiente listado las he aplicado en al menos uno de los proyectos en los que he trabajado.
-            </p>
+            <h3 className="resume__articleTitle resume__techTitle">TECNOLOGÍAS</h3>
             <div className="resume__techStickers">
                 <div className="techStickers__develop">
-                    <h4>DESARROLLO WEB</h4>
-                    <div>
+                    <h4 className="techStickers__title">DESARROLLO WEB</h4>
+                    <div className="techStickers__container">
                         {
                             devTechs && devTechs.map((devTech, index) => {
                                 return (
-                                    <div key={index}>
-                                        <img src={devTech.icon}/>
-                                        <span>{devTech.name}</span>
+                                    <div key={index} className='techStickers__sticker'>
+                                        <img 
+                                            src={devTech.icon}
+                                            className='techStickers__stickerIcon'
+                                        />
+                                        <span className='techStickers__stickerTitle'>
+                                            {devTech.name.toUpperCase()}
+                                        </span>
                                     </div>
                                 )
                             })

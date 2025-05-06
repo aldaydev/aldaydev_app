@@ -5,7 +5,7 @@
     "photo personalInfoDescription personalLinks"
     ;
     grid-template-columns: auto 40% auto;
-    justify-content: center;
+    justify-content: space-evenly;
     /* justify-items: center; */
     align-items: center;
     column-gap: 4dvw;
@@ -21,6 +21,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    justify-self: center;
 
     outline: 3px solid var(--color-yellow);
 
