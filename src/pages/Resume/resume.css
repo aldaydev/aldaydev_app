@@ -80,15 +80,55 @@
 @media screen and (max-width: 767px) {
 
     .resumeHeader__navbarLink:first-child{
-        padding-left: 2.5dvw;
+        padding-left: 20px;
     }
     
     .resumeHeader__navbarLink:last-child{
-        padding-right: 2.5dvw;
+        padding-right: 20px;
     }
     
     .resumeHeader__navbarLink{
-        padding: 10px 2dvw;
+        font-size: .9rem;
+        padding: 10px 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .resumeHeader__navbarList{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .resumeHeader__navbarItem{
+        flex-basis: 40%;
+        /* font-size: 2.4dvw; */
+    }
+
+    .resumeHeader__navbarItem:nth-child(2):after{
+        display: none;
+    }
+
+    .resumeHeader__navbarLink{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .resumeHeader__navbarLink:first-child{
+        padding-left: 10px;
+    }
+    
+    .resumeHeader__navbarLink:last-child{
+        padding-right: 10px;
+    }
+    
+    .resumeHeader__navbarLink{
+        font-size: .8rem;
+        padding: 10px 10px;
     }
 
 }

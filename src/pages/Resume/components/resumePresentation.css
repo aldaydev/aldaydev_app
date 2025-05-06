@@ -1,14 +1,14 @@
 .resume__presentation{
     display: grid;
     grid-template-areas: 
-    "photo personalInfo personalLinks"
+    "photo personalInfoTitles personalLinks"
+    "photo personalInfoDescription personalLinks"
     ;
     grid-template-columns: auto 40% auto;
     justify-content: center;
-    justify-items: center;
-    /* align-content: center; */
+    /* justify-items: center; */
     align-items: center;
-    gap: 5dvw;
+    column-gap: 5dvw;
 }
 
 .resume__photoContainer{
@@ -43,12 +43,22 @@
     gap: 15px;
 }
 
+.personalInfo__titles{
+    grid-area: personalInfoTitles;
+}
+
+.personalInfo__name{
+    margin-bottom: 7px;
+}
+
 .personalInfo__role{
+    margin-bottom: 15px;
     font-weight: 400;
     text-wrap: pretty;
 }
 
 .personalInfo_description{
+    grid-area: personalInfoDescription;
     text-wrap: pretty;
 }
 
@@ -110,26 +120,35 @@
     margin-top: 5px;
     position: relative;
     transition: transform .3s ease-in-out;
+    text-wrap: nowrap;
 }
 
 @media screen and (max-width: 1100px) {
     
     .resume__presentation{
         grid-template-areas: 
-        "photo personalInfo"
+        "photo personalInfoTitles"
+        "photo personalInfoDescription"
         "personalLinks personalLinks"
         ;
         grid-template-columns: 30% auto;
         grid-template-rows: repeat(fit-content);
         column-gap: 40px;
-        row-gap: 40px;
+        /* row-gap: 40px; */
+    }
+
+    .resume__photoContainer{
+        justify-self: center;
+    
     }
 
     .personalLinks__linkList{
+        margin-top: 50px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 25px;
+        row-gap: 15px;
+        column-gap: 25px;
     }
 
     .personalLinks__linkItem{
@@ -143,11 +162,75 @@
         gap: 15px;
     }
 
-    /* .personalLinks__linkIcon{
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .resume__presentation{
+        grid-template-areas: 
+        "photo personalInfoTitles"
+        "personalInfoDescription personalInfoDescription"
+        "personalLinks personalLinks"
+        ;
+        grid-template-columns: 30% auto;
+        column-gap: 0;
+    }
+
+    .resume__photoContainer{
+        max-width: 100px;
+        justify-self: end;
+    }
+
+    .personalInfo__titles{
+        justify-self: start;
+        align-self: center;
+        margin-left: 30px;
+    }
+
+    .personalInfo__name{
+        margin-bottom: 0;
+    }
+
+    .personalInfo__role{
+        font-size: 1.1rem;
+        margin-bottom: 0;
+    }
+
+    .personalInfo_description{
+        text-align: justify;
+        /* margin: 0 30px; */
+        margin-top: 30px;
+    }
+
+    .personalLinks__link{
+        gap: 10px;
+        
+    }
+
+    .personalLinks__linkIcon{
         width: 20px;
     }
+
     .personalLinks__linkText{
-        font-size: .8rem;
-    } */
+        font-size: .95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .resume__content{margin-top: 40px;}
+
+    .personalInfo__name{
+        font-size: 1.1rem;
+    }
+
+    .personalInfo__role{
+        font-size: .9rem;
+    }
+
+    .personalLinks__linkList{
+        margin-top: 25px;
+    }
 
 }

@@ -39,13 +39,15 @@ function ResumePresentation() {
                     className='resume__photo'
                 />
             </figure>
-            <div className='resume__personalInfo'>
+            {/* <div className='resume__personalInfo'> */}
+            <hgroup className='personalInfo__titles'>
                 <h2 className='personalInfo__name'>RAFAEL ALDAY</h2>
                 <h3 className='personalInfo__role'>DESARROLLADOR WEB FULL STACK</h3>
-                <p className='personalInfo_description'>Tras más de 12 años trabajando como Técnico Audiovisual para importantes clientes como Telefónica o Presidencia del Gobierno, me he renovado como Desarrollador Web para aportar a este sector el compromiso y buen hacer
+            </hgroup>
+            <p className='personalInfo_description'>Tras más de 12 años trabajando como Técnico Audiovisual para importantes clientes como Telefónica o Presidencia del Gobierno, me he renovado como Desarrollador Web para aportar a este sector el compromiso y buen hacer
                 que siempre me han caracterizado.</p>
                 
-            </div>
+            {/* </div> */}
             <div className='personalInfo__personalLinks'>
             <ul className='personalLinks__linkList'>
                     {

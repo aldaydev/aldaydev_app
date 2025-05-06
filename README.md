@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 5 - 05-05-2025 - working on resume presentation section
+Sprint 5 - 06-05-2025 - responsive resume presentation done
 
 ## Sprint 5
 
