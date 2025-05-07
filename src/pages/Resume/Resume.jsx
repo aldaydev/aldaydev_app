@@ -7,8 +7,10 @@ import ResumeEducation from './components/ResumeEducation';
 import ResumeProjects from './components/ResumeProjects';
 import ResumeExperience from './components/ResumeExperience';
 
+import up_icon from '../../assets/icons/util-icons/down_icon.svg';
+
 import cv from '../../assets/documents/cv-rafa-alday.pdf';
-// import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function Resume() {
 
@@ -31,26 +33,38 @@ function Resume() {
         }
     ]
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const scrollTop = window.scrollY;
-    //         const resumeNavbar = document.querySelector(".resumeHeader__navbarList");
+    const [showReturnButton, setShowReturnButton] = useState(false);
 
-    //         if (scrollTop > 100) {
-    //             resumeNavbar.classList.add("resumeHeader__navbarList--scroll");
-    //         } else if (scrollTop < 100) {
-    //             resumeNavbar.classList.remove("resumeHeader__navbarList--scroll");
-    //         }
+    useEffect(() => {
+        // const scrollTop = window.scrollY;
+        
+        const handleScroll = () => {
+            if(window.scrollY > 100){
+                setShowReturnButton(true);
+            }else{
+                setShowReturnButton(false);
+            }
+        };
 
-    //     };
-
-    //     window.addEventListener("scroll", handleScroll);
-    //     return () => window.removeEventListener("scroll", handleScroll);
-    // }, [window.scrollY]);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [window.scroll]);
 
 
     return (
         <div className='pageContainer resume'>
+            <button 
+                className={showReturnButton ? 'resume_goToTopContainer' : 'resume_goToTopContainer--hidden'}
+                onClick={() => {
+                    window.scrollTo({
+                        top: 0,
+                        left: window.scrollX
+                    });
+                }}
+            >
+                <img src={up_icon} className='resume_goToTopIcon'/>
+            </button>
+
             <AnimatedTitle
                 headingLevel="h1"
                 initialText="C"

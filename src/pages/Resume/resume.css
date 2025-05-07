@@ -1,3 +1,9 @@
+.resume{
+    max-width: 100dvw;
+    overflow-x: hidden;
+}
+
+
 /* .resume{
 
 }
@@ -44,6 +50,45 @@
     font-weight: 500;
 } */
 
+
+.resume_goToTopContainer,
+.resume_goToTopContainer--hidden{
+    position: fixed;
+    top: 20%;
+    right: 5px;
+    background-color: var(--color-white);
+    padding: 10px 10px;
+    border-radius: 50% 0 0 50%;
+    opacity: 1;
+    z-index: 900;
+}
+
+.resume_goToTopContainer{
+    animation: appear .4s ease-in-out both;
+}
+
+.resume_goToTopContainer--hidden{
+    display: none;
+    transition: opacity .4s ease-in-out;
+}
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.resume_goToTopIcon{
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    width: 30px;
+    filter: invert();
+    transform: rotate(180deg);
+}
 
 .resumeHeader__navbarList{
     width: fit-content;

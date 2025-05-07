@@ -24,6 +24,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 html{
@@ -32,14 +38,17 @@ html{
 }
 
 body {
-  overflow-x: clip;
+  overflow-x: hidden;
+  max-width: 100dvw;
 }
 
 #root{
   min-width: 320px;
   min-height: 100vh;
+  max-width: 100dvw;
   display: grid;
   grid-template-rows: auto 1fr;
+  overflow: hidden;
 }
 
 * {
