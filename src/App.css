@@ -80,7 +80,8 @@
   margin-bottom: 70px;
 }
 
-.pageContainer::after {
+
+.globalBg::after {
   content: "";
   position: fixed;
   top: 0;

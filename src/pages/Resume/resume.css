@@ -2,11 +2,30 @@
     /* margin: 0 100px; */
 }
 
+.resume__resumeHeader{
+    /* margin: 0 100px; */
+    /* position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2000; */
+}
+
 .resumeHeader__navbar{
-    
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--color-blue-dark);
+    height: auto;
+    position: sticky;
+    top: 80px;
+    left: 0;
+    z-index: 2000;
 }
 
 .resumeHeader__navbarList{
+    /* position: sticky;
+    top: 0px;
+    left: 0;
+    z-index: 2000; */
     width: fit-content;
     margin: 0 auto;
     /* padding: 10px 45px; */

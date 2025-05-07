@@ -21,7 +21,6 @@ function Resume() {
 
     return (
         <div className='pageContainer resume'>
-            <header className="resume__resumeHeader">
                 <AnimatedTitle
                     headingLevel="h1"
                     initialText="C"
@@ -53,7 +52,6 @@ function Resume() {
 
                     </ul>
                 </nav>
-            </header>
 
             <section className='resume__content'>
                 <ResumePresentation/>

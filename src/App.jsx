@@ -28,6 +28,7 @@ function App() {
     <>
       <Header/>
       <main className='App__main'>
+        <div className='globalBg'></div>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/proyectos" element={<Projects/>} />
