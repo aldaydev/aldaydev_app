@@ -1,3 +1,102 @@
 .resume__projects{
     margin-top: 70px;
 }
+
+.resumeProjects__projects{
+    display: flex;
+    column-gap: 40px;
+    margin-top: 20px;
+}
+
+.resumeProjects__mainProject{
+    padding: 10px;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.mainProject__imageContainer{
+    width: 100%;
+}
+
+.mainProject__image{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mainProject__linksContainer{
+    display: flex;
+    column-gap: 20px;
+
+    margin-bottom: 10px;
+}
+
+.mainProject__link{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+    border: 1px solid var(--color-white);
+    padding: 5px 10px;
+
+    transition: background-color .3s ease-in-out;
+}
+
+.mainProject__link:hover{
+    background-color: var(--color-green-light);
+}
+
+.mainProject__linkIcon{
+    width: 22px;
+}
+
+.mainProject__linkText{
+    font-size: .9rem;
+}
+
+.mainProject__titles{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.mainProject__title{
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mainProject__date{
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.mainProject__description{
+    margin-bottom: 25px;
+}
+
+/* .mainProject__techContainer{
+    display: flex;
+    column-gap: 10px;
+} */
+
+.mainProject__techTitle{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.mainProject__techList{
+    
+    display: flex;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.mainProject__techItem{
+    font-size: .9rem;
+}
