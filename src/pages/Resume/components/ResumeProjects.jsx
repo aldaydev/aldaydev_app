@@ -1,6 +1,7 @@
 import './resumeProjects.css';
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import projects from '../../../data/projectsData.js';
 
@@ -102,6 +103,14 @@ function ResumeProjects() {
                     }
                 </div>
 
+            </div>
+            <div className='resume__moreProjects'>
+                    <Link 
+                        to="/proyectos"
+                        className='moreProjects__link'
+                    >
+                        VER TODOS LOS PROYECTOS
+                    </Link>
             </div>
         </article>
     )

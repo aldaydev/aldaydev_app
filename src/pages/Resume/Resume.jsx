@@ -5,6 +5,7 @@ import ResumePresentation from './components/ResumePresentation';
 import ResumeTechnologies from './components/resumeTechnologies';
 import ResumeEducation from './components/ResumeEducation';
 import ResumeProjects from './components/ResumeProjects';
+import ResumeExperience from './components/ResumeExperience';
 
 function Resume() {
 
@@ -57,6 +58,7 @@ function Resume() {
                 <ResumeTechnologies/>
                 <ResumeProjects/>
                 <ResumeEducation/>
+                <ResumeExperience/>
             </section>
         </div>
     )

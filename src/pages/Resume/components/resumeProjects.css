@@ -45,7 +45,8 @@
     transition: background-color .3s ease-in-out;
 }
 
-.mainProject__link:hover{
+.mainProject__link:hover,
+.moreProjects__link:hover{
     background-color: var(--color-green-light);
 }
 
@@ -104,6 +105,19 @@
     font-size: .9rem;
 }
 
+.resume__moreProjects{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.moreProjects__link{
+    padding: 10px 30px;
+    border: 1px solid var(--color-white);
+
+    transition: background-color .3s ease-in-out;
+}
+
 @media screen and (max-width: 860px) {
     
     .resumeProjects__projects {
@@ -144,5 +158,10 @@
 
     .mainProject__techList {
         font-size: .9rem;
+    }
+
+    .moreProjects__link{
+        font-size: .8rem;
+        padding: 10px 20px;
     }
 }
