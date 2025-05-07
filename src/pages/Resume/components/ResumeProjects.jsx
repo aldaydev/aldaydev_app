@@ -13,7 +13,7 @@ function ResumeProjects() {
 
     return (
         <article className="resume__projects">
-            <h3 className="resume__articleTitle resume__projectsTitle">PROYECTOS DESTACADOS</h3>
+            <h3 className="resume__articleTitle resume__projectsTitle">PROYECTOS</h3>
             <div className='resume__resumeProjects'>
                 <div className='resumeProjects__projects'>
                     {
