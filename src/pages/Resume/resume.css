@@ -13,12 +13,16 @@
 .resumeHeader__navbar{
     width: fit-content;
     margin: 0 auto;
-    background-color: var(--color-blue-dark);
+    /* background-color: var(--color-blue-dark); */
     height: auto;
     position: sticky;
     top: 80px;
     left: 0;
     z-index: 2000;
+}
+
+.resumeHeader__navbarList--scroll{
+    background-color: aqua;
 }
 
 .resumeHeader__navbarList{
