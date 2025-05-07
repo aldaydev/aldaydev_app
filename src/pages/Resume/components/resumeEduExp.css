@@ -1,12 +1,15 @@
-.resume__education{
+.resume__education,
+.resume__experience{
     margin-top: 70px;
 }
 
-.resume__educationTitle{
+.resume__educationTitle,
+.resume__experienceTitle{
     margin-bottom: 30px;
 }
 
-.resume__educationLabel{
+.resume__educationLabel,
+.resume__experienceLabel{
     display: flex;
     align-items: stretch;
     justify-content: left;
@@ -14,14 +17,16 @@
     margin-bottom: 40px;
 }
 
-.educationLabel__decorationContainer{
+.educationLabel__decorationContainer,
+.experienceLabel__decorationContainer{
     margin-top: 7px;
     max-width: 16px;
     flex: 1;
     position: relative;
 }
 
-.educationLabel__decorationContainer::after {
+.educationLabel__decorationContainer::after,
+.experienceLabel__decorationContainer::after {
     content: "";
     position: absolute;
     top: 16px; /* justo debajo del círculo */
@@ -32,7 +37,8 @@
     background-color: var(--color-white); /* o un gris claro, según diseño */
 }
 
-.educationLabel__decorationFigure{
+.educationLabel__decorationFigure,
+.experienceLabel__decorationFigure{
     width: 15px;
     height: 15px;
     /* background-color: var(--color-white); */
@@ -42,7 +48,8 @@
     position: relative;
 }
 
-.educationLabel__decorationFigure::before{
+.educationLabel__decorationFigure::before,
+.experienceLabel__decorationFigure::before{
     content: "";
     width: 70%;
     height: 70%;
@@ -61,7 +68,8 @@
     flex-wrap: wrap;
 }
 
-.educationLabel__content{
+.educationLabel__content,
+.experienceLabel__content{
     flex-basis: 100%;
     
 }
@@ -70,7 +78,8 @@
     flex-basis: 60%;
 }
 
-.educationLabel__titles{
+.educationLabel__titles,
+.experienceLabel__titles{
     display: flex;
     align-items: baseline;
     /* justify-content: space-between; */
@@ -79,26 +88,30 @@
     margin-bottom: 3px;
 }
 
-.educationLabel__title{
+.educationLabel__title,
+.experienceLabel__title{
     font-size: 1.3rem;
     font-weight: 300;
     text-wrap: balance;
 }
 
-.educationLabel__date{
+.educationLabel__date,
+.experienceLabel__date{
     font-size: 1.2rem;
     font-weight: 300;
     text-wrap: nowrap;
 }
 
 
-.educationLabel__center{
+.educationLabel__center,
+.experienceLabel__center{
     font-size: 1rem;
     font-weight: 300;
     margin-bottom: 20px;
 }
 
-.educationLabel__information{
+.educationLabel__information,
+.experienceLabel__information{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -106,12 +119,27 @@
     row-gap: 15px;
 }
 
-.educationLabel__descriptionContainer{
+.educationLabel__descriptionContainer,
+.experienceLabel__descriptionContainer{
     flex-basis: 70%;
 }
 
-.educationLabel__description{
+.experienceLabel__descriptionContainer{
+    flex-basis: 100%;
+}
+
+.educationLabel__description,
+.experienceLabel__description{
     margin-bottom: 10px;
+}
+
+.experienceLabel__description > a{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.experienceLabel__description > a:hover{
+    color: var(--color-green-lighter);
 }
 
 .educationLabel__seeCertficate{
@@ -138,7 +166,8 @@
 
 @media screen and (max-width: 1024px) {
     
-    .educationLabel__descriptionContainer{
+    .educationLabel__descriptionContainer,
+    .experienceLabel__descriptionContainer{
         flex-basis: 100%;
     }
     .educationLabel__content--simple{
@@ -164,30 +193,36 @@
 }
 
 @media screen and (max-width: 767px) {
-    .educationLabel__titles{
+    .educationLabel__titles,
+    .experienceLabel__titles{
         flex-wrap: wrap;
     }
 
-    .educationLabel__title{
+    .educationLabel__title,
+    .experienceLabel__title{
         flex-basis: 100%;
     }
 }
 
 @media screen and (max-width: 580px) {
 
-    .educationLabel__title{
+    .educationLabel__title,
+    .experienceLabel__title{
         font-size: 1.1rem;
     }
 
-    .educationLabel__date{
+    .educationLabel__date,
+    .experienceLabel__date{
         font-size: 1rem;
     }
 
-    .educationLabel__center{
+    .educationLabel__center,
+    .experienceLabel__center{
         font-size: .9rem;
     }
 
-    .educationLabel__description{
+    .educationLabel__description,
+    .experienceLabel__description{
         font-size: .9rem;
     }
 

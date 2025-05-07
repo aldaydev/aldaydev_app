@@ -7,6 +7,8 @@ import ResumeEducation from './components/ResumeEducation';
 import ResumeProjects from './components/ResumeProjects';
 import ResumeExperience from './components/ResumeExperience';
 
+import cv from '../../assets/documents/cv-rafa-alday.pdf';
+
 function Resume() {
 
     const resumeSections = [
@@ -59,6 +61,16 @@ function Resume() {
                 <ResumeProjects/>
                 <ResumeEducation/>
                 <ResumeExperience/>
+            </section>
+
+            <section className='resume__download'>
+                <a 
+                    href={cv}
+                    target='_blank' rel="noopener noreferrer"
+                    className='resume__downloadLink'
+                >
+                    DESCARGAR CURRÍCULUM
+                </a>
             </section>
         </div>
     )

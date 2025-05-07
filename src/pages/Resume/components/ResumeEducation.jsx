@@ -1,4 +1,4 @@
-import './resumeEducation.css';
+import './resumeEduExp.css';
 
 import certificado_daw from '../../../assets/documents/certificado-daw-rafa-alday.pdf';
 import certificado_javascript from '../../../assets/documents/certificado-javascript-rafa-alday.pdf';
