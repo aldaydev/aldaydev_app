@@ -1,3 +1,197 @@
 .resume__education{
     margin-top: 70px;
 }
+
+.resume__educationTitle{
+    margin-bottom: 30px;
+}
+
+.resume__educationLabel{
+    display: flex;
+    align-items: stretch;
+    justify-content: left;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.educationLabel__decorationContainer{
+    margin-top: 7px;
+    max-width: 16px;
+    flex: 1;
+    position: relative;
+}
+
+.educationLabel__decorationContainer::after {
+    content: "";
+    position: absolute;
+    top: 16px; /* justo debajo del círculo */
+    left: 7.5px;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 95%;
+    background-color: var(--color-white); /* o un gris claro, según diseño */
+}
+
+.educationLabel__decorationFigure{
+    width: 15px;
+    height: 15px;
+    /* background-color: var(--color-white); */
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    display: block;
+    position: relative;
+}
+
+.educationLabel__decorationFigure::before{
+    content: "";
+    width: 70%;
+    height: 70%;
+    background-color: var(--color-white);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.educationLabel__preContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.educationLabel__content{
+    flex-basis: 100%;
+    
+}
+
+.educationLabel__content--simple{
+    flex-basis: 60%;
+}
+
+.educationLabel__titles{
+    display: flex;
+    align-items: baseline;
+    /* justify-content: space-between; */
+    column-gap: 50px;
+
+    margin-bottom: 3px;
+}
+
+.educationLabel__title{
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-wrap: balance;
+}
+
+.educationLabel__date{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-wrap: nowrap;
+}
+
+
+.educationLabel__center{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.educationLabel__information{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 40px;
+    row-gap: 15px;
+}
+
+.educationLabel__descriptionContainer{
+    flex-basis: 70%;
+}
+
+.educationLabel__description{
+    margin-bottom: 10px;
+}
+
+.educationLabel__seeCertficate{
+    align-self: flex-start;
+    height: fit-content;
+    padding: 20px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    text-wrap: nowrap;
+    transition: background .3s ease-in-out;
+
+}
+
+.educationLabel__seeCertficate--only{
+    align-self: center;
+    margin-left: 40px;
+}
+
+.educationLabel__seeCertficate:hover{
+    background-color: var(--color-green-light);
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .educationLabel__descriptionContainer{
+        flex-basis: 100%;
+    }
+    .educationLabel__content--simple{
+        flex-basis: 100%;
+    }
+
+    .educationLabel__seeCertficate{
+        align-self: flex-start;
+        height: fit-content;
+        padding: 15px 30px;
+        font-size: .9rem;
+        background-color: transparent;
+        border: 1px solid var(--color-white);
+        color: var(--color-white);
+        text-wrap: nowrap;
+        transition: background .3s ease-in-out;
+    
+    }
+
+    .educationLabel__seeCertficate--only{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .educationLabel__titles{
+        flex-wrap: wrap;
+    }
+
+    .educationLabel__title{
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .educationLabel__title{
+        font-size: 1.1rem;
+    }
+
+    .educationLabel__date{
+        font-size: 1rem;
+    }
+
+    .educationLabel__center{
+        font-size: .9rem;
+    }
+
+    .educationLabel__description{
+        font-size: .9rem;
+    }
+
+    .educationLabel__seeCertficate{
+        font-size: .7rem;
+    }
+}
