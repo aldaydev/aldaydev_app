@@ -1,61 +1,12 @@
-.resume{
-    max-width: 100dvw;
-    overflow-x: hidden;
-}
-
-
-/* .resume{
-
-}
-
-.resume__resumeHeader{
-}
-
 .resumeHeader__navbar{
-    height: auto;
-    position: sticky;
-    top: 80px;
-    left: 0;
-    z-index: 2000;
+    animation: fade-in .5s ease-in-out 1.3s both;
 }
-
-.resumeHeader__navbarList--scroll::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-white);
-    color: var(--color-blue-dark);
-    opacity: 1;
-    z-index: -1;
-    
-    transition: background-color .3s ease-in-out;
-}
-
-.resumeHeader__navbarList{
-    transition: color .3s ease-in-out, background-color .3s ease-in-out;
-}
-
-.resumeHeader__navbarList--scroll .resumeHeader__navbarLink{
-    color: var(--color-blue-dark);
-    font-weight: 500;
-    transition: color .3s ease-in-out, background-color .3s ease-in-out;
-}
-
-.resumeHeader__navbarList--scroll .resumeHeader__navbarLink:hover{
-    color: var(--color-white);
-    background-color: var(--color-green-lighter);
-    font-weight: 500;
-} */
-
 
 .resume_goToTopContainer,
 .resume_goToTopContainer--hidden{
     position: fixed;
     top: 20%;
-    right: 5px;
+    right: 0;
     background-color: var(--color-white);
     padding: 10px 10px;
     border-radius: 50% 0 0 50%;
@@ -64,7 +15,17 @@
 }
 
 .resume_goToTopContainer{
-    animation: appear .4s ease-in-out both;
+    animation: fromRight .4s ease-in-out both;
+}
+
+.resume_goToTopContainer:focus-visible{
+    outline: 3px solid var(--color-white);
+    outline-offset: 2px;
+    background-color: var(--color-green-lighter);
+}
+
+.resume_goToTopContainer:focus-visible .resume_goToTopIcon{
+    filter: invert(0);
 }
 
 .resume_goToTopContainer--hidden{
@@ -73,11 +34,11 @@
 }
 
 
-@keyframes appear {
+@keyframes fromRight {
     from{
-        opacity: 0;
+        transform: translateX(50px);
     }to{
-        opacity: 1;
+        transform: translateX(0px);
     }
 }
 
@@ -157,6 +118,12 @@
     padding: 10px 30px;
 }
 
+.resumeHeader__navbarLink:focus-visible{
+    outline: none;
+    background-color: var(--color-green-lighter);
+    position: relative;
+}
+
 .resume__content{
     margin: 0 100px;
     margin-top: 60px;
@@ -200,6 +167,11 @@
     padding: 10px 10%;
 
     transition: background-color .3s ease-in-out;
+}
+
+.resume__downloadLink:focus-visible{
+    outline: 2px solid var(--color-white);
+    background-color: var(--color-green-light);
 }
 
 .resume__downloadLink:hover{

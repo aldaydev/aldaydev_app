@@ -7,13 +7,16 @@ import projects from '../../../data/projectsData.js';
 
 import github_icon from '../../../assets/icons/util-icons/github_simpleicon.svg';
 import web_icon from '../../../assets/icons/util-icons/web_simpleicon.svg';
+import { useScrollReveal } from '../../../hooks/useScrollReveal.jsx';
 
 function ResumeProjects() {
+
+    useScrollReveal();
 
     const mainProjects = projects.sort((a, b) => b.rate - a.rate).slice(0, 2);
 
     return (
-        <article className="resume__projects">
+        <article className="resume__projects scrollReveal">
             <h3 id='projects' className="resume__articleTitle resume__projectsTitle">PROYECTOS</h3>
             <div className='resume__resumeProjects'>
                 <div className='resumeProjects__projects'>

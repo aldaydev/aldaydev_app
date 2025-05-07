@@ -36,8 +36,6 @@ function Resume() {
     const [showReturnButton, setShowReturnButton] = useState(false);
 
     useEffect(() => {
-        // const scrollTop = window.scrollY;
-        
         const handleScroll = () => {
             if(window.scrollY > 100){
                 setShowReturnButton(true);
@@ -45,7 +43,6 @@ function Resume() {
                 setShowReturnButton(false);
             }
         };
-
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, [window.scroll]);
@@ -53,18 +50,6 @@ function Resume() {
 
     return (
         <div className='pageContainer resume'>
-            <button 
-                className={showReturnButton ? 'resume_goToTopContainer' : 'resume_goToTopContainer--hidden'}
-                onClick={() => {
-                    window.scrollTo({
-                        top: 0,
-                        left: window.scrollX
-                    });
-                }}
-            >
-                <img src={up_icon} className='resume_goToTopIcon'/>
-            </button>
-
             <AnimatedTitle
                 headingLevel="h1"
                 initialText="C"
@@ -114,6 +99,20 @@ function Resume() {
                     DESCARGAR CURRÍCULUM
                 </a>
             </section>
+
+            <button 
+                className={showReturnButton ? 'resume_goToTopContainer' : 'resume_goToTopContainer--hidden'}
+                tabIndex={showReturnButton ? 0 : -1}
+                aria-hidden={!showReturnButton}
+                onClick={() => {
+                    window.scrollTo({
+                        top: 0,
+                        left: window.scrollX
+                    });
+                }}
+            >
+                <img src={up_icon} className='resume_goToTopIcon'/>
+            </button>
         </div>
     )
 }

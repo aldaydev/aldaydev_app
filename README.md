@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 5 - 06-05-2025 - working on education section in resume
+Sprint 5 - 08-05-2025 - working on resume accesibility
 
 ## Sprint 5
 
@@ -8,8 +8,14 @@ Objetivos:
 
 Sección Currículum (Resume)
 * Disposición inicial sección currículum
-* Creación de navbar para Resume
-* Presentation section ( + responsive)
+* Creación de navbar para Resume + funcionalidad
+* Sección Presentación ( + responsive)
+* Sección Tecnologías (+ responsive)
+* Sección Proyectos (+ responsive)
+* Sección Formación (+ responsive)
+* Sección Experiencia (+ responsive)
+* Descargar currículum + botón de volver arriba
+* Tabindex navigation de toda la página
 
 ## Sprint 4
 

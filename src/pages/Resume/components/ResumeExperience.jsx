@@ -1,8 +1,12 @@
+import { useScrollReveal } from '../../../hooks/useScrollReveal';
 import './resumeEduExp.css';
 
 function ResumeExperience () {
+
+    useScrollReveal();
+
     return (
-        <article className="resume__experience">
+        <article className="resume__experience scrollReveal">
             <h3 id='experience' className="resume__articleTitle resume__experienceTitle">EXPERIENCIA</h3>
             <div className="resume__experienceLabel">
                 <div className='experienceLabel__decorationContainer'>

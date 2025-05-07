@@ -4,11 +4,15 @@ import certificado_daw from '../../../assets/documents/certificado-daw-rafa-alda
 import certificado_javascript from '../../../assets/documents/certificado-javascript-rafa-alday.pdf';
 import certificado_css from '../../../assets/documents/certificado-css-rafa-alday.pdf';
 import certificado_sonido from '../../../assets/documents/certificado-sonido-rafa-alday.pdf';
+import { useScrollReveal } from '../../../hooks/useScrollReveal';
 
 
 function ResumeEducation () {
+
+    useScrollReveal();
+
     return(
-        <article className="resume__education">
+        <article className="resume__education scrollReveal">
             <h3 id='education' className="resume__articleTitle resume__educationTitle">FORMACIÓN</h3>
             <div className="resume__educationLabel">
                 <div className='educationLabel__decorationContainer'>

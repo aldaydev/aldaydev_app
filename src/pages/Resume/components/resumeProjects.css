@@ -1,5 +1,6 @@
 .resume__projects{
     margin-top: 70px;
+    /* animation: fade-in .5s ease-in-out 1.7s both; */
 }
 
 .resumeProjects__projects{
@@ -43,6 +44,12 @@
     padding: 5px 10px;
 
     transition: background-color .3s ease-in-out;
+}
+
+.mainProject__link:focus-visible,
+.moreProjects__link:focus-visible{
+    outline: 2px solid var(--color-white);
+    background-color: var(--color-green-light);
 }
 
 .mainProject__link:hover,

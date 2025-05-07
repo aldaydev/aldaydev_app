@@ -34,7 +34,7 @@ html, body {
 
 html{
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 120px;
 }
 
 body {
@@ -82,6 +82,18 @@ h1 {
 }
 
 /* ---------- REUSABLE ANIMATIONS ---------- */
+
+.scrollReveal{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scrollVisible{
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
 @keyframes fade-in {
   from{
