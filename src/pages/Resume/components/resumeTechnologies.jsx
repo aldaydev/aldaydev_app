@@ -11,7 +11,12 @@ function ResumeTechnologies () {
 
     return(
         <article className="resume__technologies">
-            <h3 className="resume__articleTitle resume__techTitle">TECNOLOGÍAS</h3>
+            <h3 
+                className="resume__articleTitle resume__techTitle"
+                id='technologies'
+            >
+                TECNOLOGÍAS
+            </h3>
             <div className="resume__techStickers">
                 <div className="techStickers__container">
                     <h4 className="techStickers__title">DESARROLLO WEB</h4>

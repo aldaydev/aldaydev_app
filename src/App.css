@@ -202,7 +202,7 @@
 
 @media screen and (max-width: 1440px) {
   .App__main{
-    padding: 80px 110px 0 100px;
+    padding: 80px 100px 0 110px;
   }
 
   .App__header,
@@ -223,7 +223,7 @@
 
 @media screen and (max-width: 1200px) {
   .App__main{
-    padding: 80px 90px 0 80px;
+    padding: 80px 80px 0 90px;
   }
 
   .App__header,
@@ -269,7 +269,7 @@
 
 @media screen and (max-width: 767px) {
   .App__main{
-    padding: 80px 60px 0 50px;
+    padding: 80px 50px 0 60px;
   }
   .App__header,
   .App__footer{
@@ -291,7 +291,7 @@
 
 @media screen and (max-width: 480px) {
   .App__main{
-    padding: 80px 40px 0 30px;
+    padding: 80px 30px 0 40px;
   }
   .App__header,
   .App__footer{
@@ -321,7 +321,7 @@
 
 @media screen and (max-width: 380px) {
   .App__main{
-    padding: 80px 35px 0 20px;
+    padding: 80px 20px 0 30px;
   }
   .App__header,
   .App__footer{

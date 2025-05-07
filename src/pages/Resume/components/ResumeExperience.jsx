@@ -3,7 +3,7 @@ import './resumeEduExp.css';
 function ResumeExperience () {
     return (
         <article className="resume__experience">
-            <h3 className="resume__articleTitle resume__experienceTitle">EXPERIENCIA</h3>
+            <h3 id='experience' className="resume__articleTitle resume__experienceTitle">EXPERIENCIA</h3>
             <div className="resume__experienceLabel">
                 <div className='experienceLabel__decorationContainer'>
                     <span className='experienceLabel__decorationFigure'></span>

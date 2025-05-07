@@ -1,19 +1,11 @@
-.resume{
-    /* margin: 0 100px; */
+/* .resume{
+
 }
 
 .resume__resumeHeader{
-    /* margin: 0 100px; */
-    /* position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 2000; */
 }
 
 .resumeHeader__navbar{
-    width: fit-content;
-    margin: 0 auto;
-    /* background-color: var(--color-blue-dark); */
     height: auto;
     position: sticky;
     top: 80px;
@@ -21,31 +13,53 @@
     z-index: 2000;
 }
 
-.resumeHeader__navbarList--scroll{
-    background-color: aqua;
+.resumeHeader__navbarList--scroll::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    color: var(--color-blue-dark);
+    opacity: 1;
+    z-index: -1;
+    
+    transition: background-color .3s ease-in-out;
 }
 
 .resumeHeader__navbarList{
-    /* position: sticky;
-    top: 0px;
-    left: 0;
-    z-index: 2000; */
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.resumeHeader__navbarList--scroll .resumeHeader__navbarLink{
+    color: var(--color-blue-dark);
+    font-weight: 500;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.resumeHeader__navbarList--scroll .resumeHeader__navbarLink:hover{
+    color: var(--color-white);
+    background-color: var(--color-green-lighter);
+    font-weight: 500;
+} */
+
+
+.resumeHeader__navbarList{
     width: fit-content;
     margin: 0 auto;
-    /* padding: 10px 45px; */
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    /* column-gap: 70px; */
     color: var(--color-white);
     font-weight: 400;
-    /* background-color: var(--color-white); */
     border-radius: 20px;
 
     position: relative;
     overflow: hidden;
 
     z-index: 900;
+    transition: background-color .3s ease-in-out;
 }
 
 .resumeHeader__bg{

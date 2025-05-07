@@ -9,7 +9,7 @@ import certificado_sonido from '../../../assets/documents/certificado-sonido-raf
 function ResumeEducation () {
     return(
         <article className="resume__education">
-            <h3 className="resume__articleTitle resume__educationTitle">FORMACIÓN</h3>
+            <h3 id='education' className="resume__articleTitle resume__educationTitle">FORMACIÓN</h3>
             <div className="resume__educationLabel">
                 <div className='educationLabel__decorationContainer'>
                     <span className='educationLabel__decorationFigure'></span>

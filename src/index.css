@@ -26,6 +26,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
   overflow-x: clip;
 }

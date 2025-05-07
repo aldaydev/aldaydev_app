@@ -8,33 +8,45 @@ import ResumeProjects from './components/ResumeProjects';
 import ResumeExperience from './components/ResumeExperience';
 
 import cv from '../../assets/documents/cv-rafa-alday.pdf';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 function Resume() {
 
     const resumeSections = [
-        "Presentación",
-        "Tecnologías",
-        "Formación",
-        "Experiencia"
+        {
+            name: "Tecnologías",
+            url: "#technologies"
+        },
+        {
+            name: "Proyectos",
+            url: "#projects"
+        },
+        {
+            name: "Formación",
+            url: "#education"
+        },
+        {
+            name: "Experiencia",
+            url: "#experience"
+        }
     ]
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollTop = window.scrollY;
-            const resumeNavbar = document.querySelector(".resumeHeader__navbarList");
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const scrollTop = window.scrollY;
+    //         const resumeNavbar = document.querySelector(".resumeHeader__navbarList");
 
-            if (scrollTop > 120) {
-                resumeNavbar.classList.add("resumeHeader__navbarList--scroll");
-            } else if (scrollTop < 80) {
-                resumeNavbar.classList.remove("resumeHeader__navbarList--scroll");
-            }
+    //         if (scrollTop > 100) {
+    //             resumeNavbar.classList.add("resumeHeader__navbarList--scroll");
+    //         } else if (scrollTop < 100) {
+    //             resumeNavbar.classList.remove("resumeHeader__navbarList--scroll");
+    //         }
 
-        };
+    //     };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, [window.scrollY]);
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => window.removeEventListener("scroll", handleScroll);
+    // }, [window.scrollY]);
 
 
     return (
@@ -58,10 +70,10 @@ function Resume() {
                                 <li key={index} className="resumeHeader__navbarItem">
                                     <span className='resumeHeader__bg' />
                                     <a
-                                        href="#"
+                                        href={resumeSection.url}
                                         className="resumeHeader__navbarLink"
                                     >
-                                        {resumeSection}
+                                        {resumeSection.name}
                                     </a>
                                 </li>
                             )
