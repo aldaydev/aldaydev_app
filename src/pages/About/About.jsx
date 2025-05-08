@@ -2,6 +2,7 @@ import './about.css';
 
 import AnimatedTitle from '../../components/AnimatedTitle/AnimatedTitle';
 import AboutHeader from './components/AboutHeader';
+import AboutContent from './components/AboutContent';
 
 
 
@@ -20,7 +21,7 @@ function About () {
             />
 
             <AboutHeader/>
-            
+            <AboutContent/>
 
         </div>
     )
