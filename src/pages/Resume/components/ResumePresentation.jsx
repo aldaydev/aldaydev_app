@@ -11,22 +11,26 @@ function ResumePresentation() {
     const basicInfo = [
         {
             text: "Rafaldayparejo@gmail.com",
-            url: "mailto: rafaldayparejo@gmail.com",
+            url: "mailto:rafaldayparejo@gmail.com",
+            aria: "Enviar un correo a Rafael",
             icon: envelope_icon
         },
         {
             text: "Moratalaz, Madrid",
             url: "https://maps.app.goo.gl/LWBDsg5nZv7Sa3Yt8",
+            aria: "Abrir ubicación: Moratalaz, Madrid",
             icon: location_icon
         },
         {
             text: "linkedin/in/rafaelalday",
             url: "https://linkedin.com/in/rafaelalday",
-            icon: linkedin_icon
+            aria: "Perfil de LinkedIn de Rafael",
+            icon: linkedin_icon,
         },
         {
             text: "github.com/aldaydev",
             url: "https://github.com/aldaydev",
+            aria: "Perfil de GitHub de Rafael",
             icon: github_icon
         },
     ]
@@ -37,6 +41,7 @@ function ResumePresentation() {
                 <img
                     src={rafa_alday_foto}
                     className='resume__photo'
+                    alt='Foto de Rafa Alday'
                 />
             </figure>
             
@@ -44,8 +49,8 @@ function ResumePresentation() {
                 <h2 className='personalInfo__name'>RAFAEL ALDAY</h2>
                 <h3 className='personalInfo__role'>DESARROLLADOR WEB FULL STACK</h3>
             </hgroup>
-            <p className='personalInfo_description'>Tras más de 12 años trabajando como Técnico Audiovisual para importantes clientes como Telefónica o Presidencia del Gobierno, me he renovado como Desarrollador Web para aportar a este sector el compromiso y buen hacer
-                que siempre me han caracterizado.</p>
+
+            <p className='personalInfo_description'>Tras más de 12 años trabajando como Técnico Audiovisual para importantes clientes como Telefónica o Presidencia del Gobierno, me he renovado como Desarrollador Web para aportar a este sector el compromiso y buen hacer que siempre me han caracterizado.</p>
 
             <div className='personalInfo__personalLinks'>
                 <ul className='personalLinks__linkList'>
@@ -58,6 +63,7 @@ function ResumePresentation() {
                                         target='_blank'
                                         rel='noreferrer noopener'
                                         className='personalLinks__link'
+                                        aria-label={item.aria}
                                     >
                                         <img src={item.icon} className='personalLinks__linkIcon'/>
                                         <span className='personalLinks__linkText'>{item.text}</span>

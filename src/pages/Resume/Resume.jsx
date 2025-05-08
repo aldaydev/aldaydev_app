@@ -61,10 +61,11 @@ function Resume() {
                 braceSize="3.4rem"
                 color="var(--color-white)"
             />
-            <nav className="resumeHeader__navbar">
-
+            <nav 
+                className="resumeHeader__navbar"
+                aria-label='Navegación interna para la página del currículum'
+            >
                 <ul className="resumeHeader__navbarList">
-
                     {
                         resumeSections && resumeSections.map((resumeSection, index) => {
                             return (
@@ -73,6 +74,7 @@ function Resume() {
                                     <a
                                         href={resumeSection.url}
                                         className="resumeHeader__navbarLink"
+                                        aria-label={`Ir a la sección de ${resumeSection.name} de mi currículum`}
                                     >
                                         {resumeSection.name}
                                     </a>
@@ -97,6 +99,7 @@ function Resume() {
                     href={cv}
                     target='_blank' rel="noopener noreferrer"
                     className='resume__downloadLink'
+                    aria-label='Descargar Currículum Rafael Alday en PDF'
                 >
                     DESCARGAR CURRÍCULUM
                 </a>
@@ -105,7 +108,7 @@ function Resume() {
             <button 
                 className={showReturnButton ? 'resume_goToTopContainer' : 'resume_goToTopContainer--hidden'}
                 tabIndex={showReturnButton ? 0 : -1}
-                aria-hidden={!showReturnButton}
+                aria-label='Volver a la parte superior del currículum'
                 onClick={() => {
                     window.scrollTo({
                         top: 0,

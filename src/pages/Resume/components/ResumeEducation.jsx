@@ -37,6 +37,7 @@ function ResumeEducation () {
                             target='_blank'
                             rel="noopener noreferrer"
                             className='educationLabel__seeCertficate'
+                            aria-label='Ver el certificado de Desarrollo de Aplicaciones Web'
                         >
                             VER CERTIFICADO
                         </a>
@@ -66,6 +67,7 @@ function ResumeEducation () {
                         target='_blank'
                         rel="noopener noreferrer"
                         className='educationLabel__seeCertficate educationLabel__seeCertficate--only'
+                        aria-label='Ver el certificado del Curso de JavaScript'
                     >
                         VER CERTIFICADO
                     </a>
@@ -94,6 +96,7 @@ function ResumeEducation () {
                         target='_blank'
                         rel="noopener noreferrer"
                         className='educationLabel__seeCertficate educationLabel__seeCertficate--only'
+                        aria-label='Ver el certificado del Master en CSS3 Avanzado'
                     >
                         VER CERTIFICADO
                     </a>
@@ -123,6 +126,7 @@ function ResumeEducation () {
                         target='_blank'
                         rel="noopener noreferrer"
                         className='educationLabel__seeCertficate educationLabel__seeCertficate--only'
+                        aria-label='Ver el certificado de Técnico Superior de Sonido'
                     >
                         VER CERTIFICADO
                     </a>

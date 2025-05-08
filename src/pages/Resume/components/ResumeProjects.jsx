@@ -32,27 +32,27 @@ function ResumeProjects() {
 
                                         <div className='mainProject__linksContainer'>
                                             {
-                                                project.github.map((githubLink, index) => {
-                                                    return (
-
-                                                        <a
-                                                            key={index}
-                                                            href={githubLink.url}
-                                                            target='_blank'
-                                                            rel="noopener noreferrer"
-                                                            className='mainProject__link'
-                                                        >
-                                                            <img
-                                                                src={github_icon}
-                                                                className='mainProject__linkIcon'
-                                                            />
-                                                            <span className='mainProject__linkText'>
-                                                                {githubLink.type.toUpperCase()}
-                                                            </span>
-                                                        </a>
-
-                                                    )
-                                                })
+                                            project.github.map((githubLink, index) => {
+                                                return (
+                                                    <a
+                                                        key={index}
+                                                        href={githubLink.url}
+                                                        target='_blank'
+                                                        rel="noopener noreferrer"
+                                                        className='mainProject__link'
+                                                        aria-label={`Ir a repositorio del 
+                                                            ${githubLink.type} de ${project.name}`}
+                                                    >
+                                                        <img
+                                                            src={github_icon}
+                                                            className='mainProject__linkIcon'
+                                                        />
+                                                        <span className='mainProject__linkText'>
+                                                            {githubLink.type.toUpperCase()}
+                                                        </span>
+                                                    </a>
+                                                )
+                                            })
                                             }
                                             {
                                                 project.deployed &&
@@ -61,6 +61,7 @@ function ResumeProjects() {
                                                     target='_blank'
                                                     rel="noopener noreferrer"
                                                     className='mainProject__link'
+                                                    aria-label={`Ir a al proyecto ${project.name} desplegado`}
                                                 >
                                                     <img
                                                         src={web_icon}
