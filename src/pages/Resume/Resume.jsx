@@ -49,6 +49,8 @@ function Resume() {
 
 
     return (
+
+        
         <div className='pageContainer resume'>
             <AnimatedTitle
                 headingLevel="h1"
@@ -107,7 +109,8 @@ function Resume() {
                 onClick={() => {
                     window.scrollTo({
                         top: 0,
-                        left: window.scrollX
+                        left: window.scrollX,
+                        behavior: 'smooth'
                     });
                 }}
             >

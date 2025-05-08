@@ -21,7 +21,7 @@ function ResumePresentation() {
         },
         {
             text: "linkedin/in/rafaelalday",
-            url: "https://linkedin/in/rafaelalday",
+            url: "https://linkedin.com/in/rafaelalday",
             icon: linkedin_icon
         },
         {
@@ -39,22 +39,26 @@ function ResumePresentation() {
                     className='resume__photo'
                 />
             </figure>
-            {/* <div className='resume__personalInfo'> */}
+            
             <hgroup className='personalInfo__titles'>
                 <h2 className='personalInfo__name'>RAFAEL ALDAY</h2>
                 <h3 className='personalInfo__role'>DESARROLLADOR WEB FULL STACK</h3>
             </hgroup>
             <p className='personalInfo_description'>Tras más de 12 años trabajando como Técnico Audiovisual para importantes clientes como Telefónica o Presidencia del Gobierno, me he renovado como Desarrollador Web para aportar a este sector el compromiso y buen hacer
                 que siempre me han caracterizado.</p>
-                
-            {/* </div> */}
+
             <div className='personalInfo__personalLinks'>
-            <ul className='personalLinks__linkList'>
+                <ul className='personalLinks__linkList'>
                     {
                         basicInfo && basicInfo.map((item, index) => {
                             return (
                                 <li key={index} className='personalLinks__linkItem'>
-                                    <a href={item.url} className='personalLinks__link'>
+                                    <a 
+                                        href={item.url}
+                                        target='_blank'
+                                        rel='noreferrer noopener'
+                                        className='personalLinks__link'
+                                    >
                                         <img src={item.icon} className='personalLinks__linkIcon'/>
                                         <span className='personalLinks__linkText'>{item.text}</span>
                                     </a>
