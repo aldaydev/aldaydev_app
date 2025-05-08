@@ -1,6 +1,8 @@
 import './about.css';
 
 import AnimatedTitle from '../../components/AnimatedTitle/AnimatedTitle';
+import AboutHeader from './components/AboutHeader';
+
 
 
 function About () {
@@ -16,6 +18,10 @@ function About () {
                 braceSize="3.4rem"
                 color="var(--color-white)"
             />
+
+            <AboutHeader/>
+            
+
         </div>
     )
 }
