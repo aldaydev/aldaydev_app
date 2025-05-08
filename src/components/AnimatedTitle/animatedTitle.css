@@ -102,6 +102,7 @@
 }
 
 .animatedTitle__finalText{
+    text-wrap: nowrap;
     display: inline-block;
     vertical-align: top;
     width: auto;

@@ -1,5 +1,6 @@
-import AnimatedTitle from '../../components/AnimatedTitle/AnimatedTitle';
 import './projects.css';
+
+import AnimatedTitle from '../../components/AnimatedTitle/AnimatedTitle';
 
 import { useEffect, useState } from 'react';
 import ProjectFilters from './components/ProjectFilters.jsx';
