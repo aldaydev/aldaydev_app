@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 5 - 08-05-2025 - working on resume accesibility
+Sprint 5 - 08-05-2025 - resume page finished
 
 ## Sprint 5
 
@@ -16,6 +16,7 @@ Sección Currículum (Resume)
 * Sección Experiencia (+ responsive)
 * Descargar currículum + botón de volver arriba
 * Tabindex navigation de toda la página
+* Accesibilidad y tab navigation realizada
 
 ## Sprint 4
 

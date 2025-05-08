@@ -66,6 +66,7 @@ function ResumeProjects() {
                                                     <img
                                                         src={web_icon}
                                                         className='mainProject__linkIcon'
+                                                        alt={`Imagen de ${project.name}`}
                                                     />
                                                     <span className='mainProject__linkText'>
                                                         DESPLEGADO
