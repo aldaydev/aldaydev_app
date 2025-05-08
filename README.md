@@ -1,13 +1,20 @@
 # AldayDev App
 
-Sprint 5 - 08-05-2025 - resume page finished
+Sprint 6 - 08-05-2025 - sprint 6 initial commit
+
+## Sprint 6
+
+Objetivos:
+
+Página "Sobre mí" (About)
+* Disposición inivial página sobre mí
 
 ## Sprint 5
 
 Objetivos:
 
-Sección Currículum (Resume)
-* Disposición inicial sección currículum
+Página "Currículum" (Resume)
+* Disposición inicial página currículum
 * Creación de navbar para Resume + funcionalidad
 * Sección Presentación ( + responsive)
 * Sección Tecnologías (+ responsive)
