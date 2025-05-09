@@ -11,6 +11,7 @@ function AboutHeader() {
                 <img
                     src={foto_alday_about}
                     className='about__image'
+                    alt='Foto de Rafael Alday en blanco y negro'
                 />
             </figure>
 

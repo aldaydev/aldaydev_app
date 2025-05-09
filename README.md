@@ -1,13 +1,16 @@
 # AldayDev App
 
-Sprint 6 - 08-05-2025 - sprint 6 initial commit
+Sprint 6 - 09-05-2025 - about page finished
 
 ## Sprint 6
 
 Objetivos:
 
 Página "Sobre mí" (About)
-* Disposición inivial página sobre mí
+* Disposición inicial página sobre mí
+* Secciones: "Mis inicios" y "Renovación Laboral" 
+* Sección "La música y yo" + Vídeos Youtube + Enlaces
+* Diseño responsive + accesibilidad
 
 ## Sprint 5
 

@@ -77,10 +77,12 @@ function AboutContent() {
                                     target='_blank'
                                     rel='noreferrer noopener'
                                     className='about__musicLinks'
+                                    aria-label='Visitar Spotify de Alday'
                                 >
                                     <img 
                                         src={spotify_icon}
                                         className='about__musicLinksImage'
+                                        alt=""
                                     />
                                 </a>
                             </li>
@@ -90,10 +92,12 @@ function AboutContent() {
                                     target='_blank'
                                     rel='noreferrer noopener'
                                     className='about__musicLinks'
+                                    aria-label='Visitar Instagram de Alday'
                                 >
                                     <img 
                                         src={instagram_icon}
                                         className='about__musicLinksImage'
+                                        alt=""
                                     />
                                 </a>
                             </li>
@@ -103,10 +107,12 @@ function AboutContent() {
                                     target='_blank'
                                     rel='noreferrer noopener'
                                     className='about__musicLinks'
+                                    aria-label='Visitar Youtube de Alday'
                                 >
                                     <img 
                                         src={youtube_icon}
                                         className='about__musicLinksImage'
+                                        alt=""
                                     />
                                 </a>
                             </li>

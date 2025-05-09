@@ -106,8 +106,10 @@
     transition: scale .2s ease-in-out;
 }
 
+
+
 @media screen and (max-width: 1024px ) {
-    
+
     .about__flexSection{
         column-gap: 50px;
     }
