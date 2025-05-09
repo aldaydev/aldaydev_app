@@ -15,7 +15,7 @@ function HomeHeader() {
 
     const [currentColor, setCurrentColor] = useState("white");
 
-    const [currentFocusedIcon, setCurrentFocusedIcon] = useState(techFilterList[0].name);
+    const [currentFocusedIcon, setCurrentFocusedIcon] = useState(techFilterList[0].id);
 
     const [elementFocused, setElementFocused] = useState(false);
 
@@ -46,15 +46,15 @@ function HomeHeader() {
         return () => stopInterval();
     }, []);
     
-    const handleMouseEnter = (color) => {
-        setCurrentColor(color);
+    const handleMouseEnter = (item) => {
+        setCurrentColor(item.brandColor);
         setElementFocused(true);
+        setCurrentFocusedIcon(item.id);
         stopInterval(); // Detiene el intervalo al hacer hover
     };
 
-    const handleMouseLeave = (color) => {
+    const handleMouseLeave = () => {
         setElementFocused(false);
-        setCurrentColor(color);
         startInterval();
     };
 
@@ -85,12 +85,9 @@ function HomeHeader() {
                                 <img
                                     src={filter.icon}
                                     className={`homeFigure__techIcon ${currentFocusedIcon === filter.id && !elementFocused ? "homeFigure__techIcon--focused" : ""}`}
-                                    onMouseEnter={() => handleMouseEnter(filter.brandColor)}
-                                    onMouseLeave={() => handleMouseLeave("white")}
+                                    onMouseEnter={() => handleMouseEnter(filter)}
+                                    onMouseLeave={() => handleMouseLeave()}
                                 />
-                                {/* <span className='homeFigure__techName'>
-                                    {filter.name}
-                                </span> */}
                             </div>
                         )
                     })
@@ -103,16 +100,34 @@ function HomeHeader() {
                     <HomeIllustration currentColor={currentColor} />
                 </figure>
 
+                <div className='homeHeader__currentTechContainer'>
+                    <h4 
+                        className='homeHeader__currentTechName'
+                        style={{
+                            // borderColor: currentFocusedIcon !== "express" ? currentColor : "white",
+                            color: currentFocusedIcon !== "express" ? currentColor : "white"
+                        }}
+                    >
+                        {currentFocusedIcon.toUpperCase()}
+                    </h4>
+                </div>
+                
+
             </div>
 
-            <div className='homeHeader__goDownContainer'>
+            
+
+            <a 
+                className='homeHeader__goDownContainer'
+                href='#projects'
+            >
                 <img
                     src={down_icon} className='homeHeader__goDownIcon'
                     loading="lazy"
                     width={50}
                     height={50}
                 />
-            </div>
+            </a>
 
             {/* <h4 className='homeHeader__description'>Te doy la bienvenida a mi portfolio.</h4> */}
 

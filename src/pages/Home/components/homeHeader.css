@@ -1,7 +1,6 @@
 .homeHeader{
-    /* margin-top: 25px; */
     width: 100%;
-    /* min-height: 100dvh; */
+    min-height: calc(100dvh - 70px);
     height:fit-content;
     display: flex;
     flex-direction: column;
@@ -12,7 +11,6 @@
 }
 
 .homeHeader__homeFigure{
-    grid-area: homeFigure;
     justify-self: center;
     align-self: center;
     width: fit-content;
@@ -80,7 +78,7 @@
     /* width: 500px;
     height: 500px; */
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
     height: auto;
     display: block; /* Evita espacios extra como si fuera una imagen inline */
     padding-top: 40px;
@@ -88,6 +86,8 @@
     align-self: center;
     padding: 4% 8% 0 8%;
     /* width: fit-content; */
+
+    position: relative;
 }
 
 .homeIllustration{
@@ -117,6 +117,33 @@
     border-radius: 20px;
 }
 
+.homeHeader__currentTechContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom:-30px;
+    left: 0;
+    
+    font-size: 1.6rem;
+    animation: fade-in .5s ease-in-out 2s both;
+    z-index: -1;
+}
+
+.homeHeader__currentTechName{
+    
+    /* border: 1px solid var(--color-white); */
+    border-radius: 5px;
+    /* background-color: #85898b; */
+    padding: 5px 60px 5px 60px;
+    /* border: 1px solid; */
+    font-weight: 500;
+    /* text-shadow: 1px 1px 2px var(--color-blue-dark); */
+    /* background-color: rgba(2s55, 255, 255, 0.247); */
+    
+}
+
 /*---------*/
 
 .homeHeader__title{
@@ -136,7 +163,6 @@
 }
 
 .homeHeader__description{
-    grid-area: homeDescription;
     font-size: 1.3rem;
     font-weight: 400;
     margin-bottom: 40px;
@@ -145,7 +171,6 @@
 }
 
 .homeHeader__abilities{
-    grid-area: homeAbilities;
     align-self: center;
     font-size: 1.2rem;
     font-weight: 300;
@@ -175,7 +200,7 @@
 
 
 .homeHeader__goDownContainer{
-    padding-top: 30px;
+    padding-top: 100px;
     position: relative;
     animation: fade-in 1s ease-in-out 2.1s both;
 }
@@ -197,6 +222,10 @@
 
 @media screen and (max-width: 680px ) {
     
+    .homeHeader{
+    min-height: auto;
+    }
+
     .homeHeader__title{
         font-size: 1.4rem;
     }
@@ -209,6 +238,10 @@
 
     .homeFigure__techIcon {
     width: 75px;
+    }
+
+    .homeHeader__currentTechContainer{
+    font-size: 1.2rem;
     }
 }
 
@@ -228,7 +261,22 @@
     }
 
     .homeFigure__techIcon{
-    width: 11.5dvw;
+        width: 11.5dvw;
     }
 
+    .homeHeader__currentTechContainer{
+        font-size: 1.1rem;
+        bottom: -40px;
+    }
+
+    .homeHeader__goDownIcon{
+        width: 40px;
+    }   
+
+}
+
+@media screen and (max-width: 480px ) {
+    .homeHeader__title{
+        font-size: 1.3rem;
+    }
 }
