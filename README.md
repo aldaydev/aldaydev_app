@@ -1,6 +1,13 @@
 # AldayDev App
 
-Sprint 6 - 09-05-2025 - about page finished
+Sprint 7 - 09-05-2025 - sprint 7 initial commit
+
+## Sprint 7
+
+Objetivos:
+
+Página inicial:
+* Header -> Diseño presentación
 
 ## Sprint 6
 
