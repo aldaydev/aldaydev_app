@@ -1,17 +1,70 @@
 import './homeHeader.css';
 
-import dev_illustration from '../../../assets/images/dev-illustration.svg';
-
 import { techFilters } from '../../../data/techFilters';
 import HomeIllustration from './homeIllustration';
-import { useState } from 'react';
+import down_icon from '../../../assets/icons/util-icons/down_icon.svg';
+import { useEffect, useRef, useState } from 'react';
 
 function HomeHeader() {
 
+    const techFilterList = techFilters;
+
+    const intervalRef = useRef(null);
+    const currentNumberRef = useRef(0);
+
     const [currentColor, setCurrentColor] = useState("white");
+
+    const [currentFocusedIcon, setCurrentFocusedIcon] = useState(techFilterList[0].name);
+
+    const [elementFocused, setElementFocused] = useState(false);
+
+
+    const startInterval = () => {
+        intervalRef.current = setInterval(() => {
+            const nextIndex = currentNumberRef.current;
+            setCurrentFocusedIcon(techFilterList[nextIndex].id);
+            setCurrentColor(techFilterList[nextIndex].brandColor);
+    
+            if (nextIndex >= techFilterList.length - 1) {
+                currentNumberRef.current = 0;
+            } else {
+                currentNumberRef.current++;
+            }
+        }, 2000);
+    };
+    
+    const stopInterval = () => {
+        if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+    
+    useEffect(() => {
+        
+        startInterval();
+
+        
+        return () => stopInterval();
+    }, []);
+    
+    const handleMouseEnter = (color) => {
+        setCurrentColor(color);
+        setElementFocused(true);
+        stopInterval(); // Detiene el intervalo al hacer hover
+    };
+
+    const handleMouseLeave = (color) => {
+        setElementFocused(false);
+        setCurrentColor(color);
+        startInterval();
+    };
 
     return (
         <header className='homeHeader'>
+
+<           h1 className='homeHeader__title'>
+                <span className='homeHeader__titleName'>RAFAEL ALDAY</span>
+                <span className='homeHeader__titleSeparator'> ● </span>
+                <span className='homeHeader__titleRole'>DESAROLLADOR WEB</span>
+            </h1>
 
             <div className='homeHeader__homeFigure'>
                 {
@@ -23,9 +76,9 @@ function HomeHeader() {
                             >
                                 <img
                                     src={filter.icon}
-                                    className='homeFigure__techIcon'
-                                    onMouseEnter={()=>setCurrentColor(filter.brandColor)}
-                                    onMouseLeave={()=>setCurrentColor("white")}
+                                    className={`homeFigure__techIcon ${currentFocusedIcon === filter.id && !elementFocused && "homeFigure__techIcon--focused"}`}
+                                    onMouseEnter={() => handleMouseEnter(filter.brandColor)}
+                                    onMouseLeave={() => handleMouseLeave("white")}
                                 />
                                 {/* <span className='homeFigure__techName'>
                                     {filter.name}
@@ -41,35 +94,36 @@ function HomeHeader() {
                 <figure className='homeHeader__img'>
                     <HomeIllustration currentColor={currentColor} />
                 </figure>
-                
-            </div>
-            
-            <h1 className='homeHeader__title'>
-                <span className='homeHeader__titleName'>RAFA ALDAY</span>
-                <span className='homeHeader__titleSeparator'> ● </span>
-                <span className='homeHeader__titleRole'>DESAROLLADOR WEB</span>
-            </h1>
-                    
-            <h4 className='homeHeader__description'>Te doy la bienvenida a mi portfolio.</h4>
-            
-            <ul className='homeHeader__abilities'>
 
-                <h4 className='homeHeader__abilitiesDescription'>Aquí te mostraré mis habilidades en desarrollo web: </h4>
+            </div>
+
+            <div className='homeHeader__goDownContainer'>
+                <img
+                    src={down_icon} className='homeHeader__goDownIcon'
+                    loading="lazy"
+                    width={50}
+                    height={50}
+                />
+            </div>
+
+            {/* <h4 className='homeHeader__description'>Te doy la bienvenida a mi portfolio.</h4> */}
+
+            {/* <ul className='homeHeader__abilities'>
 
                 <li className='homeHeader__ability'>
-                    Maquetación web: HTML y CSS. Diseño web "responisve" atendiendo al "pixel perfect".
+                    <b>Maquetación web</b> <p>HTML y CSS. Diseño web "responisve" atendiendo al "pixel perfect".</p>
                 </li>
                 <li className='homeHeader__ability'> 
-                    Front-end: JavaScript. Lógica de interfaces, gestión de estados, contextos y consumo de APIs utilizando React.
+                    <b>Front-end</b> <p>JavaScript. Gestión de estados, contextos y consumo de APIs con React.</p>
                 </li>
                 <li className='homeHeader__ability'>
-                    Back-end: Diseño de API Rests desde cero utilizando Node, Express y multitud de dependencias de dicho entorno.
+                    <b>Back-end</b> <p>Diseño de API Rests utilizando Node y Express.</p>
                 </li>
                 <li className='homeHeader__ability'>
-                    Bases de datos: Tanto "no-relacionales" (MongoDB) como relacionales (MySQL), aplicadas en proyectos desplegados.
+                    <b>Bases de datos</b> <p>"no-relacionales" (MongoDB) y relacionales (MySQL).</p>
                 </li>
-            </ul>
-            
+            </ul> */}
+
 
         </header>
     )
