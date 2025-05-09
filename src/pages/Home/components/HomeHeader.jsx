@@ -76,7 +76,7 @@ function HomeHeader() {
                             >
                                 <img
                                     src={filter.icon}
-                                    className={`homeFigure__techIcon ${currentFocusedIcon === filter.id && !elementFocused && "homeFigure__techIcon--focused"}`}
+                                    className={`homeFigure__techIcon ${currentFocusedIcon === filter.id && !elementFocused ? "homeFigure__techIcon--focused" : ""}`}
                                     onMouseEnter={() => handleMouseEnter(filter.brandColor)}
                                     onMouseLeave={() => handleMouseLeave("white")}
                                 />

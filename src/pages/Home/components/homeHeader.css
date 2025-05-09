@@ -2,25 +2,12 @@
     margin-top: 25px;
     width: 100%;
     min-height: 100dvh;
+    height:fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* display: grid;
-    grid-template-areas: 
-    "homeTitle homeTitle"
-    "homeDescription homeDescription"
-    "homeFigure homeAbilities"
-    ;
-    grid-template-columns: 50% auto;
-    grid-template-rows: auto auto auto 1fr;
-
-    align-items: start;
-    justify-items: center;
-    justify-content: center; */
 
     column-gap: 30px;
-    /* row-gap: 30px; */
-
 
 }
 
@@ -90,11 +77,17 @@
 }
 
 .homeHeader__homeFigure{
+    /* width: 500px;
+    height: 500px; */
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block; /* Evita espacios extra como si fuera una imagen inline */
     padding-top: 40px;
     position: relative;
     align-self: center;
     padding: 4% 8% 0 8%;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 .homeIllustration{
@@ -110,6 +103,7 @@
     cursor: pointer;
     width: 90px;
     transform: rotate3d(0, 1, 0, 25deg);
+    transition: scale .3s ease-in-out, filter .3s ease-in-out;
 }
 
 .homeFigure__techIcon:hover,
@@ -180,7 +174,7 @@
 
 
 .homeHeader__goDownContainer{
-    padding-top: 20px;
+    padding-top: 30px;
     position: relative;
     animation: fade-in 1s ease-in-out 2.1s both;
 }
@@ -199,18 +193,41 @@
         transform: translateY(0px);
     }
 }
-/* .homeHeader__titleName{
-    font-size: 1.8rem;
-    font-weight: 400;
+
+@media screen and (max-width: 680px ) {
+    
+    .homeHeader__title{
+        font-size: 1.4rem;
+    }
+
+    .homeHeader__homeFigure{
+        padding-top: 10%;
+    }
+
+    
+
+    .homeFigure__techIcon {
+    width: 75px;
+    }
 }
 
-.homeHeader__titleSeparator{
-    padding: 0 5px;
-    font-size: 1.8rem;
-    font-weight: 400;
-}
+@media screen and (max-width: 580px ) {
 
-.homeHeader__titleRole{
-    font-size: 1.8rem;
-    font-weight: 400;
-} */
+    .homeHeader__titleSeparator{
+        display: none;
+    }
+
+    .homeHeader__title{
+        font-size: 1.5rem;
+    }
+
+    .homeHeader__titleName{
+        display: block;
+        text-align: center;
+    }
+
+    .homeFigure__techIcon{
+    width: 11.5dvw;
+    }
+
+}

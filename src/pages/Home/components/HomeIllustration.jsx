@@ -4,8 +4,10 @@ function HomeIllustration({ currentColor }) {
 
     return (
         <svg
-        width="500"
-        height="500"
+        viewBox="0 0 500 500"
+        // width="500"
+        // height="500"
+        preserveAspectRatio="xMidYMid meet"
         className="homeIllustration"
         >
             <g className="layer">
