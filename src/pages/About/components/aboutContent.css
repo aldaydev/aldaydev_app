@@ -46,17 +46,127 @@
 
 .about__sectionText{
     margin-bottom: 17px;
+    text-align: justify;
+}
+
+.about__musicSection{
+    margin-bottom: 50px;
 }
 
 .about__musicSection--videos{
-    margin: 30px 15px 50px 15px;
+    margin: 50px 15px 50px 15px;
     margin-top: 30px;
     display: flex;
     column-gap: 5%;
 }
 
+.about__musicSection--links{
+    margin-bottom: 30px;
+}
+
 .about__videoContainer{
-    /* padding: 15px; */
     aspect-ratio: 16/9;
     flex-basis: 50%;
+}
+
+.about__musicLinksTitle{
+    font-weight: 400;
+    text-align: center;
+    text-wrap: pretty;
+}
+
+.about__musicLinksList{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 80px;
+}
+
+.about__musicLinksItem{
+    width: fit-content;
+}
+
+.about__musicLinks{
+    display: flex;
+    align-items: center;
+}
+
+.about__musicLinks:focus-visible{
+    outline: 2px solid var(--color-white);
+    outline-offset: 3px;
+}
+
+.about__musicLinksItem:hover .about__musicLinksImage{
+    scale: 1.15;
+}
+
+.about__musicLinksImage{
+    width: 60px;
+    transition: scale .2s ease-in-out;
+}
+
+@media screen and (max-width: 1024px ) {
+    
+    .about__flexSection{
+        column-gap: 50px;
+    }
+
+    .about__musicSection--videos{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+
+    .about__flexSection{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .about__musicSection{
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .about__musicSection--videos{
+        margin: 30px;
+        flex-direction: column;
+        row-gap: 40px;
+        column-gap: 0;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+
+    .about__musicSection--videos{
+        margin: 30px 0;
+    }
+
+    .about__musicLinksList{
+        column-gap: 15dvw;
+    }
+
+    .about__musicLinksImage {
+        width: 50px;
+        transition: scale .2s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .about__sectionText{
+        font-size: .95rem;
+    }
+
+    .about__musicLinksTitle{
+        font-size: 1.1rem;
+    }
+
 }
