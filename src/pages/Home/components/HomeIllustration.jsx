@@ -1,4 +1,4 @@
-function HomeIllustration({ currentColor = "white" }) {
+function HomeIllustration({ currentColor }) {
 
     //"#00AC89"
 

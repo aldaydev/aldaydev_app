@@ -5,7 +5,11 @@ import spotify_icon from '../../../assets/icons/social-icons/spotify_icon.svg';
 import youtube_icon from '../../../assets/icons/social-icons/youtube_icon.svg';
 import instagram_icon from '../../../assets/icons/social-icons/instagram_icon.svg';
 
+import { useScrollReveal } from '../../../hooks/useScrollReveal';
+
 function AboutContent() {
+
+    useScrollReveal();
 
     const musicVideos = [
         "https://youtu.be/a4GZnXQbZbI?si=9mgs2Wa9wuxTuQIq",
@@ -41,7 +45,7 @@ function AboutContent() {
 
                 </section>
 
-                <section className='about__section about__section--music'>
+                <section className='about__section about__section--music scrollReveal'>
                     <article className='about__musicSection'>
                         <h2 className='about__sectionTitle'>LA MÚSICA Y YO</h2>
                         <p className='about__sectionText'>Durante todo el transcurso de lo que he contado anteriormete (y desde mucho antes, de hecho), mi gran pasión siempre ha sido componer canciones.</p>
@@ -53,9 +57,8 @@ function AboutContent() {
                         {
                             musicVideos && musicVideos.map((video, index) => {
                                 return(
-                                    <div className='about__videoContainer'>
+                                    <div className='about__videoContainer' key={index}>
                                         <ReactPlayer
-                                        key={index}
                                         url={video}
                                         controls
                                         width="100%"

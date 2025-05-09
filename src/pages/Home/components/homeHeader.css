@@ -1,13 +1,31 @@
 .homeHeader{
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
-    min-height: 50dvh;
-    display: flex;
-    align-items: center;
+    /* min-height: 100dvh; */
+    /* display: flex;
+    align-items: center; */
+    display: grid;
+    grid-template-areas: 
+    "homeTitle homeTitle"
+    "homeFigure homeDescription"
+    "homeFigure homeAbilities"
+    ;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr;
+
+    align-items: start;
+
+    column-gap: 60px;
+    /* row-gap: 30px; */
+
+
 }
 
 .homeHeader__homeFigure{
-    padding-top: 60px;
+    grid-area: homeFigure;
+    width: fit-content;
+    height: fit-content;
+    padding-top: 15px;
     position: relative;
 }
 
@@ -57,16 +75,18 @@
     right: 0;
 }
 
-.homeHeader__figure{
+.homeHeader__homeFigure{
     position: relative;
+    align-self: center;
 }
 
 .homeIllustration{
-    scale: 90%;
+    scale: 75%;
 }
 
 .homeHeader__img{
-    width: 80%;
+    height: fit-content;
+    align-self: center;
 }
 
 .homeFigure__techIcon{
@@ -80,3 +100,62 @@
     scale: 1.1;
 }
 
+
+/*---------*/
+
+.homeHeader__title{
+    grid-area: homeTitle;
+    justify-self: center;
+    margin-bottom: 40px;
+    color: var(--color-white);
+    font-size: 1.7rem;
+    font-weight: 400;
+    max-height: fit-content;
+}
+
+.homeHeader__description{
+    grid-area: homeDescription;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.homeHeader__abilitiesDescription{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.homeHeader__abilities{
+    grid-area: homeAbilities;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.homeHeader__ability{
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style: circle;
+    text-wrap: pretty;
+}
+
+
+
+/* .homeHeader__titleName{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.homeHeader__titleSeparator{
+    padding: 0 5px;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.homeHeader__titleRole{
+    font-size: 1.8rem;
+    font-weight: 400;
+} */

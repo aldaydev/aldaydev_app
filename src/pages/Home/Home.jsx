@@ -9,7 +9,7 @@ function Home () {
     return(
         <div className='pageContainer home'>
             <AnimatedTitle
-                headingLevel="h3"
+                headingLevel="h2"
                 initialText="A"
                 finalText="ldayDev"
                 id="page__animatedTitle"
