@@ -4,6 +4,7 @@ import { techFilters } from '../../../data/techFilters';
 import HomeIllustration from './homeIllustration';
 import down_icon from '../../../assets/icons/util-icons/down_icon.svg';
 import { useEffect, useRef, useState } from 'react';
+import AnimatedTitle from '../../../components/AnimatedTitle/AnimatedTitle';
 
 function HomeHeader() {
 
@@ -60,7 +61,14 @@ function HomeHeader() {
     return (
         <header className='homeHeader'>
 
-<           h1 className='homeHeader__title'>
+            <AnimatedTitle
+                headingLevel="h2"
+                initialText="A"
+                finalText="ldayDev"
+                id="page__animatedTitle"
+            />
+
+            <h1 className='homeHeader__title'>
                 <span className='homeHeader__titleName'>RAFAEL ALDAY</span>
                 <span className='homeHeader__titleSeparator'> ● </span>
                 <span className='homeHeader__titleRole'>DESAROLLADOR WEB</span>
