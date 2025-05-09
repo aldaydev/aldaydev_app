@@ -7,6 +7,7 @@ import projects from '../../../data/projectsData.js';
 
 import github_icon from '../../../assets/icons/util-icons/github_simpleicon.svg';
 import web_icon from '../../../assets/icons/util-icons/web_simpleicon.svg';
+import youtube_icon from '../../../assets/icons/util-icons/youtube_simpleicon.svg';
 import { useScrollReveal } from '../../../hooks/useScrollReveal.jsx';
 
 function ResumeProjects() {
@@ -61,7 +62,7 @@ function ResumeProjects() {
                                                     target='_blank'
                                                     rel="noopener noreferrer"
                                                     className='mainProject__link'
-                                                    aria-label={`Ir a al proyecto ${project.name} desplegado`}
+                                                    aria-label={`Ir al proyecto ${project.name} desplegado`}
                                                 >
                                                     <img
                                                         src={web_icon}
@@ -70,6 +71,25 @@ function ResumeProjects() {
                                                     />
                                                     <span className='mainProject__linkText'>
                                                         DESPLEGADO
+                                                    </span>
+                                                </a>
+                                            }
+                                            {
+                                                project.video && 
+                                                <a
+                                                    href={project.deployed}
+                                                    target='_blank'
+                                                    rel="noopener noreferrer"
+                                                    className='mainProject__link mainProject__link--youtube'
+                                                    aria-label={`Ir al video presentación de ${project.name}`}
+                                                >
+                                                    <img
+                                                        src={youtube_icon}
+                                                        className='mainProject__linkIcon'
+                                                        alt={`Imagen de ${project.name}`}
+                                                    />
+                                                    <span className='mainProject__linkText'>
+                                                        VIDEO
                                                     </span>
                                                 </a>
                                             }

@@ -1,7 +1,7 @@
 /* ---------- APP HEADER ---------- */
 
 .App__header{
-  padding: 0 150px;
+  padding: 0 12%;
   height: 70px;
   width: 100%;
   position: fixed;
@@ -75,7 +75,7 @@
   /* min-height: 100dvh; */
   z-index: 0;
 
-  padding: 0 160px 0 150px;
+  padding: 0 13% 0 12%;
   padding-top: 80px;
   margin-bottom: 70px;
 }
@@ -202,12 +202,12 @@
 
 @media screen and (max-width: 1440px) {
   .App__main{
-    padding: 80px 100px 0 100px;
+    padding: 80px 11% 0 10%;
   }
 
   .App__header,
   .App__footer{
-    padding: 0 100px;
+    padding: 0 10%;
   }
 
   #page__animatedTitle{
@@ -221,7 +221,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .App__main{
     padding: 80px 80px 0 80px;
   }
@@ -230,8 +230,7 @@
   .App__footer{
     padding: 0 80px;
   }
-
-}
+} */
 
 
 @media screen and (max-width: 1024px) {
@@ -260,11 +259,23 @@
     }
   }
 
+  /* #page__animatedTitle{
+    font-size: 1.6rem;
+    margin-top: 0px;
+  }
+
+  #page__animatedTitle__braceLeft,
+  #page__animatedTitle__braceRight{
+  font-size: 2rem;
+  } */
+
   .page__subtitle{
 
     font-size: 1.2rem;
     font-weight: 300;
   }
+
+  
 }
 
 @media screen and (max-width: 767px) {

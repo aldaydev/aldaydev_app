@@ -25,6 +25,38 @@
     box-shadow: 2px 2px 20px 3px var(--color-green-lighter);
 }
 
-.about__story{
+.about__flexSection{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+
+.about__flexSection .about__section{
+    flex-basis: 50%;
+}
+
+.about__section{
     color: var(--color-white);
+}
+
+.about__sectionTitle{
+    margin-bottom: 35px;
+}
+
+.about__sectionText{
+    margin-bottom: 17px;
+}
+
+.about__musicSection--videos{
+    margin: 30px 15px 50px 15px;
+    margin-top: 30px;
+    display: flex;
+    column-gap: 5%;
+}
+
+.about__videoContainer{
+    /* padding: 15px; */
+    aspect-ratio: 16/9;
+    flex-basis: 50%;
 }

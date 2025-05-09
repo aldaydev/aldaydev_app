@@ -30,8 +30,10 @@
 
 .mainProject__linksContainer{
     display: flex;
+    justify-content: center;
     column-gap: 20px;
-
+    row-gap: 15px;
+    flex-wrap: wrap;
     margin-bottom: 10px;
 }
 
