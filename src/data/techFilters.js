@@ -6,10 +6,10 @@ import express_icon from '../assets/icons/filter-icons/express_icon.png';
 import mongo_icon from '../assets/icons/filter-icons/mongo_icon.png';
 import mysql_icon from '../assets/icons/filter-icons/mysql_icon.png';
 import firebase_icon from '../assets/icons/filter-icons/firebase_icon.png';
+import vanilla_icon from '../assets/icons/filter-icons/vanilla_icon.png';
 
 //Other filter icon imports
 
-import vanilla_icon from '../assets/icons/filter-icons/vanilla_icon.png';
 import doc_icon from '../assets/icons/filter-icons/documentation_icon.svg';
 import testing_icon from '../assets/icons/filter-icons/testing_icon.svg';
 
@@ -18,43 +18,50 @@ const techFilters = [
         id: "react",
         name: "React",
         alt: "Icono de React",
-        icon: react_icon
+        icon: react_icon,
+        brandColor: "#01D8FF"
     },
     {
         id: "node",
         name: "Node",
         alt: "Icono de Node",
-        icon: node_icon
+        icon: node_icon,
+        brandColor: "#5FA04E"
     },
     {
         id: "express",
         name: "Express",
         alt: "Icono de Express",
-        icon: express_icon
+        icon: express_icon,
+        brandColor: "#000000"
     },
     {
         id: "mongodb",
         name: "MongoDB",
         alt: "Icono de Mongo DB",
-        icon: mongo_icon
+        icon: mongo_icon,
+        brandColor: "#00684A"
     },
     {
         id: "mysql",
         name: "MySQL",
         alt: "Icono de MySQL",
-        icon: mysql_icon
+        icon: mysql_icon,
+        brandColor: "#057791"
     },
     {
         id: "firebase",
         name: "Firebase",
         alt: "Icono de Firebase",
-        icon: firebase_icon
+        icon: firebase_icon,
+        brandColor: "#DD2C00"
     },
     {
         id: "vanilla",
         name: "Vanilla",
         alt: "Icono de HTML5, CSS3 y JavaScript",
-        icon: vanilla_icon
+        icon: vanilla_icon,
+        brandColor: "#F7DF1E"
     }
 
 ]

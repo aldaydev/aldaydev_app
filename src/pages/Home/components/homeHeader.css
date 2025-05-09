@@ -1,0 +1,82 @@
+.homeHeader{
+    margin-top: 50px;
+    width: 100%;
+    min-height: 50dvh;
+    display: flex;
+    align-items: center;
+}
+
+.homeHeader__homeFigure{
+    padding-top: 60px;
+    position: relative;
+}
+
+.homeFigure__techItem{
+    position: absolute;
+    z-index: 800;
+}
+
+.homeFigure__techItem--node{
+    top: 18%;
+    left: 0;
+}
+
+.homeFigure__techItem--express{
+    scale: .9;
+    top:  7%;
+    left: 10%;
+}
+
+.homeFigure__techItem--vanilla{
+    scale: .98;
+    top:  3%;
+    left: 26%;
+}
+
+.homeFigure__techItem--react{
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.homeFigure__techItem--mongodb{
+    top:  3%;
+    right: 25%;
+}
+
+.homeFigure__techItem--mysql{
+    top:  7%;
+    right: 10%;
+}
+
+.homeFigure__techItem--firebase{
+    top: 18%;
+    right: 0;
+}
+
+.homeHeader__figure{
+    position: relative;
+}
+
+.homeIllustration{
+    scale: 90%;
+}
+
+.homeHeader__img{
+    width: 80%;
+}
+
+.homeFigure__techIcon{
+    cursor: pointer;
+    width: 75px;
+    transform: rotate3d(0, 1, 0, 25deg);
+}
+
+.homeFigure__techIcon:hover{
+    filter: drop-shadow(0px 0px 3px var(--color-white));
+    scale: 1.1;
+}
+
