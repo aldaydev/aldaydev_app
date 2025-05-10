@@ -1,0 +1,21 @@
+{
+    "name": "AldayDev App",
+    "short_name": "AldayDev",
+    "description": "Portfolio de Rafael Alday como desarrollador web bajo su marca personal, AldayDev.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#071A28",
+    "theme_color": "#e4e12f",
+    "icons": [
+        {
+            "src": "/aldaydev_icon_192px.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/aldaydev_icon_512px.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
