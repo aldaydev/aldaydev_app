@@ -141,6 +141,15 @@
     box-shadow: 1px 1px 3px 2px var(--color-green-lighter);
 }
 
+.footerPages__item a:focus-visible{
+    outline: none;
+}
+
+.footerPages__item:has(a:focus-visible){
+    outline: 2px solid var(--color-white);
+    background-color: var(--color-green-lighter);
+}
+
 @media screen and (max-width: 1024px) {
     .footer__container{
 
@@ -240,7 +249,7 @@
 
     .footerPages__list{
         justify-content: center;
-        margin: 0 30px;
+        margin: 0 40px;
         flex-wrap: wrap;
     }
 

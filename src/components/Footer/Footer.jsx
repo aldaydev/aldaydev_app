@@ -94,7 +94,7 @@ function Footer() {
                             </Link>
                         </li>
                         <li className='footerPages__item'>
-                            <Link to='/videos'>
+                            <Link to='/videos' className='footerPages__link'>
                                 Vídeos
                             </Link>
                         </li>

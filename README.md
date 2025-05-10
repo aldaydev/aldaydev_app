@@ -9,6 +9,12 @@ Objetivos:
 Footer:
 * Diseño del footer + responsive + accesibility
 
+MetaTags:
+* Añadir Favicon y meta tags
+
+Añadir a proyectos:
+* Añadir el portfolio a los proyectos
+
 ## Sprint 7
 
 Objetivos:
