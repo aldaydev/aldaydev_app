@@ -1,6 +1,13 @@
 # AldayDev App
 
-Sprint 7 - 10-05-2025 - home page finished
+Sprint 8 - 10-05-2025 - initial commit for sprint 8
+
+## Sprint 8
+
+Objetivos:
+
+Footer:
+* Diseño del footer + responsive + accesibility
 
 ## Sprint 7
 
