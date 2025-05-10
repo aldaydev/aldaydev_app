@@ -17,7 +17,7 @@ function HomeProjects () {
 
     return(
         <article className="home__projects">
-            <h3 id='projects' className="home__articleTitle home__projectsTitle">ÚLTIMOS PROYECTOS</h3>
+            <h3 id='projects' className="home__articleTitle home__projectsTitle">PROYECTOS DESTACADOS</h3>
             <div className='home__homeProjects'>
                 <div className='homeProjects__projects'>
                     {

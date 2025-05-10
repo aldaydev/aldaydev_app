@@ -19,6 +19,9 @@ import musikos_logo from '../assets/images/projects/musikos_logo.png';
 import chordsapi_capture_desktop from '../assets/images/projects/chordsapi_capture_400px.png';
 import chordsapi_capture_fullScreen from '../assets/images/projects/chordsapi_capture_1200px.png';
 import chordsapi_logo from '../assets/images/projects/chordsapi_logo.png';
+import aldaydev_capture_desktop from '../assets/images/projects/aldaydev_capture_400px.png';
+import aldaydev_capture_fullScreen from '../assets/images/projects/aldaydev_capture_1200px.png';
+import aldaydev_logo from '../assets/images/projects/aldaydev_logo-shadow.png';
 
 const projectsData = [
     {
@@ -184,6 +187,29 @@ const projectsData = [
             }
         ],
         deployed: "https://chords.alday.dev",
+        video: null
+    },
+    {
+        id: "aldaydev",
+        name: "AldayDev Portfolio",
+        description: "Este portfolio en el que estás ahora mismo. Aquí pretendo mostrarte de manera visual todos mis conocimientos y habilidades sobre desarrollow web. Podrás ver mis proyectos filtrándolos por tecnología, ver mi currículum y saber un poco más acerca de mí.",
+        date: "2025-05",
+        rate: 8,
+        documentation: false,
+        testing: false,
+        technologies: ["react", "node", "reactrouter", "vite", "html", "css", "javascript"],
+        img: {
+            fullScreen: aldaydev_capture_fullScreen,
+            desktop: aldaydev_capture_desktop,
+            mobile: aldaydev_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/aldaydev_app"
+            }
+        ],
+        deployed: null,
         video: null
     },
 

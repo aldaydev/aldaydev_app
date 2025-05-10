@@ -33,8 +33,12 @@ function Footer() {
                     <ul className='footerLinks__linkList' >
                         <li className='footerLinks__linkItem'>
                             <a 
+                                href='https://github.com/aldaydev'
+                                target='_blank'
+                                rel='noreferrer noopener'
                                 className='footerLinks__link'
                                 tabIndex={0}
+                                aria-label='Visitar perfil de GitHub de Rafael'
                             >
                                 <img 
                                     src={github_icon}
@@ -44,8 +48,12 @@ function Footer() {
                         </li>
                         <li className='footerLinks__linkItem'>
                             <a 
+                                href='https://linkedin.com/in/rafaelalday'
+                                target='_blank'
+                                rel='noreferrer noopener'
                                 className='footerLinks__link'
                                 tabIndex={0}
+                                aria-label='Visitar perfil de LinkedIn de Rafael'
                             >
                                 <img 
                                     src={linkedin_icon}
@@ -55,8 +63,12 @@ function Footer() {
                         </li>
                         <li className='footerLinks__linkItem'>
                             <a 
+                                href='https://youtube.com/@aldaydev'
+                                target='_blank'
+                                rel='noreferrer noopener'
                                 className='footerLinks__link'
                                 tabIndex={0}
+                                aria-label='Visitar canal Youtube de Rafael'
                             >
                                 <img 
                                     src={youtube_icon}
@@ -66,8 +78,10 @@ function Footer() {
                         </li>
                         <li className='footerLinks__linkItem'>
                             <a 
+                                href='mailto:rafaldayparejo@gmail.com'
                                 className='footerLinks__link'
                                 tabIndex={0}
+                                aria-label='Envíar un correo a Rafael'
                             >
                                 <img 
                                     src={envelope_icon}
@@ -84,27 +98,43 @@ function Footer() {
                     <ul className='footerPages__list'>
                         
                         <li className='footerPages__item'>
-                            <Link to='/'>
+                            <Link 
+                                to='/'
+                                aria-label='Visitar la página de Inicio'
+                            >
                                 Inicio
                             </Link>
                         </li>
                         <li className='footerPages__item'>
-                            <Link to='/proyectos'>
+                            <Link 
+                                to='/proyectos'
+                                aria-label='Visitar la página de Proyectos'
+                            >
                                 Proyectos
                             </Link>
                         </li>
                         <li className='footerPages__item'>
-                            <Link to='/videos' className='footerPages__link'>
+                            <Link 
+                                to='/videos' 
+                                className='footerPages__link'
+                                aria-label='Visitar la página de Vídeos'
+                            >
                                 Vídeos
                             </Link>
                         </li>
                         <li className='footerPages__item'>
-                            <Link to='/curriculum'>
+                            <Link 
+                                to='/curriculum'
+                                aria-label='Visitar la página de Currículum'
+                            >
                                 Currículum
                             </Link>
                         </li>
                         <li className='footerPages__item'>
-                            <Link to='/sobre-mi'>
+                            <Link 
+                                to='/sobre-mi'
+                                aria-label='Visitar la página de Sobre mí'
+                            >
                                 Sobre mí
                             </Link>
                         </li>

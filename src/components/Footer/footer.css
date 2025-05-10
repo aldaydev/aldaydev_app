@@ -128,7 +128,7 @@
     justify-content: end;
     column-gap: 10px;
     row-gap: 7px;
-    max-width: 90%;
+    max-width: 77%;
 }
 
 .footerPages__item{
@@ -148,6 +148,12 @@
 .footerPages__item:has(a:focus-visible){
     outline: 2px solid var(--color-white);
     background-color: var(--color-green-lighter);
+}
+
+@media screen and (max-width: 1024px) {
+    .footerPages__list {
+        max-width: 90%;
+    }
 }
 
 @media screen and (max-width: 1024px) {

@@ -173,6 +173,12 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    .home__projectsTitle{
+        font-size: 1.25rem;
+    }
+}
+
 
 @media screen and (max-width: 380px) {
     
