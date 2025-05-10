@@ -81,6 +81,7 @@ function HomeProjects () {
                                                     rel="noopener noreferrer"
                                                     className='mainProject__link mainProject__link--youtube'
                                                     aria-label={`Ir al video presentación de ${project.name}`}
+                                                    tabIndex={0}
                                                 >
                                                     <img
                                                         src={youtube_icon}

@@ -1,6 +1,6 @@
 .homeHeader{
     width: 100%;
-    min-height: calc(100dvh - 70px);
+    /* min-height: calc(100dvh - 70px); */
     height:fit-content;
     display: flex;
     flex-direction: column;
@@ -10,15 +10,7 @@
 
 }
 
-.homeHeader__homeFigure{
-    justify-self: center;
-    align-self: center;
-    width: fit-content;
-    height: fit-content;
-    padding-top: 15px;
-    /* margin-top: 25px; */
-    position: relative;
-}
+
 
 .homeFigure__techItem{
     position: absolute;
@@ -101,7 +93,7 @@
 
 .homeFigure__techIcon{
     cursor: pointer;
-    width: 90px;
+    width: 85px;
     transform: rotate3d(0, 1, 0, 25deg);
     transition: scale .3s ease-in-out, filter .3s ease-in-out;
 }
@@ -200,12 +192,13 @@
 
 
 .homeHeader__goDownContainer{
-    padding-top: 100px;
+    margin-top: 100px;
     position: relative;
     animation: fade-in 1s ease-in-out 2.1s both;
 }
 
 .homeHeader__goDownIcon{
+    width: 40px;
     cursor: pointer;
     animation: float 2s ease-in-out both infinite;
 }
@@ -217,6 +210,42 @@
         transform: translateY(-20px);
     }100%{
         transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1440px ) {
+
+    .homeHeader__homeFigure {
+        padding: 15px 8% 0 8%;
+    }
+
+    .homeHeader__img {
+        scale: 90%;
+    }
+
+    .homeFigure__techIcon{
+        width: 75px;
+    }
+
+    .homeHeader__title{
+        margin: 20px 0 40px 0;
+        font-size: 1.4rem;
+    }
+
+    .homeHeader__currentTechContainer {
+        bottom: -10px;
+        left: 0;
+        font-size: 1.6rem;
+        animation: fade-in .5s ease-in-out 2s both;
+        z-index: -1;
+    }
+
+    .homeHeader__goDownIcon{
+        width: 35px;
+    }
+
+    .homeHeader__goDownContainer{
+        margin-top: 60px;
     }
 }
 
@@ -233,8 +262,6 @@
     .homeHeader__homeFigure{
         padding-top: 10%;
     }
-
-    
 
     .homeFigure__techIcon {
     width: 75px;
