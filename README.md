@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 8 - 10-05-2025 - initial commit for sprint 8
+Sprint 8 - 10-05-2025 - sprint 8 finished
 
 ## Sprint 8
 
@@ -14,6 +14,9 @@ MetaTags:
 
 Añadir a proyectos:
 * Añadir el portfolio a los proyectos
+
+MetaTags:
+* FavIcon, og, responsive...
 
 ## Sprint 7
 
