@@ -1,6 +1,6 @@
 # AldayDev App
 
-Sprint 7 - 09-05-2025 - sprint 7 initial commit
+Sprint 7 - 10-05-2025 - working on home page
 
 ## Sprint 7
 
