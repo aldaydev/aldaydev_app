@@ -92,10 +92,7 @@ function HomeHeader() {
                         )
                     })
                 }
-                {/* <img
-                    src={dev_illustration}
-                    className='homeHeader__img'
-                /> */}
+
                 <figure className='homeHeader__img'>
                     <HomeIllustration currentColor={currentColor} />
                 </figure>
@@ -104,7 +101,6 @@ function HomeHeader() {
                     <h4 
                         className='homeHeader__currentTechName'
                         style={{
-                            // borderColor: currentFocusedIcon !== "express" ? currentColor : "white",
                             color: currentFocusedIcon !== "express" ? currentColor : "white"
                         }}
                     >
@@ -115,11 +111,10 @@ function HomeHeader() {
 
             </div>
 
-            
-
             <a 
                 className='homeHeader__goDownContainer'
                 href='#projects'
+                aria-label='Bajar para ir al la sección de últimos proyectos'
             >
                 <img
                     src={down_icon} className='homeHeader__goDownIcon'
@@ -128,25 +123,6 @@ function HomeHeader() {
                     height={50}
                 />
             </a>
-
-            {/* <h4 className='homeHeader__description'>Te doy la bienvenida a mi portfolio.</h4> */}
-
-            {/* <ul className='homeHeader__abilities'>
-
-                <li className='homeHeader__ability'>
-                    <b>Maquetación web</b> <p>HTML y CSS. Diseño web "responisve" atendiendo al "pixel perfect".</p>
-                </li>
-                <li className='homeHeader__ability'> 
-                    <b>Front-end</b> <p>JavaScript. Gestión de estados, contextos y consumo de APIs con React.</p>
-                </li>
-                <li className='homeHeader__ability'>
-                    <b>Back-end</b> <p>Diseño de API Rests utilizando Node y Express.</p>
-                </li>
-                <li className='homeHeader__ability'>
-                    <b>Bases de datos</b> <p>"no-relacionales" (MongoDB) y relacionales (MySQL).</p>
-                </li>
-            </ul> */}
-
 
         </header>
     )

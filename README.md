@@ -1,13 +1,16 @@
 # AldayDev App
 
-Sprint 7 - 10-05-2025 - working on home page
+Sprint 7 - 10-05-2025 - home page finished
 
 ## Sprint 7
 
 Objetivos:
 
-Página inicial:
+Página "Home":
 * Header -> Diseño presentación
+* Header -> Animaciones y funcionalidad de cambio de color
+* Sección de últimos proyectos
+* Responsive y accesibilidad
 
 ## Sprint 6
 
