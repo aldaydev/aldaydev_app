@@ -76,7 +76,7 @@ function HomeProjects () {
                                             {
                                                 project.video && 
                                                 <a
-                                                    href={project.deployed}
+                                                    href={project.video}
                                                     target='_blank'
                                                     rel="noopener noreferrer"
                                                     className='mainProject__link mainProject__link--youtube'

@@ -293,12 +293,16 @@
 
     .homeHeader__currentTechContainer{
         font-size: 1.1rem;
-        bottom: -40px;
+        bottom: -10px;
     }
 
     .homeHeader__goDownIcon{
-        width: 40px;
+        width: 30px;
     }   
+
+    .homeHeader__goDownContainer{
+        margin-top: 40px;
+    }
 
 }
 
