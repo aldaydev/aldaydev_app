@@ -164,11 +164,11 @@
 /* ---------- APP FOOTER ---------- */
 
 .App__footer{
-  padding: 0 150px;
+  padding: 0 13% 0 12%;
   position: relative;
   z-index: 900;
   min-width: 100dvw;
-  min-height: 70px;
+  /* min-height: 70px; */
   z-index: 100;
   color: var(--color-white);
 }
