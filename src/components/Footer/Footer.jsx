@@ -6,6 +6,7 @@ import github_icon from '../../assets/icons/util-icons/github_simpleicon.svg';
 import linkedin_icon from '../../assets/icons/util-icons/linkedin_simpleicon.svg';
 import youtube_icon from '../../assets/icons/util-icons/youtube_simpleicon.svg';
 import envelope_icon from '../../assets/icons/util-icons/envelope_simpleicon.svg';
+import { Link } from 'react-router-dom';
 
 function Footer() {
 
@@ -24,6 +25,7 @@ function Footer() {
                         <h5 className='footerInfo__role'>Desarrollador web</h5>
                         <h5 className='footerInfo__role'>Madrid, España</h5>
                     </article>
+                    <h4 className='footerInfo__infoRights'>Todos los derechos reservados &copy; 2025</h4>
                 </section>
 
                 <section className='footer__footerLinks'>
@@ -77,26 +79,41 @@ function Footer() {
                     </ul>
                 </section>
 
-                <section >
-                    <ul>
-                        <h4>PÁGINAS</h4>
-                        <li>
-                            Inicio
+                <section className='footer__footerPages'>
+                    <h4 className='footerPages__title'>PÁGINAS</h4>
+                    <ul className='footerPages__list'>
+                        
+                        <li className='footerPages__item'>
+                            <Link to='/'>
+                                Inicio
+                            </Link>
                         </li>
-                        <li>
-                            Proyectos
+                        <li className='footerPages__item'>
+                            <Link to='/proyectos'>
+                                Proyectos
+                            </Link>
                         </li>
-                        <li>
-                            Vídeos
+                        <li className='footerPages__item'>
+                            <Link to='/videos'>
+                                Vídeos
+                            </Link>
                         </li>
-                        <li>
-                            Currículum
+                        <li className='footerPages__item'>
+                            <Link to='/curriculum'>
+                                Currículum
+                            </Link>
                         </li>
-                        <li>
-                            Sobre mí
+                        <li className='footerPages__item'>
+                            <Link to='/sobre-mi'>
+                                Sobre mí
+                            </Link>
                         </li>
                     </ul>
                 </section>
+                <h4 
+                className='footerInfo__infoRights footerInfo__infoRights--show'>
+                    Todos los derechos reservados &copy; 2025
+                </h4>
             </div>
             
         </footer>
