@@ -9,14 +9,15 @@
     width: 58px;
     cursor: pointer;
     font-size: 1.6rem;
+    white-space: nowrap;
     margin-bottom: 4.5px;
     font-weight: 800;
     transition: width .5s ease-in-out, color .5s .2s ease-in-out;
     interpolate-size: allow-keywords;
-    filter: blur(0.1px);
+    /* filter: blur(0.1px); */
     position: relative;
     z-index: 1000;
-    scale: 1.05;
+    /* scale: 1.05; */
 }
 
 .headerLogo__link:focus-visible{
@@ -68,6 +69,7 @@
 }
 
 .headerLogo__braceLeft, .headerLogo__braceRight{
+    display: inline-block;
     font-size: 1.6rem;
     transition: padding .2s .5s ease-in-out;
 }

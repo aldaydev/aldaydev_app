@@ -141,6 +141,16 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .header__links{
+        gap: 2rem;
+    }
+
+    .headerLinks__pages{
+        gap: 1.7rem;
+    }
+}
+
 
 @media screen and (max-width: 1024px) {
     .header__links{
