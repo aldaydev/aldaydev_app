@@ -1,6 +1,6 @@
 # AldayDev App
 
-develop - 11-05-2025 - fixing errors in production
+develop - 11-05-2025 - version 1 done
 
 ## Sprint 8
 
