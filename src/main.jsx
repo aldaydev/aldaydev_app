@@ -7,8 +7,8 @@ import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter basename='/'>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>,
 )
