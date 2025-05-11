@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import './animatedTitle.css';
 
 function AnimatedTitle ({
@@ -9,11 +10,25 @@ function AnimatedTitle ({
 }) {
 
     const Heading = headingLevel;
+    const finalTextRef = useRef(null);
+    const [width, setWidth] = useState(0);
+    const [hasMounted, setHasMounted] = useState(false);
+
+    useEffect(() => {
+        if (finalTextRef.current) {
+            const el = finalTextRef.current;
+            setWidth(el.scrollWidth);
+            // pequeña espera para permitir que el pop-in termine
+            setTimeout(() => setHasMounted(true), 900); 
+        }
+    }, [finalText]);
 
     const animatedTitleClass = {
         braceLeft: !isFilled ? "animatedTitle__braceLeft" : "animatedTitle__braceLeft animatedTitle__braceLeft--filled",
         braceRight: !isFilled ? "animatedTitle__braceRight" : "animatedTitle__braceRight headerLogo__braceRight--filled"
     }
+
+
 
     return (
         <div 
@@ -26,7 +41,14 @@ function AnimatedTitle ({
             >{"{"}</span>
             <Heading className="animatedTitle__heading">
                 <span className="animatedTitle__initialText">{initialText}</span>
-                <span className="animatedTitle__finalText">{finalText}</span>
+                <span 
+                    ref={finalTextRef}
+                    className="animatedTitle__finalText"
+                    style={{width: hasMounted ? `${width}px` : '0px'}}
+                >
+
+                        {finalText}
+                </span>
             </Heading>
             <span 
                 className={animatedTitleClass.braceRight}
