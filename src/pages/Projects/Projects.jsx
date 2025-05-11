@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import ProjectFilters from './components/ProjectFilters.jsx';
 import projectsData from "../../data/projectsData.js";
 
-import ProyectList from './components/projectList.jsx';
+import ProyectList from './components/ProjectList.jsx';
 import ProjectSorter from './components/ProjectSorter.jsx';
 
 
