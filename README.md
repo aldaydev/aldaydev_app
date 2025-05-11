@@ -1,6 +1,6 @@
 # AldayDev App
 
-develop - 11-05-2025 - version 1 done
+develop - 11-05-2025 - fixing routes
 
 ## Sprint 8
 
