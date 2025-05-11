@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import './animatedTitle.css';
 
 function AnimatedTitle ({
@@ -11,15 +11,17 @@ function AnimatedTitle ({
 
     const Heading = headingLevel;
     const finalTextRef = useRef(null);
-    const [width, setWidth] = useState(0);
+    const [finalWidth, setFinalWidth] = useState(0);
     const [hasMounted, setHasMounted] = useState(false);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (finalTextRef.current) {
-            const el = finalTextRef.current;
-            setWidth(el.scrollWidth);
-            // pequeña espera para permitir que el pop-in termine
-            setTimeout(() => setHasMounted(true), 900); 
+            setTimeout(() => {
+                const width = finalTextRef.current.scrollWidth;
+                setFinalWidth(width);
+            }, 200)
+            
+            setTimeout(() => setHasMounted(true), 700); 
         }
     }, [finalText]);
 
@@ -44,7 +46,7 @@ function AnimatedTitle ({
                 <span 
                     ref={finalTextRef}
                     className="animatedTitle__finalText"
-                    style={{width: hasMounted ? `${width}px` : '0px'}}
+                    style={{width: hasMounted ? `${finalWidth}px` : '0px'}}
                 >
 
                         {finalText}
