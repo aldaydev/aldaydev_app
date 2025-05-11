@@ -126,18 +126,10 @@
 
 #page__animatedTitle{
   color: var(--color-white);
-  /* color: var(--color-yellow); */
   letter-spacing: 2px;
   font-size: 2.4rem;
   margin-top: 20px;
   font-weight: 700;
-  /* filter: blur(0.4px); */
-
-  /* text-shadow: 
-        -1px -1px 0.2px black,
-        1px -1px 0.2px black,
-        -1px  1px 0.2px black,
-        3px  3px 0.2px black; */
 }
 
 #page__animatedTitle__braceLeft,
@@ -202,7 +194,7 @@
 
 @media screen and (max-width: 1440px) {
   .App__main{
-    padding: 80px 11% 0 10%;
+    padding: 75px 11% 0 10%;
   }
 
   .App__header,
@@ -212,36 +204,14 @@
 
   #page__animatedTitle{
     scale: .9;
+    margin-top: 10px;
   }
-
-
-  /* #page__animatedTitle{
-    font-size: 2rem;
-    margin-top: 0px;
-  }
-
-  #page__animatedTitle__braceLeft,
-  #page__animatedTitle__braceRight{
-  font-size: 2.3rem;
-  } */
 }
-
-/* @media screen and (max-width: 1200px) {
-  .App__main{
-    padding: 80px 80px 0 80px;
-  }
-
-  .App__header,
-  .App__footer{
-    padding: 0 80px;
-  }
-} */
 
 
 @media screen and (max-width: 1024px) {
   .pageContainer::after {
     background-image: url("./assets/images/background_1x1.svg");
-    /* scale: 1.2; */
   }
 
   @keyframes bg-popin {
@@ -264,18 +234,11 @@
     }
   }
 
-  /* #page__animatedTitle{
-    font-size: 1.6rem;
+  #page__animatedTitle{
     margin-top: 0px;
   }
 
-  #page__animatedTitle__braceLeft,
-  #page__animatedTitle__braceRight{
-  font-size: 2rem;
-  } */
-
   .page__subtitle{
-
     font-size: 1.2rem;
     font-weight: 300;
   }
@@ -285,7 +248,7 @@
 
 @media screen and (max-width: 767px) {
   .App__main{
-    padding: 80px 50px 0 50px;
+    padding: 75px 50px 0 50px;
   }
   .App__header,
   .App__footer{
@@ -307,7 +270,7 @@
 
 @media screen and (max-width: 480px) {
   .App__main{
-    padding: 80px 30px 0 30px;
+    padding: 70px 30px 0 30px;
     /* margin-bottom: 0px; */
   }
   .App__header,
@@ -343,7 +306,7 @@
 
 @media screen and (max-width: 380px) {
   .App__main{
-    padding: 80px 20px 0 20px;
+    padding: 70px 20px 0 20px;
     
   }
   .App__header,
