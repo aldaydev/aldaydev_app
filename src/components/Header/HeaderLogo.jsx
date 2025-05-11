@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./headerLogo.css";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 function HeaderLogo( {isCollapsed}) {
 
