@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./headerLogo.css";
+import { useRef, useState } from "react";
 
 function HeaderLogo( {isCollapsed}) {
 
@@ -9,12 +10,33 @@ function HeaderLogo( {isCollapsed}) {
         braceRight: !isCollapsed ? "headerLogo__braceRight" : "headerLogo__braceRight headerLogo__braceRight--collapsed"
     }
 
+    const finalTextRef = useRef(null);
+    const [finalWidth, setFinalWidth] = useState(0);
+
+    const handleMouseEnter = () =>{
+        const width = finalTextRef.current.scrollWidth;
+        setFinalWidth(width);
+    }
+
     return (
-        <Link to="/" className={headerLogoClass.link} aria-label="Ir al inicio">
+        <Link 
+            to="/" className={headerLogoClass.link} 
+            onMouseEnter={() => handleMouseEnter()}
+            onMouseLeave={() => setFinalWidth(0)}
+            aria-label="Ir al inicio"
+        >
             <span className={headerLogoClass.braceLeft}>{"{"}</span>
             <span className="headerLogo__textContainer">
                 <span className="headerLogo__initialText">A</span>
-                {!isCollapsed && <span className="headerLogo__finalText">ldayDev</span>}
+                {!isCollapsed && 
+                    <span
+                        ref={finalTextRef}
+                        className="headerLogo__finalText"
+                        style={{width: `${finalWidth}px`}}
+                    >
+                        ldayDev
+                    </span>
+                }
             </span>
             <span className={headerLogoClass.braceRight}>{"}"}</span>
         </Link>

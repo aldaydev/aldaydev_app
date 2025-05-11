@@ -1,5 +1,4 @@
 .headerLogo__link {
-    /* color: #F4F4F5; */
     color: var(--color-white);
     text-shadow: 
         -1px -1px 0.2px black,
@@ -14,10 +13,8 @@
     font-weight: 800;
     transition: width .5s ease-in-out, color .5s .2s ease-in-out;
     interpolate-size: allow-keywords;
-    /* filter: blur(0.1px); */
     position: relative;
     z-index: 1000;
-    /* scale: 1.05; */
 }
 
 .headerLogo__link:focus-visible{
@@ -54,19 +51,19 @@
 
 .headerLogo__finalText{
     display: inline-block;
-    width: 0%;
+    /* width: 0%; */
     overflow: hidden;
 
     vertical-align: bottom;
 
     transition: width .5s ease-in-out;
-    interpolate-size: allow-keywords;
+    /* interpolate-size: allow-keywords; */
 }
 
-.headerLogo__link:hover .headerLogo__finalText{
+/* .headerLogo__link:hover .headerLogo__finalText{
     width: auto;
     transition: width .5s ease-in-out;
-}
+} */
 
 .headerLogo__braceLeft, .headerLogo__braceRight{
     display: inline-block;

@@ -81,7 +81,7 @@
 }
 
 
-.globalBg::after {
+.pageContainer::after {
   content: "";
   position: fixed;
   top: 0;
@@ -234,7 +234,7 @@
 
 
 @media screen and (max-width: 1024px) {
-  .globalBg::after {
+  .pageContainer::after {
     background-image: url("./assets/images/background_1x1.svg");
     /* scale: 1.2; */
   }
@@ -303,7 +303,7 @@
 @media screen and (max-width: 480px) {
   .App__main{
     padding: 80px 30px 0 30px;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
   }
   .App__header,
   .App__footer{

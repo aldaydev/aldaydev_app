@@ -143,7 +143,7 @@
 
 @media screen and (max-width: 1200px) {
     .header__links{
-        gap: 2rem;
+        gap: 1.8rem;
     }
 
     .headerLinks__pages{
