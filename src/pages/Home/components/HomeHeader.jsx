@@ -1,7 +1,7 @@
 import './homeHeader.css';
 
 import { techFilters } from '../../../data/techFilters';
-import HomeIllustration from './homeIllustration';
+import HomeIllustration from './HomeIllustration.jsx';
 import down_icon from '../../../assets/icons/util-icons/down_icon.svg';
 import { useEffect, useRef, useState } from 'react';
 import AnimatedTitle from '../../../components/AnimatedTitle/AnimatedTitle';
