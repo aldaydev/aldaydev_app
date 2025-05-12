@@ -1,6 +1,6 @@
 # AldayDev App
 
-develop - 11-05-2025 - fixing routes
+develop - 12-05-2025 - fixing certificate downloads
 
 ## Sprint 8
 

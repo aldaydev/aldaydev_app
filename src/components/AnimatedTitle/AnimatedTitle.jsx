@@ -19,7 +19,7 @@ function AnimatedTitle ({
             setTimeout(() => {
                 const width = finalTextRef.current.scrollWidth;
                 setFinalWidth(width);
-            }, 200)
+            }, 500)
             
             setTimeout(() => setHasMounted(true), 700); 
         }

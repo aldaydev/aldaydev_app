@@ -1,9 +1,7 @@
 import './resumeEduExp.css';
 
-import certificado_daw from '../../../assets/documents/certificado-daw-rafa-alday.pdf';
 import certificado_javascript from '../../../assets/documents/certificado-javascript-rafa-alday.pdf';
 import certificado_css from '../../../assets/documents/certificado-css-rafa-alday.pdf';
-import certificado_sonido from '../../../assets/documents/certificado-sonido-rafa-alday.pdf';
 import { useScrollReveal } from '../../../hooks/useScrollReveal';
 
 
@@ -33,13 +31,13 @@ function ResumeEducation () {
                         </div>
                         
                         <a 
-                            href={certificado_daw}
+                            href='mailto:rafaldayparejo@gmail.com'
                             target='_blank'
                             rel="noopener noreferrer"
                             className='educationLabel__seeCertficate'
-                            aria-label='Ver el certificado de Desarrollo de Aplicaciones Web'
+                            aria-label='Solicitar el certificado de Desarrollo de Aplicaciones Web'
                         >
-                            VER CERTIFICADO
+                            SOLICITAR CERTIFICADO
                         </a>
                     </div>
                     
@@ -100,10 +98,8 @@ function ResumeEducation () {
                     >
                         VER CERTIFICADO
                     </a>
-
                 </div>
-                
-                
+
             </div>
 
             <div className="resume__educationLabel">
@@ -122,19 +118,18 @@ function ResumeEducation () {
                         
                     </div>
                     <a 
-                        href={certificado_sonido}
+                        href='mailto:rafaldayparejo@gmail.com'
                         target='_blank'
                         rel="noopener noreferrer"
                         className='educationLabel__seeCertficate educationLabel__seeCertficate--only'
-                        aria-label='Ver el certificado de Técnico Superior de Sonido'
+                        aria-label='Solicitar el certificado de Técnico Superior de Sonido'
                     >
-                        VER CERTIFICADO
+                        SOLICITAR CERTIFICADO
                     </a>
                 </div>
                 
                 
             </div>
-
         </article>
     )
 }

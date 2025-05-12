@@ -91,7 +91,7 @@
   z-index: -10;
 
   background-color: var(--color-blue-dark);
-  background-image: url("./assets/images/background_16x9.svg");
+  background-image: url("./assets/images/background_16x9-v3.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -211,7 +211,7 @@
 
 @media screen and (max-width: 1024px) {
   .pageContainer::after {
-    background-image: url("./assets/images/background_1x1.svg");
+    background-image: url("./assets/images/background_1x1-v3.svg");
   }
 
   @keyframes bg-popin {
