@@ -48,7 +48,7 @@ function AboutContent() {
                 <section className='about__section about__section--music scrollReveal'>
                     <article className='about__musicSection'>
                         <h2 className='about__sectionTitle'>LA MÚSICA Y YO</h2>
-                        <p className='about__sectionText'>Durante todo el transcurso de lo que he contado anteriormete (y desde mucho antes, de hecho), mi gran pasión siempre ha sido componer canciones.</p>
+                        <p className='about__sectionText'>Durante todo el transcurso de lo que he contado anteriormente (y desde mucho antes, de hecho), mi gran pasión siempre ha sido componer canciones.</p>
                         <p className='about__sectionText'>A partir de 2014 decidí crear, de manera oficial, mi proyecto como artista musical en solitario, en el que <b>compongo, produzco y grabo mis propias canciones</b>. Además, <b>hago videclips y lyric vídeos, aparte de la web</b> que ya he mencionado antes.</p>
                         <p className='about__sectionText'>En 2022 empecé a hacer <b>streamings en Twitch</b>, en los que hago <b>loops en directo, creados al momento e interactuando con la comunidad</b>. De los mejores loops, luego nos sentamos y creamos canciones. Es maravilloso. De allí han salido canciones tan bonitas como las que te dejo a continuación. </p>
                     </article>

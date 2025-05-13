@@ -16,6 +16,7 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
                     return ["vanilla"];
                 }
             });
+            setSelectedOtherFilters([]);
 
         }else{
             setSelectedTechFilters(prev => {
@@ -36,7 +37,7 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
     const handleOtherFilters = (otherFilter) => {
 
         if(selectedTechFilters[0] === "vanilla"){
-            setSelectedTechFilters({});
+            setSelectedTechFilters([]);
         }
         setSelectedOtherFilters( prev => {
             

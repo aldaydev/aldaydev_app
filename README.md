@@ -1,6 +1,6 @@
 # AldayDev App
 
-develop - 12-05-2025 - fixing certificate downloads
+develop - 13-05-2025 - fixing project filter functions
 
 ## Sprint 8
 

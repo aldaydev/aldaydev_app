@@ -84,11 +84,15 @@ function Projects () {
 
         if(selectedOtherFilters.length > 0 || selectedTechFilters.length > 0){
             const filteredProjects = arrayToFilter.filter((project) => {
-                if(selectedOtherFilters.length > 0){
+                if(selectedOtherFilters.length > 0 && selectedTechFilters.length === 0){
                     return selectedOtherFilters.every(filtro => project[filtro]);
                 }
-                if(selectedTechFilters.length > 0){
+                if(selectedTechFilters.length > 0 && selectedOtherFilters.length === 0){
                     return selectedTechFilters.every(filtro => project.technologies.includes(filtro));
+                }
+
+                if(selectedTechFilters.length > 0 && selectedOtherFilters.length > 0){
+                    return selectedTechFilters.every(filtro => project.technologies.includes(filtro)) && selectedOtherFilters.every(filtro => project[filtro]);
                 }
             });
 
