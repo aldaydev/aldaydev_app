@@ -5,7 +5,10 @@ import spotify_icon from '../../../assets/icons/social-icons/spotify_icon.svg';
 import youtube_icon from '../../../assets/icons/social-icons/youtube_icon.svg';
 import instagram_icon from '../../../assets/icons/social-icons/instagram_icon.svg';
 
-import { useScrollReveal } from '../../../hooks/useScrollReveal';
+import { useScrollReveal } from '../../../hooks/useScrollReveal'
+
+import { useInView } from 'react-intersection-observer';
+import Spinner from '../../../components/Spinner/Spinner';
 
 function AboutContent() {
 
@@ -15,6 +18,30 @@ function AboutContent() {
         "https://youtu.be/a4GZnXQbZbI?si=9mgs2Wa9wuxTuQIq",
         "https://youtu.be/ImCJBbfbB88?si=JpdB3-LpBmDRJXsu"
     ]
+
+    function LazyVideo({ url }){
+
+        const {ref, inView } = useInView({
+            triggerOnce: true,
+            threshold: 0.2,
+        })
+
+        return(
+            <div ref={ref} className='about__videoContainer'>
+                {inView ?
+                    <ReactPlayer
+                        url={url}
+                        controls
+                        width="100%"
+                        height="100%"
+                    />
+                    :
+                    <Spinner/>
+                }
+            </div>
+        )
+
+    }
 
 
     return (
@@ -57,14 +84,7 @@ function AboutContent() {
                         {
                             musicVideos && musicVideos.map((video, index) => {
                                 return(
-                                    <div className='about__videoContainer' key={index}>
-                                        <ReactPlayer
-                                        url={video}
-                                        controls
-                                        width="100%"
-                                        height="100%"
-                                    />
-                                    </div>
+                                    <LazyVideo key={index} url={video}/>
                                 )
                             })
                         }
