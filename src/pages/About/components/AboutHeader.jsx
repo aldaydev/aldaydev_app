@@ -1,6 +1,6 @@
 import './aboutHeader.css';
 
-import foto_alday_about from '../../../assets/images/foto_rafa_alday_about.png';
+import foto_alday_about from '../../../assets/images/foto_rafa_alday_about.webp';
 
 function AboutHeader() {
     return (

@@ -1,6 +1,6 @@
 import './footer.css';
 
-import alday_photo from '../../assets/images/foto_rafa_alday.jpg';
+import alday_photo from '../../assets/images/foto_rafa_alday.webp';
 
 import github_icon from '../../assets/icons/util-icons/github_simpleicon.svg';
 import linkedin_icon from '../../assets/icons/util-icons/linkedin_simpleicon.svg';

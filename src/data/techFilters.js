@@ -1,12 +1,12 @@
 
 // Techo filter icon imports
-import react_icon from '../assets/icons/filter-icons/react_icon.png';
-import node_icon from '../assets/icons/filter-icons/node_icon.png';
-import express_icon from '../assets/icons/filter-icons/express_icon.png';
-import mongo_icon from '../assets/icons/filter-icons/mongo_icon.png';
-import mysql_icon from '../assets/icons/filter-icons/mysql_icon.png';
-import firebase_icon from '../assets/icons/filter-icons/firebase_icon.png';
-import vanilla_icon from '../assets/icons/filter-icons/vanilla_icon.png';
+import react_icon from '../assets/icons/filter-icons/react_icon.webp';
+import node_icon from '../assets/icons/filter-icons/node_icon.webp';
+import express_icon from '../assets/icons/filter-icons/express_icon.webp';
+import mongo_icon from '../assets/icons/filter-icons/mongo_icon.webp';
+import mysql_icon from '../assets/icons/filter-icons/mysql_icon.webp';
+import firebase_icon from '../assets/icons/filter-icons/firebase_icon.webp';
+import vanilla_icon from '../assets/icons/filter-icons/vanilla_icon.webp';
 
 //Other filter icon imports
 

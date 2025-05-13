@@ -1,6 +1,6 @@
 import './resumePresentation.css';
 
-import rafa_alday_foto from '../../../assets/images/foto_rafa_alday.jpg'
+import rafa_alday_foto from '../../../assets/images/foto_rafa_alday.webp'
 import envelope_icon from '../../../assets/icons/util-icons/envelope_simpleicon.svg';
 import location_icon from '../../../assets/icons/util-icons/location_simpleicon.svg';
 import linkedin_icon from '../../../assets/icons/util-icons/linkedin_simpleicon.svg';
