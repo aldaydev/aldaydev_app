@@ -187,7 +187,7 @@ const projectsData = [
             }
         ],
         deployed: "https://chords.alday.dev",
-        video: null
+        video: "https://youtu.be/AeSVz7Ewje8"
     },
     {
         id: "aldaydev",

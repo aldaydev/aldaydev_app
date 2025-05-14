@@ -10,6 +10,11 @@ function Videos() {
 
     const videos = [
         {
+            name: "Vídeo presentación de Chords API`",
+            url: "https://youtu.be/AeSVz7Ewje8?si=OHVWWpvnCPYj78PH",
+            img: "https://img.youtube.com/vi/AeSVz7Ewje8/0.jpg"
+        },
+        {
             name: "Vídeo presentación de Musikos App",
             url: "https://youtu.be/hBbSiVGH7nQ?si=3nSaakFjdHqMSVHD",
             img: "https://img.youtube.com/vi/hBbSiVGH7nQ/0.jpg"
@@ -18,11 +23,6 @@ function Videos() {
             name: "Vídeo presentación de Pokemon Game App",
             url: "https://youtu.be/MxDscYjcJKU?si=-zRrBLrMGHuRRI_F",
             img: "https://img.youtube.com/vi/MxDscYjcJKU/0.jpg"
-        },
-        {
-            name: "Vídeo sobre imagen de marca del portfolio",
-            url: "https://youtu.be/0244Zii9h5c?si=_c4lhMjbGPI6BQ4G",
-            img: "https://img.youtube.com/vi/0244Zii9h5c/0.jpg"
         }
     ]
 
