@@ -25,14 +25,12 @@
 .App__header::after {
   height: 70px;
   background-color: var(--color-blue-dark);
-  /* box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.267); */
   z-index: 900;
 }
 
 .App__header::before {
   opacity: 1;
   height: 70px;
-  /* backdrop-filter: blur(7px); */
   z-index: 800;
 }
 
@@ -42,7 +40,6 @@
 
 .App__header--scroll::before{
   backdrop-filter: blur(7px);
-  /* opacity: 1; */
 }
 
 @keyframes scroll-header-op {
@@ -68,11 +65,8 @@
 /* ---------- APP MAIN ---------- */
 
 .App__main{
-  /* margin-top: 62px; */
-  /* border-top: 1px solid transparent; */
   background-color: var(--color-white);
   min-height: calc(100dvh - 140px);
-  /* min-height: 100dvh; */
   z-index: 0;
 
   padding: 0 13% 0 12%;
@@ -160,7 +154,6 @@
   position: relative;
   z-index: 900;
   min-width: 100dvw;
-  /* min-height: 70px; */
   z-index: 100;
   color: var(--color-white);
 }
@@ -181,7 +174,6 @@
 .App__footer::after {
   opacity: .7;
   background-color: var(--color-blue-dark);
-  /* box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.267); */
   z-index: 900;
 }
 
@@ -256,22 +248,9 @@
   }
 }
 
-/* @media screen and (max-width: 550px) {
-  #page__animatedTitle{
-    font-size: 2.1rem;
-    margin-top: 0px;
-  }
-
-  #page__animatedTitle__braceLeft,
-  #page__animatedTitle__braceRight{
-  font-size: 2.5rem;
-  }
-} */
-
 @media screen and (max-width: 480px) {
   .App__main{
     padding: 70px 30px 0 30px;
-    /* margin-bottom: 0px; */
   }
   .App__header,
   .App__footer{
@@ -286,16 +265,6 @@
     scale: .75;
     margin-top: 0px;
   }
-
-  /* #page__animatedTitle{
-    font-size: 1.7rem;
-    margin-top: 0px;
-  }
-
-  #page__animatedTitle__braceLeft,
-  #page__animatedTitle__braceRight{
-  font-size: 2.1rem;
-  } */
 
   .page__subtitle{
 

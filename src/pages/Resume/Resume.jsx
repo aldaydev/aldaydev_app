@@ -101,7 +101,7 @@ function Resume() {
                     className='resume__downloadLink'
                     aria-label='Descargar Currículum Rafael Alday en PDF'
                 >
-                    SOLICITAR CURRÍCULUM PDF
+                    VER CURRÍCULUM PDF
                 </a>
             </section>
 

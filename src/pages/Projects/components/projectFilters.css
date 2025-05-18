@@ -8,8 +8,6 @@
 }
 
 .techFilters{
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 250px)); */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -80,10 +78,6 @@
     border-radius: 5px;
 }
 
-/* .techFilter__checkbox:focus{
-    outline: 2px solid red;
-} */
-
 .techFilters__techFilter:has(.techFilter__checkbox:checked)::before,
 .otherFilters__otherFilter:has(.otherFilter__checkbox:checked)::before {
     height: 3px;
@@ -99,14 +93,9 @@
     scale: 1.05;
 }
 
-/* .techFilter__checkbox:checked ~ .techFilter__image{
-    fill: blue;
-} */
-
 .techFilter__image{
     position: relative;
     width: 70px;
-    /* transition: scale .2s ease-in-out; */
 }
 
 .techFilters__techFilter::before,
@@ -195,7 +184,6 @@
     .techFilter__image {
         position: relative;
         width: 50px;
-        /* transition: scale .2s ease-in-out; */
     }
 }
 
@@ -223,7 +211,6 @@
     .techFilter__image {
         position: relative;
         width: 50px;
-        /* transition: scale .2s ease-in-out; */
     }
 
     .otherFilters{

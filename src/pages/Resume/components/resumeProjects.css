@@ -1,6 +1,5 @@
 .resume__projects{
     margin-top: 70px;
-    /* animation: fade-in .5s ease-in-out 1.7s both; */
 }
 
 .resumeProjects__projects{
@@ -91,11 +90,6 @@
 .mainProject__description{
     margin-bottom: 25px;
 }
-
-/* .mainProject__techContainer{
-    display: flex;
-    column-gap: 10px;
-} */
 
 .mainProject__techTitle{
     font-size: 1.1rem;

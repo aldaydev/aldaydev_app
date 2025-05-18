@@ -264,12 +264,6 @@
     .about__imageBg::before {
         border-radius: 100px 0 0 0;
     }
-
-    .about__image{
-        /* width: 100dvw; */
-        /* max-width: 400px;
-        min-width: 150px; */
-    }
 }
 
 @media screen and (max-width: 480px){

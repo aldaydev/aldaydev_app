@@ -1,4 +1,3 @@
-import './home.css';
 import HomeHeader from './components/HomeHeader.jsx';
 import HomeProjects from './components/HomeProjects.jsx';
 

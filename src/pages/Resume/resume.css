@@ -127,7 +127,6 @@
 }
 
 .resume__content{
-    /* margin: 0 100px; */
     margin-top: 60px;
     color: var(--color-white);
 }
@@ -213,7 +212,6 @@
 
     .resumeHeader__navbarItem{
         flex-basis: 40%;
-        /* font-size: 2.4dvw; */
     }
 
     .resumeHeader__navbarItem:nth-child(2):after{

@@ -6,7 +6,6 @@
     ;
     grid-template-columns: auto 40% auto;
     justify-content: space-evenly;
-    /* justify-items: center; */
     align-items: center;
     column-gap: 4dvw;
     animation: fade-in .5s ease-in-out 1.5s both;
@@ -15,9 +14,7 @@
 .resume__photoContainer{
     grid-area: photo;
     width: 100%;
-    /* min-width: 100px; */
     max-width: 200px;
-    /* max-height: 200px; */
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -37,8 +34,6 @@
 .resume__personalInfo{
 
     grid-area: personalInfo;
-
-    /* flex-basis: 35%; */
 
     display: flex;
     flex-direction: column;
@@ -66,8 +61,6 @@
 
 .personalInfo__personalLinks{
     grid-area: personalLinks;
-
-    /* height: 100%; */
 }
 
 .personalLinks__linkList{
@@ -107,10 +100,10 @@
 
 .personalLinks__linkText::after {
     content: "";
-    display: inline-block; /* o inline-block */
+    display: inline-block;
     width: 0%;
     height: 1px;
-    background-color: var(--color-white); /* cambia a rojo para pruebas */
+    background-color: var(--color-white);
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -136,7 +129,6 @@
         grid-template-columns: 30% auto;
         grid-template-rows: repeat(fit-content);
         column-gap: 40px;
-        /* row-gap: 40px; */
     }
 
     .resume__photoContainer{
@@ -201,7 +193,6 @@
 
     .personalInfo_description{
         text-align: justify;
-        /* margin: 0 30px; */
         margin-top: 30px;
     }
 

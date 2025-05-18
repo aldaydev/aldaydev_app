@@ -4,8 +4,6 @@
     text-align: center;
     font-weight: 800;
     font-size: 2.4rem;
-    /* transition: width .5s ease-in-out; */
-    /* filter: blur(0.2px); */
     position: relative;
     z-index: 1000;
     animation: pop-in .8s ease-in-out both;
@@ -19,10 +17,6 @@
         -1px  1px 0.2px black,
         3px  2px 0.2px black;
 }
-
-/* .animation--popin{
-    animation: pop-in 3s ease both;
-} */
 
 @keyframes pop-in{
     0%{
@@ -38,14 +32,6 @@
         transform: scale(100%);
     }
 }
-
-/* @keyframes show-text {
-    from{
-        width: 0;
-    }to{
-        width: auto;
-    }
-} */
 
 @keyframes spread-braceLeft {
     from{
@@ -95,5 +81,4 @@
     overflow: hidden;
     interpolate-size: allow-keywords;
     transition: width .7s ease-in-out;
-    /* animation: show-text .7s .9s ease-in-out both; */
 }

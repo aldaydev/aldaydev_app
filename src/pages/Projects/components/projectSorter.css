@@ -33,7 +33,6 @@
     background-color: transparent;
     color: var(--color-white);
     border: 1px solid rgba(255, 255, 255, 0.315);
-    /* outline: 1px solid rgba(255, 255, 255, 0.212); */
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.212);
     padding: 8px 25px;
     border-radius: 5px;
@@ -63,10 +62,6 @@
 
     position: relative;
 }
-
-/* .projectSorter__orderCheckbox{
-    display: none;
-} */
 
 .projectSorter__orderCheckbox{
     position: absolute;

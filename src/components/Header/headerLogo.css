@@ -57,13 +57,7 @@
     vertical-align: bottom;
 
     transition: width .5s ease-in-out;
-    /* interpolate-size: allow-keywords; */
 }
-
-/* .headerLogo__link:hover .headerLogo__finalText{
-    width: auto;
-    transition: width .5s ease-in-out;
-} */
 
 .headerLogo__braceLeft, .headerLogo__braceRight{
     display: inline-block;

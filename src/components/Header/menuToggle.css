@@ -31,11 +31,6 @@
     width: 100%;
     height: 4px;
     background-color: var(--color-white);
-    /* box-shadow: 
-        -1px -1px 0.2px black,
-        1px -1px 0.2px black,
-        -1px  1px 0.2px black,
-        3px  2px 0.2px black; */
 }
 
 .menuToggle__container--close .menuToggle__bar--1{
@@ -57,11 +52,6 @@
     bottom: 48%;
     transform: rotate(45deg) ;
     transition: transform .3s ease-in-out, bottom .3s ease-in-out, box-shadow .3s ease-in-out;
-    /* box-shadow: 
-        -1px -1px 0.2px black,
-        1px -1px 0.2px black,
-        -1px  1px 0.2px black,
-        1px  1px 0.2px black; */
 }
 
 .menuToggle__container--open .menuToggle__bar--2{
@@ -74,11 +64,6 @@
     bottom: 48%;
     transform: rotate(-45deg);
     transition: transform .3s ease-in-out, bottom .3s ease-in-out, box-shadow .3s ease-in-out;
-    /* box-shadow: 
-        -1px -1px 0.2px black,
-        1px -1px 0.2px black,
-        -1px  1px 0.2px black,
-        1px  1px 0.2px black; */
 }
 
 

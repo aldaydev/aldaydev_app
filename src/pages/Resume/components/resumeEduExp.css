@@ -29,19 +29,18 @@
 .experienceLabel__decorationContainer::after {
     content: "";
     position: absolute;
-    top: 16px; /* justo debajo del círculo */
+    top: 16px;
     left: 7.5px;
     transform: translateX(-50%);
     width: 1px;
     height: 95%;
-    background-color: var(--color-white); /* o un gris claro, según diseño */
+    background-color: var(--color-white);
 }
 
 .educationLabel__decorationFigure,
 .experienceLabel__decorationFigure{
     width: 15px;
     height: 15px;
-    /* background-color: var(--color-white); */
     border: 1px solid var(--color-white);
     border-radius: 50%;
     display: block;
@@ -82,7 +81,6 @@
 .experienceLabel__titles{
     display: flex;
     align-items: baseline;
-    /* justify-content: space-between; */
     column-gap: 50px;
 
     margin-bottom: 3px;
