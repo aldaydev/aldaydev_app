@@ -2,6 +2,7 @@ import './resumeEduExp.css';
 
 import certificado_javascript from '../../../assets/documents/certificado-javascript-rafa-alday.pdf';
 import certificado_css from '../../../assets/documents/certificado-css-rafa-alday.pdf';
+
 import { useScrollReveal } from '../../../hooks/useScrollReveal';
 
 

@@ -48,7 +48,7 @@ function ResumeExperience () {
                             <p className='experienceLabel__description'>
                             He realizado labores que van desde la edición de imágenes y vídeo profesional con herramientas de Adobe, la operación de equipos de A/V en instalaciones complejas o el soporte a usuarios VIP.</p>
                             <p className='experienceLabel__description'>
-                            Puedes ver mi currículum audiovisual 
+                            Puedes ver mi currículum audiovisual
                                 <a 
                                     href='https://cvaudiovisual.alday.dev' 
                                     target='_blank'
