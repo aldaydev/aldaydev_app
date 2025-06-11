@@ -13,7 +13,7 @@ function HomeProjects () {
 
     // useScrollReveal();
 
-    const mainProjects = projects.sort((a, b) => b.rate - a.rate).slice(0, 2).reverse();
+    const mainProjects = projects.sort((a, b) => b.rate - a.rate).slice(0, 2);
 
     return(
         <article className="home__projects">

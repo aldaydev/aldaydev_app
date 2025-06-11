@@ -27,7 +27,7 @@ Podrás filtrarlos por tecnología, así como seleccionar los que incluyan testi
 
 He trabajado por sprints y updates en diferentes ramas. Te dejo a continuación un resumen de los objetivos que he ido cumpliendo en cada uno:
 
-### update/tsfilter
+### update-1
 
 Añadir el filtro por lenguaje para poder filtrar proyectos TS y JS. Dividir tecnologías por tipos (front, back...)
 

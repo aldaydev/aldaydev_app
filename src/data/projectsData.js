@@ -28,124 +28,80 @@ import mlink_logo from '../assets/images/projects/mlink_logo.webp';
 
 const projectsData = [
     {
-        id: "gamer",
-        name: "Gamer News Layout",
-        description: "Proyecto de maquetación de un portal web de noticias de videojuegos. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
-        date: "2024-08",
-        rate: 1,
-        language: 'javascript',
-        documentation: false,
-        testing: false,
-        technologies: ["html", "css", "javascript", "vanilla"],
-        img: {
-            fullScreen: gamer_capture_fullScreen,
-            desktop: gamer_capture_desktop,
-            mobile: gamer_logo
-        },
-        github: [
-            { 
-                type: "frontend",
-                url: "https://github.com/aldaydev/gamer"
-            }
-        ],
-        deployed: "https://gamer.alday.dev",
-        video: null
-    },
-    {
-        id: "dev-agency",
-        name: "Dev Agency Layout",
-        description: "Proyecto de maquetación de la web de una agencia de desarollo web. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
-        date: "2024-09",
-        rate: 1,
-        language: 'javascript',
-        documentation: false,
-        testing: false,
-        technologies: ["html", "css", "javascript", "vanilla"],
-        img: {
-            fullScreen: devagency_capture_fullScreen,
-            desktop: devagency_capture_desktop,
-            mobile: devagency_logo
-        },
-        github: [
-            { 
-                type: "frontend",
-                url: "https://github.com/aldaydev/dev-agency"
-            }
-        ],
-        deployed: "https://devagency.alday.dev",
-        video: null
-    },
-    {
-        id: "cv-audiovisual",
-        name: "CV Audiovisual",
-        description: "Website con mi currículum audiovisual. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
-        date: "2024-10",
-        rate: 1,
-        language: 'javascript',
-        documentation: false,
-        testing: false,
-        technologies: ["html", "css", "javascript", "vanilla"],
-        img: {
-            fullScreen: cvaudiovisual_capture_fullScreen,
-            desktop: cvaudiovisual_capture_desktop,
-            mobile: cvaudiovisual_logo
-        },
-        github: [
-            { 
-                type: "frontend",
-                url: "https://github.com/aldaydev/CV_AUDIOVISUAL"
-            }
-        ],
-        deployed: "https://cvaudiovisual.alday.dev",
-        video: null
-    },
-    {
-        id: "alday-es",
-        name: "Mi web Musical",
-        description: "Mi website como artista musical. Realizado con HTML, CSS y JavaScript y creado en el contexto de mis estudios oficiales de 'Desarrollo de aplicaciones Web'.",
-        date: "2024-11",
-        rate: 1,
-        language: 'javascript',
-        documentation: false,
-        testing: false,
-        technologies: ["html", "css", "javascript", "vanilla"],
-        img: {
-            fullScreen: aldayes_capture_fullScreen,
-            desktop: aldayes_capture_desktop,
-            mobile: aldayes_logo
-        },
-        github: [
-            { 
-                type: "frontend",
-                url: "https://github.com/aldaydev/alday_es"
-            }
-        ],
-        deployed: "https://alday.es",
-        video: null
-    },
-    {
-        id: "pokemon-game",
-        name: "Pokemon Game App",
-        description: "Aplicación creada con React que consiste en un juego de pokemon donde puedes registrarte y ganar pokeballs al cazar pokemons y cumplir hitos. Creada con React, utilizando FireBase Auth para gestionar la autenticación y FireStore para la base de datos.",
-        date: "2025-01",
-        rate: 2,
-        language: 'javascript',
+        id: "mlink",
+        name: "Mlink App",
+        description: "Mlink es una app full stack tipo 'link tree' pensada para músicos. En ella puedes crear tu perfil, tener tu 'username' único y un enlace para compartir de una sola vez todas tus redes sociales como artista musical.",
+        date: "2025-06",
+        rate: 5,
+        language: 'typescript',
         documentation: false,
         testing: true,
-        technologies: ["react", "reactrouter", "node", "firebase", "selenium", "html", "css", "javascript"],
+        technologies: ["typescript", "react", "node", "express", "jwt", "vite", "reactrouter", "reactquery", "tailwind", "html", "css", ],
         img: {
-            fullScreen: pokegame_capture_fullScreen,
-            desktop: pokegame_capture_desktop,
-            mobile: pokegame_logo
+            fullScreen: mlink_capture_fullScreen,
+            desktop: mlink_capture_desktop,
+            mobile: mlink_logo
         },
         github: [
             { 
                 type: "frontend",
-                url: "https://github.com/aldaydev/pokegame"
+                url: "https://github.com/aldaydev/mlink_client"
+            },
+            { 
+                type: "backend",
+                url: "https://github.com/aldaydev/mlink_server"
             }
         ],
-        deployed: "https://pokegame.alday.dev",
-        video: "https://youtu.be/MxDscYjcJKU?si=ApWAEuw926NKNoYU"
+        deployed: "https://mlink.alday.dev",
+        video: null
+    },
+    {
+        id: "aldaydev",
+        name: "AldayDev Portfolio",
+        description: "Este portfolio en el que estás ahora mismo. Aquí pretendo mostrarte de manera visual todos mis conocimientos y habilidades sobre desarrollow web. Podrás ver mis proyectos filtrándolos por tecnología, ver mi currículum y saber un poco más acerca de mí.",
+        date: "2025-05",
+        rate: 4,
+        language: 'javascript',
+        documentation: false,
+        testing: false,
+        technologies: ["react", "node", "reactrouter", "vite", "html", "css", "javascript"],
+        img: {
+            fullScreen: aldaydev_capture_fullScreen,
+            desktop: aldaydev_capture_desktop,
+            mobile: aldaydev_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/aldaydev_app"
+            }
+        ],
+        deployed: null,
+        video: null
+    },
+    {
+        id: "chords",
+        name: "Chords API",
+        description: "API Rest pública y gratuita. Pensada para desarrolladores que están empezando a hacer sus primeras peticiones (fetch, axios) y que, además, les gusta la música. Totalmente desplegada, vistas servidas desde el backend, documentación en inglés con Swagger y JSDoc.",
+        date: "2025-04",
+        rate: 5,
+        language: 'javascript',
+        documentation: true,
+        testing: true,
+        technologies: ["node", "express", "mongodb", "mongoose", "ejs", "swagger", "jsdoc", "nodemon", "winston", "dotenv", "cors", "render"],
+        img: {
+            fullScreen: chordsapi_capture_fullScreen,
+            desktop: chordsapi_capture_desktop,
+            mobile: chordsapi_logo
+        },
+        github: [
+            { 
+                type: "backend",
+                url: "https://github.com/aldaydev/chords_api"
+            }
+        ],
+        deployed: "https://chords.alday.dev",
+        video: "https://youtu.be/AeSVz7Ewje8"
     },
     {
         id: "musikos",
@@ -176,79 +132,123 @@ const projectsData = [
         video: "https://youtu.be/hBbSiVGH7nQ?si=mO9WE-1Yw_EDZi0t"
     },
     {
-        id: "chords",
-        name: "Chords API",
-        description: "API Rest pública y gratuita. Pensada para desarrolladores que están empezando a hacer sus primeras peticiones (fetch, axios) y que, además, les gusta la música. Totalmente desplegada, vistas servidas desde el backend, documentación en inglés con Swagger y JSDoc.",
-        date: "2025-04",
-        rate: 5,
+        id: "pokemon-game",
+        name: "Pokemon Game App",
+        description: "Aplicación creada con React que consiste en un juego de pokemon donde puedes registrarte y ganar pokeballs al cazar pokemons y cumplir hitos. Creada con React, utilizando FireBase Auth para gestionar la autenticación y FireStore para la base de datos.",
+        date: "2025-01",
+        rate: 2,
         language: 'javascript',
-        documentation: true,
+        documentation: false,
         testing: true,
-        technologies: ["node", "express", "mongodb", "mongoose", "ejs", "swagger", "jsdoc", "nodemon", "winston", "dotenv", "cors", "render"],
+        technologies: ["react", "reactrouter", "node", "firebase", "selenium", "html", "css", "javascript"],
         img: {
-            fullScreen: chordsapi_capture_fullScreen,
-            desktop: chordsapi_capture_desktop,
-            mobile: chordsapi_logo
+            fullScreen: pokegame_capture_fullScreen,
+            desktop: pokegame_capture_desktop,
+            mobile: pokegame_logo
         },
         github: [
             { 
-                type: "backend",
-                url: "https://github.com/aldaydev/chords_api"
+                type: "frontend",
+                url: "https://github.com/aldaydev/pokegame"
             }
         ],
-        deployed: "https://chords.alday.dev",
-        video: "https://youtu.be/AeSVz7Ewje8"
+        deployed: "https://pokegame.alday.dev",
+        video: "https://youtu.be/MxDscYjcJKU?si=ApWAEuw926NKNoYU"
     },
     {
-        id: "aldaydev",
-        name: "AldayDev Portfolio",
-        description: "Este portfolio en el que estás ahora mismo. Aquí pretendo mostrarte de manera visual todos mis conocimientos y habilidades sobre desarrollow web. Podrás ver mis proyectos filtrándolos por tecnología, ver mi currículum y saber un poco más acerca de mí.",
-        date: "2025-05",
-        rate: 4,
+        id: "alday-es",
+        name: "Mi web Musical",
+        description: "Mi website como artista musical. Realizado con HTML, CSS y JavaScript y creado en el contexto de mis estudios oficiales de 'Desarrollo de aplicaciones Web'.",
+        date: "2024-11",
+        rate: 1,
         language: 'javascript',
         documentation: false,
         testing: false,
-        technologies: ["react", "node", "reactrouter", "vite", "html", "css", "javascript"],
+        technologies: ["html", "css", "javascript", "vanilla"],
         img: {
-            fullScreen: aldaydev_capture_fullScreen,
-            desktop: aldaydev_capture_desktop,
-            mobile: aldaydev_logo
+            fullScreen: aldayes_capture_fullScreen,
+            desktop: aldayes_capture_desktop,
+            mobile: aldayes_logo
         },
         github: [
             { 
                 type: "frontend",
-                url: "https://github.com/aldaydev/aldaydev_app"
+                url: "https://github.com/aldaydev/alday_es"
             }
         ],
-        deployed: null,
+        deployed: "https://alday.es",
         video: null
     },
     {
-        id: "mlink",
-        name: "Mlink App",
-        description: "Mlink es una app full stack tipo 'link tree' pensada para músicos. En ella puedes crear tu perfil, tener tu 'username' único y un enlace para compartir de una sola vez todas tus redes sociales como artista musical.",
-        date: "2025-06",
-        rate: 5,
-        language: 'typescript',
+        id: "cv-audiovisual",
+        name: "CV Audiovisual",
+        description: "Website con mi currículum audiovisual. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
+        date: "2024-10",
+        rate: 1,
+        language: 'javascript',
         documentation: false,
-        testing: true,
-        technologies: ["typescript", "react", "node", "express", "jwt", "vite", "reactrouter", "reactquery", "tailwind", "html", "css", ],
+        testing: false,
+        technologies: ["html", "css", "javascript", "vanilla"],
         img: {
-            fullScreen: mlink_capture_fullScreen,
-            desktop: mlink_capture_desktop,
-            mobile: mlink_logo
+            fullScreen: cvaudiovisual_capture_fullScreen,
+            desktop: cvaudiovisual_capture_desktop,
+            mobile: cvaudiovisual_logo
         },
         github: [
             { 
                 type: "frontend",
-                url: "https://github.com/aldaydev/mlink_client"
-            },
-            { 
-                type: "backend",
-                url: "https://github.com/aldaydev/mlink_server"
+                url: "https://github.com/aldaydev/CV_AUDIOVISUAL"
             }
         ],
-        deployed: "https://mlink.alday.dev",
+        deployed: "https://cvaudiovisual.alday.dev",
+        video: null
+    },
+    {
+        id: "dev-agency",
+        name: "Dev Agency Layout",
+        description: "Proyecto de maquetación de la web de una agencia de desarollo web. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
+        date: "2024-09",
+        rate: 1,
+        language: 'javascript',
+        documentation: false,
+        testing: false,
+        technologies: ["html", "css", "javascript", "vanilla"],
+        img: {
+            fullScreen: devagency_capture_fullScreen,
+            desktop: devagency_capture_desktop,
+            mobile: devagency_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/dev-agency"
+            }
+        ],
+        deployed: "https://devagency.alday.dev",
+        video: null
+    },
+    {
+        id: "gamer",
+        name: "Gamer News Layout",
+        description: "Proyecto de maquetación de un portal web de noticias de videojuegos. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
+        date: "2024-08",
+        rate: 1,
+        language: 'javascript',
+        documentation: false,
+        testing: false,
+        technologies: ["html", "css", "javascript", "vanilla"],
+        img: {
+            fullScreen: gamer_capture_fullScreen,
+            desktop: gamer_capture_desktop,
+            mobile: gamer_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/gamer"
+            }
+        ],
+        deployed: "https://gamer.alday.dev",
         video: null
     },
 

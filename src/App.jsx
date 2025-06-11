@@ -13,6 +13,7 @@ import Projects from './pages/Projects/Projects.jsx';
 import Videos from './pages/Videos/Videos.jsx';
 import Resume from './pages/Resume/Resume.jsx';
 import About from './pages/About/About.jsx';
+import Project from './pages/Project/Project.jsx';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/videos" element={<Videos/>} />
           <Route path="/curriculum" element={<Resume/>} />
           <Route path="/sobre-mi" element={<About/>} />
+          <Route path='/:project' element={<Project/>}/>
         </Routes>
       </main>
       <Footer/>

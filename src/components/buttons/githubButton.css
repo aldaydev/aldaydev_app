@@ -1,0 +1,30 @@
+.githubButton__link{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+    color: var(--color-white);
+
+    border: 1px solid var(--color-white);
+    padding: 5px 10px;
+
+    transition: background-color .3s ease-in-out;
+}
+
+.githubButton__link:focus-visible{
+    outline: 2px solid var(--color-white);
+    background-color: var(--color-green-light);
+}
+
+.githubButton__link:hover{
+    background-color: var(--color-green-light);
+}
+
+.githubButton__linkIcon{
+    width: 22px;
+}
+
+.githubButton__linkText{
+    font-size: .9rem;
+}
