@@ -24,6 +24,7 @@ import aldaydev_capture_fullScreen from '../assets/images/projects/aldaydev_capt
 import aldaydev_logo from '../assets/images/projects/aldaydev_logo-shadow.webp';
 import mlink_capture_fullScreen from '../assets/images/projects/mlink_capture_1200px.webp';
 import mlink_capture_desktop from '../assets/images/projects/mlink_capture_400px.webp';
+import mlink_logo from '../assets/images/projects/mlink_logo.webp';
 
 const projectsData = [
     {
@@ -151,7 +152,7 @@ const projectsData = [
         name: "Musikos App",
         description: "Versión beta de 'Musikos', una aplicación full stack creada para conectar músicos entre sí. En ella puedes buscarlos, filtrar por estilo, instrumento, ubicación, edad y nombre. También puedes crear tu cuenta para que otros músicos afines te encuentren.",
         date: "2025-03",
-        rate: 5,
+        rate: 4,
         language: 'javascript',
         documentation: true,
         testing: true,
@@ -179,7 +180,7 @@ const projectsData = [
         name: "Chords API",
         description: "API Rest pública y gratuita. Pensada para desarrolladores que están empezando a hacer sus primeras peticiones (fetch, axios) y que, además, les gusta la música. Totalmente desplegada, vistas servidas desde el backend, documentación en inglés con Swagger y JSDoc.",
         date: "2025-04",
-        rate: 4,
+        rate: 5,
         language: 'javascript',
         documentation: true,
         testing: true,
@@ -231,11 +232,11 @@ const projectsData = [
         language: 'typescript',
         documentation: false,
         testing: true,
-        technologies: ["react", "node", "express", "jwt", "vite", "reactrouter", "tailwind", "html", "css", "javascript"],
+        technologies: ["typescript", "react", "node", "express", "jwt", "vite", "reactrouter", "reactquery", "tailwind", "html", "css", ],
         img: {
             fullScreen: mlink_capture_fullScreen,
             desktop: mlink_capture_desktop,
-            mobile: aldaydev_logo
+            mobile: mlink_logo
         },
         github: [
             { 
