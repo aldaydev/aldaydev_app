@@ -22,6 +22,8 @@ import chordsapi_logo from '../assets/images/projects/chordsapi_logo.webp';
 import aldaydev_capture_desktop from '../assets/images/projects/aldaydev_capture_400px.webp';
 import aldaydev_capture_fullScreen from '../assets/images/projects/aldaydev_capture_1200px.webp';
 import aldaydev_logo from '../assets/images/projects/aldaydev_logo-shadow.webp';
+import mlink_capture_fullScreen from '../assets/images/projects/mlink_capture_1200px.webp';
+import mlink_capture_desktop from '../assets/images/projects/mlink_capture_400px.webp';
 
 const projectsData = [
     {
@@ -29,7 +31,8 @@ const projectsData = [
         name: "Gamer News Layout",
         description: "Proyecto de maquetación de un portal web de noticias de videojuegos. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
         date: "2024-08",
-        rate: 5,
+        rate: 1,
+        language: 'javascript',
         documentation: false,
         testing: false,
         technologies: ["html", "css", "javascript", "vanilla"],
@@ -52,7 +55,8 @@ const projectsData = [
         name: "Dev Agency Layout",
         description: "Proyecto de maquetación de la web de una agencia de desarollo web. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
         date: "2024-09",
-        rate: 5,
+        rate: 1,
+        language: 'javascript',
         documentation: false,
         testing: false,
         technologies: ["html", "css", "javascript", "vanilla"],
@@ -75,7 +79,8 @@ const projectsData = [
         name: "CV Audiovisual",
         description: "Website con mi currículum audiovisual. Realizado con HTML, CSS y JavaScript y creado en el contexto del 'Master en CSS Avanzado'.",
         date: "2024-10",
-        rate: 5,
+        rate: 1,
+        language: 'javascript',
         documentation: false,
         testing: false,
         technologies: ["html", "css", "javascript", "vanilla"],
@@ -98,7 +103,8 @@ const projectsData = [
         name: "Mi web Musical",
         description: "Mi website como artista musical. Realizado con HTML, CSS y JavaScript y creado en el contexto de mis estudios oficiales de 'Desarrollo de aplicaciones Web'.",
         date: "2024-11",
-        rate: 4,
+        rate: 1,
+        language: 'javascript',
         documentation: false,
         testing: false,
         technologies: ["html", "css", "javascript", "vanilla"],
@@ -121,7 +127,8 @@ const projectsData = [
         name: "Pokemon Game App",
         description: "Aplicación creada con React que consiste en un juego de pokemon donde puedes registrarte y ganar pokeballs al cazar pokemons y cumplir hitos. Creada con React, utilizando FireBase Auth para gestionar la autenticación y FireStore para la base de datos.",
         date: "2025-01",
-        rate: 7,
+        rate: 2,
+        language: 'javascript',
         documentation: false,
         testing: true,
         technologies: ["react", "reactrouter", "node", "firebase", "selenium", "html", "css", "javascript"],
@@ -144,7 +151,8 @@ const projectsData = [
         name: "Musikos App",
         description: "Versión beta de 'Musikos', una aplicación full stack creada para conectar músicos entre sí. En ella puedes buscarlos, filtrar por estilo, instrumento, ubicación, edad y nombre. También puedes crear tu cuenta para que otros músicos afines te encuentren.",
         date: "2025-03",
-        rate: 9,
+        rate: 5,
+        language: 'javascript',
         documentation: true,
         testing: true,
         technologies: ["react", "node", "express", "mongodb", "mysql", "reactrouter", "nodemon", "bcrypt", "cors", "cookieparser", "dotenv", "jsdoc", "jwt", "mongoose", "nodemailer", "sequelize", "mongoose", "swagger", "winston", "jest", "selenium", "cypress", "vite", "dotenv", "html", "css", "javascript"],
@@ -171,7 +179,8 @@ const projectsData = [
         name: "Chords API",
         description: "API Rest pública y gratuita. Pensada para desarrolladores que están empezando a hacer sus primeras peticiones (fetch, axios) y que, además, les gusta la música. Totalmente desplegada, vistas servidas desde el backend, documentación en inglés con Swagger y JSDoc.",
         date: "2025-04",
-        rate: 8,
+        rate: 4,
+        language: 'javascript',
         documentation: true,
         testing: true,
         technologies: ["node", "express", "mongodb", "mongoose", "ejs", "swagger", "jsdoc", "nodemon", "winston", "dotenv", "cors", "render"],
@@ -194,7 +203,8 @@ const projectsData = [
         name: "AldayDev Portfolio",
         description: "Este portfolio en el que estás ahora mismo. Aquí pretendo mostrarte de manera visual todos mis conocimientos y habilidades sobre desarrollow web. Podrás ver mis proyectos filtrándolos por tecnología, ver mi currículum y saber un poco más acerca de mí.",
         date: "2025-05",
-        rate: 8,
+        rate: 4,
+        language: 'javascript',
         documentation: false,
         testing: false,
         technologies: ["react", "node", "reactrouter", "vite", "html", "css", "javascript"],
@@ -217,22 +227,27 @@ const projectsData = [
         name: "Mlink App",
         description: "Mlink es una app full stack tipo 'link tree' pensada para músicos. En ella puedes crear tu perfil, tener tu 'username' único y un enlace para compartir de una sola vez todas tus redes sociales como artista musical.",
         date: "2025-06",
-        rate: 9,
+        rate: 5,
+        language: 'typescript',
         documentation: false,
         testing: true,
         technologies: ["react", "node", "express", "jwt", "vite", "reactrouter", "tailwind", "html", "css", "javascript"],
         img: {
-            fullScreen: aldaydev_capture_fullScreen,
-            desktop: aldaydev_capture_desktop,
+            fullScreen: mlink_capture_fullScreen,
+            desktop: mlink_capture_desktop,
             mobile: aldaydev_logo
         },
         github: [
             { 
                 type: "frontend",
-                url: "https://github.com/aldaydev/aldaydev_app"
+                url: "https://github.com/aldaydev/mlink_client"
+            },
+            { 
+                type: "backend",
+                url: "https://github.com/aldaydev/mlink_server"
             }
         ],
-        deployed: null,
+        deployed: "https://mlink.alday.dev",
         video: null
     },
 

@@ -8,10 +8,33 @@ import mysql_icon from '../assets/icons/filter-icons/mysql_icon.webp';
 import firebase_icon from '../assets/icons/filter-icons/firebase_icon.webp';
 import vanilla_icon from '../assets/icons/filter-icons/vanilla_icon.webp';
 
+//Laguage filter icon iports
+
+import javascript_icon from '../assets/icons/filter-icons/javascript.svg';
+import typescript_icon from '../assets/icons/filter-icons/typescript.svg';
+
 //Other filter icon imports
 
 import doc_icon from '../assets/icons/filter-icons/documentation_icon.svg';
 import testing_icon from '../assets/icons/filter-icons/testing_icon.svg';
+
+const languageFilters = [
+    {
+        id: "javascript",
+        name: "JavaScript",
+        alt: "Icono de JavaScript",
+        icon: javascript_icon,
+        brandColor: "#F7DF1E"
+    },
+    {
+        id: "typescript",
+        name: "TypeScript",
+        alt: "Icono de TypeScript",
+        icon: typescript_icon,
+        brandColor: "#3178C6"
+    },
+
+]
 
 const techFilters = [
     {
@@ -81,4 +104,4 @@ const otherFilters = [
     },
 ]
 
-export {techFilters, otherFilters};
+export {languageFilters, techFilters, otherFilters};

@@ -254,14 +254,6 @@ const backTechData = [
 
 const testingTechData = [
     {
-        id: "selenium",
-        name: "Selenium",
-        bgColor: "#43B02A",
-        textColor: "white",
-        icon: selenium_icon,
-        type: "develop"
-    },
-    {
         id: "jest",
         name: "Jest",
         bgColor: "#C21325",
@@ -275,6 +267,14 @@ const testingTechData = [
         bgColor: "#000000",
         textColor: "white",
         icon: cypress_icon,
+        type: "develop"
+    },
+    {
+        id: "selenium",
+        name: "Selenium",
+        bgColor: "#43B02A",
+        textColor: "white",
+        icon: selenium_icon,
         type: "develop"
     },
 ]

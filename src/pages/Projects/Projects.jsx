@@ -18,6 +18,7 @@ function Projects () {
         sortBy: "rate",
         order: "desc"
     });
+    const [selectedLangFilters, setSelectedLangFilters] = useState("");
     const [selectedTechFilters, setSelectedTechFilters] = useState([]);
     const [selectedOtherFilters, setSelectedOtherFilters] = useState([]);
 
@@ -38,6 +39,10 @@ function Projects () {
     useEffect(()=>{
         console.log('Listado de proyectos', filteredProjectList);
     }, [filteredProjectList]);
+
+    useEffect(()=>{
+        console.log('Filtro de lenguaje', selectedLangFilters);
+    }, [selectedLangFilters]);
 
     // useEffect(()=>{
     //     orderProjectList();
@@ -82,7 +87,7 @@ function Projects () {
 
         let arrayToFilter = initialProjectList;
 
-        if(selectedOtherFilters.length > 0 || selectedTechFilters.length > 0){
+        if(selectedOtherFilters.length > 0 || selectedTechFilters.length > 0 || selectedLangFilters !== ""){
             const filteredProjects = arrayToFilter.filter((project) => {
                 if(selectedOtherFilters.length > 0 && selectedTechFilters.length === 0){
                     return selectedOtherFilters.every(filtro => project[filtro]);
@@ -94,9 +99,20 @@ function Projects () {
                 if(selectedTechFilters.length > 0 && selectedOtherFilters.length > 0){
                     return selectedTechFilters.every(filtro => project.technologies.includes(filtro)) && selectedOtherFilters.every(filtro => project[filtro]);
                 }
+                return arrayToFilter;
             });
 
-            const mantainOrder = orderProjects(filteredProjects);
+            let finalFilteredArr;
+
+            if(selectedLangFilters !== ""){
+                console.log('Filtra por lenguaje')
+                finalFilteredArr = filteredProjects.filter(project => project.language === selectedLangFilters)
+            }else{
+                console.log('No filtra por lenguaje')
+                finalFilteredArr = filteredProjects;
+            }
+
+            const mantainOrder = orderProjects(finalFilteredArr);
             setFilteredProjectList(mantainOrder);
             // setFilteredProjectList(filteredProjects);
         }else{
@@ -104,7 +120,7 @@ function Projects () {
             setFilteredProjectList(mantainOrder);
         }
 
-    }, [selectedTechFilters, selectedOtherFilters])
+    }, [selectedTechFilters, selectedOtherFilters, selectedLangFilters])
 
     return(
         <div className='pageContainer projects'>
@@ -121,6 +137,8 @@ function Projects () {
             <h2 className='page__subtitle projects__subtitle'>Busca filtrando por tecnologías </h2>
             </section>
             <ProjectFilters 
+                selectedLangFilters = {selectedLangFilters}
+                setSelectedLangFilters = {setSelectedLangFilters}
                 setSelectedTechFilters={setSelectedTechFilters} 
                 selectedTechFilters={selectedTechFilters}
                 setSelectedOtherFilters={setSelectedOtherFilters}
@@ -128,6 +146,13 @@ function Projects () {
             />
             <ProjectSorter selectedSorter={selectedSorter} setSelectedSorter={setSelectedSorter}/>
             <ProyectList filteredProjectList={filteredProjectList}/>
+            {
+                filteredProjectList.length === 0 && 
+                <div className='projects__noProjectsContainer'>
+                    <span className='projects__noProyects'>Aún no hay proyectos que combinen esas tecnologías</span>
+                </div>
+            }
+                    
         </div>
     )
 }

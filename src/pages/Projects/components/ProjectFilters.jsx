@@ -1,8 +1,22 @@
 import './projectFilters.css';
 
-import { techFilters, otherFilters } from "../../../data/techFilters.js";
+import { languageFilters, techFilters, otherFilters } from "../../../data/techFilters.js";
+import { useState } from 'react';
 
-function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelectedOtherFilters, selectedOtherFilters }) {
+function ProjectFilters({ setSelectedLangFilters, setSelectedTechFilters, selectedTechFilters, setSelectedOtherFilters, selectedOtherFilters }) {
+
+    const [checkedLandFilter, setCheckedLangFilter] = useState('');
+
+    const handleLangFilters = (langFilter) => {
+        if(checkedLandFilter === langFilter.id){
+            setSelectedLangFilters("")
+            setCheckedLangFilter("");
+        }else{
+            setSelectedLangFilters(langFilter.id)
+            setCheckedLangFilter(langFilter.id);
+        }
+        
+    }
 
     const handleTechFilters = (techFilter) => {
 
@@ -52,6 +66,39 @@ function ProjectFilters({ setSelectedTechFilters, selectedTechFilters, setSelect
 
     return (
         <section className='projectFilters'>
+            <article className='languageFilters'>
+                {languageFilters && languageFilters.map((langFilter, index) => {
+
+                    return (
+                        <label
+                            key={index}
+                            className='languageFilters__languageFilter'
+                            title={langFilter.name}
+                            htmlFor={langFilter.id}
+                            aria-label={`Mostrar proyectos que usan ${langFilter.name}`}
+                        >
+                            <input
+                                type='checkbox'
+                                className='languageFilter__checkbox'
+                                checked={checkedLandFilter === langFilter.id}
+                                onChange={() => handleLangFilters(langFilter)}
+                                id={langFilter.id}
+                                tabIndex={0}
+                    
+                            />
+                            <span className="languageFilter__icon"></span>
+                            <img
+                                src={langFilter.icon}
+                                className='languageFilter__image'
+                                alt={`Mostrar proyectos que usan ${langFilter.name}`}
+                            />
+                            <span>
+                                {langFilter.name}
+                            </span>
+                        </label>
+                    )
+                })}
+            </article>
             <article className='techFilters'>
                 {techFilters && techFilters.map((techFilter, index) => {
 
