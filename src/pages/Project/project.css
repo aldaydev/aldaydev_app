@@ -1,18 +1,95 @@
-.project__header{
+.projectPage__container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.projectHeader__imageContainer{
+    row-gap: 10px;
+    margin: 0 auto;
     margin-top: 20px;
-    height: min-content;
-    flex-basis: 80%;
-    box-shadow: 0 0 4px var(--color-white);
+    max-width: 80%;
+    color: var(--color-white);
 }
 
-.projectHeader__image{
-    display: block;
+.projectPage__title{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projectPage__image{
     width: 100%;
+    display: block;
     padding: 5px;
+    margin-bottom: 15px;
+}
+
+.projectPage__links{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.projectPage__description{
+    color: var(--color-white);
+    margin-top: 15px;
+}
+
+.projectPage__date{
+    margin-top: 10px;
+}
+
+.projectPage__techTitle{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.projectPage__techList{
+    
+    display: flex;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.projectPage__techItem{
+    font-size: .9rem;
+}
+
+.projectPage__moreProjects{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.projectPage__moreProjectsLink{
+    padding: 10px 30px;
+    border: 1px solid var(--color-white);
+
+    transition: background-color .3s ease-in-out;
+}
+
+@media screen and (max-width: 1400px) {
+    .projectPage__container{
+        margin-top: 10px;
+    }
+    .projectPage__title{
+        font-size: 1.5rem;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}   
+
+@media screen and (max-width: 860px) {
+    .projectPage__container{
+        max-width: 100%;
+    }
+
+    .projectPage__title{
+        font-size: 1.6rem;
+        margin: 0px;
+    }
 }

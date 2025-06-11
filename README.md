@@ -23,6 +23,9 @@ Podrás filtrarlos por tecnología, así como seleccionar los que incluyan testi
 
 * Accesibilidad => No solo puedes navegar con "tab" por toda la aplicación, si no que, si utilizas un lector de pantalla, las personas con necesidades de accesibilidad podrán navegar de manera fluida.
 
+
+------------------------------------------------------
+
 ## Sprints y updates
 
 He trabajado por sprints y updates en diferentes ramas. Te dejo a continuación un resumen de los objetivos que he ido cumpliendo en cada uno:
@@ -35,6 +38,7 @@ Objetivos:
 
 * Reorganizar tecnologías (en varios objetos, por tipo)
 * Añadir proyecto mlink.alday.dev al listado de proyectos
+* Añadir página para visualizar un único proyecto (path param)
 
 ### Sprint 8
 
