@@ -17,15 +17,24 @@ Me llamo Rafa Alday y te doy la bienvenida al repositorio de mi portfolio como d
 * Buscador de proyectos: 
 Podrás filtrarlos por tecnología, así como seleccionar los que incluyan testing o documentación con dependencias. Además, podrás ordenarlos por antigüedad o dificultad.
 
-* CSS Avanzado => No solo he trabajado muchísimo que todo sea hashtag#responsive, si no que he aplicado animaciones hashtag#CSS bastante vistosas tanto de elementos HTML como hashtag#SVG, así como hashtag#animaciones basadas en scroll.
+* CSS Avanzado => No solo he trabajado muchísimo que todo sea responsive, si no que he aplicado animaciones CSS bastante vistosas tanto de elementos HTML como SVG, así como animaciones basadas en scroll.
 
-* HTML semántico => He tratado de trabajar para que todo el hashtag#HTML sea óptimo y esté bien estructurado.
+* HTML semántico => He tratado de trabajar para que todo el HTML sea óptimo y esté bien estructurado.
 
-* Accesibilidad => No solo puedes navegar con "tab" por toda la aplicación, si no que, si utilizas un lector de pantalla, las personas con necesidades de hashtag#accesibilidad podrán navegar de manera fluida.
+* Accesibilidad => No solo puedes navegar con "tab" por toda la aplicación, si no que, si utilizas un lector de pantalla, las personas con necesidades de accesibilidad podrán navegar de manera fluida.
 
-## Sprints
+## Sprints y updates
 
-He trabajado por sprints en diferentes ramas. Te dejo a continuación un resumen de los objetivos que he ido cumpliendo en cada uno:
+He trabajado por sprints y updates en diferentes ramas. Te dejo a continuación un resumen de los objetivos que he ido cumpliendo en cada uno:
+
+### update/tsfilter
+
+Añadir el filtro por lenguaje para poder filtrar proyectos TS y JS. Dividir tecnologías por tipos (front, back...)
+
+Objetivos:
+
+* Reorganizar tecnologías (en varios objetos, por tipo)
+* Añadir proyecto mlink.alday.dev al listado de proyectos
 
 ### Sprint 8
 

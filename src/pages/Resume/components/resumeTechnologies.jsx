@@ -1,13 +1,22 @@
 import './resumeTechnologies.css';
 
-import techData from '../../../data/technologiesData.js';
+import {
+    backTechData, 
+    languagesData, 
+    frontTechData, 
+    dbTechData, 
+    testingTechData, 
+    docTechData, 
+    managementTechData,
+    otherTechData
+} from '../../../data/technologiesData.js';
 
 function ResumeTechnologies () {
 
-    const devTechs = techData.filter(devTech => devTech.type === "develop");
-    const dbTechs = techData.filter(dbTech => dbTech.type === "databases");
-    const managementTechs = techData.filter(manTech => manTech.type === "management");
-    const otherTechs = techData.filter(otherTech => otherTech.type === "other");
+    const devTechs = backTechData.filter(devTech => devTech.type === "develop");
+    // const dbTechs = backTechData.filter(dbTech => dbTech.type === "databases");
+    // const managementTechs = backTechData.filter(manTech => manTech.type === "management");
+    // const otherTechs = backTechData.filter(otherTech => otherTech.type === "other");
 
     return(
         <article className="resume__technologies">
@@ -19,7 +28,49 @@ function ResumeTechnologies () {
             </h3>
             <div className="resume__techStickers">
                 <div className="techStickers__container">
-                    <h4 className="techStickers__title">DESARROLLO WEB</h4>
+                    <h4 className="techStickers__title">LENGUAJES</h4>
+                    <div className="techStickers__stickers">
+                        {
+                            languagesData && languagesData.map((devTech, index) => {
+                                return (
+                                    <div key={index} className='techStickers__sticker'>
+                                        <img 
+                                            src={devTech.icon}
+                                            className='techStickers__stickerIcon'
+                                        />
+                                        <span className='techStickers__stickerTitle'>
+                                            {devTech.name.toUpperCase()}
+                                        </span>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+
+                <div className="techStickers__container">
+                    <h4 className="techStickers__title">FRONTEND</h4>
+                    <div className="techStickers__stickers">
+                        {
+                            frontTechData && frontTechData.map((devTech, index) => {
+                                return (
+                                    <div key={index} className='techStickers__sticker'>
+                                        <img 
+                                            src={devTech.icon}
+                                            className='techStickers__stickerIcon'
+                                        />
+                                        <span className='techStickers__stickerTitle'>
+                                            {devTech.name.toUpperCase()}
+                                        </span>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+
+                <div className="techStickers__container">
+                    <h4 className="techStickers__title">BACKEND</h4>
                     <div className="techStickers__stickers">
                         {
                             devTechs && devTechs.map((devTech, index) => {
@@ -40,10 +91,52 @@ function ResumeTechnologies () {
                 </div>
 
                 <div className="techStickers__container">
+                    <h4 className="techStickers__title">TESTING</h4>
+                    <div className="techStickers__stickers">
+                        {
+                            testingTechData && testingTechData.map((devTech, index) => {
+                                return (
+                                    <div key={index} className='techStickers__sticker'>
+                                        <img 
+                                            src={devTech.icon}
+                                            className='techStickers__stickerIcon'
+                                        />
+                                        <span className='techStickers__stickerTitle'>
+                                            {devTech.name.toUpperCase()}
+                                        </span>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+
+                <div className="techStickers__container">
+                    <h4 className="techStickers__title">DOCUMENTACIÓN</h4>
+                    <div className="techStickers__stickers">
+                        {
+                            docTechData && docTechData.map((devTech, index) => {
+                                return (
+                                    <div key={index} className='techStickers__sticker'>
+                                        <img 
+                                            src={devTech.icon}
+                                            className='techStickers__stickerIcon'
+                                        />
+                                        <span className='techStickers__stickerTitle'>
+                                            {devTech.name.toUpperCase()}
+                                        </span>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+
+                <div className="techStickers__container">
                     <h4 className="techStickers__title">BASES DE DATOS</h4>
                     <div className="techStickers__stickers">
                         {
-                            dbTechs && dbTechs.map((dbTech, index) => {
+                            dbTechData && dbTechData.map((dbTech, index) => {
                                 return (
                                     <div key={index} className='techStickers__sticker'>
                                         <img 
@@ -64,7 +157,7 @@ function ResumeTechnologies () {
                     <h4 className="techStickers__title">HERRAMIENTAS DE GESTIÓN</h4>
                     <div className="techStickers__stickers">
                         {
-                            managementTechs && managementTechs.map((manTech, index) => {
+                            managementTechData && managementTechData.map((manTech, index) => {
                                 return (
                                     <div key={index} className='techStickers__sticker'>
                                         <img 
@@ -85,7 +178,7 @@ function ResumeTechnologies () {
                     <h4 className="techStickers__title">OTRAS HERRAMIENTAS</h4>
                     <div className="techStickers__stickers">
                         {
-                            otherTechs && otherTechs.map((otherTech, index) => {
+                            otherTechData && otherTechData.map((otherTech, index) => {
                                 return (
                                     <div key={index} className='techStickers__sticker'>
                                         <img 

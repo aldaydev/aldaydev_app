@@ -7,6 +7,7 @@ import firebase_icon from '../assets/icons/tech-icons/firebase.svg';
 import mongoose_icon from '../assets/icons/tech-icons/mongoose.svg';
 import sequelize_icon from '../assets/icons/tech-icons/sequelize.svg';
 import bootstrap_icon from '../assets/icons/tech-icons/bootstrap.svg';
+import tailwind_icon from '../assets/icons/tech-icons/tailwindcss.svg';
 import vite_icon from '../assets/icons/tech-icons/vite.svg';
 import jwt_icon from '../assets/icons/tech-icons/jsonwebtokens.svg';
 import npm_icon from '../assets/icons/tech-icons/npm.svg';
@@ -20,6 +21,7 @@ import reactrouter_icon from '../assets/icons/tech-icons/reactrouter.svg';
 import html_icon from '../assets/icons/tech-icons/html.svg';
 import css_icon from '../assets/icons/tech-icons/css.svg';
 import javascript_icon from '../assets/icons/tech-icons/javascript.svg';
+import typescript_icon from '../assets/icons/tech-icons/typescript.svg';
 import render_icon from '../assets/icons/tech-icons/render.svg';
 import vscode_icon from '../assets/icons/tech-icons/vscode.svg';
 import photoshop_icon from '../assets/icons/tech-icons/photoshop.svg';
@@ -27,8 +29,46 @@ import aftereffects_icon from '../assets/icons/tech-icons/aftereffects.svg';
 import illustrator_icon from '../assets/icons/tech-icons/illustrator.svg';
 import premiere_icon from '../assets/icons/tech-icons/premiere.svg';
 import jira_icon from '../assets/icons/tech-icons/jira.svg';
+import reactHookForm_icon from '../assets/icons/tech-icons/reacthookform.svg';
+import reactQuery_icon from '../assets/icons/tech-icons/reactquery.svg';
 
-const technologiesData = [
+
+const languagesData = [
+    {
+        id: "javascript",
+        name: "JavaScript",
+        bgColor: "#F7DF1E",
+        textColor: "black",
+        icon: javascript_icon,
+        type: "develop"
+    },
+    {
+        id: "typescript",
+        name: "TypeScript",
+        bgColor: "#3178C6",
+        textColor: "black",
+        icon: typescript_icon,
+        type: "develop"
+    },
+    {
+        id: "html",
+        name: "HTML",
+        bgColor: "#E34F26",
+        textColor: "white",
+        icon: html_icon,
+        type: "develop"
+    },
+    {
+        id: "css",
+        name: "CSS",
+        bgColor: "#663399",
+        textColor: "white",
+        icon: css_icon,
+        type: "develop"
+    },
+]
+
+const frontTechData = [
     {
         id: "react",
         name: "React",
@@ -37,6 +77,58 @@ const technologiesData = [
         icon: react_icon,
         type: "develop"
     },
+    {
+        id: "vite",
+        name: "Vite",
+        bgColor: "#646CFF",
+        textColor: "white",
+        icon: vite_icon,
+        type: "develop"
+    },
+    {
+        id: "reactrouter",
+        name: "React Router",
+        bgColor: "#61DAFB",
+        textColor: "black",
+        icon: reactrouter_icon,
+        type: "develop"
+    },
+    {
+        id: "reactrouter",
+        name: "React Hook Form",
+        bgColor: "#EC5990",
+        textColor: "white",
+        icon: reactHookForm_icon,
+        type: "develop"
+    },
+    {
+        id: "reactquery",
+        name: "React Query",
+        bgColor: "#FF4154",
+        textColor: "white",
+        icon: reactQuery_icon,
+        type: "develop"
+    },
+    {
+        id: "tailwind",
+        name: "Tailwind CSS",
+        bgColor: "#06B6D4",
+        textColor: "white",
+        icon: tailwind_icon,
+        type: "develop"
+    },
+    {
+        id: "bootstrap",
+        name: "Bootstrap",
+        bgColor: "#7952B3",
+        textColor: "white",
+        icon: bootstrap_icon,
+        type: "develop"
+    },
+]
+
+
+const backTechData = [
     {
         id: "node",
         name: "Node",
@@ -53,6 +145,160 @@ const technologiesData = [
         icon: express_icon,
         type: "develop"
     },
+    {
+        id: "nodemon",
+        name: "Nodemon",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+    {
+        id: "firebase",
+        name: "Firebase",
+        bgColor: "#DD2C00",
+        textColor: "white",
+        icon: firebase_icon,
+        type: "develop"
+    },
+    {
+        id: "mongoose",
+        name: "Mongoose",
+        bgColor: "#880000",
+        textColor: "white",
+        icon: mongoose_icon,
+        type: "develop"
+    },
+    {
+        id: "sequelize",
+        name: "Sequelize",
+        bgColor: "#52B0E7",
+        textColor: "white",
+        icon: sequelize_icon,
+        type: "develop"
+    },
+    {
+        id: "jwt",
+        name: "JSON Web Tokens",
+        bgColor: "#000000",
+        textColor: "white",
+        icon: jwt_icon,
+        type: "develop"
+    },
+    {
+        id: "bcrypt",
+        name: "Bcrypt",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+    {
+        id: "winston",
+        name: "Winston",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+    {
+        id: "nodemailer",
+        name: "Node Mailer",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+    {
+        id: "cookieparser",
+        name: "Cookie Parser",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+    {
+        id: "cors",
+        name: "CORS",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+    {
+        id: "ejs",
+        name: "EJS",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+    {
+        id: "yaml",
+        name: "Yaml",
+        bgColor: "#CB171E",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+    {
+        id: "dotenv",
+        name: "Dotenv",
+        bgColor: "#CB171E",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+    
+]
+
+const testingTechData = [
+    {
+        id: "selenium",
+        name: "Selenium",
+        bgColor: "#43B02A",
+        textColor: "white",
+        icon: selenium_icon,
+        type: "develop"
+    },
+    {
+        id: "jest",
+        name: "Jest",
+        bgColor: "#C21325",
+        textColor: "white",
+        icon: jest_icon,
+        type: "develop"
+    },
+    {
+        id: "cypress",
+        name: "Cypress",
+        bgColor: "#000000",
+        textColor: "white",
+        icon: cypress_icon,
+        type: "develop"
+    },
+]
+
+const docTechData = [
+    {
+        id: "swagger",
+        name: "Swagger",
+        bgColor: "#85EA2D",
+        textColor: "black",
+        icon: swagger_icon,
+        type: "develop"
+    },
+    {
+        id: "jsdoc",
+        name: "JSDoc",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+]
+
+const dbTechData = [
     {
         id: "mongodb",
         name: "MongoDB",
@@ -97,14 +343,6 @@ const technologiesData = [
         type: "databases"
     },
     {
-        id: "firebase",
-        name: "Firebase",
-        bgColor: "#DD2C00",
-        textColor: "white",
-        icon: firebase_icon,
-        type: "develop"
-    },
-    {
         id: "firestore",
         name: "Firestore",
         bgColor: "#DD2C00",
@@ -112,174 +350,9 @@ const technologiesData = [
         icon: firebase_icon,
         type: "databases"
     },
-    {
-        id: "javascript",
-        name: "JavaScript",
-        bgColor: "#F7DF1E",
-        textColor: "black",
-        icon: javascript_icon,
-        type: "develop"
-    },
-    {
-        id: "mongoose",
-        name: "Mongoose",
-        bgColor: "#880000",
-        textColor: "white",
-        icon: mongoose_icon,
-        type: "develop"
-    },
-    {
-        id: "sequelize",
-        name: "Sequelize",
-        bgColor: "#52B0E7",
-        textColor: "white",
-        icon: sequelize_icon,
-        type: "develop"
-    },
-    {
-        id: "bootstrap",
-        name: "Bootstrap",
-        bgColor: "#7952B3",
-        textColor: "white",
-        icon: bootstrap_icon,
-        type: "develop"
-    },
-    {
-        id: "vite",
-        name: "Vite",
-        bgColor: "#646CFF",
-        textColor: "white",
-        icon: vite_icon,
-        type: "develop"
-    },
-    {
-        id: "jwt",
-        name: "JSON Web Tokens",
-        bgColor: "#000000",
-        textColor: "white",
-        icon: jwt_icon,
-        type: "develop"
-    },
-    {
-        id: "bcrypt",
-        name: "Bcrypt",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "winston",
-        name: "Winston",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "nodemailer",
-        name: "Node Mailer",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "cookieparser",
-        name: "Cookie Parser",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "nodemon",
-        name: "Nodemon",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "cors",
-        name: "CORS",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "ejs",
-        name: "EJS",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "yaml",
-        name: "Yaml",
-        bgColor: "#CB171E",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "dotenv",
-        name: "Dotenv",
-        bgColor: "#CB171E",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "swagger",
-        name: "Swagger",
-        bgColor: "#85EA2D",
-        textColor: "black",
-        icon: swagger_icon,
-        type: "develop"
-    },
-    {
-        id: "jsdoc",
-        name: "JSDoc",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "selenium",
-        name: "Selenium",
-        bgColor: "#43B02A",
-        textColor: "white",
-        icon: selenium_icon,
-        type: "develop"
-    },
-    {
-        id: "jest",
-        name: "Jest",
-        bgColor: "#C21325",
-        textColor: "white",
-        icon: jest_icon,
-        type: "develop"
-    },
-    {
-        id: "cypress",
-        name: "Cypress",
-        bgColor: "#000000",
-        textColor: "white",
-        icon: cypress_icon,
-        type: "develop"
-    },
-    {
-        id: "reactrouter",
-        name: "React Router",
-        bgColor: "#61DAFB",
-        textColor: "black",
-        icon: reactrouter_icon,
-        type: "develop"
-    },
+]
+
+const managementTechData = [
     {
         id: "git",
         name: "Git",
@@ -297,22 +370,6 @@ const technologiesData = [
         type: "management"
     },
     {
-        id: "html",
-        name: "HTML",
-        bgColor: "#E34F26",
-        textColor: "white",
-        icon: html_icon,
-        type: "develop"
-    },
-    {
-        id: "css",
-        name: "CSS",
-        bgColor: "#663399",
-        textColor: "white",
-        icon: css_icon,
-        type: "develop"
-    },
-    {
         id: "vscode",
         name: "VS Code",
         bgColor: "#2B9FED",
@@ -320,6 +377,25 @@ const technologiesData = [
         icon: vscode_icon,
         type: "develop"
     },
+    {
+        id: "jira",
+        name: "Jira",
+        bgColor: "#2B9FED",
+        textColor: "white",
+        icon: jira_icon,
+        type: "management"
+    },
+    {
+        id: "render",
+        name: "Render",
+        bgColor: "#000000",
+        textColor: "white",
+        icon: render_icon,
+        type: "management"
+    }
+]
+
+const otherTechData = [
     {
         id: "photshop",
         name: "Photoshop",
@@ -352,22 +428,6 @@ const technologiesData = [
         icon: illustrator_icon,
         type: "other"
     },
-    {
-        id: "jira",
-        name: "Jira",
-        bgColor: "#2B9FED",
-        textColor: "white",
-        icon: jira_icon,
-        type: "management"
-    },
-    {
-        id: "render",
-        name: "Render",
-        bgColor: "#000000",
-        textColor: "white",
-        icon: render_icon,
-        type: "management"
-    }
 ]
 
-export default technologiesData;
+export {backTechData, languagesData, frontTechData, dbTechData, testingTechData, docTechData, managementTechData, otherTechData};

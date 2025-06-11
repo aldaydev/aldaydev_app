@@ -212,6 +212,29 @@ const projectsData = [
         deployed: null,
         video: null
     },
+    {
+        id: "mlink",
+        name: "Mlink App",
+        description: "Mlink es una app full stack tipo 'link tree' pensada para músicos. En ella puedes crear tu perfil, tener tu 'username' único y un enlace para compartir de una sola vez todas tus redes sociales como artista musical.",
+        date: "2025-06",
+        rate: 9,
+        documentation: false,
+        testing: true,
+        technologies: ["react", "node", "express", "jwt", "vite", "reactrouter", "tailwind", "html", "css", "javascript"],
+        img: {
+            fullScreen: aldaydev_capture_fullScreen,
+            desktop: aldaydev_capture_desktop,
+            mobile: aldaydev_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/aldaydev_app"
+            }
+        ],
+        deployed: null,
+        video: null
+    },
 
 ]
 
