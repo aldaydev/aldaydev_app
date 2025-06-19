@@ -34,9 +34,9 @@ const projectsData = [
         date: "2025-06",
         rate: 5,
         language: 'typescript',
-        documentation: false,
+        documentation: true,
         testing: true,
-        technologies: ["typescript", "react", "node", "express", "jwt", "vite", "reactrouter", "reactquery", "tailwind", "html", "css", ],
+        technologies: ["typescript", "react", "node", "express", "mongodb", "mongoose", "jwt", "swagger", "vite", "reactrouter", "reactquery", "tailwind", "html", "css", "axios", "cypress", "netlify", "vercel"],
         img: {
             fullScreen: mlink_capture_fullScreen,
             desktop: mlink_capture_desktop,
@@ -64,7 +64,7 @@ const projectsData = [
         language: 'javascript',
         documentation: false,
         testing: false,
-        technologies: ["react", "node", "reactrouter", "vite", "html", "css", "javascript"],
+        technologies: ["react", "node", "reactrouter", "vite", "html", "css", "javascript", "vercel"],
         img: {
             fullScreen: aldaydev_capture_fullScreen,
             desktop: aldaydev_capture_desktop,
@@ -88,7 +88,7 @@ const projectsData = [
         language: 'javascript',
         documentation: true,
         testing: true,
-        technologies: ["node", "express", "mongodb", "mongoose", "ejs", "swagger", "jsdoc", "nodemon", "winston", "dotenv", "cors", "render"],
+        technologies: ["node", "express", "mongodb", "mongoose", "ejs", "swagger", "jsdoc", "jest", "nodemon", "winston", "dotenv", "cors", "render"],
         img: {
             fullScreen: chordsapi_capture_fullScreen,
             desktop: chordsapi_capture_desktop,

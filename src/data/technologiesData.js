@@ -31,6 +31,9 @@ import premiere_icon from '../assets/icons/tech-icons/premiere.svg';
 import jira_icon from '../assets/icons/tech-icons/jira.svg';
 import reactHookForm_icon from '../assets/icons/tech-icons/reacthookform.svg';
 import reactQuery_icon from '../assets/icons/tech-icons/reactquery.svg';
+import axios_icon from '../assets/icons/tech-icons/axios.svg';
+import netlify_icon from '../assets/icons/tech-icons/netlify.svg';
+import vercel_icon from '../assets/icons/tech-icons/vercel.svg';
 
 
 const languagesData = [
@@ -125,6 +128,14 @@ const frontTechData = [
         icon: bootstrap_icon,
         type: "develop"
     },
+    {
+        id: "axios",
+        name: "Axios",
+        bgColor: "#5A29E4",
+        textColor: "white",
+        icon: axios_icon,
+        type: "develop"
+    },
 ]
 
 
@@ -146,22 +157,6 @@ const backTechData = [
         type: "develop"
     },
     {
-        id: "nodemon",
-        name: "Nodemon",
-        bgColor: "#0061F2",
-        textColor: "white",
-        icon: npm_icon,
-        type: "develop"
-    },
-    {
-        id: "firebase",
-        name: "Firebase",
-        bgColor: "#DD2C00",
-        textColor: "white",
-        icon: firebase_icon,
-        type: "develop"
-    },
-    {
         id: "mongoose",
         name: "Mongoose",
         bgColor: "#880000",
@@ -175,6 +170,22 @@ const backTechData = [
         bgColor: "#52B0E7",
         textColor: "white",
         icon: sequelize_icon,
+        type: "develop"
+    },
+    {
+        id: "nodemon",
+        name: "Nodemon",
+        bgColor: "#0061F2",
+        textColor: "white",
+        icon: npm_icon,
+        type: "develop"
+    },
+    {
+        id: "firebase",
+        name: "Firebase",
+        bgColor: "#DD2C00",
+        textColor: "white",
+        icon: firebase_icon,
         type: "develop"
     },
     {
@@ -392,7 +403,24 @@ const managementTechData = [
         textColor: "white",
         icon: render_icon,
         type: "management"
-    }
+    },
+    {
+        id: "netlify",
+        name: "Netlify",
+        bgColor: "#00C7B7",
+        textColor: "white",
+        icon: netlify_icon,
+        type: "management"
+    },
+    {
+        id: "vercel",
+        name: "Vercel",
+        bgColor: "#000000",
+        textColor: "white",
+        icon: vercel_icon,
+        type: "management"
+    },
+
 ]
 
 const otherTechData = [
