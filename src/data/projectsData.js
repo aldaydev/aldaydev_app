@@ -39,8 +39,8 @@ const projectsData = [
         rate: 6,
         language: 'typescript',
         documentation: false,
-        testing: false,
-        technologies: ["typescript", "react", "next", "node", "express", "postgresql", "sequelize", "jwt", "tailwind", "html", "css", "vercel", "aws", "ec2"],
+        testing: true,
+        technologies: ["typescript", "react", "next", "node", "express", "postgresql", "sequelize", "jwt", "jest", "supertest", "tailwind", "html", "css", "vercel", "aws", "ec2"],
         img: {
             fullScreen: cuadrapp_capture_fullScreen,
             desktop: cuadrapp_capture_desktop,
@@ -68,7 +68,7 @@ const projectsData = [
         language: 'typescript',
         documentation: true,
         testing: true,
-        technologies: ["typescript", "react", "node", "express", "mongodb", "mongoose", "jwt", "swagger", "vite", "reactrouter", "reactquery", "tailwind", "html", "css", "axios", "cypress", "netlify", "aws", "ec2"],
+        technologies: ["typescript", "react", "node", "express", "mongodb", "mongoose", "jwt", "swagger", "jest", "supertest", "cypress", "vite", "reactrouter", "reactquery", "tailwind", "html", "css", "axios", "cypress", "netlify", "aws", "ec2"],
         img: {
             fullScreen: mlink_capture_fullScreen,
             desktop: mlink_capture_desktop,
