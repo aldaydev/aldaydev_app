@@ -25,8 +25,40 @@ import aldaydev_logo from '../assets/images/projects/aldaydev_logo-shadow.webp';
 import mlink_capture_fullScreen from '../assets/images/projects/mlink_capture_1200px.webp';
 import mlink_capture_desktop from '../assets/images/projects/mlink_capture_400px.webp';
 import mlink_logo from '../assets/images/projects/mlink_logo.webp';
+import cuadrapp_capture_fullScreen from '../assets/images/projects/cuadrapp_capture_1200px.webp';
+import cuadrapp_capture_desktop from '../assets/images/projects/cuadrapp_capture_400px.webp';
+import cuadrapp_logo from '../assets/images/projects/cuadrapp_logo.webp';
+
 
 const projectsData = [
+    {
+        id: "cuadrapp",
+        name: "Cuadrapp",
+        description: "Cuadrapp es una aplicación para gestión de presupuestosy gastos. En ella puedes crear un cuenta y gestionar tus finanzas de manera sencilla y práctica.",
+        date: "2025-07",
+        rate: 6,
+        language: 'typescript',
+        documentation: false,
+        testing: false,
+        technologies: ["typescript", "react", "next", "node", "express", "postgresql", "sequelize", "jwt", "tailwind", "html", "css", "vercel", "aws", "ec2"],
+        img: {
+            fullScreen: cuadrapp_capture_fullScreen,
+            desktop: cuadrapp_capture_desktop,
+            mobile: cuadrapp_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/cuadrapp_client"
+            },
+            { 
+                type: "backend",
+                url: "https://github.com/aldaydev/cuadrapp_server"
+            }
+        ],
+        deployed: "https://cuadrapp.alday.dev",
+        video: null
+    },
     {
         id: "mlink",
         name: "Mlink App",
@@ -36,7 +68,7 @@ const projectsData = [
         language: 'typescript',
         documentation: true,
         testing: true,
-        technologies: ["typescript", "react", "node", "express", "mongodb", "mongoose", "jwt", "swagger", "vite", "reactrouter", "reactquery", "tailwind", "html", "css", "axios", "cypress", "netlify", "vercel"],
+        technologies: ["typescript", "react", "node", "express", "mongodb", "mongoose", "jwt", "swagger", "vite", "reactrouter", "reactquery", "tailwind", "html", "css", "axios", "cypress", "netlify", "aws", "ec2"],
         img: {
             fullScreen: mlink_capture_fullScreen,
             desktop: mlink_capture_desktop,
