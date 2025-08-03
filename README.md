@@ -33,6 +33,7 @@ He trabajado por sprints y updates en diferentes ramas. Te dejo a continuación 
 ### update/082025
 Añadiendo proyecto de Angular (nueva web alday)
 Añadiendo angular en los filtros de proyectos
+Arreglando logos en el home
 
 ### update-1
 

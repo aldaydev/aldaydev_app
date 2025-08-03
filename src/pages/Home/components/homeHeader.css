@@ -36,7 +36,18 @@
 .homeFigure__techItem--react{
     top: 0;
     left: 0;
-    width: 100%;
+    width: 115%;
+
+    display: flex;
+    justify-content: center;
+
+    animation: fade-in .5s ease-in-out 1.6s both;
+}
+
+.homeFigure__techItem--angular{
+    top: 0;
+    left: 0;
+    width: 90%;
 
     display: flex;
     justify-content: center;
