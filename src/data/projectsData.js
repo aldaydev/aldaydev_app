@@ -51,7 +51,7 @@ const projectsData = [
         github: [
             { 
                 type: "frontend",
-                url: "https://github.com/aldaydev/cuadrapp_client"
+                url: "https://github.com/aldaydev/alday_es-v2"
             },
         ],
         deployed: "https://alday.es",
