@@ -28,9 +28,35 @@ import mlink_logo from '../assets/images/projects/mlink_logo.webp';
 import cuadrapp_capture_fullScreen from '../assets/images/projects/cuadrapp_capture_1200px.webp';
 import cuadrapp_capture_desktop from '../assets/images/projects/cuadrapp_capture_400px.webp';
 import cuadrapp_logo from '../assets/images/projects/cuadrapp_logo.webp';
+import aldayes_v2_capture_desktop from '../assets/images/projects/aldayes_v2_capture_400px.webp';
+import aldayes_v2_capture_fullscreen from '../assets/images/projects/aldayes_v2_capture_1200px.webp'; 
 
 
 const projectsData = [
+    {
+        id: "alday-es-v2",
+        name: "Alday.es",
+        description: "Nueva versión de mi web musical donde puedes ver todos mis lanzamientos así como filtrar mis videoclips.",
+        date: "2025-08",
+        rate: 3,
+        language: 'typescript',
+        documentation: false,
+        testing: false,
+        technologies: ["typescript", "angular", "node", "html", "css", "firebase"],
+        img: {
+            fullScreen: aldayes_v2_capture_fullscreen,
+            desktop: aldayes_v2_capture_desktop,
+            mobile: aldayes_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/cuadrapp_client"
+            },
+        ],
+        deployed: "https://alday.es",
+        video: null
+    },
     {
         id: "cuadrapp",
         name: "Cuadrapp",
@@ -92,7 +118,7 @@ const projectsData = [
         name: "AldayDev Portfolio",
         description: "Este portfolio en el que estás ahora mismo. Aquí pretendo mostrarte de manera visual todos mis conocimientos y habilidades sobre desarrollow web. Podrás ver mis proyectos filtrándolos por tecnología, ver mi currículum y saber un poco más acerca de mí.",
         date: "2025-05",
-        rate: 4,
+        rate: 5,
         language: 'javascript',
         documentation: false,
         testing: false,
@@ -116,7 +142,7 @@ const projectsData = [
         name: "Chords API",
         description: "API Rest pública y gratuita. Pensada para desarrolladores que están empezando a hacer sus primeras peticiones (fetch, axios) y que, además, les gusta la música. Totalmente desplegada, vistas servidas desde el backend, documentación en inglés con Swagger y JSDoc.",
         date: "2025-04",
-        rate: 5,
+        rate: 4,
         language: 'javascript',
         documentation: true,
         testing: true,
@@ -189,7 +215,7 @@ const projectsData = [
     },
     {
         id: "alday-es",
-        name: "Mi web Musical",
+        name: "Alday.es (v1 old)",
         description: "Mi website como artista musical. Realizado con HTML, CSS y JavaScript y creado en el contexto de mis estudios oficiales de 'Desarrollo de aplicaciones Web'.",
         date: "2024-11",
         rate: 1,
@@ -208,7 +234,7 @@ const projectsData = [
                 url: "https://github.com/aldaydev/alday_es"
             }
         ],
-        deployed: "https://alday.es",
+        deployed: "https://v1.alday.es",
         video: null
     },
     {

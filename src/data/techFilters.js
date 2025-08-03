@@ -7,6 +7,7 @@ import mongo_icon from '../assets/icons/filter-icons/mongo_icon.webp';
 import mysql_icon from '../assets/icons/filter-icons/mysql_icon.webp';
 import firebase_icon from '../assets/icons/filter-icons/firebase_icon.webp';
 import vanilla_icon from '../assets/icons/filter-icons/vanilla_icon.webp';
+import angular_icon from '../assets/icons/filter-icons/angular_icon.webp';
 
 //Laguage filter icon iports
 
@@ -43,6 +44,13 @@ const techFilters = [
         alt: "Icono de React",
         icon: react_icon,
         brandColor: "#01D8FF"
+    },
+    {
+        id: "angular",
+        name: "Angular",
+        alt: "Icono de Angular",
+        icon: angular_icon,
+        brandColor: "#F21050"
     },
     {
         id: "node",

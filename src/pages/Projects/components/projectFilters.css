@@ -190,7 +190,12 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
+
+    .techFilters{
+        column-gap: 2.5dvw;
+    }
+
     .techFilters__techFilter {
         flex: 0 1 30%;
         max-width: 60px;
@@ -207,7 +212,7 @@
 }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 780px) {
 
     .projectFilters{
         gap: 35px;
@@ -255,7 +260,7 @@
 
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
 
     .techFilters{
         column-gap: 3.5dvw;
