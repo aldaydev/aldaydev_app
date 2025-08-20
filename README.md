@@ -32,6 +32,7 @@ He trabajado por sprints y updates en diferentes ramas. Te dejo a continuación 
 
 ### update/082025
 Añadiendo proyecto FilmFlix
+Añadiendo Digital Ocean a technologiesData
 
 ### update/082025
 Añadiendo proyecto de Angular (nueva web alday)

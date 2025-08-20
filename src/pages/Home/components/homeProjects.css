@@ -147,6 +147,10 @@
 }
 
 @media screen and (max-width: 860px) {
+
+    .homeProjects__projects{
+        row-gap: 40px;
+    }
     
     .homeProjects__projects {
         flex-direction: column;
@@ -177,9 +181,6 @@
 
 @media screen and (max-width: 380px) {
     
-    .homeProjects__projects{
-        row-gap: 20px;
-    }
 
     .mainProject__linksContainer {
         column-gap: 15px;

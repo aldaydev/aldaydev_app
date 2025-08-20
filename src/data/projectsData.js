@@ -29,10 +29,37 @@ import cuadrapp_capture_fullScreen from '../assets/images/projects/cuadrapp_capt
 import cuadrapp_capture_desktop from '../assets/images/projects/cuadrapp_capture_400px.webp';
 import cuadrapp_logo from '../assets/images/projects/cuadrapp_logo.webp';
 import aldayes_v2_capture_desktop from '../assets/images/projects/aldayes_v2_capture_400px.webp';
-import aldayes_v2_capture_fullscreen from '../assets/images/projects/aldayes_v2_capture_1200px.webp'; 
+import aldayes_v2_capture_fullScreen from '../assets/images/projects/aldayes_v2_capture_1200px.webp'; 
+import filmflix_capture_fullScreen from '../assets/images/projects/filmflix_capture_1200px.webp';
+import filmflix_capture_desktop from '../assets/images/projects/filmflix_capture_400px.webp';
+import filmflix_logo from '../assets/images/projects/filmflix_logo.webp';
 
 
 const projectsData = [
+    {
+        id: "filmflix",
+        name: "FilmFlix",
+        description: "Filmflixes una aplicación en la que puedes buscar películas por año o por varios filtros, así como ordenar los resultados de diferentes manera. Podrás ver, además, las películas en cartelera o los próximos estrenos.",
+        date: "2025-08",
+        rate: 5,
+        language: 'typescript',
+        documentation: false,
+        testing: true,
+        technologies: ["typescript", "angular", "node", "html", "css", "cypress", "digitalocean"],
+        img: {
+            fullScreen: filmflix_capture_fullScreen,
+            desktop: filmflix_capture_desktop,
+            mobile: filmflix_logo
+        },
+        github: [
+            { 
+                type: "frontend",
+                url: "https://github.com/aldaydev/filmflix"
+            },
+        ],
+        deployed: "https://filmflix.alday.dev",
+        video: null
+    },
     {
         id: "alday-es-v2",
         name: "Alday.es",
@@ -44,7 +71,7 @@ const projectsData = [
         testing: false,
         technologies: ["typescript", "angular", "node", "html", "css", "firebase"],
         img: {
-            fullScreen: aldayes_v2_capture_fullscreen,
+            fullScreen: aldayes_v2_capture_fullScreen,
             desktop: aldayes_v2_capture_desktop,
             mobile: aldayes_logo
         },

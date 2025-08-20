@@ -1,4 +1,5 @@
 import react_icon from '../assets/icons/tech-icons/react.svg';
+import angular_icon from '../assets/icons/tech-icons/angular.svg';
 import node_icon from '../assets/icons/tech-icons/node.svg';
 import express_icon from '../assets/icons/tech-icons/express.svg';
 import mongodb_icon from '../assets/icons/tech-icons/mongodb.svg';
@@ -34,6 +35,7 @@ import reactQuery_icon from '../assets/icons/tech-icons/reactquery.svg';
 import axios_icon from '../assets/icons/tech-icons/axios.svg';
 import netlify_icon from '../assets/icons/tech-icons/netlify.svg';
 import vercel_icon from '../assets/icons/tech-icons/vercel.svg';
+import degitalocean_icon from '../assets/icons/tech-icons/digitalocean.svg';
 
 
 const languagesData = [
@@ -72,6 +74,14 @@ const languagesData = [
 ]
 
 const frontTechData = [
+    {
+        id: "angular",
+        name: "Angular",
+        bgColor: "#BD002E",
+        textColor: "black",
+        icon: angular_icon,
+        type: "develop"
+    },
     {
         id: "react",
         name: "React",
@@ -418,6 +428,14 @@ const managementTechData = [
         bgColor: "#000000",
         textColor: "white",
         icon: vercel_icon,
+        type: "management"
+    },
+    {
+        id: "digitalocean",
+        name: "Digital Ocean",
+        bgColor: "#0080FF",
+        textColor: "white",
+        icon: degitalocean_icon,
         type: "management"
     },
 
