@@ -31,6 +31,9 @@ Podrás filtrarlos por tecnología, así como seleccionar los que incluyan testi
 He trabajado por sprints y updates en diferentes ramas. Te dejo a continuación un resumen de los objetivos que he ido cumpliendo en cada uno:
 
 ### update/082025
+Añadiendo proyecto FilmFlix
+
+### update/082025
 Añadiendo proyecto de Angular (nueva web alday)
 Añadiendo angular en los filtros de proyectos
 Arreglando logos en el home
