@@ -24,13 +24,13 @@ function Resume() {
             url: "#projects"
         },
         {
+            name: "Experiencia",
+            url: "#experience"
+        },
+        {
             name: "Formación",
             url: "#education"
         },
-        {
-            name: "Experiencia",
-            url: "#experience"
-        }
     ]
 
     const [showReturnButton, setShowReturnButton] = useState(false);
@@ -50,7 +50,7 @@ function Resume() {
 
     return (
 
-        
+
         <div className='pageContainer resume'>
             <AnimatedTitle
                 headingLevel="h1"
@@ -61,7 +61,7 @@ function Resume() {
                 braceSize="3.4rem"
                 color="var(--color-white)"
             />
-            <nav 
+            <nav
                 className="resumeHeader__navbar"
                 aria-label='Navegación interna para la página del currículum'
             >
@@ -90,8 +90,8 @@ function Resume() {
                 <ResumePresentation />
                 <ResumeTechnologies />
                 <ResumeProjects />
-                <ResumeEducation />
                 <ResumeExperience />
+                <ResumeEducation />
             </section>
 
             <section className='resume__download'>
@@ -105,7 +105,7 @@ function Resume() {
                 </a>
             </section>
 
-            <button 
+            <button
                 className={showReturnButton ? 'resume_goToTopContainer' : 'resume_goToTopContainer--hidden'}
                 tabIndex={showReturnButton ? 0 : -1}
                 aria-label='Volver a la parte superior del currículum'

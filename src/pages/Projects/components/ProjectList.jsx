@@ -12,31 +12,31 @@ function ProyectList ({ filteredProjectList }) {
             {
                 filteredProjectList && filteredProjectList.map((project, index) => {
                     return(
-                        <a 
-                            href={`/${project.id}`} 
+                        <a
+                            href={`/${project.id}`}
                             target="_blank"
-                            key={index} 
+                            key={index}
                             className="projectList__project"
                             title={`Visitar proyecto ${project.name}`}
                             aria-label={`Visitar proyecto ${project.name}`}
                         >
                             <div className="project__bg"/>
                             <figure className="project__imageContainer">
-                                <img 
-                                    src={!resizeImages ? project.img.desktop : project.img.mobile}
+                                <img
+                                    src={project.img.desktop}
                                     className={!resizeImages ? "project__image" : "project__image--mobile"}
                                 />
                             </figure>
-                            
+
                             <div className="project__data">
                                 <h3 className="project__title">{project.name}</h3>
                                 <h3 className="project__date">{project.date}</h3>
                             </div>
-                            
+
                         </a>
-                        
+
                     )
-                    
+
                 })
             }
         </section>
