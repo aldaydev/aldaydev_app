@@ -11,8 +11,6 @@ import youtube_icon from '../../../assets/icons/util-icons/youtube_simpleicon.sv
 
 function HomeProjects () {
 
-    // useScrollReveal();
-
     const mainProjects = projects.sort((a, b) => b.rate - a.rate).slice(0, 2);
 
     return(
@@ -40,7 +38,7 @@ function HomeProjects () {
                                                         target='_blank'
                                                         rel="noopener noreferrer"
                                                         className='mainProject__link'
-                                                        aria-label={`Ir a repositorio del 
+                                                        aria-label={`Ir a repositorio del
                                                             ${githubLink.type} de ${project.name}`}
                                                     >
                                                         <img
@@ -74,7 +72,7 @@ function HomeProjects () {
                                                 </a>
                                             }
                                             {
-                                                project.video && 
+                                                project.video &&
                                                 <a
                                                     href={project.video}
                                                     target='_blank'
@@ -130,7 +128,7 @@ function HomeProjects () {
 
             </div>
             <div className='home__moreProjects'>
-                    <Link 
+                    <Link
                         to="/proyectos"
                         className='moreProjects__link'
                     >

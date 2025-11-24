@@ -36,6 +36,7 @@ import axios_icon from '../assets/icons/tech-icons/axios.svg';
 import netlify_icon from '../assets/icons/tech-icons/netlify.svg';
 import vercel_icon from '../assets/icons/tech-icons/vercel.svg';
 import degitalocean_icon from '../assets/icons/tech-icons/digitalocean.svg';
+import jasmine_icon from '../assets/icons/tech-icons/jasmine.svg';
 
 
 const languagesData = [
@@ -270,7 +271,7 @@ const backTechData = [
         icon: npm_icon,
         type: "develop"
     },
-    
+
 ]
 
 const testingTechData = [
@@ -296,6 +297,22 @@ const testingTechData = [
         bgColor: "#43B02A",
         textColor: "white",
         icon: selenium_icon,
+        type: "develop"
+    },
+    {
+        id: "jasmine",
+        name: "Jasmine",
+        bgColor: "#8A4182",
+        textColor: "white",
+        icon: jasmine_icon,
+        type: "develop"
+    },
+    {
+        id: "karma",
+        name: "Karma",
+        bgColor: "#BD002E",
+        textColor: "white",
+        icon: angular_icon,
         type: "develop"
     },
 ]
@@ -327,7 +344,7 @@ const dbTechData = [
         textColor: "white",
         icon: mongodb_icon,
         type: "databases"
-        
+
     },
     {
         id: "mongoatlas",
@@ -336,7 +353,7 @@ const dbTechData = [
         textColor: "white",
         icon: mongodb_icon,
         type: "databases"
-        
+
     },
     {
         id: "mongocompass",
@@ -345,7 +362,7 @@ const dbTechData = [
         textColor: "white",
         icon: mongodb_icon,
         type: "databases"
-        
+
     },
     {
         id: "mysql",
@@ -388,6 +405,14 @@ const managementTechData = [
         bgColor: "#181717",
         textColor: "white",
         icon: github_icon,
+        type: "management"
+    },
+    {
+        id: "npm",
+        name: "NPM",
+        bgColor: "#181717",
+        textColor: "white",
+        icon: npm_icon,
         type: "management"
     },
     {
