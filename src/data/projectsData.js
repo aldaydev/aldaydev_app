@@ -67,10 +67,10 @@ const projectsData = [
     github: [
       {
         type: "frontend",
-        url: "https://github.com/aldaydev/filmflix",
+        url: "https://github.com/universalux",
       },
     ],
-    deployed: "https://filmflix.alday.dev",
+    deployed: "https://universalux.dev",
     video: null,
   },
   {
